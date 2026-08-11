@@ -36,6 +36,8 @@ OUT = ROOT / "Bhadravati_FINAL_Interior_Design.pdf"
 # Brand palette
 NN9074 = HexColor("#B5AB9C")
 WW0005 = HexColor("#EEEDE9")
+NN9088 = HexColor("#E9E3D9")
+WW0020 = HexColor("#EDE9E2")
 LATTE = HexColor("#C8B9A4")
 SLATE = HexColor("#4E4C49")
 IDRIA = HexColor("#A39178")
@@ -51,11 +53,11 @@ MARGIN = 16 * mm
 
 def swatch_row():
     labels = [
-        ("NN9074", "Puddle of Grey", "#B5AB9C"),
-        ("WW0005", "White Linen", "#EEEDE9"),
+        ("NN9074", "A · Puddle Grey", "#B5AB9C"),
+        ("WW0005", "A · White Linen", "#EEEDE9"),
+        ("NN9088", "B · Ecru Tint", "#E9E3D9"),
+        ("WW0020", "B · Virgin White", "#EDE9E2"),
         ("S1241", "Latte MT", "#C8B9A4"),
-        ("80236", "Slate Grey", "#4E4C49"),
-        ("84689", "Idria Oak", "#A39178"),
     ]
     cells = []
     for code, name, hx in labels:
@@ -239,7 +241,7 @@ def build():
         story.append(Paragraph("Living — social zone (daylight concept)", caption))
 
     story.append(Spacer(1, 6 * mm))
-    story.append(Paragraph(f"Generated {date.today().isoformat()} · Concept A locked · coordination: integration_complete", small))
+    story.append(Paragraph(f"Generated {date.today().isoformat()} · Dual paint schemes A/B · live gallery toggle · coordination: integration_complete", small))
     story.append(PageBreak())
 
     # ——— DESIGN DIRECTION ———
@@ -297,7 +299,10 @@ def build():
     story.append(Paragraph("2. Locked palette &amp; finishes", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=8))
     story.append(Paragraph(
-        "Screen hex values are approximate references. Approve physical samples beside granite under morning / afternoon / 3000 K light.",
+        "Two locked <b>paint schemes</b> for walls/ceilings; laminates and hardware stay constant. "
+        "The live gallery at GitHub Pages includes a sticky <b>Paint scheme</b> toggle (Scheme A / Scheme B) — "
+        "preference persists in localStorage; URL hashes <b>#scheme-a</b> / <b>#scheme-b</b> also work. "
+        "Screen hex values are approximate — approve physical chips beside granite under morning / afternoon / 3000 K light.",
         body,
     ))
     story.append(swatch_row())
@@ -305,8 +310,10 @@ def build():
 
     pal_data = [
         [Paragraph("<b>Role</b>", cell_b), Paragraph("<b>Code / product</b>", cell_b), Paragraph("<b>Notes</b>", cell_b)],
-        [Paragraph("Main walls", cell), Paragraph("Birla Opus <b>NN9074</b> Puddle of Grey", cell), Paragraph("Low-sheen washable greige", cell)],
-        [Paragraph("Ceiling", cell), Paragraph("Birla Opus <b>WW0005</b> White Linen", cell), Paragraph("Matt", cell)],
+        [Paragraph("Scheme A walls (default)", cell), Paragraph("Birla Opus <b>NN9074</b> Puddle of Grey", cell), Paragraph("#B5AB9C · mid warm greige", cell)],
+        [Paragraph("Scheme A ceiling", cell), Paragraph("Birla Opus <b>WW0005</b> White Linen", cell), Paragraph("#EEEDE9 · warm linen white", cell)],
+        [Paragraph("Scheme B walls", cell), Paragraph("Birla Opus <b>NN9088</b> Ecru Tint", cell), Paragraph("#E9E3D9 · lighter warm ecru", cell)],
+        [Paragraph("Scheme B ceiling", cell), Paragraph("Birla Opus <b>WW0020</b> Virgin White", cell), Paragraph("#EDE9E2 · cleaner warm white", cell)],
         [Paragraph("Kitchen shutters (all)", cell), Paragraph("Century <b>S1241 MT Latte</b>", cell), Paragraph("One code only; matte", cell)],
         [Paragraph("TV cabinet", cell), Paragraph("<b>80236</b> DW Slate Grey (or Latte)", cell), Paragraph("Controlled accent", cell)],
         [Paragraph("Wardrobe face", cell), Paragraph("<b>84689 SU Idria Oak</b> (backup 84687 Lyon) / plywood Option B", cell), Paragraph("Soft woodgrain", cell)],
@@ -434,8 +441,41 @@ def build():
             story.append(Paragraph(cap, caption))
     story.append(PageBreak())
 
+    # ——— PAINT SCHEME A vs B ———
+    story.append(Paragraph("7. Paint schemes A vs B (side-by-side)", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=6))
+    story.append(Paragraph(
+        "<b>Scheme A</b> (default): walls <b>NN9074</b> Puddle of Grey + ceiling <b>WW0005</b> White Linen. "
+        "<b>Scheme B</b>: walls <b>NN9088</b> Ecru Tint + ceiling <b>WW0020</b> Virgin White. "
+        "Joinery (Latte shutters, Idria / fluted options, recessed SS) is identical. "
+        "Compare live in the gallery paint-scheme toggle; approve chips on site before ordering.",
+        body,
+    ))
+    half_w = (content_w - 6 * mm) / 2
+    for a_name, b_name, label in [
+        ("01_living_social_zone_daylight.jpg", "01_living_social_zone_daylight_schemeB.jpg", "Living — social zone"),
+        ("02_kitchen_granite_latte_shutters.jpg", "02_kitchen_granite_latte_shutters_schemeB.jpg", "Kitchen — granite + Latte"),
+    ]:
+        a_path = VIS / a_name
+        b_path = VIS / b_name
+        imgs, caps = [], []
+        if a_path.exists():
+            imgs.append(fit_image(a_path, half_w, 72 * mm))
+            caps.append(Paragraph(f"<b>A</b> · {label}", caption))
+        if b_path.exists():
+            imgs.append(fit_image(b_path, half_w, 72 * mm))
+            caps.append(Paragraph(f"<b>B</b> · {label}", caption))
+        if imgs:
+            row = Table([imgs], colWidths=[half_w + 3 * mm] * len(imgs))
+            row.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("ALIGN", (0, 0), (-1, -1), "CENTER")]))
+            story.append(row)
+            crow = Table([caps], colWidths=[half_w + 3 * mm] * len(caps))
+            story.append(crow)
+            story.append(Spacer(1, 2 * mm))
+    story.append(PageBreak())
+
     # ——— WARDROBE A/B ———
-    story.append(Paragraph("7. Wardrobe options A / B (3-door)", h1))
+    story.append(Paragraph("8. Wardrobe options A / B (3-door)", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=6))
     story.append(Paragraph(
         "Locked: three vertical leaves (1 single + 1 double), widths <b>457 / 457 / 458 mm</b> inside clear "
@@ -468,13 +508,13 @@ def build():
     story.append(PageBreak())
 
     # ——— NEXT ACTIONS ———
-    story.append(Paragraph("8. Next 3 actions &amp; site-measure residuals", h1))
+    story.append(Paragraph("9. Next 3 actions &amp; site-measure residuals", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=8))
     actions = [
         ("1. Sign the site-measure sheet",
          "Kitchen, wardrobe niche, and all openings — photograph tape end-to-end. Resolves granite thickness conflict and any PDF/photo dimension disagreements."),
         ("2. Approve the physical sample board",
-         "NN9074, WW0005, S1241 MT Latte, 84689 SU Idria (or plywood Option B), 80236 DW, E3 1 mm &amp; 2 mm edges, recessed brushed SS pull — beside granite under morning / afternoon / 3000 K light. Choose wardrobe Option A or B."),
+         "Scheme A chips <b>NN9074 + WW0005</b> and Scheme B chips <b>NN9088 + WW0020</b>, plus S1241 MT Latte, 84689 SU Idria (or plywood Option B), 80236 DW, E3 edges, recessed brushed SS — beside granite under morning / afternoon / 3000 K. Choose paint scheme and wardrobe Option A or B."),
         ("3. Lock fabricator shop drawings + quotation",
          "One kitchen laminate, three wardrobe leaves (single + double, 457/457/458), board grades, edges, recessed hardware, service access — then commission plan-faithful visuals from locked geometry only."),
     ]
@@ -513,7 +553,7 @@ def build():
         body,
     ))
     story.append(Paragraph(
-        "Companion sources: MASTER_BRIEF.md · design_tokens.json · coordination/*_lock.json · visuals gallery.",
+        "Companion sources: MASTER_BRIEF.md · design_tokens.json · coordination/swatch_lock.json · scheme_b_swatch_lock.json · live gallery (paint scheme toggle).",
         small,
     ))
 

@@ -15,8 +15,8 @@ Design-control handoff for client review and fabricator briefing. Location: firs
 
 ## Open the visual presentation
 
-Open `visuals/index.html` in any modern browser.  
-Includes floor plan, axonometric, palette board, three-view room sets, and **wardrobe Options A / B**.
+Open this folder’s `index.html` (GitHub Pages) or `visuals/index.html` in the deliverable.  
+Includes floor plan, axonometric, palette board, three-view room sets, **wardrobe Options A / B**, and a sticky **Paint scheme** toggle (Scheme A / Scheme B). Preference persists in `localStorage` (`bhadravati-paint-scheme`); URL hashes `#scheme-a` / `#scheme-b` also work.
 
 ---
 
@@ -24,8 +24,10 @@ Includes floor plan, axonometric, palette board, three-view room sets, and **war
 
 | Role | Spec |
 |------|------|
-| Main walls | Birla Opus **NN9074** Puddle of Grey |
-| Ceiling | Birla Opus **WW0005** White Linen |
+| Main walls (Scheme A default) | Birla Opus **NN9074** Puddle of Grey `#B5AB9C` |
+| Ceiling (Scheme A) | Birla Opus **WW0005** White Linen `#EEEDE9` |
+| Main walls (Scheme B) | Birla Opus **NN9088** Ecru Tint `#E9E3D9` |
+| Ceiling (Scheme B) | Birla Opus **WW0020** Virgin White `#EDE9E2` |
 | Kitchen shutters (all) | Century **S1241 MT Latte** |
 | TV cabinet only | **80236** DW Slate Grey |
 | Wardrobe niche | W-01 **1372 x 2286 x 488 mm** |
@@ -37,7 +39,9 @@ Includes floor plan, axonometric, palette board, three-view room sets, and **war
 | Hardware finish | Brushed stainless (recessed profiles) |
 | Lighting baseline | **3000 K** |
 
-Matte / low-sheen finishes throughout. Machine-readable tokens: `design_tokens.json`. Locks: `coordination/*_lock.json` + `image_qa.json`.
+Matte / low-sheen finishes throughout. Machine-readable tokens: `design_tokens.json`. Locks: `coordination/*_lock.json` (incl. `scheme_b_swatch_lock.json`) + `image_qa.json`.
+
+**Paint scheme toggle:** sticky segmented control in `index.html` switches CSS swatches, palette board (`palette_board.svg` / `palette_board_schemeB.svg`), and gallery image sources (`*_schemeB.png` when present; falls back to Scheme A with a “Scheme B image pending” badge).
 
 ---
 

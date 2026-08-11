@@ -1,0 +1,76 @@
+{
+  "scheme_id": "B_ecru_virgin_white",
+  "project": "Bhadravati Home",
+  "status": "complete",
+  "updated": "2026-08-11",
+  "owner": "color_material_swatch_specialist",
+  "role": "Scheme B alternate wall/ceiling pair — lighter warm ecru walls with Virgin White ceiling",
+  "scheme_a_unchanged": {
+    "note": "Scheme A remains the default locked concept: NN9074 Puddle of Grey walls + WW0005 White Linen ceiling.",
+    "walls": {
+      "code": "NN9074",
+      "name": "Puddle of Grey",
+      "hex": "#B5AB9C",
+      "rgb": [181, 171, 156]
+    },
+    "ceiling": {
+      "code": "WW0005",
+      "name": "White Linen",
+      "hex": "#EEEDE9",
+      "rgb": [238, 237, 233]
+    }
+  },
+  "walls": {
+    "brand": "Birla Opus",
+    "code": "NN9088",
+    "code_spaced": "NN 9088",
+    "name": "Ecru Tint",
+    "hex": "#E9E3D9",
+    "rgb": [233, 227, 217],
+    "undertone": "light_warm_ecru",
+    "sheen": "low_sheen_washable_matt",
+    "use_rule": "Scheme B walls throughout (lighter alternative to NN9074). Prefer washable system; shows dust/smoke faster than mid-tone greige.",
+    "verification": {
+      "source_local": "processed_pdf_text/birla_opus_shade_card_extracted.txt — NN 9088 Ecru tint RGB 233,227,217 #E9E3D9",
+      "source_tokens": "FINAL_DELIVERABLE/design_tokens.json palette.secondary_walls_optional",
+      "match": "exact",
+      "assumption_flag": false
+    }
+  },
+  "ceiling": {
+    "brand": "Birla Opus",
+    "code": "WW0020",
+    "code_spaced": "WW 0020",
+    "name": "Virgin White",
+    "hex": "#EDE9E2",
+    "rgb": [237, 233, 226],
+    "undertone": "warm_clean_white_slight_cream",
+    "sheen": "matt",
+    "use_rule": "Scheme B ceilings only. Cleaner/warmer-leaning white than WW0005 White Linen; pairs with NN9088 Ecru Tint.",
+    "decision": {
+      "official_code_found": true,
+      "code": "WW0020",
+      "confidence": "confirmed",
+      "assumption_flag": false,
+      "rationale": "Official Birla Opus catalogue lists Virgin White as WW 0020. Local project shade-card extract and birlaopus.com both give RGB 237,233,226 (#EDE9E2). Shade-card interior notes also cite WW 0020 alongside WW 0005 for industrial-area ceilings with NN 9088 walls."
+    },
+    "verification": {
+      "source_local": "processed_pdf_text/birla_opus_shade_card_extracted.txt page 3 — WW 0020 Virgin white RGB 237,233,226 #EDE9E2",
+      "source_web": "https://www.birlaopus.com/colour-catalogue/whites-and-off-whites-wall-paint-colours/virgin-white",
+      "web_rgb": [237, 233, 226],
+      "match": "exact_local_and_official_site",
+      "assumption_flag": false
+    }
+  },
+  "pairing_notes": {
+    "contrast": "NN9088 (#E9E3D9) to WW0020 (#EDE9E2) is a soft step — ceiling reads slightly cleaner/lighter than wall ecru.",
+    "vs_scheme_a": "Scheme A uses warmer linen white WW0005 (#EEEDE9) over mid greige NN9074; Scheme B uses Virgin White WW0020 over light ecru NN9088.",
+    "site_verify": "Approve physical NN9088 + WW0020 chips beside granite under morning / afternoon / 3000 K light before ordering.",
+    "shade_card_industrial_note": "Shade card interior system notes list ceilings WW 0005 / WW 0020 with walls NN 9088 for industrial areas — aligns with this Scheme B lock."
+  },
+  "research_brief": {
+    "local_shade_pdf": "Birla_Opus_INTERIOR_Shade_Card.pdf / birla_opus_shade_card_extracted.txt",
+    "web": "birlaopus.com Virgin white (WW 0020) confirmed",
+    "skills_sh_github": "No useful interior-design palette-toggle patterns found for this lock; Scheme A/B kept as explicit dual scheme records rather than UI toggle."
+  }
+}

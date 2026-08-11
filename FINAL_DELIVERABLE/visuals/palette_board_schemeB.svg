@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 900" role="img" aria-labelledby="pb-title pb-desc">
+  <title id="pb-title">Bhadravati Home — Scheme B Colour &amp; Material Swatch Board</title>
+  <desc id="pb-desc">Scheme B locked pair: NN9088 Ecru Tint walls, WW0020 Virgin White ceiling, S1241 MT Latte kitchen, 84689 Idria Oak wardrobe, 80236 DW Slate Grey TV only, black granite counter, brushed stainless, E3 ABS, 3000 K lighting.</desc>
+  <defs>
+    <style>
+      .t { font-family: "Fraunces", "Libre Baskerville", Georgia, serif; fill: #2C2925; }
+      .s { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; fill: #5A534A; }
+      .l { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; fill: #2C2925; font-weight: 600; }
+      .code { font-family: "IBM Plex Mono", "Source Code Pro", ui-monospace, monospace; fill: #3A3632; }
+      .w { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; fill: #F4F0EA; }
+      .wm { font-family: "IBM Plex Mono", "Source Code Pro", ui-monospace, monospace; fill: #E8DFD4; }
+    </style>
+    <!-- Black granite: cool fleck, restrained sheen — not white quartz -->
+    <linearGradient id="granGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2A2A2A"/>
+      <stop offset="35%" stop-color="#111111"/>
+      <stop offset="65%" stop-color="#1C1C1C"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <pattern id="granFleck" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="7" r="0.7" fill="#4A4A4A" opacity="0.55"/>
+      <circle cx="14" cy="18" r="0.55" fill="#5A5A5A" opacity="0.45"/>
+      <circle cx="22" cy="5" r="0.65" fill="#3A3A3A" opacity="0.5"/>
+      <circle cx="9" cy="24" r="0.5" fill="#666" opacity="0.35"/>
+      <circle cx="25" cy="15" r="0.45" fill="#555" opacity="0.4"/>
+    </pattern>
+    <!-- 84689 European grey oak — muted grain, not orange oak -->
+    <pattern id="oakGrain" width="9" height="48" patternUnits="userSpaceOnUse">
+      <rect width="9" height="48" fill="#A39178"/>
+      <path d="M2 0 C3.2 12 1.2 24 2.4 48 M6 0 C7 14 5 28 6.2 48" stroke="#8F7C64" stroke-width="0.65" fill="none" opacity="0.5"/>
+      <path d="M4.5 0 C5 10 4 22 4.8 48" stroke="#B5A48C" stroke-width="0.4" fill="none" opacity="0.35"/>
+    </pattern>
+    <!-- 80236 DW Slate Grey — dyed woodgrain, TV only -->
+    <pattern id="slateGrain" width="11" height="42" patternUnits="userSpaceOnUse">
+      <rect width="11" height="42" fill="#4E4C49"/>
+      <path d="M1.5 0 C2.5 10 0.8 22 1.8 42 M7 0 C8 12 6 24 7.2 42" stroke="#3A3835" stroke-width="0.75" fill="none" opacity="0.55"/>
+      <path d="M4.5 0 C5 8 4 20 4.6 42" stroke="#5C5A56" stroke-width="0.4" fill="none" opacity="0.35"/>
+    </pattern>
+    <!-- Brushed stainless — diffuse, not mirror chrome -->
+    <linearGradient id="ssBrush" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8B8B4"/>
+      <stop offset="22%" stop-color="#9A9A96"/>
+      <stop offset="48%" stop-color="#C4C4C0"/>
+      <stop offset="72%" stop-color="#8E8E8A"/>
+      <stop offset="100%" stop-color="#A8A8A4"/>
+    </linearGradient>
+    <pattern id="ssLines" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="3" fill="url(#ssBrush)"/>
+      <line x1="0" y1="1.5" x2="3" y2="1.5" stroke="#D0D0CC" stroke-width="0.35" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Board ground: warm paper, not flat white -->
+  <rect width="1200" height="900" fill="#EFE9E0"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#2C2925"/>
+
+  <text x="48" y="48" class="t" font-size="26">Bhadravati — Colour &amp; Material Swatch Board</text>
+  <text x="48" y="72" class="s" font-size="13">Scheme B · Ecru Tint + Virgin White · Birla Opus RGB verified · Century laminate hex = visual approx · Approve samples under morning / afternoon / 3000 K</text>
+
+  <!-- ========== PRIMARY LOCKED SWATCHES ========== -->
+  <text x="48" y="112" class="l" font-size="14">SCHEME B · LOCKED PAIR</text>
+
+  <!-- NN9088 Walls — large -->
+  <g transform="translate(48,128)">
+    <rect width="176" height="210" fill="#E9E3D9" stroke="#D0C8BC" stroke-width="1"/>
+    <rect y="210" width="176" height="88" fill="#FBF8F3"/>
+    <text x="14" y="232" class="l" font-size="13">Walls · Scheme B</text>
+    <text x="14" y="252" class="code" font-size="12">NN9088</text>
+    <text x="14" y="270" class="s" font-size="11">Ecru Tint</text>
+    <text x="14" y="286" class="code" font-size="10">#E9E3D9 · RGB 233,227,217</text>
+    <text x="14" y="302" class="s" font-size="10">Light warm ecru · washable matt</text>
+  </g>
+
+  <!-- WW0020 Ceiling -->
+  <g transform="translate(240,128)">
+    <rect width="176" height="210" fill="#EDE9E2" stroke="#D0C8BC" stroke-width="1"/>
+    <rect y="210" width="176" height="88" fill="#FBF8F3"/>
+    <text x="14" y="232" class="l" font-size="13">Ceiling · Scheme B</text>
+    <text x="14" y="252" class="code" font-size="12">WW0020</text>
+    <text x="14" y="270" class="s" font-size="11">Virgin White</text>
+    <text x="14" y="286" class="code" font-size="10">#EDE9E2 · RGB 237,233,226</text>
+    <text x="14" y="302" class="s" font-size="10">Warm clean white · matt (not #FFF)</text>
+  </g>
+
+  <!-- S1241 Kitchen ALL -->
+  <g transform="translate(432,128)">
+    <rect width="176" height="210" fill="#C8B9A4"/>
+    <rect y="210" width="176" height="88" fill="#FBF8F3"/>
+    <text x="14" y="232" class="l" font-size="13">Kitchen · ALL shutters</text>
+    <text x="14" y="252" class="code" font-size="12">S1241 MT Latte</text>
+    <text x="14" y="270" class="s" font-size="11">Base + drawers + loft</text>
+    <text x="14" y="286" class="code" font-size="10">#C8B9A4 · visual approx</text>
+    <text x="14" y="302" class="s" font-size="10">Solid matte · one code only</text>
+  </g>
+
+  <!-- 84689 Wardrobe -->
+  <g transform="translate(624,128)">
+    <rect width="176" height="210" fill="url(#oakGrain)"/>
+    <rect y="210" width="176" height="88" fill="#FBF8F3"/>
+    <text x="14" y="232" class="l" font-size="13">Wardrobe · 4 leaves</text>
+    <text x="14" y="252" class="code" font-size="12">84689 SU Idria Oak</text>
+    <text x="14" y="270" class="s" font-size="11">European grey oak</text>
+    <text x="14" y="286" class="code" font-size="10">#A39178 · visual approx</text>
+    <text x="14" y="302" class="s" font-size="10">Soft woodgrain · SU matte</text>
+  </g>
+
+  <!-- 80236 TV only -->
+  <g transform="translate(816,128)">
+    <rect width="176" height="210" fill="url(#slateGrain)"/>
+    <rect y="210" width="176" height="88" fill="#FBF8F3"/>
+    <text x="14" y="232" class="l" font-size="13">TV cabinet ONLY</text>
+    <text x="14" y="252" class="code" font-size="12">80236 DW Slate Grey</text>
+    <text x="14" y="270" class="s" font-size="11">Controlled low accent</text>
+    <text x="14" y="286" class="code" font-size="10">#4E4C49 · visual approx</text>
+    <text x="14" y="302" class="s" font-size="10">Dyed woodgrain · not kitchen</text>
+  </g>
+
+  <!-- Black granite -->
+  <g transform="translate(1008,128)">
+    <rect width="144" height="210" fill="url(#granGrad)"/>
+    <rect width="144" height="210" fill="url(#granFleck)"/>
+    <rect y="210" width="144" height="88" fill="#FBF8F3"/>
+    <text x="12" y="232" class="l" font-size="13">Counter</text>
+    <text x="12" y="252" class="code" font-size="12">Black granite</text>
+    <text x="12" y="270" class="s" font-size="11">Existing · retain</text>
+    <text x="12" y="286" class="code" font-size="10">~#1A1A1A fleck</text>
+    <text x="12" y="302" class="s" font-size="10">Not quartz / marble</text>
+  </g>
+
+  <!-- ========== HARDWARE / EDGE / LIGHT ========== -->
+  <text x="48" y="460" class="l" font-size="14">HARDWARE · EDGE · LIGHT</text>
+
+  <g transform="translate(48,476)">
+    <rect width="220" height="100" fill="url(#ssLines)" stroke="#7A7A76" stroke-width="1"/>
+    <rect y="100" width="220" height="52" fill="#FBF8F3"/>
+    <text x="14" y="120" class="l" font-size="12">Hardware</text>
+    <text x="14" y="138" class="code" font-size="11">Brushed stainless</text>
+    <text x="14" y="152" class="s" font-size="10">Diffuse brush · no black / brass / mirror mix</text>
+  </g>
+
+  <g transform="translate(284,476)">
+    <rect width="220" height="100" fill="#D8CFC2"/>
+    <rect x="0" y="0" width="8" height="100" fill="#A39178"/>
+    <rect x="212" y="0" width="8" height="100" fill="#C8B9A4"/>
+    <rect y="100" width="220" height="52" fill="#FBF8F3"/>
+    <text x="18" y="120" class="l" font-size="12">Edge band</text>
+    <text x="18" y="138" class="code" font-size="11">E3 ABS · matt / soft touch</text>
+    <text x="18" y="152" class="s" font-size="10">Kitchen 2 mm · wardrobe 1 mm · physical match</text>
+  </g>
+
+  <g transform="translate(520,476)">
+    <rect width="220" height="100" fill="#2C2925"/>
+    <text x="18" y="48" class="w" font-size="28" font-weight="600">3000 K</text>
+    <text x="18" y="74" class="wm" font-size="11">Warm-neutral · CRI ≥90 pref.</text>
+    <rect y="100" width="220" height="52" fill="#FBF8F3"/>
+    <text x="14" y="120" class="l" font-size="12">Lighting CCT</text>
+    <text x="14" y="138" class="code" font-size="11">Living baseline 3000 K</text>
+    <text x="14" y="152" class="s" font-size="10">Bedroom lamps 2700–3000 K · not orange</text>
+  </g>
+
+  <g transform="translate(756,476)">
+    <rect width="160" height="100" fill="#B5AB9C"/>
+    <rect y="100" width="160" height="52" fill="#FBF8F3"/>
+    <text x="12" y="120" class="l" font-size="12">Scheme A walls</text>
+    <text x="12" y="138" class="code" font-size="11">NN9074 Puddle of Grey</text>
+    <text x="12" y="152" class="s" font-size="10">#B5AB9C · default mid greige</text>
+  </g>
+
+  <g transform="translate(932,476)">
+    <rect width="100" height="100" fill="#B8B6B0"/>
+    <rect y="100" width="100" height="52" fill="#FBF8F3"/>
+    <text x="10" y="120" class="l" font-size="11">Kitchen backup</text>
+    <text x="10" y="138" class="code" font-size="10">S1173 MT</text>
+    <text x="10" y="152" class="s" font-size="9">Cloud Grey only if Latte fails</text>
+  </g>
+
+  <g transform="translate(1048,476)">
+    <rect width="104" height="100" fill="#9A8A72"/>
+    <rect y="100" width="104" height="52" fill="#FBF8F3"/>
+    <text x="10" y="120" class="l" font-size="11">Wardrobe backup</text>
+    <text x="10" y="138" class="code" font-size="10">84687 SU Lyon</text>
+    <text x="10" y="152" class="s" font-size="9">#9A8A72 · backup only</text>
+  </g>
+
+  <!-- ========== OPTIONAL ACCENTS (LIMITED) ========== -->
+  <text x="48" y="670" class="l" font-size="14">OPTIONAL · ONE SURFACE MAX</text>
+
+  <g transform="translate(48,686)">
+    <rect width="88" height="64" fill="#9CAE91"/>
+    <text x="0" y="82" class="code" font-size="10">GG7140</text>
+    <text x="0" y="96" class="s" font-size="9">Tender Buds · #9CAE91</text>
+  </g>
+  <g transform="translate(160,686)">
+    <rect width="88" height="64" fill="#B9CEA4"/>
+    <text x="0" y="82" class="code" font-size="10">GG7162</text>
+    <text x="0" y="96" class="s" font-size="9">Old Olive Trees · #B9CEA4</text>
+  </g>
+  <g transform="translate(272,686)">
+    <rect width="88" height="64" fill="#90B1C3"/>
+    <text x="0" y="82" class="code" font-size="10">BB5146</text>
+    <text x="0" y="96" class="s" font-size="9">Old Novel · study opt.</text>
+  </g>
+  <g transform="translate(384,686)">
+    <rect width="88" height="64" fill="#8BA6A3"/>
+    <text x="0" y="82" class="code" font-size="10">BG6116</text>
+    <text x="0" y="96" class="s" font-size="9">Songs from the Valley</text>
+  </g>
+  <g transform="translate(496,686)">
+    <rect width="88" height="64" fill="#C4B5A0"/>
+    <text x="0" y="82" class="code" font-size="10">Textiles</text>
+    <text x="0" y="96" class="s" font-size="9">Warm beige / taupe</text>
+  </g>
+
+  <!-- ========== DO NOT USE ========== -->
+  <g transform="translate(620,660)">
+    <rect width="532" height="140" fill="#2C2925"/>
+    <text x="20" y="28" class="w" font-size="14" font-weight="600">DO NOT USE</text>
+    <text x="20" y="52" class="wm" font-size="12">No gold / brass hardware or strips</text>
+    <text x="20" y="72" class="wm" font-size="12">No gloss / sparkle / acrylic drama (GL · CX · Super Gloss)</text>
+    <text x="20" y="92" class="wm" font-size="12">No dual-tone kitchen — S1241 Latte for base, drawers, and loft</text>
+    <text x="20" y="112" class="wm" font-size="12">No TV feature wall · no Slate Grey in kitchen · no white quartz counter</text>
+    <text x="20" y="132" class="wm" font-size="11">No high-chroma lime / electric blue / bright yellow / deep charcoal walls</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="48" y="870" class="s" font-size="11">Screen references only · Birla Opus NN9088 / WW0020 verified against shade-card RGB · Century StarLine &amp; granite: physical sample board mandatory before fabrication</text>
+  <text x="48" y="888" class="code" font-size="10">scheme_b_swatch_lock.json status: complete · pair with NN9088 walls + WW0020 Virgin White ceiling</text>
+</svg>

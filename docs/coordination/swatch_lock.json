@@ -1,0 +1,186 @@
+{
+  "project": "Bhadravati Home",
+  "concept_id": "A_warm_contemporary_minimalism",
+  "owner": "color_material_swatch_specialist",
+  "status": "complete",
+  "updated": "2026-08-11",
+  "verification_summary": {
+    "birla_opus_shade_card": "All locked paint hex/RGB match processed_pdf_text/birla_opus_shade_card_extracted.txt exactly. No paint hex corrections required.",
+    "century_starline": "Codes S1241 MT Latte, S1173 MT Cloud Grey, 80236 DW Slate Grey, 84689 SU Idria Oak, 84687 SU Lyon Oak confirmed in century_starline_extracted.txt. No catalogue RGB -- hex remain visual approx aligned to names/families.",
+    "e3_edge": "PVC & ABS; finishes include SUPER MATT / SOFT TOUCHE; thicknesses include 1.00 mm and 2.00 mm. Select matt/soft match only -- not SUPER GLOSS or SPARKLE.",
+    "hex_corrections_made": []
+  },
+  "locked_swatches": {
+    "NN9074": {
+      "brand": "Birla Opus",
+      "name": "Puddle of Grey",
+      "hex": "#B5AB9C",
+      "rgb": [181, 171, 156],
+      "undertone": "warm_greige",
+      "sheen": "low_sheen_washable_matt",
+      "use_rule": "Main walls throughout; default base for living, kitchen, bedroom, study, wardrobe surrounds",
+      "verification_note": "Shade card: NN 9074 Puddle of grey RGB 181,171,156 #B5AB9C -- exact match to design_tokens.hex_approx"
+    },
+    "WW0005": {
+      "brand": "Birla Opus",
+      "name": "White Linen",
+      "hex": "#EEEDE9",
+      "rgb": [238, 237, 233],
+      "undertone": "warm_linen_white",
+      "sheen": "matt",
+      "use_rule": "Ceilings only; avoid stark cool white",
+      "verification_note": "Shade card: WW 0005 White linen RGB 238,237,233 #EEEDE9 -- exact match"
+    },
+    "S1241_MT": {
+      "brand": "Century StarLine",
+      "name": "Latte",
+      "finish_code": "MT",
+      "hex": "#C8B9A4",
+      "rgb": [200, 185, 164],
+      "undertone": "warm_beige_solid",
+      "sheen": "matte_MT",
+      "use_rule": "ALL kitchen shutters -- base, drawers, and loft. One code only. No dual-tone.",
+      "verification_note": "Catalogue lists S1241 MT LATTE under Solid MATTE. No measured RGB in extract; hex is visual approx -- must not read orange under 3000 K (sample-check)"
+    },
+    "84689_SU": {
+      "brand": "Century StarLine",
+      "name": "Idria Oak",
+      "finish_code": "SU",
+      "hex": "#A39178",
+      "rgb": [163, 145, 120],
+      "undertone": "european_grey_oak",
+      "sheen": "soft_woodgrain_SU",
+      "use_rule": "Wardrobe shutters -- four equal vertical leaves. Grain vertical.",
+      "verification_note": "Catalogue: 84689 SU IDRIA OAK in European Grey WOODGRAINS. Hex visual approx for muted grey-oak -- not yellow/orange oak"
+    },
+    "80236_DW": {
+      "brand": "Century StarLine",
+      "name": "Slate Grey",
+      "finish_code": "DW",
+      "hex": "#4E4C49",
+      "rgb": [78, 76, 73],
+      "undertone": "warm_graphite_dyed_wood",
+      "sheen": "matte_dyed_woodgrain_DW",
+      "use_rule": "TV cabinet ONLY as controlled low accent. Do not use in kitchen or broadly on walls.",
+      "verification_note": "Catalogue: 80236 DW SLATE GREY under Dyed Wood. Hex visual approx -- deep graphite, not cool blue-grey"
+    },
+    "black_granite": {
+      "brand": "existing_site",
+      "name": "Black granite counter",
+      "hex": "#1A1A1A",
+      "rgb": [26, 26, 26],
+      "undertone": "cool_black_with_natural_fleck",
+      "sheen": "existing_restrained_sheen",
+      "use_rule": "Retain existing kitchen counter (and related horizontal granite bands as installed). Do not render as white quartz or marble. No waterfall / invented vertical end panels.",
+      "verification_note": "No catalogue hex; board uses cool black fleck gradient ~#1A1A1A family for screen reference only"
+    },
+    "brushed_stainless": {
+      "brand": "hardware_spec",
+      "name": "Brushed stainless steel",
+      "hex": "#9A9A96",
+      "rgb": [154, 154, 150],
+      "undertone": "neutral_metal",
+      "sheen": "brushed_diffuse_not_mirror",
+      "use_rule": "All visible hardware. Forbid black, brass, and mixed mirror chrome.",
+      "verification_note": "Finish lock from MASTER_BRIEF / design_tokens -- screen metal approx only"
+    },
+    "E3_ABS_edge": {
+      "brand": "E3",
+      "name": "ABS edge band matched to laminate",
+      "hex": "#D8CFC2",
+      "rgb": [216, 207, 194],
+      "undertone": "match_host_laminate",
+      "sheen": "matt_or_soft_touch_not_gloss_sparkle",
+      "use_rule": "Kitchen 2.00 mm ABS; wardrobe 1.00 mm ABS. Physical sample match to exact laminate only -- do not order by colour name alone.",
+      "verification_note": "e3_ebt_extracted: PVC & ABS; SUPER MATT / SOFT TOUCHE available; 1.00 mm and 2.00 mm standard; reject SUPER GLOSS and SPARKLE for this project"
+    },
+    "lighting_3000K": {
+      "brand": "lighting_spec",
+      "name": "Warm-neutral 3000 K baseline",
+      "hex": "#2C2925",
+      "rgb": [44, 41, 37],
+      "undertone": "warm_neutral_cct",
+      "sheen": "n_a_light_source",
+      "use_rule": "Living ambient/task baseline 3000 K; bedroom lamps 2700-3000 K; kitchen under-loft linear diffused 3000 K; CRI ?90 preferred. Must not push Latte orange.",
+      "verification_note": "MASTER_BRIEF / design_tokens lighting.cct_living_k = 3000 -- board callout only (not a surface colour)"
+    }
+  },
+  "optional_limited": {
+    "NN9088": {
+      "name": "Ecru Tint",
+      "hex": "#E9E3D9",
+      "rgb": [233, 227, 217],
+      "undertone": "light_warm_ecru",
+      "sheen": "low_sheen_washable_matt",
+      "use_rule": "Lighter wall alternative only if client insists -- not default for dusty façades",
+      "verification_note": "Shade card NN 9088 Ecru tint RGB 233,227,217 #E9E3D9 -- exact match"
+    },
+    "S1173_MT": {
+      "name": "Cloud Grey",
+      "hex": "#B8B6B0",
+      "rgb": [184, 182, 176],
+      "undertone": "neutral_cloud_grey",
+      "sheen": "matte_MT",
+      "use_rule": "Kitchen backup laminate only if Latte sample fails beside granite",
+      "verification_note": "Catalogue S1173 MT CLOUD GREY -- visual approx"
+    },
+    "84687_SU": {
+      "name": "Lyon Oak",
+      "hex": "#9A8A72",
+      "rgb": [154, 138, 114],
+      "undertone": "european_grey_oak_backup",
+      "sheen": "soft_woodgrain_SU",
+      "use_rule": "Wardrobe backup only",
+      "verification_note": "Catalogue 84687 SU LYON OAK European Grey WOODGRAINS -- visual approx"
+    },
+    "GG7140": {
+      "name": "Tender Buds",
+      "hex": "#9CAE91",
+      "rgb": [156, 174, 145],
+      "undertone": "muted_sage_green",
+      "sheen": "low_sheen_washable_matt",
+      "use_rule": "Optional accent -- one small wall max",
+      "verification_note": "Shade card GG 7140 Tender buds RGB 156,174,145 #9CAE91 -- exact match"
+    },
+    "GG7162": {
+      "name": "Old Olive Trees",
+      "hex": "#B9CEA4",
+      "rgb": [185, 206, 164],
+      "undertone": "soft_olive",
+      "sheen": "low_sheen_washable_matt",
+      "use_rule": "Optional accent alt -- one small wall max",
+      "verification_note": "Shade card GG 7162 Old olive trees RGB 185,206,164 #B9CEA4 -- exact match"
+    },
+    "BB5146": {
+      "name": "Old Novel",
+      "hex": "#90B1C3",
+      "rgb": [144, 177, 195],
+      "undertone": "muted_blue",
+      "sheen": "low_sheen_washable_matt",
+      "use_rule": "Study optional one controlled surface",
+      "verification_note": "Shade card BB 5146 Old novel RGB 144,177,195 #90B1C3 -- exact match"
+    },
+    "BG6116": {
+      "name": "Songs from the Valley",
+      "hex": "#8BA6A3",
+      "rgb": [139, 166, 163],
+      "undertone": "muted_blue_green",
+      "sheen": "low_sheen_washable_matt",
+      "use_rule": "Study optional one controlled surface",
+      "verification_note": "Shade card BG 6116 Songs from the valley RGB 139,166,163 #8BA6A3 -- exact match"
+    }
+  },
+  "do_not_use": [
+    "gold_or_brass_hardware_or_strips",
+    "gloss_sparkle_acrylic_GL_CX_super_gloss",
+    "dual_tone_kitchen_shutters",
+    "80236_slate_grey_in_kitchen",
+    "white_quartz_or_marble_counter_render",
+    "TV_feature_wall_marble_gold_slats",
+    "saturated_lime_electric_blue_bright_yellow_broad_orange",
+    "deep_charcoal_walls"
+  ],
+  "board_file": "FINAL_DELIVERABLE/visuals/palette_board.svg",
+  "tokens_file": "FINAL_DELIVERABLE/design_tokens.json",
+  "board_matches_locks": true
+}
