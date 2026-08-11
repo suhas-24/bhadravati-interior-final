@@ -7,6 +7,11 @@ Design-control handoff for client review and fabricator briefing. Location: firs
 
 ---
 
+
+## Download PDF
+
+**[Bhadravati_FINAL_Interior_Design.pdf](Bhadravati_FINAL_Interior_Design.pdf)** — multi-page client handoff. See `PDF_NOTES.md`.
+
 ## Open the visual presentation
 
 Open `visuals/index.html` in any modern browser.  

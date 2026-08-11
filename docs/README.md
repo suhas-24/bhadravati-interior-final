@@ -7,6 +7,12 @@ Design-control handoff for client review and fabricator briefing. Location: firs
 
 ---
 
+## Download PDF
+
+**[Bhadravati_FINAL_Interior_Design.pdf](Bhadravati_FINAL_Interior_Design.pdf)** — client handoff package (design direction, locked palette, K-01/W-01 dimensions, concepts, next actions).
+
+---
+
 ## Open the visual presentation
 
 Open `visuals/index.html` in any modern browser.  
