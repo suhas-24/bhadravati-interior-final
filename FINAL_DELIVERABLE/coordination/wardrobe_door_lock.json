@@ -1,0 +1,68 @@
+{
+  "project": "Bhadravati Home",
+  "contract": "wardrobe_door_lock",
+  "status": "complete",
+  "updated": "2026-08-11",
+  "owner": "spec_updater",
+  "aligned_to": "dimension_lock.json W-01_THREE_DOORS (drawings locked)",
+  "client_directive": "3 doors = 1 single + 1 double; recessed handles; overrides prior four-leaf lock",
+  "clear_width_mm": 1372,
+  "leaves": 3,
+  "config": "single + double",
+  "niche_W01": {
+    "clear_width_mm": 1372,
+    "clear_height_mm": 2286,
+    "internal_depth_mm": 488,
+    "clear_in": [54.0, 90.0, 19.2],
+    "source": "dimension_register_v1 / dimension_lock.json � do not invent overall niche size"
+  },
+  "door_configuration": {
+    "door_count": 3,
+    "leaves": 3,
+    "config": "single + double",
+    "layout": "single L + double R",
+    "layout_note": "Left: one single leaf. Right: paired double (two leaves). Not four leaves; not two full-width slabs."
+  },
+  "proposed_leaf_widths_mm": {
+    "leaf_1_single_L_mm": 457,
+    "leaf_2_double_R_inner_mm": 457,
+    "leaf_3_double_R_outer_mm": 458,
+    "sum_mm": 1372,
+    "sum_check": "457 + 457 + 458 = 1372 PASS",
+    "source": "dimension drawings lock � exact",
+    "assumptions": [
+      "Leaf face widths are the locked vertical divisions inside W-01 finished clear width 1372 mm.",
+      "457 + 457 + 458 mm sum exactly to clear width; inter-leaf / side reveals and overlay vs inset are fabricator shop-drawing details (not separate mm in this lock).",
+      "Recessed handles are non-dimensional finish � do not dimension pull profiles on drawings.",
+      "Hinge sides and meeting-stile hardware TBD on shop drawings after site measure."
+    ]
+  },
+  "handle_type": {
+    "kitchen": "recessed",
+    "wardrobe": "recessed",
+    "allowed": ["J-pull", "finger-pull", "recessed_profile"],
+    "forbidden": ["projecting_bar_handles"],
+    "note": "Recessed handles non-dimensional"
+  },
+  "options": {
+    "aluminium_fluted_glass": {
+      "id": "aluminium_fluted_glass",
+      "label": "A",
+      "finish": "aluminium frame + fluted glass; recessed pulls",
+      "visual_files": ["visuals/05_wardrobe_aluminium_fluted_glass.png"]
+    },
+    "plywood": {
+      "id": "plywood",
+      "label": "B",
+      "finish": "plywood / plywood-faced (Idria Oak 84689 SU if laminate face); recessed pulls",
+      "visual_files": [
+        "visuals/04_bedroom_wardrobe_three_door_plywood.png",
+        "visuals/04b_bedroom_from_wardrobe_toward_bed.png",
+        "visuals/04c_wardrobe_three_door_detail.png",
+        "visuals/06_wardrobe_plywood_three_door.png"
+      ]
+    }
+  },
+  "visual_qa": "coordination/image_qa.json status=complete"
+}
+

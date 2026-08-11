@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1020 860" role="img" aria-labelledby="fp-title fp-desc">
+<title id="fp-title">Bhadravati Home - Scale-True Dimensioned Floor Plan</title>
+<desc id="fp-desc">Scale-locked plan: every length = mm x 0.1 px/mm. Studio 6401 x 5486 mm plan_relationship_only. K-01/W-01 from dimension_register_v1. Not fabrication-approved.</desc>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M1 1 L9 5 L1 9" fill="none" stroke="#2C2925" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <style>
+    .wall { fill: #3A3632; }
+    .floor { fill: #F3EEE6; }
+    .zone { stroke: #8A8175; stroke-width: 0.8; stroke-dasharray: 4 3; }
+    .furn { fill: #C8B9A4; stroke: #6E655B; stroke-width: 0.9; }
+    .furn-oak { fill: #A39178; stroke: #5C5348; stroke-width: 0.9; }
+    .furn-slate { fill: #4E4C49; stroke: #2A2927; stroke-width: 0.9; }
+    .granite { fill: #1C1C1C; stroke: #0A0A0A; stroke-width: 0.8; }
+    .circ { fill: none; stroke: #5B7A6A; stroke-width: 1.6; stroke-dasharray: 6 4; marker-end: url(#arr); }
+    .dim { fill: none; stroke: #2C2925; stroke-width: 0.7; }
+    .dimt { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; font-size: 10px; fill: #2C2925; }
+    .lab { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; font-size: 11px; fill: #2C2925; font-weight: 600; }
+    .sub { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; font-size: 9px; fill: #5A534A; }
+    .title { font-family: "Fraunces", "Libre Baskerville", Georgia, serif; font-size: 17px; fill: #2C2925; font-weight: 600; }
+    .note { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; font-size: 9px; fill: #6A6258; }
+  </style>
+</defs>
+<rect width="1020" height="860" fill="#F7F3EC"/>
+<text x="36" y="28" class="title">Bhadravati Home - Scale-True Floor Plan</text>
+<text x="36" y="44" class="note">Warm Contemporary Minimalism | scale_px_per_mm = 0.1 (locked) | Studio 6401 x 5486 mm = plan_relationship_only | K-01/W-01 register | Not fabrication-approved</text>
+<rect x="78.0" y="159.4" width="664.1" height="572.6" class="wall"/>
+<rect x="90.0" y="171.4" width="640.1" height="548.6" class="floor"/>
+<rect x="90.0" y="171.4" width="220.0" height="208.6" class="zone" fill="#D9E2DC" opacity="0.45"/>
+<rect x="90.0" y="400.0" width="250.0" height="320.0" class="zone" fill="#EDE6DB" opacity="0.28"/>
+<rect x="340.0" y="440.0" width="240.0" height="280.0" class="zone" fill="#E8E1D6" opacity="0.28"/>
+<rect x="510.0" y="171.4" width="220.1" height="228.6" class="zone" fill="#E4DCCF" opacity="0.4"/>
+<rect x="110.0" y="300.0" width="55.0" height="40.0" rx="2" fill="#E5EBE8" stroke="#7A8A80" stroke-width="0.8"/>
+<text x="118.0" y="322.0" class="sub">Shower</text>
+<rect x="110.0" y="260.0" width="45.0" height="30.0" rx="2" fill="#EEEDE9" stroke="#8A8175" stroke-width="0.8"/>
+<text x="122.0" y="275.0" class="sub">WC</text>
+<rect x="180.0" y="330.0" width="70.0" height="40.0" rx="2" class="furn-oak"/>
+<text x="195.0" y="350.0" class="sub">Basin (outside shower)</text>
+<text x="102.0" y="370.0" class="lab">BATHROOM | NW</text>
+<rect x="341.45" y="171.4" width="137.2" height="48.8" class="furn-oak"/>
+<!-- 3 doors: single (L) + double pair (R); near-equal leaves ~457 mm within 1372 -->
+<line x1="387.18" y1="171.4" x2="387.18" y2="220.2" stroke="#5C5348" stroke-width="1.1"/>
+<line x1="432.92" y1="171.4" x2="432.92" y2="220.2" stroke="#5C5348" stroke-width="0.7"/>
+<!-- double-pair underline (leaves 2+3 only; non-dimensional) -->
+<line x1="390.18" y1="214.2" x2="475.65" y2="214.2" stroke="#5C5348" stroke-width="0.5" opacity="0.55"/>
+<text x="341.45" y="228.2" class="lab">WARDROBE W-01 | N-centre</text>
+<text x="341.45" y="242.2" class="sub">1372 x 2286 x 488 mm | 3 doors (1 single + 1 double) | 84689 Idria Oak</text>
+<line class="dim" x1="333.45" y1="220.2" x2="333.45" y2="335.5"/>
+<text x="313.45" y="277.85" class="dimt" transform="rotate(-90 313.45 277.85)">1153 clear &gt;=600</text>
+<rect x="555.1" y="261.4" width="135.0" height="65.0" rx="2" class="furn-oak"/>
+<rect x="588.85" y="334.4" width="67.5" height="67.5" rx="33.75" fill="#5A534A" opacity="0.35"/>
+<text x="555.1" y="243.4" class="lab">STUDY | NE</text>
+<text x="555.1" y="330.4" class="sub">Desk ~1350 x 650 (design approx)</text>
+<rect x="150.0" y="427.0" width="152.5" height="203.0" rx="3" class="furn"/>
+<rect x="155.0" y="636.0" width="47.5" height="40.0" rx="2" class="furn-oak"/>
+<rect x="155.0" y="381.0" width="47.5" height="40.0" rx="2" class="furn-oak"/>
+<line class="dim" x1="90.0" y1="528.5" x2="150.0" y2="528.5"/>
+<text x="102.0" y="516.5" class="dimt">600 side</text>
+<text x="170.0" y="528.5" class="lab">BED</text>
+<text x="102.0" y="700.0" class="lab">BEDROOM | SW</text>
+<text x="102.0" y="714.0" class="sub">Queen 1525 x 2030 | sides &gt;=600</text>
+<rect x="371.3" y="600.5" width="215.0" height="87.5" rx="4" class="furn"/>
+<circle cx="478.8" cy="515.5" r="37.5" class="furn-oak" opacity="0.9"/>
+<rect x="398.8" y="335.5" width="160.0" height="42.5" rx="2" class="furn-slate"/>
+<rect x="443.8" y="323.5" width="70.0" height="8.0" rx="1" fill="#2C2925"/>
+<line class="dim" x1="478.8" y1="600.5" x2="478.8" y2="553.0"/>
+<text x="482.8" y="576.75" class="dimt">475</text>
+<text x="371.3" y="692.0" class="lab">LIVING | S-centre</text>
+<text x="371.3" y="706.0" class="sub">Sofa-coffee 450-500 | TV cab. 80236</text>
+<rect x="681.3" y="360.8" width="48.8" height="269.2" class="granite"/>
+<rect x="681.3" y="581.75" width="7.0" height="45.7" fill="#C8B9A4" stroke="#7A6F62" stroke-width="0.5"/>
+<text x="639.3" y="604.6" class="dimt">B3 457</text>
+<rect x="681.3" y="487.8" width="7.0" height="91.4" fill="#C8B9A4" stroke="#7A6F62" stroke-width="0.5"/>
+<text x="639.3" y="533.5" class="dimt">B2 914</text>
+<rect x="681.3" y="363.35" width="7.0" height="121.9" fill="#C8B9A4" stroke="#7A6F62" stroke-width="0.5"/>
+<text x="639.3" y="424.3" class="dimt">B1 1219</text>
+<rect x="665.1" y="630.0" width="65.0" height="70.0" rx="2" fill="#D0D4D6" stroke="#6E655B" stroke-width="0.8"/>
+<text x="663.1" y="665.0" class="sub" transform="rotate(-90 663.1 665.0)">Fridge EXTREME RIGHT</text>
+<text x="591.3" y="356.8" class="lab">KITCHEN | SE | K-01</text>
+<text x="571.3" y="634.0" class="sub">Module 2692 x 488 | B1/B2/B3 1219/914/457 | S1241 Latte</text>
+<g transform="translate(471.29999999999995, 350.8)">
+<rect x="0" y="0" width="190" height="118" rx="3" fill="#FBF8F3" stroke="#C8B9A4" stroke-width="1"/>
+<text x="8" y="14" class="lab">K-01 loft heights (register)</text>
+<text x="8" y="32" class="sub">Floor to loft underside 2591</text>
+<text x="8" y="46" class="sub">Loft to lower shelf und. 1219</text>
+<text x="8" y="60" class="sub">Shelf und. to counter top 584</text>
+<text x="8" y="74" class="sub">Floor to counter top 787</text>
+<text x="8" y="94" class="sub">Depth 488 | granite retain</text>
+<text x="8" y="108" class="note">Thickness conflict - measure site</text>
+</g>
+<line class="dim" x1="738.1" y1="630.0" x2="738.1" y2="360.8"/>
+<line class="dim" x1="736.1" y1="630.0" x2="740.1" y2="630.0"/>
+<line class="dim" x1="736.1" y1="360.8" x2="740.1" y2="360.8"/>
+<text x="740.1" y="495.4" class="dimt" transform="rotate(90 740.1 495.4)">2692 module</text>
+<line class="dim" x1="681.3" y1="636.0" x2="730.1" y2="636.0"/>
+<text x="681.3" y="638.0" class="dimt">488</text>
+<line class="dim" x1="341.45" y1="151.4" x2="478.65" y2="151.4"/>
+<text x="381.45" y="149.4" class="dimt">1372</text>
+<line class="dim" x1="90.0" y1="139.4" x2="730.1" y2="139.4"/>
+<line class="dim" x1="90.0" y1="143.4" x2="90.0" y2="135.4"/>
+<line class="dim" x1="730.1" y1="143.4" x2="730.1" y2="135.4"/>
+<text x="290.0" y="135.4" class="dimt">6401 mm (21 ft) - plan_relationship_only</text>
+<line class="dim" x1="758.1" y1="720.0" x2="758.1" y2="171.4"/>
+<text x="762.1" y="445.7" class="dimt" transform="rotate(90 762.1 445.7)">5486 mm (18 ft) - plan_relationship_only</text>
+<line class="dim" x1="586.3" y1="644.25" x2="681.3" y2="644.25"/>
+<text x="613.8" y="630.25" class="dimt">primary 950 (900-1200)</text>
+<path class="circ" d="M100.0 520.0 L370.0 520.0 L478.8 515.5 L661.3 495.4"/>
+<text x="230.0" y="505.0" class="sub" fill="#5B7A6A">Primary aisle 900-1200</text>
+<path class="circ" d="M312.5 528.5 L410.05 240.2 L210.0 360.0" stroke="#7A8F6E"/>
+<text x="250.0" y="380.0" class="sub" fill="#5B7A6A">Night route to wardrobe / bath</text>
+<rect x="78.0" y="460.0" width="12.0" height="105.1" fill="#F7F3EC" stroke="#2C2925" stroke-width="1"/>
+<text x="74.0" y="510.0" class="sub" transform="rotate(-90 74.0 510.0)">Main door ~1051* unverified</text>
+<rect x="78.0" y="600.0" width="12.0" height="90.0" fill="#C5D5E0" stroke="#5A6A75" stroke-width="0.8"/>
+<rect x="555.1" y="159.4" width="167.6" height="12.0" fill="#C5D5E0" stroke="#5A6A75" stroke-width="0.8"/>
+<rect x="730.1" y="447.4" width="12.0" height="96.5" fill="#C5D5E0" stroke="#5A6A75" stroke-width="0.8"/>
+<text x="732.1" y="495.4" class="sub" transform="rotate(90 732.1 495.4)">Kitchen window* over sink</text>
+<g transform="translate(810.1, 120)">
+  <circle cx="0" cy="0" r="26" fill="#EEEDE9" stroke="#2C2925" stroke-width="1"/>
+  <path d="M0 16 L0 -16" stroke="#2C2925" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="-5" y="-20" class="lab">N</text>
+</g>
+<g transform="translate(820, 200)">
+  <text x="0" y="0" class="lab">Legend</text>
+  <rect x="0" y="12" width="16" height="10" fill="#C8B9A4" stroke="#6E655B"/><text x="22" y="21" class="sub">S1241 Latte / textiles</text>
+  <rect x="0" y="30" width="16" height="10" fill="#A39178" stroke="#5C5348"/><text x="22" y="39" class="sub">84689 Idria Oak</text>
+  <rect x="0" y="48" width="16" height="10" fill="#4E4C49"/><text x="22" y="57" class="sub">80236 TV only</text>
+  <rect x="0" y="66" width="16" height="10" fill="#1C1C1C"/><text x="22" y="75" class="sub">Black granite retain</text>
+  <text x="0" y="98" class="note">* Openings unverified</text>
+  <text x="0" y="112" class="note">Scale locked 0.1 px/mm</text>
+  <text x="0" y="126" class="note">(1 SVG unit = 10 mm)</text>
+  <text x="0" y="148" class="note">Zones: Bed SW | Living S</text>
+  <text x="0" y="162" class="note">Kitchen SE | Bath NW</text>
+  <text x="0" y="176" class="note">Wardrobe N | Study NE</text>
+</g>
+<text x="36" y="845" class="note">Source: dimension_register_v1 + design_tokens.json + MASTER_BRIEF - Do not cut shutters from this drawing - site measure supersedes</text>
+</svg>

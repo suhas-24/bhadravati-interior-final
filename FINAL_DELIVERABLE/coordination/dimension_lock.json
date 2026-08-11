@@ -1,0 +1,433 @@
+{
+  "project": "Bhadravati Home",
+  "role": "Dimension_Spatial_Plan_Engineer",
+  "status": "complete",
+  "version": "FINAL_v1",
+  "not_fabrication_approved": true,
+  "scale": {
+    "scale_px_per_mm": 0.1,
+    "plan_formula": "Xsvg = 90 + mm_x * 0.1; Ysvg = 720 - mm_y * 0.1",
+    "origin": "SW interior corner; +X east; +Y north (screen Y flipped)",
+    "axonometric_scale_px_per_mm": 0.045,
+    "axonometric_formula": "isoX = 490 + (x-y)*cos30*s; isoY = 470 + (x+y)*sin30*s - z*s",
+    "note": "Every drawn register length on plan = mm * scale_px_per_mm"
+  },
+  "studio_outline": {
+    "length_mm_ew": 6401,
+    "width_mm_ns": 5486,
+    "confidence": "plan_relationship_only",
+    "source": "design_tokens.overall_studio / MASTER_BRIEF",
+    "label_required": "plan_relationship_only"
+  },
+  "zones": {
+    "bedroom": "SW",
+    "living": "S-centre",
+    "kitchen": "SE",
+    "bathroom": "NW",
+    "wardrobe": "N-centre",
+    "study": "NE",
+    "source": "MASTER_BRIEF section 2"
+  },
+  "critical_dimensions": [
+    {
+      "id": "STUDIO_EW",
+      "mm": 6401,
+      "source": "design_tokens.overall_studio.length_mm_approx",
+      "confidence": "plan_relationship_only",
+      "drawn": true,
+      "check": "PASS"
+    },
+    {
+      "id": "STUDIO_NS",
+      "mm": 5486,
+      "source": "design_tokens.overall_studio.width_mm_approx",
+      "confidence": "plan_relationship_only",
+      "drawn": true,
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_MODULE_W",
+      "mm": 2692,
+      "source": "dimension_register_v1 / K-01 overall granite module width 106.00 in",
+      "drawn_px": 269.2,
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_DEPTH",
+      "mm": 488,
+      "source": "dimension_register_v1 / internal countertop depth 19.20 in",
+      "drawn_px": 48.8,
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_B1",
+      "mm": 1219,
+      "source": "dimension_register_v1 / B1 left clear opening 48.00 in",
+      "drawn_px": 121.9,
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_B2",
+      "mm": 914,
+      "source": "dimension_register_v1 / B2 middle clear opening 36.00 in",
+      "drawn_px": 91.4,
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_B3",
+      "mm": 457,
+      "source": "dimension_register_v1 / B3 right clear opening 18.00 in",
+      "drawn_px": 45.7,
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_PARTITIONS_TOTAL",
+      "mm": 102,
+      "source": "dimension_register_v1 reconciliation four 1.00 in sides/partitions",
+      "note": "drawn as 4x25.5 mm so B1+B2+B3+parts = 2692",
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_B_SUM_RECONCILE",
+      "mm": 2692,
+      "expected_mm": 2692,
+      "source": "dimension_register_v1 reconciliation",
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_FLOOR_TO_LOFT_UNDERSIDE",
+      "mm": 2591,
+      "source": "dimension_register_v1 / floor to loft underside 102.00 in",
+      "labeled_on": [
+        "floor_plan_precise.svg loft panel",
+        "axonometric_3d.svg"
+      ],
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_LOFT_TO_LOWER_SHELF",
+      "mm": 1219,
+      "source": "dimension_register_v1 / loft underside to lower shelf underside 48.00 in",
+      "labeled_on": [
+        "floor_plan_precise.svg loft panel"
+      ],
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_SHELF_TO_COUNTER",
+      "mm": 584,
+      "source": "dimension_register_v1 / lower shelf underside to countertop top 23.00 in",
+      "labeled_on": [
+        "floor_plan_precise.svg loft panel"
+      ],
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_FLOOR_TO_COUNTER",
+      "mm": 787,
+      "source": "dimension_register_v1 / floor to countertop top 31.00 in",
+      "labeled_on": [
+        "floor_plan_precise.svg loft panel",
+        "axonometric_3d.svg"
+      ],
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_REF_WALL",
+      "mm": 5588,
+      "source": "dimension_register_v1 / reference total wall width 220.00 in",
+      "drawn": false,
+      "note": "labelled register context only; not used as studio outline",
+      "check": "PASS"
+    },
+    {
+      "id": "K-01_FRIDGE",
+      "placement": "extreme_right_south_of_module_when_facing_east",
+      "source": "design_tokens.key_dimensions.kitchen.orientation.fridge / MASTER_BRIEF",
+      "footprint_mm_design_approx": [
+        650,
+        700
+      ],
+      "check": "PASS"
+    },
+    {
+      "id": "W-01_CLEAR_W",
+      "mm": 1372,
+      "source": "dimension_register_v1 / finished clear width 54.00 in",
+      "drawn_px": 137.2,
+      "check": "PASS"
+    },
+    {
+      "id": "W-01_CLEAR_H",
+      "mm": 2286,
+      "source": "dimension_register_v1 / finished clear height 90.00 in",
+      "drawn_on_axo": true,
+      "check": "PASS"
+    },
+    {
+      "id": "W-01_DEPTH",
+      "mm": 488,
+      "source": "dimension_register_v1 / internal depth 19.20 in",
+      "drawn_px": 48.8,
+      "check": "PASS"
+    },
+    {
+      "id": "W-01_THREE_DOORS",
+      "leaf_count": 3,
+      "configuration": "1 single + 1 double (two paired leaves)",
+      "nominal_leaf_mm": [
+        457,
+        457,
+        458
+      ],
+      "note": "Three near-equal leaves within clear W 1372 mm with small reveals; client lock - not 4 leaves. Recessed handles = non-dimensional finish (do not dimension pulls).",
+      "overall_carcass_mm": {
+        "w": 1372,
+        "h": 2286,
+        "d": 488
+      },
+      "source": "client change / wardrobe door lock absent - assumed near-equal thirds",
+      "check": "PASS"
+    },
+    {
+      "id": "W-01_LEFT_PART_RIGHT",
+      "mm": [
+        533,
+        15,
+        824
+      ],
+      "source": "dimension_register_v1 left 21 / granite 0.59 / right 32.41 in",
+      "note": "right drawn 824 mm so horizontal sum = 1372 (1 mm inch-rounding)",
+      "check": "PASS"
+    },
+    {
+      "id": "CLR_PRIMARY_SOFA_KITCHEN",
+      "mm": 950.0,
+      "target_mm": [
+        900,
+        1200
+      ],
+      "source": "design_tokens.key_dimensions.circulation_mm.primary",
+      "check": "PASS"
+    },
+    {
+      "id": "CLR_SOFA_COFFEE",
+      "mm": 475,
+      "target_mm": [
+        450,
+        500
+      ],
+      "source": "design_tokens.key_dimensions.circulation_mm.sofa_to_coffee_table",
+      "check": "PASS"
+    },
+    {
+      "id": "CLR_BED_WEST_SIDE",
+      "mm": 600.0,
+      "target_mm_min": 600,
+      "source": "design_tokens.key_dimensions.circulation_mm.bed_side_preferred_min",
+      "check": "PASS"
+    },
+    {
+      "id": "CLR_WARDROBE_FRONT",
+      "mm": 1153.0,
+      "target_mm_min": 600,
+      "source": "02_Zoning_Furniture_Layout / MASTER_BRIEF wardrobe standing clear",
+      "check": "PASS"
+    },
+    {
+      "id": "CLR_COFFEE_TO_TV_AISLE",
+      "mm": 1000,
+      "target_mm": [
+        900,
+        1200
+      ],
+      "source": "design_tokens.key_dimensions.circulation_mm.primary",
+      "check": "PASS"
+    },
+    {
+      "id": "FURN_SOFA",
+      "mm": [
+        2150,
+        875
+      ],
+      "source": "design_tokens.furniture_list.sofa.approx_mm",
+      "confidence": "design_approx",
+      "check": "PASS"
+    },
+    {
+      "id": "FURN_COFFEE",
+      "mm": [
+        750,
+        750
+      ],
+      "source": "design_tokens.furniture_list.coffee_table.approx_mm",
+      "confidence": "design_approx",
+      "check": "PASS"
+    },
+    {
+      "id": "FURN_TV_CAB",
+      "mm": [
+        1600,
+        425
+      ],
+      "source": "design_tokens.furniture_list.tv_cabinet.approx_mm",
+      "confidence": "design_approx",
+      "check": "PASS"
+    },
+    {
+      "id": "FURN_BED",
+      "mm": [
+        1525,
+        2030
+      ],
+      "source": "design_tokens.furniture_list.bed.mattress_approx_mm",
+      "confidence": "design_approx",
+      "check": "PASS"
+    },
+    {
+      "id": "FURN_DESK",
+      "mm": [
+        1350,
+        650
+      ],
+      "source": "design_tokens.furniture_list.desk.approx_mm",
+      "confidence": "design_approx",
+      "check": "PASS"
+    }
+  ],
+  "placements_mm_sw_origin": {
+    "kitchen_module": {
+      "x0": 5913.0,
+      "x1": 6401.0,
+      "y0": 900.0,
+      "y1": 3592.0,
+      "facing": "east_wall_into_room_west",
+      "B_order_when_facing": "B1_north_left__B2_mid__B3_south_right"
+    },
+    "fridge": {
+      "x0": 5751.0,
+      "y0": 200.0,
+      "y1": 900.0,
+      "note": "south_of_module_extreme_right_when_facing_kitchen"
+    },
+    "wardrobe": {
+      "x0": 2514.5,
+      "y0": 4998.0,
+      "w": 1372,
+      "h": 2286,
+      "d": 488,
+      "leaf_count": 3,
+      "configuration": "1 single + 1 double",
+      "leaf_mm": [
+        457,
+        457,
+        458
+      ],
+      "handles": "recessed - non-dimensional finish"
+    },
+    "bed": {
+      "x0": 600.0,
+      "y0": 900.0,
+      "w": 1525,
+      "l": 2030
+    },
+    "sofa": {
+      "x0": 2813.0,
+      "y0": 320.0,
+      "l": 2150,
+      "d": 875
+    },
+    "coffee": {
+      "cx": 3888.0,
+      "cy": 2045.0,
+      "d": 750,
+      "clear_from_sofa": 475
+    },
+    "tv_cabinet": {
+      "x0": 3088.0,
+      "y0": 3420.0,
+      "l": 1600,
+      "d": 425
+    },
+    "desk": {
+      "x0": 4651.0,
+      "y0": 3936.0,
+      "w": 1350,
+      "d": 650
+    }
+  },
+  "checklist": [
+    {
+      "item": "Fixed scale documented (scale_px_per_mm)",
+      "result": "PASS",
+      "detail": "0.1"
+    },
+    {
+      "item": "Studio outline 6401 x 5486 labeled plan_relationship_only",
+      "result": "PASS"
+    },
+    {
+      "item": "Kitchen module 2692; B1/B2/B3 1219/914/457; depth 488",
+      "result": "PASS"
+    },
+    {
+      "item": "Fridge extreme right of kitchen",
+      "result": "PASS"
+    },
+    {
+      "item": "Loft heights labeled from register",
+      "result": "PASS",
+      "detail": "2591/1219/584/787"
+    },
+    {
+      "item": "Wardrobe 1372 x 2286 x 488 with 3 doors (1 single + 1 double); recessed handles non-dimensional",
+      "result": "PASS"
+    },
+    {
+      "item": "Primary path 900-1200",
+      "result": "PASS",
+      "detail": "950.0 mm sofa to kitchen"
+    },
+    {
+      "item": "Sofa-coffee 450-500",
+      "result": "PASS",
+      "detail": "475 mm"
+    },
+    {
+      "item": "Bed sides >=600",
+      "result": "PASS",
+      "detail": "west 600.0 mm"
+    },
+    {
+      "item": "Wardrobe clear >=600",
+      "result": "PASS",
+      "detail": "1153.0 mm"
+    },
+    {
+      "item": "Zones match MASTER_BRIEF",
+      "result": "PASS"
+    },
+    {
+      "item": "Axonometric topology 1:1 with plan",
+      "result": "PASS"
+    },
+    {
+      "item": "No dimensions invented from photos",
+      "result": "PASS",
+      "detail": "Openings marked unverified; furniture = design_approx from tokens"
+    },
+    {
+      "item": "K-01 granite thickness conflict flagged (measure site)",
+      "result": "PASS"
+    }
+  ],
+  "files": {
+    "floor_plan_precise_svg": "/Users/suhas/Downloads/Interiors/FINAL_DELIVERABLE/visuals/floor_plan_precise.svg",
+    "axonometric_3d_svg": "/Users/suhas/Downloads/Interiors/FINAL_DELIVERABLE/visuals/axonometric_3d.svg",
+    "dimension_lock_json": "/Users/suhas/Downloads/Interiors/FINAL_DELIVERABLE/coordination/dimension_lock.json"
+  },
+  "conflicts_held": [
+    "K-01 drawing assumes 1.50 in slab AND 15 mm granite - measure installed stone before fabrication",
+    "Opening sizes from prior docs remain unverified"
+  ]
+}

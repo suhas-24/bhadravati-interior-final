@@ -1,0 +1,557 @@
+{
+  "project": "Bhadravati Home",
+  "version": "FINAL_v1",
+  "concept_id": "A_warm_contemporary_minimalism",
+  "concept_name": "Warm Contemporary Minimalism - climate-resilient",
+  "status": "design_control_not_fabrication_approved",
+  "location": "Bhadravati, Karnataka",
+  "overall_studio": {
+    "length_ft": 21,
+    "width_ft": 18,
+    "length_mm_approx": 6401,
+    "width_mm_approx": 5486,
+    "area_sqft_approx": 378,
+    "confidence": "plan_relationship_only"
+  },
+  "palette": {
+    "base_walls": {
+      "brand": "Birla Opus",
+      "code": "NN9074",
+      "name": "Puddle of Grey",
+      "hex_approx": "#B5AB9C",
+      "rgb_approx": [
+        181,
+        171,
+        156
+      ],
+      "undertone": "warm_greige",
+      "sheen": "low_sheen_washable_matt"
+    },
+    "secondary_walls_optional": {
+      "brand": "Birla Opus",
+      "code": "NN9088",
+      "name": "Ecru Tint",
+      "hex_approx": "#E9E3D9",
+      "rgb_approx": [
+        233,
+        227,
+        217
+      ],
+      "use": "lighter_alternative_not_default"
+    },
+    "ceiling": {
+      "brand": "Birla Opus",
+      "code": "WW0005",
+      "name": "White Linen",
+      "hex_approx": "#EEEDE9",
+      "rgb_approx": [
+        238,
+        237,
+        233
+      ],
+      "sheen": "matt"
+    },
+    "accent_optional": {
+      "primary": {
+        "code": "GG7140",
+        "name": "Tender Buds",
+        "hex_approx": "#9CAE91",
+        "rgb_approx": [
+          156,
+          174,
+          145
+        ],
+        "limit": "one_small_wall_max"
+      },
+      "secondary": {
+        "code": "GG7162",
+        "name": "Old Olive Trees",
+        "hex_approx": "#B9CEA4",
+        "rgb_approx": [
+          185,
+          206,
+          164
+        ],
+        "limit": "one_small_wall_max"
+      },
+      "study_optional": [
+        {
+          "code": "BB5146",
+          "name": "Old Novel",
+          "hex_approx": "#90B1C3",
+          "rgb_approx": [
+            144,
+            177,
+            195
+          ]
+        },
+        {
+          "code": "BG6116",
+          "name": "Songs from the Valley",
+          "hex_approx": "#8BA6A3",
+          "rgb_approx": [
+            139,
+            166,
+            163
+          ]
+        }
+      ]
+    },
+    "textiles": {
+      "sofa_bedding": "warm_beige_taupe",
+      "hex_family_approx": [
+        "#C4B5A0",
+        "#B5A694",
+        "#A89888"
+      ]
+    },
+    "reject_broad_use": [
+      "saturated_green_lime",
+      "electric_blue",
+      "bright_yellow",
+      "broad_orange",
+      "high_chroma_red",
+      "deep_charcoal_walls",
+      "gloss_sparkle_laminates",
+      "high_contrast_marble_laminates"
+    ]
+  },
+  "materials": {
+    "kitchen_shutters_all": {
+      "brand": "Century StarLine",
+      "code": "S1241",
+      "finish": "MT",
+      "name": "Latte",
+      "hex_approx": "#C8B9A4",
+      "applies_to": [
+        "base",
+        "drawers",
+        "loft"
+      ],
+      "board": "18mm_BWP_base_preferred; loft_16_18mm_HDHMR_if_sealed",
+      "handle_type": "recessed",
+      "handle_note": "J-pull / finger-pull / recessed profile — not projecting bar handles; non-dimensional"
+    },
+    "kitchen_backup_laminate": {
+      "code": "S1173",
+      "finish": "MT",
+      "name": "Cloud Grey",
+      "hex_approx": "#B8B6B0"
+    },
+    "tv_cabinet": {
+      "preferred": {
+        "code": "80236",
+        "finish": "DW",
+        "name": "Slate Grey",
+        "hex_approx": "#4E4C49",
+        "use": "controlled_low_accent_only"
+      },
+      "lighter_alternative": {
+        "code": "S1241",
+        "finish": "MT",
+        "name": "Latte"
+      }
+    },
+    "wardrobe_shutters": {
+      "preferred": {
+        "code": "84689",
+        "finish": "SU",
+        "name": "Idria Oak",
+        "hex_approx": "#A39178",
+        "door_count": 3,
+        "leaf_count": 3,
+        "configuration": "single + double",
+        "handle_type": "recessed",
+        "handle_note": "J-pull / finger-pull / recessed profile — not projecting bar handles; non-dimensional",
+        "face_options": [
+          "aluminium_fluted_glass",
+          "plywood"
+        ],
+        "layout": "single_L + double_R",
+        "leaf_widths_mm": [
+          457,
+          457,
+          458
+        ]
+      },
+      "backup": {
+        "code": "84687",
+        "finish": "SU",
+        "name": "Lyon Oak",
+        "hex_approx": "#9A8A72"
+      },
+      "board": "18mm_HDHMR_or_BWP"
+    },
+    "countertop_existing": {
+      "material": "black_granite",
+      "action": "retain",
+      "hex_approx": "#1A1A1A",
+      "rgb_approx": [
+        26,
+        26,
+        26
+      ],
+      "undertone": "cool_black_with_natural_fleck",
+      "sheen": "existing_restrained_sheen",
+      "do_not_render_as": [
+        "white_quartz",
+        "marble",
+        "new_stone"
+      ]
+    },
+    "edge_band": {
+      "brand": "E3",
+      "material": "ABS",
+      "kitchen_thickness_mm": 2,
+      "wardrobe_thickness_mm": 1,
+      "match_rule": "physical_sample_match_to_exact_laminate_only",
+      "finish": "matt_or_soft_touch_not_gloss_sparkle"
+    },
+    "hardware": {
+      "finish": "brushed_stainless",
+      "handle_type": "recessed",
+      "handle_type_kitchen": "recessed",
+      "handle_type_wardrobe": "recessed",
+      "handle_note": "J-pull / finger-pull / recessed profile — not projecting bar handles; non-dimensional",
+      "forbid": [
+        "black",
+        "brass",
+        "mirror_chrome_mix",
+        "projecting_bar_handles"
+      ],
+      "screws_wet_risk": "SS304",
+      "hinges_channels": "corrosion_resistant_branded_soft_close"
+    },
+    "sheen_global": "matte_low_sheen",
+    "adhesive_note": "PUR_only_if_demonstrated_on_actual_machine"
+  },
+  "lighting": {
+    "cct_living_k": 3000,
+    "cct_bedroom_k_range": [
+      2700,
+      3000
+    ],
+    "cri_preferred": 90,
+    "lux_targets": {
+      "living_general": [
+        150,
+        300
+      ],
+      "reading_detail": [
+        300,
+        500
+      ],
+      "kitchen_worktop": [
+        300,
+        750
+      ],
+      "bedroom_general": [
+        50,
+        150
+      ],
+      "study_desk": [
+        300,
+        500
+      ]
+    },
+    "layers": [
+      "ambient",
+      "task",
+      "accent_minimal",
+      "daylight_control"
+    ],
+    "kitchen_task": "linear_LED_under_loft_diffused_3000K"
+  },
+  "key_dimensions": {
+    "units_note": "register values in inches; mm calculated as in*25.4; not fabrication cut list",
+    "source": "interior_dimension_control/dimension_register_v1",
+    "circulation_mm": {
+      "primary": [
+        900,
+        1200
+      ],
+      "secondary": [
+        600,
+        900
+      ],
+      "sofa_to_coffee_table": [
+        450,
+        500
+      ],
+      "bed_side_preferred_min": 600
+    },
+    "kitchen": {
+      "overall_granite_module_width_in": 106.0,
+      "overall_granite_module_width_mm": 2692,
+      "reference_total_wall_width_in": 220.0,
+      "reference_total_wall_width_mm": 5588,
+      "floor_to_loft_underside_in": 102.0,
+      "floor_to_loft_underside_mm": 2591,
+      "loft_underside_to_lower_shelf_underside_in": 48.0,
+      "loft_underside_to_lower_shelf_underside_mm": 1219,
+      "lower_shelf_underside_to_countertop_top_in": 23.0,
+      "lower_shelf_underside_to_countertop_top_mm": 584,
+      "floor_to_countertop_top_in": 31.0,
+      "floor_to_countertop_top_mm": 787,
+      "internal_countertop_depth_in": 19.2,
+      "internal_countertop_depth_mm": 488,
+      "B1_clear_in": 48.0,
+      "B1_clear_mm": 1219,
+      "B2_clear_in": 36.0,
+      "B2_clear_mm": 914,
+      "B3_clear_in": 18.0,
+      "B3_clear_mm": 457,
+      "orientation": {
+        "type": "single_wall_existing_granite",
+        "sink": "under_kitchen_window",
+        "fridge": "extreme_right",
+        "scope": "shutters_only_no_new_carcass_island_or_counter"
+      },
+      "conflicts": [
+        "drawing_assumes_1.50in_slab_and_also_15mm_granite_measure_installed_stone"
+      ]
+    },
+    "wardrobe": {
+      "clear_width_in": 54.0,
+      "clear_width_mm": 1372,
+      "clear_height_in": 90.0,
+      "clear_height_mm": 2286,
+      "internal_depth_in": 19.2,
+      "internal_depth_mm": 488,
+      "left_clear_in": 21.0,
+      "left_clear_mm": 533,
+      "granite_partition_in": 0.59,
+      "granite_partition_mm": 15,
+      "right_clear_in": 32.41,
+      "right_clear_mm": 823,
+      "door_count": 3,
+      "shutter_leaf_count": 3,
+      "configuration": "single + double",
+      "layout": "single_L + double_R",
+      "leaf_widths_mm": [
+        457,
+        457,
+        458
+      ],
+      "leaf_widths_note": "457+457+458=1372; locked to dimension drawings; recessed handles non-dimensional",
+      "handle_type": "recessed",
+      "face_options": [
+        "aluminium_fluted_glass",
+        "plywood"
+      ],
+      "hanging_space_in": 39.0,
+      "hanging_space_mm": 991,
+      "drawer_front_in": 9.5,
+      "drawer_front_mm": 241
+    },
+    "openings_unverified_from_prior_docs": {
+      "note": "verify_on_site_do_not_fabricate_from_these",
+      "main_door_mm_cited": 1051,
+      "bedroom_window_cited": "4ft9in x 3ft_OR_4ft9in x 4ft_conflict",
+      "bathroom_window_cited": "2ft x 4ft",
+      "study_window_cited": "5.5ft x 4ft",
+      "kitchen_window_cited": "3ft2in x 4ft"
+    }
+  },
+  "furniture_list": [
+    {
+      "id": "sofa",
+      "room": "living",
+      "item": "3-seater sofa",
+      "approx_mm": [
+        2150,
+        875,
+        825
+      ],
+      "finish": "warm_beige_taupe_tight_weave_wipeable"
+    },
+    {
+      "id": "coffee_table",
+      "room": "living",
+      "item": "round coffee table",
+      "approx_mm": [
+        750,
+        750,
+        425
+      ],
+      "clearance_to_sofa_mm": [
+        450,
+        500
+      ]
+    },
+    {
+      "id": "tv_cabinet",
+      "room": "living",
+      "item": "floating TV cabinet",
+      "approx_mm": [
+        1600,
+        425,
+        425
+      ],
+      "laminate": "80236_DW_or_S1241_MT",
+      "forbid": "decorative_TV_wall"
+    },
+    {
+      "id": "tv",
+      "room": "living",
+      "item": "wall-mounted TV",
+      "placement": "centred_above_cabinet"
+    },
+    {
+      "id": "living_rug",
+      "room": "living",
+      "item": "low-pile rug",
+      "rule": "front_legs_of_sofa_minimum"
+    },
+    {
+      "id": "bed",
+      "room": "bedroom",
+      "item": "queen bed",
+      "mattress_approx_mm": [
+        1525,
+        2030
+      ]
+    },
+    {
+      "id": "nightstand_l",
+      "room": "bedroom",
+      "item": "nightstand",
+      "approx_mm": [
+        475,
+        400,
+        525
+      ]
+    },
+    {
+      "id": "nightstand_r",
+      "room": "bedroom",
+      "item": "nightstand",
+      "approx_mm": [
+        475,
+        400,
+        525
+      ]
+    },
+    {
+      "id": "bedside_lamps",
+      "room": "bedroom",
+      "item": "bedside lamps x2",
+      "cct_k": [
+        2700,
+        3000
+      ]
+    },
+    {
+      "id": "desk",
+      "room": "study",
+      "item": "desk",
+      "approx_mm": [
+        1350,
+        650,
+        750
+      ]
+    },
+    {
+      "id": "task_chair",
+      "room": "study",
+      "item": "mesh task chair",
+      "approx_footprint_mm": [
+        675,
+        675
+      ]
+    },
+    {
+      "id": "study_lamp",
+      "room": "study",
+      "item": "task lamp",
+      "cct_k": 3000
+    },
+    {
+      "id": "floating_shelves",
+      "room": "study",
+      "item": "limited floating shelves",
+      "max_count": 3,
+      "max_depth_mm": 300
+    },
+    {
+      "id": "kitchen_shutters",
+      "room": "kitchen",
+      "item": "base+loft shutters B1 B2 B3",
+      "laminate": "S1241_MT_Latte",
+      "register_clear_openings_in": {
+        "B1": 48,
+        "B2": 36,
+        "B3": 18
+      }
+    },
+    {
+      "id": "fridge",
+      "room": "kitchen",
+      "item": "refrigerator",
+      "placement": "extreme_right_of_kitchen_zone"
+    },
+    {
+      "id": "wardrobe",
+      "room": "dressing",
+      "item": "wardrobe shutters x3 (single + double)",
+      "laminate": "84689_SU_Idria_Oak",
+      "door_count": 3,
+      "configuration": "single + double",
+      "handle_type": "recessed",
+      "face_options": [
+        "aluminium_fluted_glass",
+        "plywood"
+      ],
+      "clear_opening_in": [
+        54,
+        90,
+        19.2
+      ],
+      "leaf_widths_mm": [
+        457,
+        457,
+        458
+      ]
+    }
+  ],
+  "visual_producer_rules": {
+    "style": "warm contemporary minimalism",
+    "not_style": "textbook Japandi showroom",
+    "preserve": [
+      "existing_black_granite",
+      "single_wall_kitchen",
+      "actual_opening_positions_when_known",
+      "matte_finishes",
+      "brushed_stainless_hardware",
+      "3000K_lighting"
+    ],
+    "forbid_in_renders": [
+      "mirrored_or_moved_openings",
+      "L_shaped_or_island_kitchen",
+      "second_kitchen_shutter_colour",
+      "new_countertop_stone",
+      "TV_feature_wall_marble_gold_slats",
+      "two_huge_wardrobe_doors",
+      "gloss_acrylic_sparkle",
+      "invented_extra_lofts_or_tall_units",
+      "blocking_door_swings_or_plumbing_access",
+      "boucle_dust_traps_and_japandi_prop_clutter"
+    ],
+    "delivery_per_critical_room": [
+      "plan_faithful_wide_view",
+      "opposite_or_adjacent_view",
+      "close_material_detail_view"
+    ],
+    "label_each_view_with": [
+      "room",
+      "camera_position",
+      "orientation"
+    ],
+    "mark_unknowns_as": "not_verified"
+  },
+  "next_3_actions": [
+    "Complete and sign site-measure sheet for kitchen, wardrobe, and openings",
+    "Approve physical sample board under morning, afternoon, and 3000K light",
+    "Lock fabricator shop drawings and quotation before commissioning plan-faithful visuals"
+  ]
+}

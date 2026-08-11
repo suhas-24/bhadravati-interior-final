@@ -1,0 +1,134 @@
+{
+  "project": "Bhadravati Home",
+  "role": "Photoreal_Visual_Expert_Inspector",
+  "status": "complete",
+  "updated": "2026-08-11",
+  "locks_applied": [
+    "coordination/swatch_lock.json",
+    "coordination/dimension_lock.json",
+    "coordination/wardrobe_door_lock.json"
+  ],
+  "client_directive_override": {
+    "wardrobe_doors": "3 leaves = single L + double R (457 / 457 / 458 mm)",
+    "handles": "recessed only (kitchen + wardrobe); no projecting bar handles",
+    "face_options": {
+      "04_series": "plywood / Idria continuity",
+      "05": "aluminium fluted glass",
+      "06": "plywood hero"
+    }
+  },
+  "assumed_leaf_widths_mm": {
+    "leaf_1_single_L": 457,
+    "leaf_2_double_R_inner": 457,
+    "leaf_3_double_R_outer": 458,
+    "sum": 1372,
+    "source": "dimension_lock.json W-01_THREE_DOORS"
+  },
+  "images": [
+    {
+      "file": "visuals/01_living_social_zone_daylight.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "Retained after swatch regen; no balcony; plain NN9074 TV wall; 80236 floating cabinet; no feature wall"
+    },
+    {
+      "file": "visuals/01b_living_from_tv_toward_sofa.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "Retained; beige-taupe pillows only (prior orange pillow fail closed)"
+    },
+    {
+      "file": "visuals/01c_living_side_across_social.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "Retained; side social view OK"
+    },
+    {
+      "file": "visuals/02_kitchen_granite_latte_shutters.png",
+      "verdict": "PASS",
+      "defects": ["Mid granite shelf band still schematic vs closed loft stack ideal"],
+      "action": "Regenerated with recessed J-pulls; Latte-all; fridge extreme right; no waterfall; no bar handles"
+    },
+    {
+      "file": "visuals/02b_kitchen_from_fridge_along_run.png",
+      "verdict": "PASS",
+      "defects": ["Mid granite shelf band weak/schematic; open-niche risk residual"],
+      "action": "Regenerated with recessed pulls; fridge right; closed loft preferred"
+    },
+    {
+      "file": "visuals/02c_kitchen_loft_shelf_band_detail.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "Regenerated; recessed finger-pulls verified; no bar handle"
+    },
+    {
+      "file": "visuals/03_evening_material_lighting_detail.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "Retained; Slate + Latte + horizontal granite junction; matte 3000K mood"
+    },
+    {
+      "file": "visuals/04_bedroom_wardrobe_three_door_plywood.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "NEW plywood 3-door (single+double) with recessed pulls; also mirrored to 04_bedroom_wardrobe_four_shutters.png for gallery path continuity"
+    },
+    {
+      "file": "visuals/04_bedroom_wardrobe_four_shutters.png",
+      "verdict": "PASS",
+      "defects": ["Filename legacy (four_shutters); content is 3-door plywood"],
+      "action": "Overwritten with plywood 3-door recessed content; prefer three_door filename going forward"
+    },
+    {
+      "file": "visuals/04b_bedroom_from_wardrobe_toward_bed.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "Regenerated with reference to plywood 3-door; verified 3 doors + recessed pulls (prior 4-door/bar-handle fails closed)"
+    },
+    {
+      "file": "visuals/04c_wardrobe_three_door_detail.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "NEW detail with labels 457/457/458; recessed pulls; also mirrored to 04c_wardrobe_four_leaf_detail.png"
+    },
+    {
+      "file": "visuals/04c_wardrobe_four_leaf_detail.png",
+      "verdict": "PASS",
+      "defects": ["Filename legacy; content is 3-door detail"],
+      "action": "Overwritten with 04c three-door detail"
+    },
+    {
+      "file": "visuals/05_wardrobe_aluminium_fluted_glass.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "NEW option A; aluminium + fluted glass; 3 doors; recessed/no protruding bars verified"
+    },
+    {
+      "file": "visuals/06_wardrobe_plywood_three_door.png",
+      "verdict": "PASS",
+      "defects": [],
+      "action": "NEW plywood hero; 3 doors single+double; recessed pulls clearly verified"
+    }
+  ],
+  "regenerations": [
+    "02_kitchen_granite_latte_shutters.png",
+    "02b_kitchen_from_fridge_along_run.png",
+    "02c_kitchen_loft_shelf_band_detail.png",
+    "04_bedroom_wardrobe_three_door_plywood.png",
+    "04_bedroom_wardrobe_four_shutters.png (overwrite)",
+    "04b_bedroom_from_wardrobe_toward_bed.png",
+    "04c_wardrobe_three_door_detail.png",
+    "04c_wardrobe_four_leaf_detail.png (overwrite)",
+    "05_wardrobe_aluminium_fluted_glass.png",
+    "06_wardrobe_plywood_three_door.png"
+  ],
+  "summary": {
+    "pass": 14,
+    "fail": 0,
+    "residuals": [
+      "Kitchen mid granite shelf / loft stack still AI-schematic on some frames",
+      "Legacy filenames 04_*four* retained as aliases of 3-door content",
+      "Site measure still required before fabrication"
+    ]
+  }
+}

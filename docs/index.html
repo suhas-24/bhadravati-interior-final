@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhadravati Home &#8212; Visual Package</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #2C2925;
+      --muted: #6A6258;
+      --wall: #B5AB9C;
+      --ceil: #EEEDE9;
+      --latte: #C8B9A4;
+      --oak: #A39178;
+      --slate: #4E4C49;
+      --paper: #F7F3EC;
+      --paper-deep: #EDE6DB;
+      --line: #D2C8BA;
+      --accent: #5B7A6A;
+      --granite: #1A1A1A;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(181,171,156,0.35), transparent 60%),
+        radial-gradient(900px 500px at 100% 0%, rgba(163,145,120,0.18), transparent 55%),
+        linear-gradient(180deg, #F4EFE7 0%, var(--paper) 40%, #F1EBE2 100%);
+      line-height: 1.5;
+    }
+    a { color: var(--accent); }
+    .wrap { width: min(1120px, calc(100% - 2.5rem)); margin: 0 auto; }
+    header.hero {
+      position: relative;
+      min-height: 88svh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      background: var(--granite);
+    }
+    header.hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(28,28,28,0.82) 0%, rgba(28,28,28,0.35) 48%, rgba(28,28,28,0.15) 100%),
+        url("01_living_social_zone_daylight.png") center/cover no-repeat;
+      transform: scale(1.02);
+      animation: drift 18s ease-in-out infinite alternate;
+    }
+    @keyframes drift {
+      from { transform: scale(1.02) translate3d(0,0,0); }
+      to { transform: scale(1.06) translate3d(-1.5%, -1%, 0); }
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      padding: 3.5rem 0 3rem;
+      color: var(--ceil);
+      max-width: 36rem;
+    }
+    .eyebrow {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--latte);
+      margin: 0 0 0.75rem;
+    }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 650;
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.05;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .lede { margin: 0 0 1.5rem; color: #E4DCCF; font-size: 1.05rem; max-width: 30rem; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.1rem;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.92rem;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--latte); color: var(--ink); }
+    .btn-ghost { background: transparent; color: var(--ceil); border-color: rgba(238,237,233,0.35); }
+    nav.sticky {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(247,243,236,0.88);
+      border-bottom: 1px solid var(--line);
+    }
+    nav.sticky .wrap {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding: 0.85rem 0;
+      font-size: 0.88rem;
+    }
+    nav a { color: var(--muted); text-decoration: none; white-space:nowrap; }
+    nav a:hover { color: var(--ink); }
+    section { padding: 3.5rem 0; }
+    h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.6rem, 3vw, 2.1rem);
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.015em;
+    }
+    .section-lede { color: var(--muted); margin: 0 0 1.75rem; max-width: 44rem; }
+    .token-strip {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .swatch {
+      min-height: 88px;
+      padding: 0.65rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: var(--ink);
+      font-size: 0.72rem;
+      font-family: "IBM Plex Mono", monospace;
+      border: 1px solid var(--line);
+    }
+    .swatch span { background: rgba(247,243,236,0.92); padding: 0.15rem 0.3rem; width: fit-content; }
+    .swatch.on-dark { color: var(--ceil); }
+    .swatch.on-dark span { background: rgba(28,28,28,0.75); color: var(--ceil); }
+    .gallery { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    .gallery figure { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); }
+    .gallery img {
+      display: block; width: 100%; height: 100%; object-fit: cover;
+      min-height: 280px; max-height: 380px; transition: transform 0.6s ease;
+    }
+    .gallery figure:hover img { transform: scale(1.03); }
+    .gallery figcaption {
+      position: absolute; left: 0; right: 0; bottom: 0; padding: 0.85rem 1rem;
+      background: linear-gradient(transparent, rgba(28,28,28,0.78));
+      color: var(--ceil); font-size: 0.82rem;
+    }
+    .room-block { margin-bottom: 2.25rem; }
+    .room-block h3 {
+      font-family: "Fraunces", Georgia, serif; font-size: 1.15rem; font-weight: 650; margin: 0 0 0.35rem;
+    }
+    .room-block .room-lede { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.85rem; }
+    .tri-gallery { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 0.75rem; }
+    .tri-gallery figure { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); }
+    .tri-gallery img {
+      display: block; width: 100%; height: 100%; object-fit: cover;
+      min-height: 220px; max-height: 360px; transition: transform 0.6s ease;
+    }
+    .tri-gallery figure:hover img { transform: scale(1.03); }
+    .tri-gallery figcaption {
+      position: absolute; left: 0; right: 0; bottom: 0; padding: 0.7rem 0.85rem;
+      background: linear-gradient(transparent, rgba(28,28,28,0.78));
+      color: var(--ceil); font-size: 0.78rem;
+    }
+    .tri-gallery .hero-shot img { min-height: 320px; max-height: 420px; }
+    .compare-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .compare-gallery figure { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); border: 1px solid var(--line); }
+    .compare-gallery img {
+      display: block; width: 100%; height: 100%; object-fit: cover;
+      min-height: 340px; max-height: 480px; transition: transform 0.6s ease;
+    }
+    .compare-gallery figure:hover img { transform: scale(1.02); }
+    .compare-gallery figcaption {
+      position: absolute; left: 0; right: 0; bottom: 0; padding: 0.9rem 1rem;
+      background: linear-gradient(transparent, rgba(28,28,28,0.82));
+      color: var(--ceil); font-size: 0.84rem;
+    }
+    .option-label {
+      display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.72rem;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--latte); margin-bottom: 0.3rem;
+    }
+    .badge {
+      display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.68rem;
+      letter-spacing: 0.06em; text-transform: uppercase; color: var(--latte); margin-bottom: 0.25rem;
+    }
+    .panel { background: rgba(251,248,243,0.7); border: 1px solid var(--line); padding: 1rem; }
+    .panel.highlight { border-color: var(--accent); background: rgba(91,122,106,0.08); }
+    .svg-frame { background: #fff; border: 1px solid var(--line); padding: 0.5rem; overflow: auto; }
+    .svg-frame object, .svg-frame img, .svg-frame svg { width: 100%; height: auto; display: block; }
+    .two-col { display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 1.25rem; align-items: start; }
+    .notes dt { font-weight: 600; margin-top: 0.85rem; }
+    .notes dd { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.92rem; }
+    .hotspots { display: grid; gap: 0.5rem; margin-top: 1rem; }
+    .hotspot {
+      text-align: left; width: 100%; border: 1px solid var(--line); background: #FBF8F3;
+      padding: 0.7rem 0.85rem; cursor: pointer; font: inherit; color: inherit;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+    .hotspot:hover, .hotspot.active { border-color: var(--accent); background: #F1EBE2; }
+    .hotspot strong { display: block; font-size: 0.92rem; }
+    .hotspot span { color: var(--muted); font-size: 0.82rem; }
+    #callout {
+      margin-top: 1rem; padding: 1rem; border-left: 3px solid var(--accent);
+      background: rgba(91,122,106,0.08); min-height: 5.5rem; font-size: 0.92rem;
+    }
+    footer { padding: 2.5rem 0 3rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+    @media (max-width: 860px) {
+      .token-strip { grid-template-columns: repeat(3, 1fr); }
+      .gallery, .two-col, .tri-gallery, .compare-gallery { grid-template-columns: 1fr; }
+      .tri-gallery .hero-shot img, .compare-gallery img { min-height: 260px; max-height: none; }
+      header.hero { min-height: 78svh; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Bhadravati &#183; FINAL_v1 &#183; All locks complete</p>
+      <h1>Bhadravati Home</h1>
+      <p class="lede">Warm Contemporary Minimalism &#8212; locked palette, scale-true plan, recessed pulls, and wardrobe face Options A / B for client choice.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#wardrobe-options">Wardrobe Options A / B</a>
+        <a class="btn btn-ghost" href="#concepts">Room concepts</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sticky" aria-label="Section navigation">
+    <div class="wrap">
+      <a href="#tokens">Tokens</a>
+      <a href="#wardrobe-options">Wardrobe A/B</a>
+      <a href="#concepts">Concepts</a>
+      <a href="#plan">Floor plan</a>
+      <a href="#axon">Axonometric</a>
+      <a href="#palette">Palette</a>
+      <a href="#notes">Design notes</a>
+      <a href="MASTER_BRIEF.md">Master brief</a>
+      <a href="README.md">README</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="tokens">
+      <div class="wrap">
+        <h2>Locked design tokens</h2>
+        <p class="section-lede">From <code>swatch_lock.json</code> + <code>dimension_lock.json</code> + <code>wardrobe_door_lock.json</code> (all complete). Birla Opus hex exact; Century laminate hex = visual approx.</p>
+        <div class="token-strip" aria-label="Primary palette">
+          <div class="swatch" style="background:#B5AB9C"><span>NN9074 &#183; #B5AB9C</span></div>
+          <div class="swatch" style="background:#EEEDE9"><span>WW0005 &#183; #EEEDE9</span></div>
+          <div class="swatch" style="background:#C8B9A4"><span>S1241 MT Latte</span></div>
+          <div class="swatch" style="background:#A39178"><span>84689 SU Idria</span></div>
+          <div class="swatch on-dark" style="background:#4E4C49"><span>80236 DW TV</span></div>
+          <div class="swatch on-dark" style="background:#1A1A1A"><span>Black granite</span></div>
+        </div>
+        <div class="panel highlight">
+          <strong>Client lock:</strong> Wardrobe = <strong>3 doors</strong> (1 single L + 1 double R) &#183; leaf widths <strong>457 / 457 / 458&nbsp;mm</strong> (sum 1372) &#183; kitchen + wardrobe pulls = <strong>recessed only</strong> (no projecting bars) &#183; all kitchen shutters S1241 MT Latte &#183; granite retained (no waterfall) &#183; 3000&nbsp;K &#183; matte / low-sheen.
+        </div>
+      </div>
+    </section>
+
+    <section id="wardrobe-options">
+      <div class="wrap">
+        <h2>Wardrobe face options</h2>
+        <p class="section-lede">Same W-01 niche and 3-door geometry. Choose face finish. Both use recessed pulls. Niche 1372&#215;2286&#215;488&nbsp;mm (register).</p>
+        <div class="panel" style="margin-bottom:1.25rem">
+          <strong>Shared geometry:</strong> 3 doors = single L + double R &#183; <strong>457 / 457 / 458&nbsp;mm</strong> &#183; recessed handles (J-pull / finger-pull / recessed profile) &#183; standing clear 1153&nbsp;mm.
+        </div>
+        <div class="compare-gallery">
+          <figure>
+            <img src="05_wardrobe_aluminium_fluted_glass.png" alt="Option A aluminium fluted glass wardrobe" />
+            <figcaption>
+              <div class="option-label">Option A &#183; 05</div>
+              Aluminium frame + fluted glass &#183; recessed pulls &#183; 3-door single+double
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="06_wardrobe_plywood_three_door.png" alt="Option B plywood three-door wardrobe" />
+            <figcaption>
+              <div class="option-label">Option B &#183; 06</div>
+              Plywood / Idria Oak face &#183; recessed pulls &#183; 3-door single+double
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="concepts">
+      <div class="wrap">
+        <h2>Photorealistic concepts</h2>
+        <p class="section-lede">Three-view sets per critical room. Image QA: 14 PASS / 0 FAIL. Conceptual &#8212; openings and granite thickness remain site-measure items.</p>
+
+        <div class="room-block" id="living-set">
+          <h3>Living &#8212; three-view set</h3>
+          <p class="room-lede">S-centre &#183; sofa&#8211;coffee 475&nbsp;mm &#183; aisle ~950&#8211;1000&nbsp;mm &#183; NN9074 TV wall &#183; 80236 floating cabinet only &#183; no balcony</p>
+          <div class="tri-gallery">
+            <figure class="hero-shot">
+              <img src="01_living_social_zone_daylight.png" alt="Living social zone daylight" />
+              <figcaption><div class="badge">Wide &#183; PASS</div>01 &#183; Sofa &#8594; TV wall</figcaption>
+            </figure>
+            <figure>
+              <img src="01b_living_from_tv_toward_sofa.png" alt="Living opposite from TV toward sofa" />
+              <figcaption><div class="badge">Opposite &#183; PASS</div>01b &#183; TV wall &#8594; sofa</figcaption>
+            </figure>
+            <figure>
+              <img src="01c_living_side_across_social.png" alt="Living side angle across social zone" />
+              <figcaption><div class="badge">Adjacent &#183; PASS</div>01c &#183; Side across sofa&#8211;TV</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="room-block" id="kitchen-set">
+          <h3>Kitchen &#8212; three-view set (K-01)</h3>
+          <p class="room-lede">Module 2692&#215;488&nbsp;mm &#183; B1/B2/B3 1219/914/457 &#183; loft 2591 / counter 787 &#183; S1241 Latte all &#183; fridge extreme right &#183; <strong>recessed pulls</strong> &#183; no waterfall</p>
+          <div class="tri-gallery">
+            <figure class="hero-shot">
+              <img src="02_kitchen_granite_latte_shutters.png" alt="Kitchen granite and Latte shutters recessed" />
+              <figcaption><div class="badge">Wide &#183; PASS</div>02 &#183; Recessed pulls &#183; closed loft</figcaption>
+            </figure>
+            <figure>
+              <img src="02b_kitchen_from_fridge_along_run.png" alt="Kitchen from fridge along the run" />
+              <figcaption><div class="badge">Adjacent &#183; PASS</div>02b &#183; Fridge right &#183; along run</figcaption>
+            </figure>
+            <figure>
+              <img src="02c_kitchen_loft_shelf_band_detail.png" alt="Kitchen loft and shelf band detail" />
+              <figcaption><div class="badge">Detail &#183; PASS</div>02c &#183; Counter / splash / loft stack</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="room-block" id="bedroom-set">
+          <h3>Bedroom / wardrobe &#8212; three-view set (plywood continuity)</h3>
+          <p class="room-lede">W-01 1372&#215;2286&#215;488&nbsp;mm &#183; <strong>3 doors</strong> 457/457/458 &#183; recessed pulls &#183; plywood / Idria continuity &#183; standing clear 1153&nbsp;mm</p>
+          <div class="tri-gallery">
+            <figure class="hero-shot">
+              <img src="04_bedroom_wardrobe_three_door_plywood.png" alt="Bedroom three-door plywood wardrobe" />
+              <figcaption><div class="badge">Wide &#183; PASS</div>04 &#183; 3-door plywood &#183; single+double</figcaption>
+            </figure>
+            <figure>
+              <img src="04b_bedroom_from_wardrobe_toward_bed.png" alt="Bedroom from wardrobe toward bed" />
+              <figcaption><div class="badge">Opposite &#183; PASS</div>04b &#183; Wardrobe &#8594; bed</figcaption>
+            </figure>
+            <figure>
+              <img src="04c_wardrobe_three_door_detail.png" alt="Wardrobe three-door detail" />
+              <figcaption><div class="badge">Detail &#183; PASS</div>04c &#183; 3-door recessed detail</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="room-block" id="evening-detail">
+          <h3>Junction detail</h3>
+          <p class="room-lede">Living&#8211;kitchen material / evening lighting (matte junctions &#183; 3000&nbsp;K)</p>
+          <div class="gallery">
+            <figure>
+              <img src="03_evening_material_lighting_detail.png" alt="Evening material and lighting detail" />
+              <figcaption><div class="badge">Detail &#183; PASS</div>03 &#183; 80236 / granite / Latte &#183; no waterfall</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan">
+      <div class="wrap">
+        <h2>Dimensioned floor plan</h2>
+        <p class="section-lede">Scale-true: <strong>0.1&nbsp;px/mm</strong>. Studio 6401&#215;5486&nbsp;mm = plan_relationship_only. K-01 register + W-01 3-door 457/457/458. Not a cut sheet.</p>
+        <div class="svg-frame">
+          <object data="floor_plan_precise.svg" type="image/svg+xml" aria-label="Dimensioned floor plan SVG">Floor plan SVG</object>
+        </div>
+      </div>
+    </section>
+
+    <section id="axon">
+      <div class="wrap two-col">
+        <div>
+          <h2>Axonometric layout</h2>
+          <p class="section-lede">Topology 1:1 with plan &#183; axo <strong>0.045&nbsp;px/mm</strong>. Select a zone for locked notes.</p>
+          <div class="svg-frame">
+            <object data="axonometric_3d.svg" type="image/svg+xml" aria-label="Axonometric diagram">Axonometric SVG</object>
+          </div>
+        </div>
+        <aside>
+          <div class="hotspots" role="tablist" aria-label="Zone callouts">
+            <button class="hotspot active" data-zone="living" role="tab" aria-selected="true"><strong>Living</strong><span>Sofa&#8211;coffee 475 &#183; 80236 only</span></button>
+            <button class="hotspot" data-zone="kitchen" role="tab"><strong>Kitchen</strong><span>2692&#215;488 &#183; recessed &#183; fridge right</span></button>
+            <button class="hotspot" data-zone="wardrobe" role="tab"><strong>Wardrobe</strong><span>3 doors 457/457/458 &#183; Options A/B</span></button>
+            <button class="hotspot" data-zone="bedroom" role="tab"><strong>Bedroom</strong><span>Queen &#183; west side 600 &#183; NN9074</span></button>
+            <button class="hotspot" data-zone="study" role="tab"><strong>Study</strong><span>Desk 1350&#215;650 &#183; NE</span></button>
+          </div>
+          <div id="callout" role="tabpanel">
+            <strong>Living</strong> &#8212; S-centre. Sofa&#8211;coffee <strong>475&nbsp;mm</strong>. Primary clear <strong>950&nbsp;mm</strong>; coffee&#8211;TV aisle <strong>1000&nbsp;mm</strong>. Floating 80236 only.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="palette">
+      <div class="wrap">
+        <h2>Palette board</h2>
+        <p class="section-lede">NN9074 / WW0005 / S1241 MT Latte / 84689 Idria / 80236 Slate / granite / recessed SS hardware / E3 ABS / 3000&nbsp;K.</p>
+        <div class="svg-frame">
+          <object data="palette_board.svg" type="image/svg+xml" aria-label="Palette board SVG">Palette SVG</object>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <div class="wrap two-col">
+        <div>
+          <h2>Design notes &amp; legend</h2>
+          <dl class="notes">
+            <dt>Style</dt>
+            <dd>Warm Contemporary Minimalism &#8212; not textbook Japandi.</dd>
+            <dt>Plan scale (locked)</dt>
+            <dd>Plan <strong>0.1&nbsp;px/mm</strong>; axo <strong>0.045&nbsp;px/mm</strong>. Studio 6401&#215;5486&nbsp;mm = plan_relationship_only.</dd>
+            <dt>Kitchen (K-01)</dt>
+            <dd>2692&#215;488 &#183; B1/B2/B3 1219/914/457 &#183; loft 2591 &#183; counter 787 &#183; Latte all &#183; fridge right &#183; <strong>recessed pulls</strong>.</dd>
+            <dt>Wardrobe (W-01 + door lock)</dt>
+            <dd>1372&#215;2286&#215;488 &#183; <strong>3 doors</strong> single L + double R &#183; <strong>457 / 457 / 458&nbsp;mm</strong> &#183; recessed pulls &#183; Option A aluminium fluted glass (05) vs Option B plywood (06).</dd>
+            <dt>Lighting</dt>
+            <dd>3000&nbsp;K baseline; bedroom lamps 2700&#8211;3000&nbsp;K; CRI &#8805;90 preferred.</dd>
+            <dt>Confidence</dt>
+            <dd>All coordination locks complete. Openings + granite thickness = site measure. Not fabrication-approved.</dd>
+          </dl>
+        </div>
+        <div class="panel">
+          <p style="margin-top:0"><strong>Files in this folder</strong></p>
+          <ul style="padding-left:1.1rem; color:var(--muted); font-size:0.92rem;">
+            <li>01 / 01b / 01c living three-view</li>
+            <li>02 / 02b / 02c kitchen three-view (recessed)</li>
+            <li>03 evening junction</li>
+            <li>04 / 04b / 04c bedroom plywood 3-door set</li>
+            <li><strong>05</strong> Option A aluminium fluted glass</li>
+            <li><strong>06</strong> Option B plywood three-door hero</li>
+            <li>floor_plan / axonometric / palette SVGs</li>
+            <li>index.html &#183; VISUAL_PROMPTS.md</li>
+          </ul>
+          <p style="color:var(--muted); font-size:0.85rem;">All images are <strong>conceptual</strong> &#8212; not proof of dimensions, product stock, or code compliance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Bhadravati Home Visual Package &#183; orchestration <strong>integration_complete</strong> &#183; swatch + dimension + wardrobe_door + image_qa locks complete &#183; Not fabrication-approved until signed site measure + physical sample board.
+    </div>
+  </footer>
+
+  <script>
+    const copy = {
+      living: "<strong>Living</strong> &#8212; S-centre. Sofa&#8211;coffee <strong>475&nbsp;mm</strong>. Primary clear <strong>950&nbsp;mm</strong>; coffee&#8211;TV aisle <strong>1000&nbsp;mm</strong>. Floating 80236 only.",
+      kitchen: "<strong>Kitchen</strong> &#8212; Module <strong>2692&#215;488&nbsp;mm</strong>; B1/B2/B3 <strong>1219/914/457</strong>. Latte all. Fridge extreme right. <strong>Recessed pulls</strong>. No waterfall.",
+      wardrobe: "<strong>Wardrobe</strong> &#8212; Clear <strong>1372&#215;2286&#215;488&nbsp;mm</strong>. <strong>3 doors</strong> 457/457/458 (single L + double R). Recessed pulls. Option A (05 aluminium fluted glass) or Option B (06 plywood).",
+      bedroom: "<strong>Bedroom</strong> &#8212; SW queen; west side <strong>600&nbsp;mm</strong>. NN9074 / WW0005. Lamps 2700&#8211;3000&nbsp;K.",
+      study: "<strong>Study</strong> &#8212; NE desk <strong>1350&#215;650&nbsp;mm</strong>. Limited shelves. Task 3000&nbsp;K."
+    };
+    const callout = document.getElementById("callout");
+    document.querySelectorAll(".hotspot").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".hotspot").forEach((b) => {
+          b.classList.remove("active");
+          b.setAttribute("aria-selected", "false");
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-selected", "true");
+        callout.innerHTML = copy[btn.dataset.zone];
+      });
+    });
+  </script>
+</body>
+</html>
