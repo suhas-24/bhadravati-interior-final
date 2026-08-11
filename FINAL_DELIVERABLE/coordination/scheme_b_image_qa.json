@@ -1,0 +1,118 @@
+{
+  "project": "Bhadravati Home",
+  "role": "Photoreal_Visual_Expert_Inspector_SchemeB",
+  "status": "complete",
+  "updated": "2026-08-11",
+  "deploy_gate": "non_blocking",
+  "scheme": {
+    "id": "B_ecru_virgin_white",
+    "lock": "coordination/scheme_b_swatch_lock.json",
+    "walls": {
+      "code": "NN9088",
+      "name": "Ecru Tint",
+      "hex": "#E9E3D9"
+    },
+    "ceiling": {
+      "code": "WW0020",
+      "name": "Virgin White",
+      "hex": "#EDE9E2",
+      "note": "Official Birla Opus Virgin White — not pure #FFFFFF"
+    },
+    "vs_scheme_a": "Scheme A files retained unchanged (NN9074 + WW0005). Scheme B is parallel *_schemeB.png set."
+  },
+  "locked_design_unchanged": [
+    "Kitchen all S1241 MT Latte",
+    "Black granite counter horizontal only (no waterfall)",
+    "Recessed pulls (kitchen + wardrobe)",
+    "Fridge extreme right",
+    "Wardrobe 3 doors single+double 457/457/458 intent",
+    "TV 80236 floating cabinet only — no feature wall",
+    "No invented balcony",
+    "3000 K lighting"
+  ],
+  "images": [
+    {
+      "file": "visuals/01_living_social_zone_daylight_schemeB.png",
+      "verdict": "PASS",
+      "palette": {
+        "walls_intent": "NN9088 Ecru Tint — light warm ecru, clearly lighter than Scheme A greige",
+        "ceiling_intent": "WW0020 Virgin White — soft warm off-white, not stark #FFFFFF"
+      },
+      "defects": [],
+      "action": "Living hero OK: plain TV wall, 80236 floating cabinet, no balcony, 3000K spots, Scheme B paint pair confirmed by eye"
+    },
+    {
+      "file": "visuals/02_kitchen_granite_latte_shutters_schemeB.png",
+      "verdict": "PASS",
+      "palette": {
+        "walls_intent": "NN9088 Ecru Tint splash/walls",
+        "ceiling_intent": "WW0020 Virgin White visible at top"
+      },
+      "defects": ["Mid/upper stack may still read schematic vs site loft band"],
+      "action": "Kitchen hero OK: Latte-all, recessed pulls, black granite no waterfall, fridge extreme right, 3000K under-cabinet LED"
+    },
+    {
+      "file": "visuals/03_evening_material_lighting_detail_schemeB.png",
+      "verdict": "PASS",
+      "palette": {
+        "walls_intent": "NN9088 Ecru Tint under 3000K LED (evening values darker but undertone warm ecru)",
+        "ceiling_intent": "WW0020 — limited ceiling crop; soffit/ambient reads warm virgin white family"
+      },
+      "defects": ["Ceiling barely in frame — virgin-white intent inferred from warm off-white soffit/ambient"],
+      "action": "Optional evening detail OK: 80236 + Latte + horizontal granite junction; recessed pulls; no feature wall"
+    },
+    {
+      "file": "visuals/04_bedroom_wardrobe_three_door_plywood_schemeB.png",
+      "verdict": "PASS",
+      "palette": {
+        "walls_intent": "NN9088 Ecru Tint",
+        "ceiling_intent": "WW0020 Virgin White"
+      },
+      "defects": [
+        "Wardrobe face may optically read as extra vertical divisions under lamp light; recessed pulls + plywood present — prefer 06 hero for clearest 3-door read"
+      ],
+      "action": "Bedroom plywood wide view OK for Scheme B paint pair; 3000K bedside lamp; non-blocking residual on leaf clarity"
+    },
+    {
+      "file": "visuals/05_wardrobe_aluminium_fluted_glass_schemeB.png",
+      "verdict": "PASS",
+      "palette": {
+        "walls_intent": "NN9088 Ecru Tint",
+        "ceiling_intent": "WW0020 Virgin White (thin top edge)"
+      },
+      "defects": [],
+      "action": "Option A hero OK: aluminium + fluted glass, three doors single+double, warm 3000K interior glow, Scheme B walls/ceiling"
+    },
+    {
+      "file": "visuals/06_wardrobe_plywood_three_door_schemeB.png",
+      "verdict": "PASS",
+      "palette": {
+        "walls_intent": "NN9088 Ecru Tint",
+        "ceiling_intent": "WW0020 Virgin White"
+      },
+      "defects": [],
+      "action": "Option B plywood hero OK: clear 3 doors single L + double R, recessed pulls, Scheme B paint pair confirmed"
+    }
+  ],
+  "summary": {
+    "pass": 6,
+    "fail": 0,
+    "required_set": [
+      "01_living_social_zone_daylight_schemeB.png",
+      "02_kitchen_granite_latte_shutters_schemeB.png",
+      "04_bedroom_wardrobe_three_door_plywood_schemeB.png",
+      "05_wardrobe_aluminium_fluted_glass_schemeB.png",
+      "06_wardrobe_plywood_three_door_schemeB.png"
+    ],
+    "optional_included": [
+      "03_evening_material_lighting_detail_schemeB.png"
+    ],
+    "palette_confirmation": "All six Scheme B frames read lighter warm ecru walls (NN9088 intent) vs Scheme A mid greige; ceilings read soft warm Virgin White (WW0020 #EDE9E2 intent), not cool pure white.",
+    "residuals": [
+      "04 leaf-division clarity weaker than 06 — non-blocking",
+      "03 evening crop has minimal ceiling area",
+      "Screen RGB under mixed lighting is not shade-card proof; approve NN9088 + WW0020 chips on site"
+    ],
+    "deploy": "complete — do not block"
+  }
+}

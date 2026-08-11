@@ -7,6 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="01_living_social_zone_daylight_schemeB.png" />
+  <link rel="preload" as="image" href="01b_living_from_tv_toward_sofa_schemeB.png" />
+  <link rel="preload" as="image" href="01c_living_side_across_social_schemeB.png" />
+  <link rel="preload" as="image" href="02_kitchen_granite_latte_shutters_schemeB.png" />
+  <link rel="preload" as="image" href="02b_kitchen_from_fridge_along_run_schemeB.png" />
+  <link rel="preload" as="image" href="02c_kitchen_loft_shelf_band_detail_schemeB.png" />
+  <link rel="preload" as="image" href="03_evening_material_lighting_detail_schemeB.png" />
+  <link rel="preload" as="image" href="04_bedroom_wardrobe_three_door_plywood_schemeB.png" />
+  <link rel="preload" as="image" href="04b_bedroom_from_wardrobe_toward_bed_schemeB.png" />
+  <link rel="preload" as="image" href="04c_wardrobe_three_door_detail_schemeB.png" />
+  <link rel="preload" as="image" href="05_wardrobe_aluminium_fluted_glass_schemeB.png" />
+  <link rel="preload" as="image" href="06_wardrobe_plywood_three_door_schemeB.png" />
   <style>
     :root,
     [data-paint-scheme="a"] {
@@ -675,12 +687,12 @@
         <div class="panel">
           <p style="margin-top:0"><strong>Files in this folder</strong></p>
           <ul style="padding-left:1.1rem; color:var(--muted); font-size:0.92rem;">
-            <li>01 / 01b / 01c living three-view (+ <code>*_schemeB.png</code> when ready)</li>
-            <li>02 / 02b / 02c kitchen three-view (recessed)</li>
-            <li>03 evening junction</li>
-            <li>04 / 04b / 04c bedroom plywood 3-door set</li>
-            <li><strong>05</strong> Option A aluminium fluted glass</li>
-            <li><strong>06</strong> Option B plywood three-door hero</li>
+            <li>01 / 01b / 01c living three-view (+ matching <code>*_schemeB.png</code>)</li>
+            <li>02 / 02b / 02c kitchen three-view (recessed) (+ <code>*_schemeB.png</code>)</li>
+            <li>03 evening junction (+ <code>*_schemeB.png</code>)</li>
+            <li>04 / 04b / 04c bedroom plywood 3-door set (+ <code>*_schemeB.png</code>)</li>
+            <li><strong>05</strong> Option A aluminium fluted glass (+ <code>*_schemeB.png</code>)</li>
+            <li><strong>06</strong> Option B plywood three-door hero (+ <code>*_schemeB.png</code>)</li>
             <li>floor_plan / axonometric / palette + palette_schemeB SVGs</li>
             <li>index.html &#183; VISUAL_PROMPTS.md</li>
           </ul>
@@ -740,14 +752,40 @@
       const livingLede = document.querySelector('[data-room-lede="living"]');
       const schemeImages = Array.from(document.querySelectorAll("img[data-scheme-src]"));
 
+      /* Explicit Scheme B gallery map — basename of Scheme A src → Scheme B file.
+         Keep in sync with docs/ + visuals/ *_schemeB.png assets. */
+      const SCHEME_B_BY_A = {
+        "01_living_social_zone_daylight.png": "01_living_social_zone_daylight_schemeB.png",
+        "01b_living_from_tv_toward_sofa.png": "01b_living_from_tv_toward_sofa_schemeB.png",
+        "01c_living_side_across_social.png": "01c_living_side_across_social_schemeB.png",
+        "02_kitchen_granite_latte_shutters.png": "02_kitchen_granite_latte_shutters_schemeB.png",
+        "02b_kitchen_from_fridge_along_run.png": "02b_kitchen_from_fridge_along_run_schemeB.png",
+        "02c_kitchen_loft_shelf_band_detail.png": "02c_kitchen_loft_shelf_band_detail_schemeB.png",
+        "03_evening_material_lighting_detail.png": "03_evening_material_lighting_detail_schemeB.png",
+        "04_bedroom_wardrobe_three_door_plywood.png": "04_bedroom_wardrobe_three_door_plywood_schemeB.png",
+        "04b_bedroom_from_wardrobe_toward_bed.png": "04b_bedroom_from_wardrobe_toward_bed_schemeB.png",
+        "04c_wardrobe_three_door_detail.png": "04c_wardrobe_three_door_detail_schemeB.png",
+        "05_wardrobe_aluminium_fluted_glass.png": "05_wardrobe_aluminium_fluted_glass_schemeB.png",
+        "06_wardrobe_plywood_three_door.png": "06_wardrobe_plywood_three_door_schemeB.png"
+      };
+
+      const schemeBAvailability = Object.create(null);
+
+      function basename(path) {
+        return String(path || "").split("/").pop();
+      }
+
+      function toSchemeBPath(src) {
+        const name = basename(src);
+        if (SCHEME_B_BY_A[name]) return SCHEME_B_BY_A[name];
+        return src.replace(/(\.[a-zA-Z0-9]+)$/, "_schemeB$1");
+      }
+
       schemeImages.forEach((img) => {
         if (!img.dataset.srcA) img.dataset.srcA = img.getAttribute("src");
         img.dataset.srcB = toSchemeBPath(img.dataset.srcA);
+        img.dataset.hasSchemeB = SCHEME_B_BY_A[basename(img.dataset.srcA)] ? "1" : "0";
       });
-
-      function toSchemeBPath(src) {
-        return src.replace(/(\.[a-zA-Z0-9]+)$/, "_schemeB$1");
-      }
 
       function resolveInitialScheme() {
         const hash = (location.hash || "").replace(/^#/, "").toLowerCase();
@@ -785,9 +823,19 @@
 
       function probeImage(url) {
         return new Promise((resolve) => {
+          if (Object.prototype.hasOwnProperty.call(schemeBAvailability, url)) {
+            resolve(schemeBAvailability[url]);
+            return;
+          }
           const probe = new Image();
-          probe.onload = () => resolve(true);
-          probe.onerror = () => resolve(false);
+          probe.onload = () => {
+            schemeBAvailability[url] = true;
+            resolve(true);
+          };
+          probe.onerror = () => {
+            schemeBAvailability[url] = false;
+            resolve(false);
+          };
           probe.src = url;
         });
       }
@@ -797,6 +845,15 @@
         if (!badge) return;
         badge.hidden = !show;
         badge.classList.toggle("is-visible", show);
+      }
+
+      async function preloadSchemeBAssets() {
+        const urls = Array.from(new Set(
+          schemeImages
+            .filter((img) => img.dataset.hasSchemeB === "1")
+            .map((img) => img.dataset.srcB)
+        ));
+        await Promise.all(urls.map((url) => probeImage(url)));
       }
 
       async function applyImageSources(scheme) {
@@ -811,6 +868,14 @@
               img.style.opacity = "0.55";
               img.setAttribute("src", img.dataset.srcA);
             }
+            return;
+          }
+          /* No mapped Scheme B asset → keep A, never show pending */
+          if (img.dataset.hasSchemeB !== "1") {
+            if (img.getAttribute("src") !== img.dataset.srcA) {
+              img.setAttribute("src", img.dataset.srcA);
+            }
+            img.style.opacity = "1";
             return;
           }
           const ok = await probeImage(img.dataset.srcB);
@@ -831,7 +896,7 @@
 
         if (heroImg) {
           const heroUrl =
-            useB && heroImg.dataset.fallbackUsed !== "1"
+            useB && heroImg.dataset.fallbackUsed !== "1" && heroImg.dataset.hasSchemeB === "1"
               ? heroImg.dataset.srcB
               : heroImg.dataset.srcA;
           document.documentElement.style.setProperty("--hero-image", 'url("' + heroUrl + '")');
@@ -939,7 +1004,9 @@
         });
       });
 
-      applyScheme(resolveInitialScheme(), { persist: true, updateHash: true });
+      preloadSchemeBAssets().then(() => {
+        applyScheme(resolveInitialScheme(), { persist: true, updateHash: true });
+      });
     })();
   </script>
 </body>
