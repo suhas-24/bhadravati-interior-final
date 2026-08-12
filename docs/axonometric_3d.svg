@@ -12,7 +12,7 @@
     .wallE { fill: #A89F90; stroke: #6E655B; stroke-width: 0.7; }
     .ceil { fill: #EEEDE9; stroke: #B5AB9C; stroke-width: 0.5; opacity: 0.5; }
     .latte { fill: #C8B9A4; stroke: #7A6F62; stroke-width: 0.6; }
-    .oak { fill: #A39178; stroke: #5C5348; stroke-width: 0.6; }
+    .oak { fill: #3D483C; stroke: #5C5348; stroke-width: 0.6; }
     .slate { fill: #4E4C49; stroke: #2A2927; stroke-width: 0.6; }
     .gran { fill: #1C1C1C; stroke: #0A0A0A; stroke-width: 0.6; }
     .textile { fill: #C4B5A0; stroke: #8A7A68; stroke-width: 0.6; }
@@ -88,7 +88,7 @@
   <rect x="12" y="54" width="14" height="10" fill="#EEEDE9" stroke="#B5AB9C"/><text x="34" y="63" class="s" font-size="10">WW0005 ceiling</text>
   <rect x="12" y="72" width="14" height="10" fill="#C8B9A4"/><text x="34" y="81" class="s" font-size="10">S1241 Latte kitchen</text>
   <rect x="12" y="90" width="14" height="10" fill="#1C1C1C"/><text x="34" y="99" class="s" font-size="10">Black granite retain</text>
-  <rect x="12" y="108" width="14" height="10" fill="#A39178"/><text x="34" y="117" class="s" font-size="10">84689 Idria Oak</text>
+  <rect x="12" y="108" width="14" height="10" fill="#3D483C"/><text x="34" y="117" class="s" font-size="10">84689 Idria Oak</text>
   <rect x="12" y="126" width="14" height="10" fill="#4E4C49"/><text x="34" y="135" class="s" font-size="10">80236 TV only</text>
   <text x="12" y="158" class="s" font-size="10">Hardware: brushed SS</text>
   <text x="12" y="174" class="s" font-size="10">Lighting: 3000 K</text>

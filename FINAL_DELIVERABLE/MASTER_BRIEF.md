@@ -86,7 +86,7 @@ Arithmetic PASS for module width. **Granite thickness conflict** on drawing (1.5
 | Ceiling | **WW0005 White Linen** | `#EEEDE9` | Matt |
 | Kitchen all shutters | Century **S1241 MT Latte** | ?`#C8B9A4` | Matte; one code only |
 | TV cabinet | **80236 DW Slate Grey** (or Latte) | ?`#4E4C49` | Controlled accent |
-| Wardrobe | **84689 SU Idria Oak** (backup **84687 Lyon**) | ?`#A39178` | Soft woodgrain |
+| Wardrobe | **84689 SU Idria Oak** (backup **84687 Lyon**) | ?`#3D483C` | Soft woodgrain |
 | Optional accent | **GG7140** / **GG7162** | `#9CAE91` / `#B9CEA4` | One small wall max |
 | Edge | E3 ABS matched | — | Kitchen **2 mm**, wardrobe **1 mm** |
 | Hardware | Brushed stainless **recessed** pulls (J-pull / finger-pull) | — | Kitchen + wardrobe; soft-close branded; no projecting bar handles |

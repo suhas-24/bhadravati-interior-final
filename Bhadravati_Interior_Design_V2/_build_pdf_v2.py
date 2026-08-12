@@ -45,7 +45,7 @@ NN9074 = HexColor("#B5AB9C")
 WW0005 = HexColor("#EEEDE9")
 LATTE = HexColor("#C8B9A4")
 SLATE = HexColor("#4E4C49")
-IDRIA = HexColor("#A39178")
+IDRIA = HexColor("#3D483C")
 INK = HexColor("#2C2A26")
 MUTED = HexColor("#5C574F")
 RULE = HexColor("#D4CEC4")
@@ -332,7 +332,7 @@ def build():
         ("WW0005", "A ceiling", "#EEEDE9"),
         ("NN9088", "B walls alt", "#E9E3D9"),
         ("S1241", "Latte MT", "#C8B9A4"),
-        ("84689", "Idria Oak SU", "#A39178"),
+        ("84689", "Idria Oak SU", "#3D483C"),
         ("80236", "Slate DW", "#4E4C49"),
     ]
     cells = []
@@ -378,9 +378,74 @@ def build():
         story.append(Spacer(1, 2 * mm))
         story.append(fit_image(pal_img, content_w, 95 * mm))
         story.append(Paragraph(
-            "Visual palette board V2 — Scheme A locks (NN9074 / WW0005 / S1241 Latte / Idria); do-not-use rules on board",
+            "Visual palette board V2 — Scheme A locks (NN9074 / WW0005 / S1241 Latte / Idria); do-not-use rules on board. "
+            "Idria chip sampled from CenturyPly European Grey product image (not taupe).",
             caption,
         ))
+    story.append(PageBreak())
+
+    # ——— PLYWOOD + HARDWARE (from PLYWOOD_HARDWARE_RECOMMENDATION.md §10) ———
+    story.append(Paragraph("Boards & hardware (annotated lock)", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=6))
+    story.append(Paragraph(
+        "From <b>PLYWOOD_HARDWARE_RECOMMENDATION.md</b>. Kitchen = shutters-only on existing black granite. "
+        "Wardrobe = full niche carcass + three hinged Idria leaves. Split the board spec — do not buy one core for the whole house.",
+        body,
+    ))
+    story.append(Paragraph("Core boards", h2))
+    board_rows = [
+        [Paragraph("<b>Location</b>", cell_b), Paragraph("<b>Primary</b>", cell_b), Paragraph("<b>Alternate / note</b>", cell_b)],
+        [Paragraph("Kitchen shutters (S1241 MT Latte 0.8 mm · 2 mm E3 ABS · 3000 K)", cell),
+         Paragraph("<b>Action Tesa Boilo 18 mm</b>", cell),
+         Paragraph("<b>Century Club Prime 18/19 mm</b> if shop will not edge HDF. Laminate <b>both faces</b>. "
+                   "<b>Do NOT</b> default kitchen doors to Sainik 710 (official page = IS 303 BWP, not marine IS 710; "
+                   "alternate-core cups = hinge tear-out risk).", cell)],
+        [Paragraph("Wardrobe carcass + 3 Idria leaves (54×90×19.20 in · 1 mm E3 ABS)", cell),
+         Paragraph("<b>Century Sainik 710 18 mm BWP</b> — QR-scan every sheet", cell),
+         Paragraph("<b>HDHMR 18 mm</b> calibrated alternate. <b>Boilo too heavy</b> for 90 in doors. "
+                   "Never MR, particle board, MDF, or unbranded “710”.", cell)],
+    ]
+    bt = Table(board_rows, colWidths=[48 * mm, 55 * mm, 67 * mm])
+    bt.setStyle(tbl_style(SLATE, header_white=True))
+    story.append(bt)
+    story.append(Spacer(1, 3 * mm))
+    story.append(Paragraph("Hardware schedule (named series)", h2))
+    hw_rows = [
+        [Paragraph("<b>Item</b>", cell_b), Paragraph("<b>Spec</b>", cell_b), Paragraph("<b>Lock</b>", cell_b)],
+        [Paragraph("Pulls", cell),
+         Paragraph("Brushed stainless <b>recessed</b> only (J / finger / recessed)", cell),
+         Paragraph("<b>LOCKED</b> — no bars / brass / black", cell)],
+        [Paragraph("Hinges", cell),
+         Paragraph("<b>Hettich Sensys 8645i</b> 110° integrated soft-close; <b>5 per</b> tall wardrobe leaf", cell),
+         Paragraph("Kitchen + wardrobe; not Onsys / clip-on dampers", cell)],
+        [Paragraph("Channels (if drawers)", cell),
+         Paragraph("<b>Hettich KA 5632</b> (45 kg) or <b>KA 4732</b> Silent System (35 kg)", cell),
+         Paragraph("Only if drawers exist", cell)],
+        [Paragraph("Wardrobe lock", cell),
+         Paragraph("<b>Godrej Curvo 8010</b> (25 mm); 8011 if finished stack thicker", cell),
+         Paragraph("SS cover", cell)],
+        [Paragraph("Hanging rail", cell),
+         Paragraph("Oval <b>30×15 mm</b> + mid-support (Hettich SL 322 / Ebco WRF class)", cell),
+         Paragraph("Required at ~centre of 54 in", cell)],
+        [Paragraph("Screws", cell),
+         Paragraph("<b>SS304</b> in kitchen / wet-risk; Hettich-supplied hinge screws", cell),
+         Paragraph("Predrill cups", cell)],
+        [Paragraph("Edges", cell),
+         Paragraph("E3 ABS matched · <b>2 mm kitchen / 1 mm wardrobe</b>", cell),
+         Paragraph("Seal every edge; matt", cell)],
+    ]
+    ht = Table(hw_rows, colWidths=[32 * mm, 90 * mm, 48 * mm])
+    ht.setStyle(tbl_style(IDRIA, header_white=True))
+    story.append(ht)
+    story.append(Spacer(1, 2 * mm))
+    story.append(Paragraph(
+        "<b>Executive lock:</b> Kitchen shutters → Boilo 18 mm (or Club Prime 18/19 mm). "
+        "Wardrobe → Sainik 710 18 mm BWP QR-verified (HDHMR 18 mm alternate; not Boilo). "
+        "Hettich Sensys 8645i · KA 5632/4732 if drawers · Godrej Curvo 8010 · oval 30×15 mm rail with mid-support · "
+        "SS304 kitchen · recessed SS pulls only · seal every edge · laminate both faces of kitchen shutters. "
+        "Full evidence + procurement checklist: PLYWOOD_HARDWARE_RECOMMENDATION.md.",
+        body,
+    ))
     story.append(PageBreak())
 
     # ——— WELLNESS / LIGHTING / ACOUSTICS / SYSTEMS / CODES ———

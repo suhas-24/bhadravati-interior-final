@@ -27,9 +27,9 @@
     </pattern>
     <!-- 84689 European grey oak — muted grain, not orange oak -->
     <pattern id="oakGrain" width="9" height="48" patternUnits="userSpaceOnUse">
-      <rect width="9" height="48" fill="#A39178"/>
-      <path d="M2 0 C3.2 12 1.2 24 2.4 48 M6 0 C7 14 5 28 6.2 48" stroke="#8F7C64" stroke-width="0.65" fill="none" opacity="0.5"/>
-      <path d="M4.5 0 C5 10 4 22 4.8 48" stroke="#B5A48C" stroke-width="0.4" fill="none" opacity="0.35"/>
+      <rect width="9" height="48" fill="#3D483C"/>
+      <path d="M2 0 C3.2 12 1.2 24 2.4 48 M6 0 C7 14 5 28 6.2 48" stroke="#2F3830" stroke-width="0.65" fill="none" opacity="0.5"/>
+      <path d="M4.5 0 C5 10 4 22 4.8 48" stroke="#5A6558" stroke-width="0.4" fill="none" opacity="0.35"/>
     </pattern>
     <!-- 80236 DW Slate Grey — dyed woodgrain, TV only -->
     <pattern id="slateGrain" width="11" height="42" patternUnits="userSpaceOnUse">
@@ -101,7 +101,7 @@
     <text x="14" y="232" class="l" font-size="13">Wardrobe · 4 leaves</text>
     <text x="14" y="252" class="code" font-size="12">84689 SU Idria Oak</text>
     <text x="14" y="270" class="s" font-size="11">European grey oak</text>
-    <text x="14" y="286" class="code" font-size="10">#A39178 · visual approx</text>
+    <text x="14" y="286" class="code" font-size="10">#3D483C · visual approx</text>
     <text x="14" y="302" class="s" font-size="10">Soft woodgrain · SU matte</text>
   </g>
 
@@ -141,7 +141,7 @@
 
   <g transform="translate(284,476)">
     <rect width="220" height="100" fill="#D8CFC2"/>
-    <rect x="0" y="0" width="8" height="100" fill="#A39178"/>
+    <rect x="0" y="0" width="8" height="100" fill="#3D483C"/>
     <rect x="212" y="0" width="8" height="100" fill="#C8B9A4"/>
     <rect y="100" width="220" height="52" fill="#FBF8F3"/>
     <text x="18" y="120" class="l" font-size="12">Edge band</text>

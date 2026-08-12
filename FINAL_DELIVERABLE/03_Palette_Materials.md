@@ -15,7 +15,7 @@
 | **Kitchen backup laminate** | **S1173 MT Cloud Grey** | ?`#B8B6B0` (visual approx) | Only if Latte sample fails beside granite |
 | **TV cabinet (controlled)** | Century **80236 DW Slate Grey** | ?`#4E4C49` (visual approx) | Low accent only; do **not** use broadly in kitchen |
 | **TV cabinet alt (lighter scheme)** | S1241 MT Latte | same as kitchen | If slate reads too heavy |
-| **Wardrobe shutters** | Century **84689 SU Idria Oak** | ?`#A39178` (visual approx) | Preferred wood |
+| **Wardrobe shutters** | Century **84689 SU Idria Oak** | ?`#3D483C` (visual approx) | Preferred wood |
 | **Wardrobe backup** | **84687 SU Lyon Oak** | ?`#9A8A72` (visual approx) | Backup only |
 | **Optional accent (1 wall max)** | **GG7140 Tender Buds** or **GG7162 Old Olive Trees** | `#9CAE91` / `#B9CEA4` | Bedroom small wall or omit |
 | **Study optional accent** | **BB5146 Old Novel** or **BG6116 Songs from the Valley** | `#90B1C3` / `#8BA6A3` | One controlled surface if colour desired |

@@ -53,7 +53,26 @@ Archived as: `source/century_84689_idria_oak_website_2026-08-12.png`
 | `SOURCE_OF_TRUTH.md` / `CONTRADICTIONS.md` C-07 / `REVIEW.md` | Website + catalogue cited |
 | Wrong labels scanned | No remaining Skagen / 84688-as-Idria / 84687-as-preferred / missing Oak on locks |
 
-**PDF rebuild:** Not required — labels already correct. PDF remains openable (19 pages).
+**PDF rebuild (pass 2):** Not required for labels — commercial name/code/finish already correct.
+
+---
+
+## Pass 3 — visual sample correction (2026-08-12)
+
+**Finding:** SKU / commercial name were correct, but the **on-screen chip appearance was wrong**. Palette board + site swatches used a mid brownish-taupe / Latte-adjacent grain (`#A39178`) that does **not** match Century Idria Oak.
+
+**Correct look (Century evidence):** Woodgrains | European Grey — darker muted olive / grey-green fine vertical woodgrain.
+
+| Before | After |
+|---|---|
+| Mid taupe-brown synthetic grain · `#A39178` | Century website/catalogue grain sample · screen approx `#3D483C` |
+
+**Actions:**
+- Extracted grain tile from `source/century_84689_idria_oak_website_2026-08-12.png` → `source/century_84689_idria_oak_grain_tile.png`
+- Rebuilt `assets/01_visual_palette_board_v2.png` Idria chip + hex label
+- Recolored `assets/04_wardrobe_elevation_overlay_v2.png` door faces toward Idria grain
+- Updated tokens / SVG fills / GitHub Pages site (`docs/index.html` + `swatch_84689_idria_oak.png`)
+- Rebuilt client PDF via `_build_pdf_v2.py`
 
 ---
 

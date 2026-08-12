@@ -1,8 +1,8 @@
-# Bhadravati Home — Interior Design Package Version 2
+# Bhadravati Home ï¿½ Interior Design Package Version 2
 
-**Role:** Lead Interior Design — client design-control handoff  
+**Role:** Lead Interior Design ï¿½ client design-control handoff  
 **Location:** First-floor studio, Bhadravati, Karnataka  
-**Concept (locked):** Warm Contemporary Minimalism — climate-resilient  
+**Concept (locked):** Warm Contemporary Minimalism ï¿½ climate-resilient  
 **Version:** **V2** (supersedes `FINAL_DELIVERABLE/Bhadravati_FINAL_Interior_Design.pdf` / FINAL_v1)  
 **Status:** Design control only. **Not fabrication-approved** until signed site measure + physical sample approval.
 
@@ -12,7 +12,7 @@ Sources of truth (in priority order): signed site measure (when complete) ? `int
 
 ## 1. Design direction
 
-The home must feel calm, practical, and locally believable — not a pale showroom and not textbook Japandi. Architecture and circulation come before styling.
+The home must feel calm, practical, and locally believable ï¿½ not a pale showroom and not textbook Japandi. Architecture and circulation come before styling.
 
 **Problems solved:** dust/smoke visibility; hard-water streaking; monsoon humidity at wet joinery; glare under strong daylight; repairability; prior visual QA failures (wrong openings, flipped kitchen, invented cabinetry, false gloss, unsafe clearances, climate-mismatched props).
 
@@ -20,7 +20,7 @@ The home must feel calm, practical, and locally believable — not a pale showroom
 
 1. Existing **black granite** kitchen remains; scope = **shutters only**.
 2. Kitchen base + drawers + loft = **Century S1241 MT Latte** only.
-3. Hardware = **brushed stainless recessed** pulls (J-pull / finger-pull) — no projecting bar handles.
+3. Hardware = **brushed stainless recessed** pulls (J-pull / finger-pull) ï¿½ no projecting bar handles.
 4. Lighting baseline = **3000 K** warm-neutral; finishes = **matte / low-sheen**.
 5. Wardrobe = **3 doors** (1 single L + 1 double R), leaf widths **457 / 457 / 458 mm** inside clear **1372 mm** (not four leaves; not two oversized slabs).
 6. No TV feature wall, island, L-kitchen flip, gold strips, slatted Japandi props, or gloss/sparkle laminates.
@@ -29,15 +29,15 @@ The home must feel calm, practical, and locally believable — not a pale showroom
 
 | Concept | Decision |
 |---|---|
-| **A — Warm Contemporary Minimalism** (NN9074 + Latte + Idria) | **FINAL / V2 locked** |
-| B — Textbook Japandi | Reject as governing style |
-| C — Dual-tone kitchen / lighter walls as default | Reject |
+| **A ï¿½ Warm Contemporary Minimalism** (NN9074 + Latte + Idria) | **FINAL / V2 locked** |
+| B ï¿½ Textbook Japandi | Reject as governing style |
+| C ï¿½ Dual-tone kitchen / lighter walls as default | Reject |
 
 ---
 
 ## 2. Zoning and furniture layout
 
-**Studio relationship (plan evidence only):** ? **21 × 18 ft (6401 × 5486 mm)** · ~378 sq ft. Relational only — not a cut sheet.
+**Studio relationship (plan evidence only):** ? **21 ï¿½ 18 ft (6401 ï¿½ 5486 mm)** ï¿½ ~378 sq ft. Relational only ï¿½ not a cut sheet.
 
 | Zone | Position | Intent |
 |---|---|---|
@@ -45,12 +45,12 @@ The home must feel calm, practical, and locally believable — not a pale showroom
 | Living | S-centre | 3-seat sofa, round coffee table, floating TV cabinet |
 | Kitchen | SE | Single-wall granite module; fridge extreme right |
 | Bathroom | NW | Open shower retained; basin outside shower |
-| Wardrobe | N-centre | 54 × 90 × 19.20 in niche; **3 doors** |
-| Study | NE | Desk at large window; 2–3 shallow shelves max |
+| Wardrobe | N-centre | 54 ï¿½ 90 ï¿½ 19.20 in niche; **3 doors** |
+| Study | NE | Desk at large window; 2ï¿½3 shallow shelves max |
 
-**Circulation:** primary **900–1200 mm**; secondary **600–900 mm**; sofa–coffee **450–500 mm**; bed sides ?**600 mm** where possible; wardrobe standing clear ?**600 mm** (prefer 900 if primary aisle).
+**Circulation:** primary **900ï¿½1200 mm**; secondary **600ï¿½900 mm**; sofaï¿½coffee **450ï¿½500 mm**; bed sides ?**600 mm** where possible; wardrobe standing clear ?**600 mm** (prefer 900 if primary aisle).
 
-### Kitchen register (K-01) — labelled clear openings
+### Kitchen register (K-01) ï¿½ labelled clear openings
 
 | Item | in | mm |
 |---|---:|---:|
@@ -63,19 +63,19 @@ The home must feel calm, practical, and locally believable — not a pale showroom
 | Internal counter depth | 19.20 | 488 |
 | B1 / B2 / B3 clear | 48 / 36 / 18 | 1219 / 914 / 457 |
 
-Arithmetic PASS for module width. **Granite thickness conflict** on drawing (1.50 in vs 15 mm) — measure stone on site.
+Arithmetic PASS for module width. **Granite thickness conflict** on drawing (1.50 in vs 15 mm) ï¿½ measure stone on site.
 
 ### Wardrobe register (W-01)
 
 | Item | in | mm |
 |---|---:|---:|
-| Clear W × H × D | 54 × 90 × 19.20 | 1372 × 2286 × 488 |
+| Clear W ï¿½ H ï¿½ D | 54 ï¿½ 90 ï¿½ 19.20 | 1372 ï¿½ 2286 ï¿½ 488 |
 | Left / partition / right | 21 / 0.59 / 32.41 | 533 / 15 / 823 |
 | Three vertical leaves | 1 single + 1 double | **457 / 457 / 458** |
-| Left openings T?B | 12 + 4×19.5 | 305 + 4×495 |
+| Left openings T?B | 12 + 4ï¿½19.5 | 305 + 4ï¿½495 |
 | Right stack | 12 / 39 hang / 9.5 / 12 / 17.5 | 305 / 991 / 241 / 305 / 445 |
 
-Face options: **A** aluminium frame + fluted glass · **B** plywood / Idria Oak face. Recessed pulls only.
+Face options: **A** aluminium frame + fluted glass ï¿½ **B** plywood / Idria Oak face. Recessed pulls only.
 
 ---
 
@@ -89,13 +89,13 @@ Face options: **A** aluminium frame + fluted glass · **B** plywood / Idria Oak f
 | Scheme B ceiling | Birla Opus **WW0020** Virgin White | `#EDE9E2` | Cleaner warm white |
 | Kitchen all shutters | Century **S1241 MT Latte** | `#C8B9A4` | One code only |
 | TV cabinet | **80236 DW Slate Grey** (or Latte) | `#4E4C49` | Controlled accent |
-| Wardrobe | **84689 SU Idria Oak** (backup **84687 Lyon**) | `#A39178` | Soft woodgrain |
+| Wardrobe | **84689 SU Idria Oak** (backup **84687 Lyon**) | `#3D483C` | Soft woodgrain |
 | Optional accent | **GG7140** / **GG7162** | `#9CAE91` / `#B9CEA4` | One small wall max |
-| Edge | E3 ABS matched | — | Kitchen **2 mm**, wardrobe **1 mm** |
-| Hardware | Brushed stainless **recessed** | — | Kitchen + wardrobe |
-| Counter | Existing black granite | — | Retain; not quartz |
+| Edge | E3 ABS matched | ï¿½ | Kitchen **2 mm**, wardrobe **1 mm** |
+| Hardware | Brushed stainless **recessed** | ï¿½ | Kitchen + wardrobe |
+| Counter | Existing black granite | ï¿½ | Retain; not quartz |
 
-**Boards:** kitchen base 18 mm BWP at wet/hinge stress; loft 16–18 mm HDHMR if sealed; wardrobe 18 mm HDHMR/BWP; SS304 in wet risk; PUR only if machine-proven.
+**Boards:** kitchen base 18 mm BWP at wet/hinge stress; loft 16ï¿½18 mm HDHMR if sealed; wardrobe 18 mm HDHMR/BWP; SS304 in wet risk; PUR only if machine-proven.
 
 Hex/RGB are screen references. Approve physical samples beside granite under morning / afternoon / 3000 K light.
 
@@ -105,10 +105,10 @@ Hex/RGB are screen references. Approve physical samples beside granite under mor
 
 | Layer | Direction |
 |---|---|
-| CCT | **3000 K** living; bedroom lamps **2700–3000 K** |
+| CCT | **3000 K** living; bedroom lamps **2700ï¿½3000 K** |
 | CRI | Prefer **?90** where colour of paint/laminate/food matters |
-| Ambient | Living 150–300 lux; bedroom 50–150 lux |
-| Task | Kitchen worktop 300–750 lux (under-loft linear); study/reading 300–500 lux |
+| Ambient | Living 150ï¿½300 lux; bedroom 50ï¿½150 lux |
+| Task | Kitchen worktop 300ï¿½750 lux (under-loft linear); study/reading 300ï¿½500 lux |
 | Accent | Minimal; no decorative cove glitter |
 | Daylight | Preserve openings; sheers + practical curtains for glare/heat |
 | Controls | Separate zones + dimming on living/bedroom |
@@ -118,9 +118,9 @@ Hex/RGB are screen references. Approve physical samples beside granite under mor
 ## 5. Furniture and decor (summary)
 
 - **Kitchen:** shutter set only; no island/new carcass; fridge extreme right.
-- **Living:** wipeable taupe sofa ~2100–2200 mm; Ø700–800 coffee table; floating TV cabinet 1400–1800 mm; low-pile rug; no TV wall cladding.
+- **Living:** wipeable taupe sofa ~2100ï¿½2200 mm; ï¿½700ï¿½800 coffee table; floating TV cabinet 1400ï¿½1800 mm; low-pile rug; no TV wall cladding.
 - **Bedroom:** queen bed; two closed nightstands; two warm lamps; optional GG7140 one wall.
-- **Study:** 1200–1500 mm desk; mesh chair; task lamp; 2–3 shallow shelves max.
+- **Study:** 1200ï¿½1500 mm desk; mesh chair; task lamp; 2ï¿½3 shallow shelves max.
 - **Wardrobe:** three leaves 457/457/458 mm; Options A/B; recessed pulls.
 - **Bathroom:** open shower retained; easy-clean; minimal closed storage.
 
@@ -132,7 +132,7 @@ Decor stays sparse and local-context appropriate.
 
 1. **Essential:** kitchen shutters + wardrobe three leaves + paint + matched edges/recessed hardware + kitchen task light.
 2. **Recommended (target):** + TV cabinet, ambient dimming, sofa/curtains/rugs, bedside & study lamps.
-3. **Premium:** proven PUR, upgraded boards/lighting, spare laminate kit — still no gloss/island/TV wall.
+3. **Premium:** proven PUR, upgraded boards/lighting, spare laminate kit ï¿½ still no gloss/island/TV wall.
 
 Phase 0 = measure + samples; Phase 1 = wet/storage core; Phase 2 = light + living; Phase 3 = sleep/work; Phase 4 = optional polish.
 
@@ -146,8 +146,8 @@ Dust/smoke, laterite dust, hard water, hot summers, monsoon humidity, strong day
 
 ## 8. Human factors notes
 
-- Counter height baseline ~787 mm (floor to counter top) — verify for primary users.
-- Wardrobe hanging bay ~991 mm clear — confirm reach for users.
+- Counter height baseline ~787 mm (floor to counter top) ï¿½ verify for primary users.
+- Wardrobe hanging bay ~991 mm clear ï¿½ confirm reach for users.
 - Keep primary aisles ?900 mm; avoid <450 mm as through routes.
 - Lever/recessed hardware preferred over projecting bars (safer + cleaner).
 - No accessibility certification claimed; adapt if mobility needs emerge.
@@ -158,7 +158,7 @@ Dust/smoke, laterite dust, hard water, hot summers, monsoon humidity, strong day
 
 **Open (site-measure only):** granite thickness conflict; all openings unverified; exact kitchen shutter overlay/leaf shop widths vs B1/B2/B3 clear; wardrobe overlay/inset/reveals/hinge sides.
 
-**Assumptions:** 21×18 ft is relational; K-01/W-01 are baseline until signed measure; fridge right / sink under window pending confirm; hex approx for laminates; no structural/electrical certification.
+**Assumptions:** 21ï¿½18 ft is relational; K-01/W-01 are baseline until signed measure; fridge right / sink under window pending confirm; hex approx for laminates; no structural/electrical certification.
 
 ---
 
@@ -172,7 +172,7 @@ Dust/smoke, laterite dust, hard water, hot summers, monsoon humidity, strong day
 
 ## V2 deltas vs V1 FINAL PDF
 
-- Corrected wardrobe language globally to **3-door / 457–457–458** (removed four-leaf drift in older chapter text).
+- Corrected wardrobe language globally to **3-door / 457ï¿½457ï¿½458** (removed four-leaf drift in older chapter text).
 - Expanded client PDF with lighting, FF&E schedule, budget phasing, climate/IEQ, bedroom three-view continuity, kitchen loft detail, evening material junction.
 - Added `PHASE_SKILL_LOG.md` and `REVIEW.md`.
 - Machine tokens bumped to `version: V2`.

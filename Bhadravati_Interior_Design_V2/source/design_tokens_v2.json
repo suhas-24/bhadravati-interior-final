@@ -163,7 +163,7 @@
         "thickness_mm": 0.8,
         "sheet_size": "8ft x 4ft",
         "category": "Woodgrains | European Grey",
-        "hex_approx": "#A39178",
+        "hex_approx": "#3D483C",
         "door_count": 3,
         "leaf_count": 3,
         "configuration": "single + double",
@@ -178,7 +178,14 @@
           457,
           457,
           458
-        ]
+        ],
+        "rgb_approx": [
+          61,
+          72,
+          60
+        ],
+        "undertone": "european_grey_olive_muted",
+        "visual_note": "Screen approx sampled from CenturyPly Idria Oak product image 2026-08-12 (European Grey woodgrain); not Latte/taupe."
       },
       "backup": {
         "code": "84687",

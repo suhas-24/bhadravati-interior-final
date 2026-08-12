@@ -58,7 +58,7 @@ All specialist locks complete. Dimensions never invented from photos.
 | NN9074 | `#B5AB9C` | PASS (Birla exact) |
 | WW0005 | `#EEEDE9` | PASS (Birla exact) |
 | S1241 MT Latte | `#C8B9A4` | PASS (approx) |
-| 84689 SU Idria | `#A39178` | PASS (approx) |
+| 84689 SU Idria | `#3D483C` | PASS (approx) |
 | 80236 DW Slate | `#4E4C49` | PASS (approx) |
 | Black granite retain | `~#1A1A1A` display | PASS |
 | Recessed brushed SS + E3 ABS + 3000 K | labelled | PASS |

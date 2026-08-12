@@ -31,7 +31,7 @@
       --ceil-code: "WW0005";
       --ceil-name: "White Linen";
       --latte: #C8B9A4;
-      --oak: #A39178;
+      --oak: #3D483C; /* Century Idria Oak European Grey screen approx */
       --slate: #4E4C49;
       --paper: #F7F3EC;
       --paper-deep: #EDE6DB;
@@ -62,7 +62,7 @@
       color: var(--ink);
       background:
         radial-gradient(1200px 600px at 10% -10%, var(--wall-glow), transparent 60%),
-        radial-gradient(900px 500px at 100% 0%, rgba(163,145,120,0.18), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(61,72,60,0.16), transparent 55%),
         linear-gradient(180deg, #F4EFE7 0%, var(--paper) 40%, #F1EBE2 100%);
       line-height: 1.5;
       transition: background 0.45s cubic-bezier(0.16, 1, 0.3, 1);
@@ -306,6 +306,14 @@
     .swatch.on-dark span { background: rgba(28,28,28,0.75); color: #EEEDE9; }
     .swatch[data-role="wall"] { background: var(--wall); }
     .swatch[data-role="ceil"] { background: var(--ceil); }
+    .swatch.idria {
+      background-color: var(--oak);
+      background-image: url("swatch_84689_idria_oak.png");
+      background-size: cover;
+      background-position: center;
+      color: var(--ceil);
+    }
+    .swatch.idria span { background: rgba(28,28,28,0.75); color: #EEEDE9; }
     .gallery { display: grid; grid-template-columns: 1fr; gap: 1rem; }
     .gallery figure { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); }
     .gallery img {
@@ -374,8 +382,8 @@
       transition: opacity 0.3s ease;
     }
     .pending-badge.is-visible { opacity: 1; }
-    .panel { background: rgba(251,248,243,0.7); border: 1px solid var(--line); padding: 1rem; }
-    .panel.highlight { border-color: var(--accent); background: rgba(91,122,106,0.08); }
+    .panel { background: rgba(251,248,243,0.7); border: 1px solid var(--line); padding: 1rem; overflow: visible; white-space: normal; line-height: 1.45; }
+    .panel.highlight { border-color: var(--accent); background: rgba(91,122,106,0.08); overflow: visible; }
     .svg-frame { background: #fff; border: 1px solid var(--line); padding: 0.5rem; overflow: auto; }
     .svg-frame object, .svg-frame img, .svg-frame svg { width: 100%; height: auto; display: block; }
     .palette-board-a, .palette-board-b { display: none; }
@@ -476,6 +484,7 @@
         <a href="#plan">Floor plan</a>
         <a href="#axon">Axonometric</a>
         <a href="#palette">Palette</a>
+        <a href="#boards-hardware">Boards &amp; hardware</a>
         <a href="#notes">Design notes</a>
       </div>
     </nav>
@@ -490,12 +499,13 @@
           <div class="swatch" data-role="wall" id="swatch-wall"><span id="swatch-wall-label">NN9074 &#183; #B5AB9C</span></div>
           <div class="swatch" data-role="ceil" id="swatch-ceil"><span id="swatch-ceil-label">WW0005 &#183; #EEEDE9</span></div>
           <div class="swatch" style="background:#C8B9A4"><span>S1241 MT Latte</span></div>
-          <div class="swatch" style="background:#A39178"><span>84689 SU Idria</span></div>
+          <div class="swatch idria on-dark" style="background-color:#3D483C" title="84689 SU Idria Oak · European Grey"><span>84689 SU Idria Oak</span></div>
           <div class="swatch on-dark" style="background:#4E4C49"><span>80236 DW TV</span></div>
           <div class="swatch on-dark" style="background:#1A1A1A"><span>Black granite</span></div>
         </div>
         <div class="panel highlight">
-          <strong>Client lock:</strong> Wardrobe = <strong>3 doors</strong> (1 single L + 1 double R) &#183; leaf widths <strong>457 / 457 / 458&nbsp;mm</strong> (sum 1372) &#183; kitchen + wardrobe pulls = <strong>recessed only</strong> (no projecting bars) &#183; all kitchen shutters S1241 MT Latte &#183; granite retained (no waterfall) &#183; 3000&nbsp;K &#183; matte / low-sheen.
+          <strong>Client lock:</strong> Wardrobe = <strong>3 doors</strong> (1 single L + 1 double R) &#183; leaf widths <strong>457 / 457 / 458&nbsp;mm</strong> (sum 1372).<br />
+          Kitchen + wardrobe pulls = <strong>recessed only</strong> (no projecting bars) &#183; all kitchen shutters S1241 MT Latte &#183; granite retained (no waterfall) &#183; 3000&nbsp;K &#183; matte / low-sheen.
         </div>
       </div>
     </section>
@@ -656,6 +666,34 @@
         </div>
         <div class="svg-frame palette-board-b">
           <object data="palette_board_schemeB.svg" type="image/svg+xml" aria-label="Scheme B palette board SVG">Palette SVG Scheme B</object>
+        </div>
+      </div>
+    </section>
+
+    <section id="boards-hardware">
+      <div class="wrap">
+        <h2>Boards &amp; hardware</h2>
+        <p class="section-lede">Split lock from <code>PLYWOOD_HARDWARE_RECOMMENDATION.md</code>. Kitchen = shutters-only on existing granite. Wardrobe = carcass + three Idria leaves. Recessed brushed stainless pulls stay locked.</p>
+        <div class="panel highlight" style="margin-bottom:1.25rem">
+          <strong>Kitchen shutters</strong> (S1241 MT Latte 0.8&nbsp;mm · 2&nbsp;mm E3 ABS · 3000&nbsp;K):
+          <strong>Action Tesa Boilo 18&nbsp;mm</strong>, or <strong>Century Club Prime 18/19&nbsp;mm</strong> if the shop will not edge HDF.
+          Do <strong>not</strong> default kitchen doors to Sainik 710 — Century’s own page is IS&nbsp;303 BWP, not marine IS&nbsp;710; alternate-core cups are hinge-tear-out risk.
+          Laminate <strong>both faces</strong>; seal every edge.
+        </div>
+        <div class="panel" style="margin-bottom:1.25rem">
+          <strong>Wardrobe</strong> (54×90×19.20&nbsp;in · three Idria Oak leaves · 1&nbsp;mm E3 ABS):
+          <strong>Century Sainik 710 18&nbsp;mm BWP</strong>, every sheet QR-scanned.
+          <strong>HDHMR 18&nbsp;mm</strong> calibrated alternate. <strong>Boilo too heavy</strong> for 90&nbsp;in doors.
+          Never MR, particle board, MDF, or unbranded “710”.
+        </div>
+        <div class="panel">
+          <strong>Hardware:</strong>
+          Hettich <strong>Sensys 8645i</strong> 110° integrated soft-close (5 per tall wardrobe leaf) ·
+          Hettich <strong>KA 5632 / 4732</strong> if drawers exist ·
+          Godrej <strong>Curvo 8010</strong> lock ·
+          oval <strong>30×15&nbsp;mm</strong> rail with mid-support ·
+          <strong>SS304</strong> screws in kitchen ·
+          recessed brushed stainless pulls only.
         </div>
       </div>
     </section>

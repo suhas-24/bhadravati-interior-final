@@ -65,7 +65,7 @@ Package direction (Warm Contemporary Minimalism, Concept A tokens) was correct, 
 4. Corrected **`axonometric_3d.svg`** fridge placement note/geometry.  
 5. Encoding cleanup across markdown, HTML, SVGs ? UTF-8.  
 6. Palette CRI label; README visual file map.  
-7. Confirmed tokens in `index.html` swatches match `design_tokens.json` (`#B5AB9C`, `#EEEDE9`, `#C8B9A4`, `#A39178`, `#4E4C49`).
+7. Confirmed tokens in `index.html` swatches match `design_tokens.json` (`#B5AB9C`, `#EEEDE9`, `#C8B9A4`, `#3D483C`, `#4E4C49`).
 
 ---
 

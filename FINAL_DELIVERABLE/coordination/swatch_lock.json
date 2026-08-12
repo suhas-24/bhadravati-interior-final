@@ -15,7 +15,11 @@
       "brand": "Birla Opus",
       "name": "Puddle of Grey",
       "hex": "#B5AB9C",
-      "rgb": [181, 171, 156],
+      "rgb": [
+        181,
+        171,
+        156
+      ],
       "undertone": "warm_greige",
       "sheen": "low_sheen_washable_matt",
       "use_rule": "Main walls throughout; default base for living, kitchen, bedroom, study, wardrobe surrounds",
@@ -25,7 +29,11 @@
       "brand": "Birla Opus",
       "name": "White Linen",
       "hex": "#EEEDE9",
-      "rgb": [238, 237, 233],
+      "rgb": [
+        238,
+        237,
+        233
+      ],
       "undertone": "warm_linen_white",
       "sheen": "matt",
       "use_rule": "Ceilings only; avoid stark cool white",
@@ -36,7 +44,11 @@
       "name": "Latte",
       "finish_code": "MT",
       "hex": "#C8B9A4",
-      "rgb": [200, 185, 164],
+      "rgb": [
+        200,
+        185,
+        164
+      ],
       "undertone": "warm_beige_solid",
       "sheen": "matte_MT",
       "use_rule": "ALL kitchen shutters -- base, drawers, and loft. One code only. No dual-tone.",
@@ -46,19 +58,27 @@
       "brand": "Century StarLine",
       "name": "Idria Oak",
       "finish_code": "SU",
-      "hex": "#A39178",
-      "rgb": [163, 145, 120],
-      "undertone": "european_grey_oak",
+      "hex": "#3D483C",
+      "rgb": [
+        61,
+        72,
+        60
+      ],
+      "undertone": "european_grey_olive_muted",
       "sheen": "soft_woodgrain_SU",
-      "use_rule": "Wardrobe shutters -- four equal vertical leaves. Grain vertical.",
-      "verification_note": "Catalogue: 84689 SU IDRIA OAK in European Grey WOODGRAINS. Hex visual approx for muted grey-oak -- not yellow/orange oak"
+      "use_rule": "Wardrobe shutters -- 3 doors (single L + double R), leaves 457/457/458. Grain vertical.",
+      "verification_note": "Century Idria Oak European Grey; hex #3D483C / rgb 61,72,60 sampled from website product image 2026-08-12 (replaces wrong taupe #A39178)."
     },
     "80236_DW": {
       "brand": "Century StarLine",
       "name": "Slate Grey",
       "finish_code": "DW",
       "hex": "#4E4C49",
-      "rgb": [78, 76, 73],
+      "rgb": [
+        78,
+        76,
+        73
+      ],
       "undertone": "warm_graphite_dyed_wood",
       "sheen": "matte_dyed_woodgrain_DW",
       "use_rule": "TV cabinet ONLY as controlled low accent. Do not use in kitchen or broadly on walls.",
@@ -68,7 +88,11 @@
       "brand": "existing_site",
       "name": "Black granite counter",
       "hex": "#1A1A1A",
-      "rgb": [26, 26, 26],
+      "rgb": [
+        26,
+        26,
+        26
+      ],
       "undertone": "cool_black_with_natural_fleck",
       "sheen": "existing_restrained_sheen",
       "use_rule": "Retain existing kitchen counter (and related horizontal granite bands as installed). Do not render as white quartz or marble. No waterfall / invented vertical end panels.",
@@ -78,7 +102,11 @@
       "brand": "hardware_spec",
       "name": "Brushed stainless steel",
       "hex": "#9A9A96",
-      "rgb": [154, 154, 150],
+      "rgb": [
+        154,
+        154,
+        150
+      ],
       "undertone": "neutral_metal",
       "sheen": "brushed_diffuse_not_mirror",
       "use_rule": "All visible hardware. Forbid black, brass, and mixed mirror chrome.",
@@ -88,7 +116,11 @@
       "brand": "E3",
       "name": "ABS edge band matched to laminate",
       "hex": "#D8CFC2",
-      "rgb": [216, 207, 194],
+      "rgb": [
+        216,
+        207,
+        194
+      ],
       "undertone": "match_host_laminate",
       "sheen": "matt_or_soft_touch_not_gloss_sparkle",
       "use_rule": "Kitchen 2.00 mm ABS; wardrobe 1.00 mm ABS. Physical sample match to exact laminate only -- do not order by colour name alone.",
@@ -98,7 +130,11 @@
       "brand": "lighting_spec",
       "name": "Warm-neutral 3000 K baseline",
       "hex": "#2C2925",
-      "rgb": [44, 41, 37],
+      "rgb": [
+        44,
+        41,
+        37
+      ],
       "undertone": "warm_neutral_cct",
       "sheen": "n_a_light_source",
       "use_rule": "Living ambient/task baseline 3000 K; bedroom lamps 2700-3000 K; kitchen under-loft linear diffused 3000 K; CRI ?90 preferred. Must not push Latte orange.",
@@ -109,16 +145,24 @@
     "NN9088": {
       "name": "Ecru Tint",
       "hex": "#E9E3D9",
-      "rgb": [233, 227, 217],
+      "rgb": [
+        233,
+        227,
+        217
+      ],
       "undertone": "light_warm_ecru",
       "sheen": "low_sheen_washable_matt",
-      "use_rule": "Lighter wall alternative only if client insists -- not default for dusty façades",
+      "use_rule": "Lighter wall alternative only if client insists -- not default for dusty fa\u00e7ades",
       "verification_note": "Shade card NN 9088 Ecru tint RGB 233,227,217 #E9E3D9 -- exact match"
     },
     "S1173_MT": {
       "name": "Cloud Grey",
       "hex": "#B8B6B0",
-      "rgb": [184, 182, 176],
+      "rgb": [
+        184,
+        182,
+        176
+      ],
       "undertone": "neutral_cloud_grey",
       "sheen": "matte_MT",
       "use_rule": "Kitchen backup laminate only if Latte sample fails beside granite",
@@ -127,7 +171,11 @@
     "84687_SU": {
       "name": "Lyon Oak",
       "hex": "#9A8A72",
-      "rgb": [154, 138, 114],
+      "rgb": [
+        154,
+        138,
+        114
+      ],
       "undertone": "european_grey_oak_backup",
       "sheen": "soft_woodgrain_SU",
       "use_rule": "Wardrobe backup only",
@@ -136,7 +184,11 @@
     "GG7140": {
       "name": "Tender Buds",
       "hex": "#9CAE91",
-      "rgb": [156, 174, 145],
+      "rgb": [
+        156,
+        174,
+        145
+      ],
       "undertone": "muted_sage_green",
       "sheen": "low_sheen_washable_matt",
       "use_rule": "Optional accent -- one small wall max",
@@ -145,7 +197,11 @@
     "GG7162": {
       "name": "Old Olive Trees",
       "hex": "#B9CEA4",
-      "rgb": [185, 206, 164],
+      "rgb": [
+        185,
+        206,
+        164
+      ],
       "undertone": "soft_olive",
       "sheen": "low_sheen_washable_matt",
       "use_rule": "Optional accent alt -- one small wall max",
@@ -154,7 +210,11 @@
     "BB5146": {
       "name": "Old Novel",
       "hex": "#90B1C3",
-      "rgb": [144, 177, 195],
+      "rgb": [
+        144,
+        177,
+        195
+      ],
       "undertone": "muted_blue",
       "sheen": "low_sheen_washable_matt",
       "use_rule": "Study optional one controlled surface",
@@ -163,7 +223,11 @@
     "BG6116": {
       "name": "Songs from the Valley",
       "hex": "#8BA6A3",
-      "rgb": [139, 166, 163],
+      "rgb": [
+        139,
+        166,
+        163
+      ],
       "undertone": "muted_blue_green",
       "sheen": "low_sheen_washable_matt",
       "use_rule": "Study optional one controlled surface",

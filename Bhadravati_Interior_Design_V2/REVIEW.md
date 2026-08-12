@@ -14,7 +14,15 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 
 ### Idria Oak website revalidation (2026-08-12, pass 2)
 
-User CenturyPly product-page screenshot confirms wardrobe lock fields: **Idria Oak · 84689 SU · Woodgrains | European Grey · 8 ft ? 4 ft · 0.8 mm**. Evidence archived at `source/century_84689_idria_oak_website_2026-08-12.png` (with prior catalogue crop `source/century_84689_idria_page55_pdfp90.png`). Full write-up: `IDRIA_REVALIDATION.md`. **No PDF label fixes required** — V2 already used the correct commercial name/code/finish.
+User CenturyPly product-page screenshot confirms wardrobe lock fields: **Idria Oak · 84689 SU · Woodgrains | European Grey · 8 ft ? 4 ft · 0.8 mm**. Evidence archived at `source/century_84689_idria_oak_website_2026-08-12.png` (with prior catalogue crop `source/century_84689_idria_page55_pdfp90.png`). Full write-up: `IDRIA_REVALIDATION.md`. **SKU/labels were already correct.**
+
+### Idria Oak visual sample correction (2026-08-12, pass 3)
+
+**Code was right; visual sample was wrong.** Palette chip / site swatch showed mid brownish-taupe (`#A39178`) instead of Century European Grey (dark muted olive/grey-green woodgrain). Corrected from website + catalogue evidence; screen approx hex now `#3D483C`; grain tile archived; palette board + wardrobe elevation + GitHub Pages (`docs/`) updated; PDF rebuilt. See `IDRIA_REVALIDATION.md` pass 3.
+
+### Boards & hardware lock (2026-08-12)
+
+Annotated PDF page **Boards & hardware** + site section `#boards-hardware` from `PLYWOOD_HARDWARE_RECOMMENDATION.md`: kitchen shutters **Action Tesa Boilo 18 mm** (or Club Prime 18/19); wardrobe **Sainik 710 18 mm BWP** QR-verified (HDHMR 18 mm alt; not Boilo for 90 in doors); **Hettich Sensys 8645i** / KA 5632|4732 / Godrej Curvo 8010 / oval 30×15 mid-support / SS304 / recessed SS pulls.
 
 ### Asset refresh (2026-08-12)
 

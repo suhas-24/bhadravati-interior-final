@@ -130,7 +130,7 @@
       ],
       "board": "18mm_BWP_base_preferred; loft_16_18mm_HDHMR_if_sealed",
       "handle_type": "recessed",
-      "handle_note": "J-pull / finger-pull / recessed profile — not projecting bar handles; non-dimensional"
+      "handle_note": "J-pull / finger-pull / recessed profile \u2014 not projecting bar handles; non-dimensional"
     },
     "kitchen_backup_laminate": {
       "code": "S1173",
@@ -157,12 +157,12 @@
         "code": "84689",
         "finish": "SU",
         "name": "Idria Oak",
-        "hex_approx": "#A39178",
+        "hex_approx": "#3D483C",
         "door_count": 3,
         "leaf_count": 3,
         "configuration": "single + double",
         "handle_type": "recessed",
-        "handle_note": "J-pull / finger-pull / recessed profile — not projecting bar handles; non-dimensional",
+        "handle_note": "J-pull / finger-pull / recessed profile \u2014 not projecting bar handles; non-dimensional",
         "face_options": [
           "aluminium_fluted_glass",
           "plywood"
@@ -172,7 +172,14 @@
           457,
           457,
           458
-        ]
+        ],
+        "rgb_approx": [
+          61,
+          72,
+          60
+        ],
+        "undertone": "european_grey_olive_muted",
+        "visual_note": "Screen approx sampled from CenturyPly Idria Oak product image 2026-08-12 (European Grey woodgrain); not Latte/taupe."
       },
       "backup": {
         "code": "84687",
@@ -212,7 +219,7 @@
       "handle_type": "recessed",
       "handle_type_kitchen": "recessed",
       "handle_type_wardrobe": "recessed",
-      "handle_note": "J-pull / finger-pull / recessed profile — not projecting bar handles; non-dimensional",
+      "handle_note": "J-pull / finger-pull / recessed profile \u2014 not projecting bar handles; non-dimensional",
       "forbid": [
         "black",
         "brass",
