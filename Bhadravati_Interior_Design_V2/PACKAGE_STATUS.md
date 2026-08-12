@@ -1,9 +1,9 @@
-# PACKAGE_STATUS — Bhadravati Interior Design V2
+# PACKAGE_STATUS ï¿½ Bhadravati Interior Design V2
 
 **Checked:** 2026-08-12  
 **Package root:** `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`  
 **Verdict:** **COMPLETE / READY** for design-control client handoff  
-**PDF rebuild for assets 01–05:** **Not required** (already embedded)
+**PDF rebuild for assets 01ï¿½05:** **Not required** (already embedded)
 
 ---
 
@@ -22,20 +22,20 @@
 | Item | Status | Detail |
 |---|---|---|
 | `Bhadravati_Interior_Design_V2.pdf` | **Ready** | Exists; **19 pages**; size ~5.7 MB; mtime **2026-08-12T01:29:50** |
-| Embeds `assets/01`–`05` v2 | **Ready** | Pixel dims match current primary boards (see below) |
+| Embeds `assets/01`ï¿½`05` v2 | **Ready** | Pixel dims match current primary boards (see below) |
 | Excludes `02b` / `04b` / `05b` | **Ready** | Those caution-asset dimensions absent from PDF XObjects |
 
 ### Primary board ? PDF embedding
 
 | Board | File | Asset size | In PDF | Page |
 |---|---|---|---|---:|
-| 01 | `assets/01_visual_palette_board_v2.png` | 1800×1180 | Yes | 7 |
-| 02 | `assets/02_floorplan_concept_v2.png` | 1696×1503 | Yes | 6 |
-| 03 | `assets/03_kitchen_elevation_overlay_v2.png` | 1632×1278 | Yes | 12 |
-| 04 | `assets/04_wardrobe_elevation_overlay_v2.png` | 1700×1100 | Yes | 15 |
-| 05 | `assets/05_qa_contact_sheet_v2.jpg` | 1656×962 | Yes | 19 |
+| 01 | `assets/01_visual_palette_board_v2.png` | 1800ï¿½1180 | Yes | 7 |
+| 02 | `assets/02_floorplan_concept_v2.png` | 1696ï¿½1503 | Yes | 6 |
+| 03 | `assets/03_kitchen_elevation_overlay_v2.png` | 1632ï¿½1278 | Yes | 12 |
+| 04 | `assets/04_wardrobe_elevation_overlay_v2.png` | 1700ï¿½1100 | Yes | 15 |
+| 05 | `assets/05_qa_contact_sheet_v2.jpg` | 1656ï¿½962 | Yes | 19 |
 
-Asset mtimes (01:22–01:24) are **older** than PDF mtime (01:29). No rebuild needed to embed current `01`–`05` v2 images.
+Asset mtimes (01:22ï¿½01:24) are **older** than PDF mtime (01:29). No rebuild needed to embed current `01`ï¿½`05` v2 images.
 
 ---
 
@@ -61,10 +61,10 @@ Asset mtimes (01:22–01:24) are **older** than PDF mtime (01:29). No rebuild need
 
 | Deliverable | Path | Status |
 |---|---|---|
-| PDF generator | `_build_pdf_v2.py` | **Ready** (references boards 01–05) |
+| PDF generator | `_build_pdf_v2.py` | **Ready** (references boards 01ï¿½05) |
 | Design tokens | `source/design_tokens_v2.json` | **Ready** |
 
-### Assets — presentation boards (primary)
+### Assets ï¿½ presentation boards (primary)
 
 | Deliverable | Path | Status |
 |---|---|---|
@@ -75,7 +75,7 @@ Asset mtimes (01:22–01:24) are **older** than PDF mtime (01:29). No rebuild need
 | Wardrobe elevation (3-door) | `assets/04_wardrobe_elevation_overlay_v2.png` | **Ready** (in PDF) |
 | QA contact sheet | `assets/05_qa_contact_sheet_v2.jpg` | **Ready** (in PDF) |
 
-### Assets — caution / internal only (on disk, not in client PDF)
+### Assets ï¿½ caution / internal only (on disk, not in client PDF)
 
 | Deliverable | Path | Status |
 |---|---|---|
@@ -83,7 +83,7 @@ Asset mtimes (01:22–01:24) are **older** than PDF mtime (01:29). No rebuild need
 | Four-leaf superseded | `assets/04b_wardrobe_elevation_four_leaf_superseded.png` | **Ready** (internal; correctly excluded) |
 | Historical QA sheet | `assets/05b_qa_contact_sheet_historical.jpg` | **Ready** (internal; correctly excluded) |
 
-### Assets — room renders / vectors
+### Assets ï¿½ room renders / vectors
 
 | Deliverable | Path | Status |
 |---|---|---|
@@ -96,7 +96,7 @@ Asset mtimes (01:22–01:24) are **older** than PDF mtime (01:29). No rebuild need
 
 | Item | Status | Rationale |
 |---|---|---|
-| Rebuild PDF to embed `assets/01`–`05` | **Not needed** | Boards already embedded; PDF newer than board files; dim QA matches REVIEW |
+| Rebuild PDF to embed `assets/01`ï¿½`05` | **Not needed** | Boards already embedded; PDF newer than board files; dim QA matches REVIEW |
 | Regenerate primary boards | **Not needed** | Present and indexed |
 | Companion markdown after PDF | Optional only | `REVIEW.md` / `PHASE_SKILL_LOG.md` updated later the same day; narrative companions, not missing art embeds |
 
@@ -114,3 +114,7 @@ None after creation of this file.
 - PDF: `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/Bhadravati_Interior_Design_V2.pdf`
 - Status: `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/PACKAGE_STATUS.md`
 - Generator: `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/_build_pdf_v2.py`
+
+## Post-status caption hygiene (same day)
+
+PDF captions updated for SoT override on QA sheet wardrobe dims (1372Ã—2286Ã—488; 84689 Idria), recessed kitchen pulls (C-08), and floorplan depth 488 mm (not leaf-width OCR). Rebuild was caption-only; boards 01â€“05 still embedded; 02b/04b/05b still excluded. See `FINAL_QA_CHECKLIST.md` (PASS).

@@ -3,7 +3,7 @@
 **Reviewer:** V2 PDF synthesis lead  
 **Date:** 2026-08-12  
 **Package:** `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`  
-**PDF:** `Bhadravati_Interior_Design_V2.pdf` (19 pages after asset refresh)  
+**PDF:** `Bhadravati_Interior_Design_V2.pdf` (19 pages after asset refresh + caption hygiene)  
 **Supersedes:** `/Users/suhas/Downloads/Interiors/FINAL_DELIVERABLE/Bhadravati_FINAL_Interior_Design.pdf` (V1)
 
 ---
@@ -14,7 +14,7 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 
 ### Asset refresh (2026-08-12)
 
-Sibling visualization boards finished after the first V2 PDF push. PDF embeds `assets/ASSET_INDEX.md` primaries via `_build_pdf_v2.py`:
+PDF embeds `assets/ASSET_INDEX.md` primaries via `_build_pdf_v2.py`:
 
 | Board | File | PDF role |
 |---|---|---|
@@ -28,7 +28,13 @@ Sibling visualization boards finished after the first V2 PDF push. PDF embeds `a
 
 Visual QA: primary board pixel dimensions confirmed embedded; excluded board dimensions absent; wardrobe XObject matches 1700×1100 3-door board.
 
-**Package status:** `PACKAGE_STATUS.md` = **COMPLETE / READY** — boards 01–05 already in PDF; caution boards absent; **no further PDF rebuild required** for this ship. `FINAL_QA_CHECKLIST.md` was not present at ship time; package completeness + prior lock/embed checks used.
+**Package status:** `PACKAGE_STATUS.md` = **COMPLETE / READY** — boards 01–05 embedded; caution boards absent.
+
+**Final visual/spec QA:** `FINAL_QA_CHECKLIST.md` = **PASS** (locks). Caption/OCR hygiene applied before this ship:
+
+1. QA sheet wardrobe panel overridden with SoT **1372 × 2286 × 488 mm** + **84689 SU Idria Oak** (do not OCR baked overlays).  
+2. Kitchen elevation caption forces **recessed** brushed stainless pulls (C-08).  
+3. Floorplan caption cites register **488 mm** depth (leaf widths remain 457/457/458 — do not confuse with depth).
 
 ---
 
@@ -42,8 +48,9 @@ Visual QA: primary board pixel dimensions confirmed embedded; excluded board dim
 | `PHASE_FRAMEWORK.md` / `SKILLS_INVENTORY.md` / `TEAM_ROLES.md` | Phase sequence logged in `PHASE_SKILL_LOG.md` |
 | `dimension_register_v1` | K-01 / W-01 numbers match |
 | `design_tokens_v2.json` | Codes/dims aligned |
-| `assets/ASSET_INDEX.md` | Incorporated — primary boards 01–05 embedded; 02b/04b/05b excluded |
-| `PACKAGE_STATUS.md` | COMPLETE / READY — no rebuild needed |
+| `assets/ASSET_INDEX.md` | Primary boards 01–05 embedded; 02b/04b/05b excluded |
+| `PACKAGE_STATUS.md` | COMPLETE / READY |
+| `FINAL_QA_CHECKLIST.md` | PASS — caption hygiene applied |
 
 ---
 
@@ -64,48 +71,14 @@ Visual QA: primary board pixel dimensions confirmed embedded; excluded board dim
 
 ---
 
-## Accuracy / consistency findings
-
-### Fixed in V2 (vs V1 / older packs)
-
-1. **Global 3-door wardrobe story** — no four-leaf as current lock (C-02 / F1 / F13).  
-2. **Explicit supersession** of Corrected Handover dual-tone kitchen + NN9088-as-used + Lyon-as-used (C-03, C-04, C-07 / F2).  
-3. **Expanded client PDF** (19 pp): ethics/hold, lighting/IEQ/systems/codes, FF&E, budget, elevations, bedroom continuity, kitchen loft detail, evening junction, install sequence, QA appendix, portfolio note.  
-4. **844485 typo** called out as do-not-order (C-06 / F5).  
-5. **C-09 nuance** retained: finish lock = S1241 laminate; kitchen aluminium frame system open.  
-6. **Openings** labeled UNVERIFIED (C-05 / C-11 / F4).  
-7. **UTF-8** clean builder source.
-
-### Issues found during review ? fixed before finalize
-
-| Issue | Fix |
-|---|---|
-| `_build_pdf_v2.py` CP1252 em-dash encoding broke build | Converted to UTF-8 with coding declaration; rebuilt PDF |
-| Phase log still used early ad-hoc phase numbering | Rewrote `PHASE_SKILL_LOG.md` to PHASE_FRAMEWORK 0–22 sequence |
-| First V2 PDF shipped before sibling presentation boards | Embedded ASSET_INDEX boards 01–05; excluded 02b/04b/05b |
-
-### Not defects (intentional residuals)
-
-| ID | Residual | Status |
-|---|---|---|
-| C-01 | Granite 1.50 in vs 15 mm | Open — measure |
-| C-05/C-11 | Window sizes | Open — UNVERIFIED |
-| R2 | Kitchen shutter overlay vs clear | Open — shop drawings |
-| — | AI loft/shelf bands schematic | Caption-disclosed |
-
----
-
-## Visual QA spot-check (package assets)
+## Visual QA spot-check
 
 | Asset class | Check | Result |
 |---|---|---|
-| Living 01/01b/01c | Present; captions forbid balcony / TV wall | PASS |
-| Kitchen 02/02b/02c + board 03 | Latte-all + fridge-right + elevation overlay | PASS |
-| Wardrobe 05/06 + 04 series + board 04 | 3-door elevation 457/457/458 embedded | PASS |
-| Scheme B pairs | Living + kitchen included | PASS |
-| Palette board 01 + floorplan board 02 | V2 boards embedded | PASS |
-| QA board 05 | Appendix contact sheet; historical 05b excluded | PASS |
-| Exclusions | 02b / 04b / 05b not embedded | PASS |
+| Boards 01–05 | Embedded; dims match | PASS |
+| Exclusions 02b/04b/05b | Not embedded | PASS |
+| Caption hygiene | SoT override on QA dims; recessed kitchen; 488 depth | PASS |
+| `FINAL_QA_CHECKLIST.md` | Overall PASS | PASS |
 
 ---
 
@@ -114,10 +87,9 @@ Visual QA: primary board pixel dimensions confirmed embedded; excluded board dim
 - Clear Version 2 branding and V1 supersede path.  
 - Fabrication hold banner on scope + dimensions.  
 - Next 3 actions actionable.  
-- Companion control docs present for agents/fabricators.  
-- `PACKAGE_STATUS.md` confirms complete package for design-control handoff.
+- Companion control docs + package status + final QA checklist present.
 
-**Residual risk (acceptable):** Without signed site measure, any shop drawing cut from this PDF alone remains wrong process — package states this repeatedly.
+**Residual risk (acceptable):** Without signed site measure, any shop drawing cut from this PDF alone remains wrong process — package states this repeatedly. Baked overlay OCR on board 05 must not be trusted (caption overrides).
 
 ---
 
@@ -128,9 +100,10 @@ Visual QA: primary board pixel dimensions confirmed embedded; excluded board dim
 - `PHASE_SKILL_LOG.md`  
 - `REVIEW.md` (this file)  
 - `PACKAGE_STATUS.md`  
+- `FINAL_QA_CHECKLIST.md`  
 - `_build_pdf_v2.py`  
 - `SOURCE_OF_TRUTH.md`, `V1_BASELINE.md`, `CONTRADICTIONS.md`  
 - `SKILLS_INVENTORY.md`, `PHASE_FRAMEWORK.md`, `TEAM_ROLES.md`  
 - `source/design_tokens_v2.json`  
 - `assets/ASSET_INDEX.md`, primary boards `01`–`05`, `assets/img/*`, `assets/svg/*`  
-- Caution assets `02b` / `04b` / `05b` kept on disk for internal QA only — not in client PDF
+- Caution assets `02b` / `04b` / `05b` on disk only — not in client PDF

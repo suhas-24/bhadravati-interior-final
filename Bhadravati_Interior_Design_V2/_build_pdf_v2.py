@@ -310,7 +310,9 @@ def build():
     if fp.exists():
         story.append(fit_image(fp, content_w, 170 * mm))
         story.append(Paragraph(
-            "V2 zoning floorplan — single-wall kitchen; W-01 3-door wardrobe; relational envelope only (not a cut sheet)",
+            "V2 zoning floorplan — single-wall kitchen; W-01 3-door wardrobe; relational only. "
+            "Cite register depths from SoT (W-01 / counter depth <b>488 mm</b>) — do not OCR plan chips "
+            "(leaf widths are <b>457 / 457 / 458</b>; depth is not 458).",
             caption,
         ))
     story.append(PageBreak())
@@ -487,7 +489,8 @@ def build():
     if BOARD_KITCHEN_ELEV.exists():
         story.append(fit_image(BOARD_KITCHEN_ELEV, content_w, 155 * mm))
         story.append(Paragraph(
-            "K-01 elevation overlay V2 — Latte-all shutters; shutters-only scope; not fabrication-approved",
+            "K-01 elevation overlay V2 — Latte-all shutters; shutters-only; hardware lock = "
+            "<b>recessed</b> brushed stainless pulls (C-08) — ignore any drawn bar pulls on source art; not fabrication-approved",
             caption,
         ))
     story.append(PageBreak())
@@ -651,13 +654,16 @@ def build():
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
         "Six-up strip for client visual QA: living, kitchen Latte, kitchen detail, wardrobe 3-door, "
-        "wardrobe dims, evening light. Historical / dark-cabinet contact sheets excluded.",
+        "wardrobe dims, evening light. Historical / dark-cabinet contact sheets excluded. "
+        "<b>Do not OCR</b> the wardrobe-dims panel — controlling SoT values follow in the caption.",
         body,
     ))
     if BOARD_QA.exists():
         story.append(fit_image(BOARD_QA, content_w, 160 * mm))
         story.append(Paragraph(
-            "QA contact sheet V2 — conceptual; prefer brief captions over OCR of baked overlays",
+            "QA contact sheet V2 — conceptual only. Wardrobe SoT lock (override baked overlays): "
+            "clear niche <b>1372 × 2286 × 488 mm</b>; leaves <b>457 / 457 / 458 mm</b>; "
+            "preferred face <b>84689 SU Idria Oak</b>. Do not trust OCR of height/depth typos or wrong laminate names on the sheet.",
             caption,
         ))
 
