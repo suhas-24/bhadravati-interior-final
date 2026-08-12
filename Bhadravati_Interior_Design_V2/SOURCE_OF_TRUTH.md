@@ -129,15 +129,18 @@ Brief: `/Users/suhas/Downloads/Interiors/Bhadravati_Final_Interior_Design_Brief/
 ### Laminates — Century StarLine (catalogue-verified)
 
 Catalogue: `/Users/suhas/Downloads/Interiors/Century Laminates StarLine 0.8mm.pdf`  
-Extract: `/Users/suhas/Downloads/Interiors/processed_pdf_text/century_starline_extracted.txt`
+Extract: `/Users/suhas/Downloads/Interiors/processed_pdf_text/century_starline_extracted.txt`  
+Evidence crop (Idria): `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/source/century_84689_idria_page55_pdfp90.png`
 
 | Role | Code | Finish | Name | Catalogue check | Notes |
 |---|---|---|---|---|---|
 | Kitchen base + drawers + loft (**all**) | **S1241** | **MT** | Latte | `S1241 MT` / `LATTE` present | **One code only** — no dual-tone kitchen |
 | Kitchen backup (if Latte fails sample) | **S1173** | **MT** | Cloud Grey | Present | Backup only |
 | TV cabinet (controlled accent) | **80236** | **DW** | Slate Grey | `80236 DW` present | **Not** for kitchen shutters |
-| Wardrobe preferred | **84689** | **SU** | Idria Oak | Present | Prefer over Lyon |
-| Wardrobe backup | **84687** | **SU** | Lyon Oak | Present | Backup only |
+| Wardrobe preferred | **84689** | **SU** | Idria Oak | **CONFIRMED** — StarLine printed **p.55** (PDF p.90): `84689 SU` / `IDRIA OAK`; index PDF p.143 | Prefer over Lyon. Also listed as `84689 CL` Crystal Line (PDF p.12) — project lock remains **SU** |
+| Wardrobe backup | **84687** | **SU** | Lyon Oak | **CONFIRMED** — StarLine printed **p.57** (PDF p.92): `84687 SU` / `LYON OAK`; index PDF p.143 | Backup only |
+
+**2026-08-12 SKU revalidation:** User challenge that “84689 SU Idria” might be wrong was checked against the Century StarLine PDF + extract + index. **Verdict: code and commercial name are correct.** Do not substitute Skagen (`84688 SU`) or Lyon (`84687 SU`) as Idria.
 
 Laminate hexes in tokens (`#C8B9A4`, `#A39178`, `#4E4C49`) are **screen approx** — not measured from catalogue RGB (catalogue extract has no RGB for these). Physical sample required.
 

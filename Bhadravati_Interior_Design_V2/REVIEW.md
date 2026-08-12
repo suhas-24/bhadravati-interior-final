@@ -62,7 +62,7 @@ Visual QA: primary board pixel dimensions confirmed embedded; excluded board dim
 | 2 | Black granite retained; shutters-only; no island/L-flip/waterfall | **PASS** |
 | 3 | Module 106 in; wall 220; B1/B2/B3 48/36/18; floor?counter 31; floor?loft 102; depth 19.20 | **PASS** |
 | 4 | Wardrobe niche 54×90×19.20; 3 doors 457/457/458 (not four; not two slabs) | **PASS** |
-| 5 | Wardrobe preferred 84689 SU Idria (backup 84687) | **PASS** |
+| 5 | Wardrobe preferred 84689 SU Idria Oak (backup 84687 Lyon) — catalogue-confirmed StarLine p.55 / p.57 | **PASS** |
 | 6 | Default walls NN9074; ceiling WW0005; NN9088 = Scheme B alt only | **PASS** |
 | 7 | TV cabinet 80236 DW (or Latte) controlled only | **PASS** |
 | 8 | Recessed brushed SS; E3 2 mm / 1 mm; 3000 K | **PASS** |

@@ -332,7 +332,7 @@ def build():
         ("WW0005", "A ceiling", "#EEEDE9"),
         ("NN9088", "B walls alt", "#E9E3D9"),
         ("S1241", "Latte MT", "#C8B9A4"),
-        ("84689", "Idria SU", "#A39178"),
+        ("84689", "Idria Oak SU", "#A39178"),
         ("80236", "Slate DW", "#4E4C49"),
     ]
     cells = []

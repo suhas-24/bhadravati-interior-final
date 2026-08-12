@@ -118,3 +118,8 @@ None after creation of this file.
 ## Post-status caption hygiene (same day)
 
 PDF captions updated for SoT override on QA sheet wardrobe dims (1372×2286×488; 84689 Idria), recessed kitchen pulls (C-08), and floorplan depth 488 mm (not leaf-width OCR). Rebuild was caption-only; boards 01–05 still embedded; 02b/04b/05b still excluded. See `FINAL_QA_CHECKLIST.md` (PASS).
+
+## SKU revalidation — 84689 Idria (2026-08-12)
+
+User challenge that **84689 SU Idria** might be a wrong codename was checked against Century StarLine. **Verdict: CORRECT** — `84689 SU` = **IDRIA OAK** (catalogue p.55 / PDF p.90; index PDF p.143). Backup **84687 SU Lyon Oak** also confirmed (p.57 / PDF p.92). SoT / CONTRADICTIONS C-07 / tokens / FINAL_QA updated with page evidence; PDF chip label normalized to “Idria Oak SU”; PDF rebuilt. Evidence: `source/century_84689_idria_page55_pdfp90.png`.
+

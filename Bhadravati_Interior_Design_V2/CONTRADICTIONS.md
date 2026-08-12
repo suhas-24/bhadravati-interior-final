@@ -92,8 +92,14 @@
 |---|---|
 | Preferred **84689 SU Idria Oak** | Final Brief; Professional; Visual Concept; FINAL tokens |
 | Corrected pack “materials used”: **84687 SU Lyon Oak** | Corrected Client Handover |
+| Challenge: “84689 SU Idria” codename may be incorrect | User query 2026-08-12 |
 
-**Resolution:** Preferred = **84689**. Lyon = backup only after sample failure / client choice.
+**Catalogue proof (Century StarLine 0.8mm.pdf):**
+- **84689 SU = IDRIA OAK** — printed catalogue **p.55** (PDF page **90**); design-code index PDF page **143**. Evidence crop: `source/century_84689_idria_page55_pdfp90.png`.
+- **84687 SU = LYON OAK** — printed catalogue **p.57** (PDF page **92**); same index page **143**. Image: `processed_pdf_images/century/page_092.png`.
+- Adjacent code **84688 SU = SKAGEN OAK** (also p.55) — do not confuse with Idria.
+
+**Resolution:** Preferred = **84689 SU Idria Oak** (catalogue-confirmed). Lyon **84687** = backup only after sample failure / client choice. Challenge closed — **not a wrong SKU**.
 
 ---
 

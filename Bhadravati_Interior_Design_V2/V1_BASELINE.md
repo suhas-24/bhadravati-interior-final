@@ -47,7 +47,7 @@ Compared to Aug 7 `Bhadravati_*` PDFs, this FINAL PDF is the **most complete cli
 2. **Kitchen non-negotiables stated:** retain black granite; shutters only; **S1241 MT Latte** on base + loft + drawers; fridge extreme right; no island / L-flip.  
 3. **Dimension tables** aligned to dimension register K-01 / W-01 (106 / 220 / 102 / 48 / 23 / 31 / 19.2; B1–B3 48/36/18; wardrobe 54×90×19.2).  
 4. **Paint lock with verified hexes** for NN9074 / WW0005 / NN9088 against Birla shade card.  
-5. **Century codes catalogue-confirmed** for S1241 MT, 80236 DW, 84689 SU, 84687 SU, S1173 MT.  
+5. **Century codes catalogue-confirmed** for S1241 MT, 80236 DW, **84689 SU Idria Oak** (StarLine p.55 / PDF p.90), **84687 SU Lyon Oak** (p.57 / PDF p.92), S1173 MT.  
 6. **Visual QA awareness:** forbids waterfall granite ends, balcony invention, gloss, TV feature walls (documented in `QA_FINDINGS.md`).  
 7. **Wardrobe Options A/B** (aluminium fluted glass vs plywood/Idria) with recessed hardware direction.  
 8. **Site-measure residuals honestly open** (R2 shutter shops, R4 openings, R5 granite thickness).
