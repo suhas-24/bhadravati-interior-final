@@ -4,7 +4,7 @@
 **Site:** Bhadravati, Karnataka — monsoon humidity, laterite dust, termite/borer risk  
 **Locked finishes:** Century **S1241 MT Latte** (kitchen, 0.8 mm) · Century **84689 SU Idria Oak** (wardrobe, 0.8 mm) · E3 ABS **2 mm kitchen / 1 mm wardrobe** · brushed stainless **recessed** pulls (not bar pulls) · **3000 K** lighting  
 **Date:** 2026-08-12  
-**Status:** Specification recommendation for fabricator BOQ. Not a bid. Not a certification. Do not treat retailer blogs as BIS certificates.
+**Status:** SUPERSEDED as the client lock by `BOARD_DECISION.md` (2026-08-12). Keep this file as hardware SKU detail + source notes. **Do not** use the Sainik-wardrobe primary in §2/§10 — wardrobe primary is Club Prime / Greenply 710 Marine; Sainik is contingency only.
 
 ---
 

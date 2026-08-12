@@ -163,10 +163,11 @@ Laminate hexes in tokens (`#C8B9A4`, `#3D483C`, `#4E4C49`) are **screen approx**
 
 | Component | Board guidance | Citation |
 |---|---|---|
-| Kitchen base / drawers | 18 mm BWP (wet/hinge stress) | Final Brief § Material and fabrication |
-| Kitchen loft | 16–18 mm HDHMR if sealed | Same |
-| Wardrobe | 18 mm HDHMR or BWP | Same |
-| Adhesive | PUR only if demonstrated on actual machine | Same |
+| Kitchen shutters | **Club Prime 19 mm** with **IS 710** stamp (or Boilo 18 mm if CNC; or Greenply 710 Marine 19 mm). Not Sainik default. | `BOARD_DECISION.md` |
+| Kitchen loft | 18 mm HDHMR if fully ABS-sealed; else same ply as shutters | Same |
+| Wardrobe carcass + 3 leaves | **Club Prime 19 mm** or **Greenply 710 Marine 19 mm**; HDHMR 18 mm if CNC. Sainik 710 19 mm = contingency only. Boilo too heavy. | Same |
+| Reject | MR, interior MDF, particle board, unbranded “710”, 16 mm tall doors | Same |
+| Adhesive | PUR only if demonstrated on actual machine | Final Brief |
 
 ---
 

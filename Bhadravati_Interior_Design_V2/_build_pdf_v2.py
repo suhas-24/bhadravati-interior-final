@@ -147,6 +147,11 @@ def build():
         fontSize=7.5, leading=9.5, textColor=INK,
     )
     cell_b = ParagraphStyle("CellB", parent=cell, fontName="Helvetica-Bold")
+    cell_xs = ParagraphStyle(
+        "CellXS", parent=styles["Normal"], fontName="Helvetica",
+        fontSize=6.4, leading=8.0, textColor=INK,
+    )
+    cell_xs_b = ParagraphStyle("CellXSB", parent=cell_xs, fontName="Helvetica-Bold")
     warn = ParagraphStyle(
         "Warn", parent=body, fontName="Helvetica-Bold", textColor=ALERT, fontSize=8.5, leading=11,
     )
@@ -384,32 +389,76 @@ def build():
         ))
     story.append(PageBreak())
 
-    # ——— PLYWOOD + HARDWARE (from PLYWOOD_HARDWARE_RECOMMENDATION.md §10) ———
-    story.append(Paragraph("Boards & hardware (annotated lock)", h1))
-    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=6))
+    # ——— BOARDS + HARDWARE (from BOARD_DECISION.md — not Sainik-default) ———
+    story.append(Paragraph("Boards & hardware (options + lock)", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
-        "From <b>PLYWOOD_HARDWARE_RECOMMENDATION.md</b>. Kitchen = shutters-only on existing black granite. "
-        "Wardrobe = full niche carcass + three hinged Idria leaves. Split the board spec — do not buy one core for the whole house.",
+        "From <b>BOARD_DECISION.md</b> (catalog + user reviews; prior Sainik-wardrobe rec revisited). "
+        "Kitchen = shutters-only on existing black granite. Wardrobe = carcass + three hinged Idria leaves. "
+        "<b>IS 303:2024</b> = general-purpose MR/BWR/BWP. <b>IS 710:2024</b> = marine. "
+        "Product name “710” is not the stamp. Sainik 710 official page = <b>IS 303 BWP</b>. "
+        "Greenply Ecotec 710 = IS 303; Greenply <b>710 Marine</b> = IS 710.",
         body,
     ))
-    story.append(Paragraph("Core boards", h2))
+    story.append(Paragraph("Locked primary / alternate", h2))
     board_rows = [
-        [Paragraph("<b>Location</b>", cell_b), Paragraph("<b>Primary</b>", cell_b), Paragraph("<b>Alternate / note</b>", cell_b)],
-        [Paragraph("Kitchen shutters (S1241 MT Latte 0.8 mm · 2 mm E3 ABS · 3000 K)", cell),
-         Paragraph("<b>Action Tesa Boilo 18 mm</b>", cell),
-         Paragraph("<b>Century Club Prime 18/19 mm</b> if shop will not edge HDF. Laminate <b>both faces</b>. "
-                   "<b>Do NOT</b> default kitchen doors to Sainik 710 (official page = IS 303 BWP, not marine IS 710; "
-                   "alternate-core cups = hinge tear-out risk).", cell)],
-        [Paragraph("Wardrobe carcass + 3 Idria leaves (54×90×19.20 in · 1 mm E3 ABS)", cell),
-         Paragraph("<b>Century Sainik 710 18 mm BWP</b> — QR-scan every sheet", cell),
-         Paragraph("<b>HDHMR 18 mm</b> calibrated alternate. <b>Boilo too heavy</b> for 90 in doors. "
-                   "Never MR, particle board, MDF, or unbranded “710”.", cell)],
+        [Paragraph("<b>Location</b>", cell_b), Paragraph("<b>Primary (BOQ)</b>", cell_b), Paragraph("<b>Alternate</b>", cell_b)],
+        [Paragraph("Kitchen shutters · S1241 MT Latte 0.8 mm · 2 mm E3 ABS · 3000 K", cell),
+         Paragraph("<b>Century Club Prime 19 mm</b> — <b>IS 710</b> on sheet-edge stamp + CenturyPromise QR. Laminate <b>both faces</b>.", cell),
+         Paragraph("<b>Boilo 18 mm</b> if CNC/HDF-fluent. <b>Greenply 710 Marine 19 mm</b> (IS 710 stamp). Classic Marine / Bond 710 only if stamped IS 710.", cell)],
+        [Paragraph("Wardrobe carcass + 3 Idria leaves · 54×90×19.20 in · 1 mm E3 ABS", cell),
+         Paragraph("<b>Club Prime 19 mm</b> or <b>Greenply 710 Marine 19 mm</b> (IS 710 stamp). Same mill as kitchen ply path preferred.", cell),
+         Paragraph("<b>HDHMR / HDWR 18 mm</b> if CNC. <b>Boilo too heavy</b> for 90 in doors. <b>Sainik 710 19 mm</b> = contingency only (QR, no core gaps) — <b>not</b> the written default.", cell)],
     ]
-    bt = Table(board_rows, colWidths=[48 * mm, 55 * mm, 67 * mm])
+    bt = Table(board_rows, colWidths=[48 * mm, 61 * mm, 61 * mm])
     bt.setStyle(tbl_style(SLATE, header_white=True))
     story.append(bt)
-    story.append(Spacer(1, 3 * mm))
-    story.append(Paragraph("Hardware schedule (named series)", h2))
+    story.append(Paragraph("Options matrix (all cores considered)", h2))
+    mx = [
+        [Paragraph("<b>Option</b>", cell_xs_b), Paragraph("<b>Official grade</b>", cell_xs_b),
+         Paragraph("<b>Kitchen</b>", cell_xs_b), Paragraph("<b>Wardrobe</b>", cell_xs_b),
+         Paragraph("<b>Why / why not</b>", cell_xs_b)],
+        [Paragraph("Club Prime 19 mm", cell_xs_b), Paragraph("Marine-BWP claimed; confirm IS 710 stamp", cell_xs),
+         Paragraph("<b>Y primary</b>", cell_xs), Paragraph("<b>Y primary</b>", cell_xs),
+         Paragraph("Composed core + calibration for 0.8 mm + daily cups. Carpenter-native.", cell_xs)],
+        [Paragraph("Greenply 710 Marine 19", cell_xs), Paragraph("IS 710 on product page (resole PF)", cell_xs),
+         Paragraph("Y peer", cell_xs), Paragraph("Y peer", cell_xs),
+         Paragraph("Same role as Club Prime. Not Ecotec.", cell_xs)],
+        [Paragraph("Action Tesa Boilo 18", cell_xs), Paragraph("BWP FR HDF (not ply). Density/FR = mill claims", cell_xs),
+         Paragraph("Y if CNC", cell_xs), Paragraph("<b>N heavy</b>", cell_xs),
+         Paragraph("Homogeneous cups. No independent 3–7 yr diary. ~54 kg/sheet.", cell_xs)],
+        [Paragraph("Tesa HDHMR / Greenpanel HDWR 18", cell_xs), Paragraph("IS 12406 family; MR not BWP", cell_xs),
+         Paragraph("~ loft", cell_xs), Paragraph("Y CNC", cell_xs),
+         Paragraph("Factory shutter. Seal every edge. Open edges swell irreversibly.", cell_xs)],
+        [Paragraph("Classic Marine / Bond 710", cell_xs), Paragraph("Dealer IS 710; Classic official page silent", cell_xs),
+         Paragraph("~ if stamped", cell_xs), Paragraph("~ if stamped", cell_xs),
+         Paragraph("Cost middle. Verbal “marine” is not a stamp.", cell_xs)],
+        [Paragraph("Sainik 710 19 mm", cell_xs), Paragraph("<b>IS 303 BWP</b> — not marine IS 710", cell_xs),
+         Paragraph("<b>N default</b>", cell_xs), Paragraph("Contingency only", cell_xs),
+         Paragraph("Economy / alternate-core risk. Availability ≠ performance. QR still required.", cell_xs)],
+        [Paragraph("Ecotec 710 / Vista 710", cell_xs), Paragraph("Ecotec = IS 303; Vista = no IS on site", cell_xs),
+         Paragraph("N default", cell_xs), Paragraph("~ until stamp", cell_xs),
+         Paragraph("Peer-grade trap. Kitply Gold/Marine only if ISI IS 710.", cell_xs)],
+        [Paragraph("Architect / Austin / local 710", cell_xs), Paragraph("Architect = premium claim; Austin inspect-every-sheet", cell_xs),
+         Paragraph("Architect = cost", cell_xs), Paragraph("Architect overkill", cell_xs),
+         Paragraph("No unique failure mode here. Unbranded 710 = reject.", cell_xs)],
+        [Paragraph("Interior MDF / particle board", cell_xs), Paragraph("IS 12406 Gr.2 / IS 3087 · UF", cell_xs),
+         Paragraph("<b>N</b>", cell_xs), Paragraph("<b>N</b>", cell_xs),
+         Paragraph("Wet swell, hinge tear-out, 4–5 yr write-off.", cell_xs)],
+    ]
+    mt = Table(mx, colWidths=[36 * mm, 38 * mm, 22 * mm, 26 * mm, 48 * mm])
+    mt.setStyle(tbl_style(SLATE, header_white=True))
+    story.append(mt)
+    story.append(Paragraph(
+        "Why Sainik is not the wardrobe lock: 90 in leaves fail by hinge tear-out, sag, and 0.8 mm telegraph — "
+        "Sainik does not publish composed-core or screw numbers; “710” ≠ IS 710. Year 3–7 cost is rework, not skipping Club Prime. "
+        "Full compare: BOARD_DECISION.md.",
+        ParagraphStyle("MxNote", parent=body, fontSize=8, leading=10.5, spaceBefore=2, spaceAfter=4),
+    ))
+    story.append(PageBreak())
+
+    story.append(Paragraph("Hardware schedule (named series)", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=6))
     hw_rows = [
         [Paragraph("<b>Item</b>", cell_b), Paragraph("<b>Spec</b>", cell_b), Paragraph("<b>Lock</b>", cell_b)],
         [Paragraph("Pulls", cell),
@@ -417,13 +466,13 @@ def build():
          Paragraph("<b>LOCKED</b> — no bars / brass / black", cell)],
         [Paragraph("Hinges", cell),
          Paragraph("<b>Hettich Sensys 8645i</b> 110° integrated soft-close; <b>5 per</b> tall wardrobe leaf", cell),
-         Paragraph("Kitchen + wardrobe; not Onsys / clip-on dampers", cell)],
+         Paragraph("Kitchen + wardrobe; not Onsys / clip-on dampers. Invoice + carton on site (fakes).", cell)],
         [Paragraph("Channels (if drawers)", cell),
          Paragraph("<b>Hettich KA 5632</b> (45 kg) or <b>KA 4732</b> Silent System (35 kg)", cell),
          Paragraph("Only if drawers exist", cell)],
         [Paragraph("Wardrobe lock", cell),
          Paragraph("<b>Godrej Curvo 8010</b> (25 mm); 8011 if finished stack thicker", cell),
-         Paragraph("SS cover", cell)],
+         Paragraph("SS cover. Godrej ≠ concealed hinge.", cell)],
         [Paragraph("Hanging rail", cell),
          Paragraph("Oval <b>30×15 mm</b> + mid-support (Hettich SL 322 / Ebco WRF class)", cell),
          Paragraph("Required at ~centre of 54 in", cell)],
@@ -433,17 +482,20 @@ def build():
         [Paragraph("Edges", cell),
          Paragraph("E3 ABS matched · <b>2 mm kitchen / 1 mm wardrobe</b>", cell),
          Paragraph("Seal every edge; matt", cell)],
+        [Paragraph("Wardrobe hinge value cut", cell),
+         Paragraph("<b>Ebco</b> integrated soft-close (named SKU) — wardrobe only", cell),
+         Paragraph("Not the kitchen hinge spec", cell)],
     ]
-    ht = Table(hw_rows, colWidths=[32 * mm, 90 * mm, 48 * mm])
+    ht = Table(hw_rows, colWidths=[38 * mm, 84 * mm, 48 * mm])
     ht.setStyle(tbl_style(IDRIA, header_white=True))
     story.append(ht)
-    story.append(Spacer(1, 2 * mm))
+    story.append(Spacer(1, 3 * mm))
     story.append(Paragraph(
-        "<b>Executive lock:</b> Kitchen shutters → Boilo 18 mm (or Club Prime 18/19 mm). "
-        "Wardrobe → Sainik 710 18 mm BWP QR-verified (HDHMR 18 mm alternate; not Boilo). "
+        "<b>Executive lock:</b> Kitchen shutters → Club Prime 19 mm IS 710 stamp (or Boilo 18 mm if HDF shop; or Greenply 710 Marine 19 mm). "
+        "Wardrobe → Club Prime 19 mm or Greenply 710 Marine 19 mm (HDHMR 18 mm if CNC; not Boilo; Sainik 19 mm contingency only). "
         "Hettich Sensys 8645i · KA 5632/4732 if drawers · Godrej Curvo 8010 · oval 30×15 mm rail with mid-support · "
         "SS304 kitchen · recessed SS pulls only · seal every edge · laminate both faces of kitchen shutters. "
-        "Full evidence + procurement checklist: PLYWOOD_HARDWARE_RECOMMENDATION.md.",
+        "Evidence: BOARD_DECISION.md · BOARD_OPTIONS_CATALOG.md · BOARD_USER_REVIEWS.md.",
         body,
     ))
     story.append(PageBreak())

@@ -20,9 +20,9 @@ User CenturyPly product-page screenshot confirms wardrobe lock fields: **Idria O
 
 **Code was right; visual sample was wrong.** Palette chip / site swatch showed mid brownish-taupe (`#A39178`) instead of Century European Grey (dark muted olive/grey-green woodgrain). Corrected from website + catalogue evidence; screen approx hex now `#3D483C`; grain tile archived; palette board + wardrobe elevation + GitHub Pages (`docs/`) updated; PDF rebuilt. See `IDRIA_REVALIDATION.md` pass 3.
 
-### Boards & hardware lock (2026-08-12)
+### Boards & hardware lock (2026-08-12, revisited)
 
-Annotated PDF page **Boards & hardware** + site section `#boards-hardware` from `PLYWOOD_HARDWARE_RECOMMENDATION.md`: kitchen shutters **Action Tesa Boilo 18 mm** (or Club Prime 18/19); wardrobe **Sainik 710 18 mm BWP** QR-verified (HDHMR 18 mm alt; not Boilo for 90 in doors); **Hettich Sensys 8645i** / KA 5632|4732 / Godrej Curvo 8010 / oval 30×15 mid-support / SS304 / recessed SS pulls.
+`BOARD_DECISION.md` supersedes Sainik-as-wardrobe-default. Kitchen shutters **Club Prime 19 mm IS 710 stamp** (Boilo 18 mm if CNC; Greenply 710 Marine 19 mm peer). Wardrobe **Club Prime or Greenply 710 Marine 19 mm** (HDHMR 18 mm CNC alt; Boilo too heavy; **Sainik 710 = contingency only**). Hardware unchanged: **Hettich Sensys 8645i** / KA 5632|4732 / Godrej Curvo 8010 / oval 30×15 mid-support / SS304 / recessed SS pulls.
 
 ### Asset refresh (2026-08-12)
 
