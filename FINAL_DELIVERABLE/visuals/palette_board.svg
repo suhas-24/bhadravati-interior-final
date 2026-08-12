@@ -33,7 +33,7 @@
     </pattern>
     <!-- 80236 DW Slate Grey — dyed woodgrain, TV only -->
     <pattern id="slateGrain" width="11" height="42" patternUnits="userSpaceOnUse">
-      <rect width="11" height="42" fill="#4E4C49"/>
+      <rect width="11" height="42" fill="#575D5C"/>
       <path d="M1.5 0 C2.5 10 0.8 22 1.8 42 M7 0 C8 12 6 24 7.2 42" stroke="#3A3835" stroke-width="0.75" fill="none" opacity="0.55"/>
       <path d="M4.5 0 C5 8 4 20 4.6 42" stroke="#5C5A56" stroke-width="0.4" fill="none" opacity="0.35"/>
     </pattern>
@@ -85,12 +85,12 @@
 
   <!-- S1241 Kitchen ALL -->
   <g transform="translate(432,128)">
-    <rect width="176" height="210" fill="#C8B9A4"/>
+    <rect width="176" height="210" fill="#A49483"/>
     <rect y="210" width="176" height="88" fill="#FBF8F3"/>
     <text x="14" y="232" class="l" font-size="13">Kitchen · ALL shutters</text>
     <text x="14" y="252" class="code" font-size="12">S1241 MT Latte</text>
     <text x="14" y="270" class="s" font-size="11">Base + drawers + loft</text>
-    <text x="14" y="286" class="code" font-size="10">#C8B9A4 · visual approx</text>
+    <text x="14" y="286" class="code" font-size="10">#A49483 · catalogue crop</text>
     <text x="14" y="302" class="s" font-size="10">Solid matte · one code only</text>
   </g>
 
@@ -98,7 +98,7 @@
   <g transform="translate(624,128)">
     <rect width="176" height="210" fill="url(#oakGrain)"/>
     <rect y="210" width="176" height="88" fill="#FBF8F3"/>
-    <text x="14" y="232" class="l" font-size="13">Wardrobe · 4 leaves</text>
+    <text x="14" y="232" class="l" font-size="13">Wardrobe · 3 doors</text>
     <text x="14" y="252" class="code" font-size="12">84689 SU Idria Oak</text>
     <text x="14" y="270" class="s" font-size="11">European grey oak</text>
     <text x="14" y="286" class="code" font-size="10">#3D483C · visual approx</text>
@@ -112,7 +112,7 @@
     <text x="14" y="232" class="l" font-size="13">TV cabinet ONLY</text>
     <text x="14" y="252" class="code" font-size="12">80236 DW Slate Grey</text>
     <text x="14" y="270" class="s" font-size="11">Controlled low accent</text>
-    <text x="14" y="286" class="code" font-size="10">#4E4C49 · visual approx</text>
+    <text x="14" y="286" class="code" font-size="10">#575D5C · catalogue crop</text>
     <text x="14" y="302" class="s" font-size="10">Dyed woodgrain · not kitchen</text>
   </g>
 
@@ -142,7 +142,7 @@
   <g transform="translate(284,476)">
     <rect width="220" height="100" fill="#D8CFC2"/>
     <rect x="0" y="0" width="8" height="100" fill="#3D483C"/>
-    <rect x="212" y="0" width="8" height="100" fill="#C8B9A4"/>
+    <rect x="212" y="0" width="8" height="100" fill="#A49483"/>
     <rect y="100" width="220" height="52" fill="#FBF8F3"/>
     <text x="18" y="120" class="l" font-size="12">Edge band</text>
     <text x="18" y="138" class="code" font-size="11">E3 ABS · matt / soft touch</text>

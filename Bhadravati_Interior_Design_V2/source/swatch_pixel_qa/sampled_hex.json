@@ -1,0 +1,29 @@
+{
+  "S1241_MT": {
+    "hex": "#A49483",
+    "rgb": [
+      164,
+      148,
+      131
+    ],
+    "source": "Century StarLine PDF p.80 / printed p.51 Solid MATTE chip crop"
+  },
+  "84689_SU": {
+    "hex": "#3D483B",
+    "rgb": [
+      61,
+      72,
+      59
+    ],
+    "source": "CenturyPly website product image 2026-08-12, UI chrome excluded"
+  },
+  "80236_DW": {
+    "hex": "#575D5C",
+    "rgb": [
+      87,
+      93,
+      92
+    ],
+    "source": "Century StarLine PDF p.8 / printed p.7 Dyed Wood chip crop"
+  }
+}

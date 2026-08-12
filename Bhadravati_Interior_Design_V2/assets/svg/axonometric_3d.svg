@@ -11,9 +11,9 @@
     .wallN { fill: #B5AB9C; stroke: #6E655B; stroke-width: 0.7; }
     .wallE { fill: #A89F90; stroke: #6E655B; stroke-width: 0.7; }
     .ceil { fill: #EEEDE9; stroke: #B5AB9C; stroke-width: 0.5; opacity: 0.5; }
-    .latte { fill: #C8B9A4; stroke: #7A6F62; stroke-width: 0.6; }
+    .latte { fill: #A49483; stroke: #7A6F62; stroke-width: 0.6; }
     .oak { fill: #3D483C; stroke: #5C5348; stroke-width: 0.6; }
-    .slate { fill: #4E4C49; stroke: #2A2927; stroke-width: 0.6; }
+    .slate { fill: #575D5C; stroke: #2A2927; stroke-width: 0.6; }
     .gran { fill: #1C1C1C; stroke: #0A0A0A; stroke-width: 0.6; }
     .textile { fill: #C4B5A0; stroke: #8A7A68; stroke-width: 0.6; }
     .fridge { fill: #D0D4D6; stroke: #6E655B; stroke-width: 0.6; }
@@ -82,14 +82,14 @@
 <text x="630.32" y="533.01" class="s" font-size="10">6401 mm E-W</text>
 <text x="363.62" y="520.47" class="s" font-size="10">5486 mm N-S</text>
 <g transform="translate(36,90)">
-  <rect x="0" y="0" width="200" height="200" rx="4" fill="#FBF8F3" stroke="#C8B9A4" stroke-width="1"/>
+  <rect x="0" y="0" width="200" height="200" rx="4" fill="#FBF8F3" stroke="#A49483" stroke-width="1"/>
   <text x="12" y="22" class="l" font-size="12">Material keys</text>
   <rect x="12" y="36" width="14" height="10" fill="#B5AB9C"/><text x="34" y="45" class="s" font-size="10">NN9074 walls</text>
   <rect x="12" y="54" width="14" height="10" fill="#EEEDE9" stroke="#B5AB9C"/><text x="34" y="63" class="s" font-size="10">WW0005 ceiling</text>
-  <rect x="12" y="72" width="14" height="10" fill="#C8B9A4"/><text x="34" y="81" class="s" font-size="10">S1241 Latte kitchen</text>
+  <rect x="12" y="72" width="14" height="10" fill="#A49483"/><text x="34" y="81" class="s" font-size="10">S1241 Latte kitchen</text>
   <rect x="12" y="90" width="14" height="10" fill="#1C1C1C"/><text x="34" y="99" class="s" font-size="10">Black granite retain</text>
   <rect x="12" y="108" width="14" height="10" fill="#3D483C"/><text x="34" y="117" class="s" font-size="10">84689 Idria Oak</text>
-  <rect x="12" y="126" width="14" height="10" fill="#4E4C49"/><text x="34" y="135" class="s" font-size="10">80236 TV only</text>
+  <rect x="12" y="126" width="14" height="10" fill="#575D5C"/><text x="34" y="135" class="s" font-size="10">80236 TV only</text>
   <text x="12" y="158" class="s" font-size="10">Hardware: brushed SS</text>
   <text x="12" y="174" class="s" font-size="10">Lighting: 3000 K</text>
   <text x="12" y="190" class="s" font-size="10">Axo matches plan mm 1:1</text>

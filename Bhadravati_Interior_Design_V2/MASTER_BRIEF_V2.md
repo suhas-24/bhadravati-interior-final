@@ -87,8 +87,8 @@ Face options: **A** aluminium frame + fluted glass � **B** plywood / Idria Oak
 | Scheme A ceiling | Birla Opus **WW0005** White Linen | `#EEEDE9` | Matt |
 | Scheme B walls | Birla Opus **NN9088** Ecru Tint | `#E9E3D9` | Lighter alt; shows dust faster |
 | Scheme B ceiling | Birla Opus **WW0020** Virgin White | `#EDE9E2` | Cleaner warm white |
-| Kitchen all shutters | Century **S1241 MT Latte** | `#C8B9A4` | One code only |
-| TV cabinet | **80236 DW Slate Grey** (or Latte) | `#4E4C49` | Controlled accent |
+| Kitchen all shutters | Century **S1241 MT Latte** | `#A49483` | One code only |
+| TV cabinet | **80236 DW Slate Grey** (or Latte) | `#575D5C` | Controlled accent |
 | Wardrobe | **84689 SU Idria Oak** (backup **84687 Lyon**) | `#3D483C` | Soft woodgrain |
 | Optional accent | **GG7140** / **GG7162** | `#9CAE91` / `#B9CEA4` | One small wall max |
 | Edge | E3 ABS matched | � | Kitchen **2 mm**, wardrobe **1 mm** |

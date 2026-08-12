@@ -43,8 +43,8 @@ BOARD_QA = ASSETS / "05_qa_contact_sheet_v2.jpg"
 
 NN9074 = HexColor("#B5AB9C")
 WW0005 = HexColor("#EEEDE9")
-LATTE = HexColor("#C8B9A4")
-SLATE = HexColor("#4E4C49")
+LATTE = HexColor("#A49483")
+SLATE = HexColor("#575D5C")
 IDRIA = HexColor("#3D483C")
 INK = HexColor("#2C2A26")
 MUTED = HexColor("#5C574F")
@@ -336,14 +336,14 @@ def build():
         ("NN9074", "A walls", "#B5AB9C"),
         ("WW0005", "A ceiling", "#EEEDE9"),
         ("NN9088", "B walls alt", "#E9E3D9"),
-        ("S1241", "Latte MT", "#C8B9A4"),
+        ("S1241", "Latte MT", "#A49483"),
         ("84689", "Idria Oak SU", "#3D483C"),
-        ("80236", "Slate DW", "#4E4C49"),
+        ("80236", "Slate DW", "#575D5C"),
     ]
     cells = []
     for code, name, hx in swatch_specs:
         c = HexColor(hx)
-        dark = hx.upper() == "#4E4C49"
+        dark = hx.upper() in {"#575D5C", "#3D483C", "#4E4C49"}
         inner = Table(
             [[""], [Paragraph(
                 f"<b>{code}</b><br/><font size='6'>{name}</font>",

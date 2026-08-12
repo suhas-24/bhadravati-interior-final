@@ -30,9 +30,9 @@
       --ceil: #EEEDE9;
       --ceil-code: "WW0005";
       --ceil-name: "White Linen";
-      --latte: #C8B9A4;
+      --latte: #A49483;
       --oak: #3D483C; /* Century Idria Oak European Grey screen approx */
-      --slate: #4E4C49;
+      --slate: #575D5C;
       --paper: #F7F3EC;
       --paper-deep: #EDE6DB;
       --line: #D2C8BA;
@@ -314,6 +314,13 @@
       color: var(--ceil);
     }
     .swatch.idria span { background: rgba(28,28,28,0.75); color: #EEEDE9; }
+    .swatch.latte { background-color: var(--latte); }
+    .swatch.slate {
+      background-color: var(--slate);
+      background-image: url("swatch_80236_DW_slate_grey.png");
+      background-size: cover;
+      background-position: center;
+    }
     .gallery { display: grid; grid-template-columns: 1fr; gap: 1rem; }
     .gallery figure { margin: 0; position: relative; overflow: hidden; background: var(--paper-deep); }
     .gallery img {
@@ -498,9 +505,9 @@
         <div class="token-strip" aria-label="Primary palette">
           <div class="swatch" data-role="wall" id="swatch-wall"><span id="swatch-wall-label">NN9074 &#183; #B5AB9C</span></div>
           <div class="swatch" data-role="ceil" id="swatch-ceil"><span id="swatch-ceil-label">WW0005 &#183; #EEEDE9</span></div>
-          <div class="swatch" style="background:#C8B9A4"><span>S1241 MT Latte</span></div>
+          <div class="swatch latte" style="background:#A49483"><span>S1241 MT Latte</span></div>
           <div class="swatch idria on-dark" style="background-color:#3D483C" title="84689 SU Idria Oak · European Grey"><span>84689 SU Idria Oak</span></div>
-          <div class="swatch on-dark" style="background:#4E4C49"><span>80236 DW TV</span></div>
+          <div class="swatch slate on-dark" style="background:#575D5C"><span>80236 DW TV</span></div>
           <div class="swatch on-dark" style="background:#1A1A1A"><span>Black granite</span></div>
         </div>
         <div class="panel highlight">

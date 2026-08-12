@@ -145,7 +145,7 @@ Evidence (Idria CenturyPly website, 2026-08-12): `/Users/suhas/Downloads/Interio
 
 **2026-08-12 SKU revalidation (pass 2 — website):** User-supplied CenturyPly product-page screenshot re-confirms **Idria Oak · 84689 SU · Woodgrains | European Grey · 8 ft ? 4 ft · Thickness 0.8 mm**. See `IDRIA_REVALIDATION.md`.
 
-Laminate hexes in tokens (`#C8B9A4`, `#3D483C`, `#4E4C49`) are **screen approx**. Idria `#3D483C` was re-sampled 2026-08-12 from the CenturyPly product-page image (European Grey olive/grey-green) — prior `#A39178` taupe was a wrong visual approx. Catalogue extract has no RGB. Physical sample required.
+Laminate hexes in tokens (`#A49483`, `#3D483C`, `#575D5C`) are **screen approx**. Idria `#3D483C` was re-sampled 2026-08-12 from the CenturyPly product-page image (European Grey olive/grey-green) — prior `#A39178` taupe was a wrong visual approx. Catalogue extract has no RGB. Physical sample required.
 
 ### Edge / hardware / lighting
 

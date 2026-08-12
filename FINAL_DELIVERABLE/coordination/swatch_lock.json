@@ -43,16 +43,16 @@
       "brand": "Century StarLine",
       "name": "Latte",
       "finish_code": "MT",
-      "hex": "#C8B9A4",
+      "hex": "#A49483",
       "rgb": [
-        200,
-        185,
-        164
+        164,
+        148,
+        131
       ],
       "undertone": "warm_beige_solid",
       "sheen": "matte_MT",
       "use_rule": "ALL kitchen shutters -- base, drawers, and loft. One code only. No dual-tone.",
-      "verification_note": "Catalogue lists S1241 MT LATTE under Solid MATTE. No measured RGB in extract; hex is visual approx -- must not read orange under 3000 K (sample-check)"
+      "verification_note": "StarLine printed p.51 / PDF p.80 Solid MATTE chip crop 2026-08-12; screen approx #A49483 rgb 164,148,131. Solid matte \u2014 not woodgrain. Physical sample required."
     },
     "84689_SU": {
       "brand": "Century StarLine",
@@ -67,22 +67,22 @@
       "undertone": "european_grey_olive_muted",
       "sheen": "soft_woodgrain_SU",
       "use_rule": "Wardrobe shutters -- 3 doors (single L + double R), leaves 457/457/458. Grain vertical.",
-      "verification_note": "Century Idria Oak European Grey; hex #3D483C / rgb 61,72,60 sampled from website product image 2026-08-12 (replaces wrong taupe #A39178)."
+      "verification_note": "CenturyPly website product image 2026-08-12 (Woodgrains | European Grey). Recropped excluding UI chrome. Screen approx #3D483C rgb 61,72,60. Catalogue print p.55 reads lighter charcoal #5D5C54 \u2014 website photography is the locked chip. Not taupe."
     },
     "80236_DW": {
       "brand": "Century StarLine",
       "name": "Slate Grey",
       "finish_code": "DW",
-      "hex": "#4E4C49",
+      "hex": "#575D5C",
       "rgb": [
-        78,
-        76,
-        73
+        87,
+        93,
+        92
       ],
-      "undertone": "warm_graphite_dyed_wood",
+      "undertone": "cool_slate_dyed_wood",
       "sheen": "matte_dyed_woodgrain_DW",
       "use_rule": "TV cabinet ONLY as controlled low accent. Do not use in kitchen or broadly on walls.",
-      "verification_note": "Catalogue: 80236 DW SLATE GREY under Dyed Wood. Hex visual approx -- deep graphite, not cool blue-grey"
+      "verification_note": "StarLine printed p.7 / PDF p.8 Dyed Wood chip crop 2026-08-12; screen approx #575D5C rgb 87,93,92. Real DW grain, not synthetic. Physical sample required."
     },
     "black_granite": {
       "brand": "existing_site",
