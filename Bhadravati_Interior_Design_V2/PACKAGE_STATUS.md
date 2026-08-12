@@ -1,4 +1,4 @@
-# PACKAGE_STATUS � Bhadravati Interior Design V2
+# PACKAGE_STATUS — Bhadravati Interior Design V2
 
 **Checked:** 2026-08-12  
 **Package root:** `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`  
@@ -122,4 +122,6 @@ PDF captions updated for SoT override on QA sheet wardrobe dims (1372×2286×488
 ## SKU revalidation — 84689 Idria (2026-08-12)
 
 User challenge that **84689 SU Idria** might be a wrong codename was checked against Century StarLine. **Verdict: CORRECT** — `84689 SU` = **IDRIA OAK** (catalogue p.55 / PDF p.90; index PDF p.143). Backup **84687 SU Lyon Oak** also confirmed (p.57 / PDF p.92). SoT / CONTRADICTIONS C-07 / tokens / FINAL_QA updated with page evidence; PDF chip label normalized to “Idria Oak SU”; PDF rebuilt. Evidence: `source/century_84689_idria_page55_pdfp90.png`.
+
+**Pass 2 (website):** CenturyPly product-page screenshot reconfirms **Idria Oak · 84689 SU · Woodgrains | European Grey · 8×4 ft · 0.8 mm**. Evidence: `source/century_84689_idria_oak_website_2026-08-12.png`. Write-up: `IDRIA_REVALIDATION.md`. No further PDF label fixes.
 

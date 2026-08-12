@@ -1,4 +1,4 @@
-# Bhadravati Home ó Contradictions Register (Critical)
+# Bhadravati Home ‚Äî Contradictions Register (Critical)
 
 **Auditor date:** 2026-08-12  
 **Severity:** Items marked **CRITICAL** can cause wrong fabrication, wrong procurement, or client mistrust if agents pick the wrong side.  
@@ -6,7 +6,7 @@
 
 ---
 
-## C-01 ó Kitchen granite / slab thickness (CRITICAL)
+## C-01 ‚Äî Kitchen granite / slab thickness (CRITICAL)
 
 | Side A | Side B |
 |---|---|
@@ -14,26 +14,26 @@
 
 **Sources:**  
 `/Users/suhas/Downloads/Interiors/interior_dimension_control/dimension_register_v1.json` (`kitchen.notes`)  
-`/Users/suhas/Downloads/Interiors/interior_dimension_control/dimension_register_v1.md` (ìCritical conflictî)
+`/Users/suhas/Downloads/Interiors/interior_dimension_control/dimension_register_v1.md` (‚ÄúCritical conflict‚Äù)
 
 **Resolution for agents:** **Neither** is fabrication-ready. Measure installed stone. Do not average. Do not silently pick 15 mm or 1.50 in.
 
 ---
 
-## C-02 ó Wardrobe door count: 4 leaves vs 3 doors (CRITICAL)
+## C-02 ‚Äî Wardrobe door count: 4 leaves vs 3 doors (CRITICAL)
 
 | Claim | Where it appears |
 |---|---|
-| **Four** narrower vertical shutters | Final Brief MD ß Wardrobe; Professional PDF wardrobe elevation; Visual Concept PDF; Visual QA Critique; early FINAL QA (`QA_FINDINGS` M3); `swatch_lock.json` use_rule for 84689; `06_Budget_Phasing.md` essential tier |
+| **Four** narrower vertical shutters | Final Brief MD ¬ß Wardrobe; Professional PDF wardrobe elevation; Visual Concept PDF; Visual QA Critique; early FINAL QA (`QA_FINDINGS` M3); `swatch_lock.json` use_rule for 84689; `06_Budget_Phasing.md` essential tier |
 | **Three** doors (1 single L + 1 double R), leaves **457 / 457 / 458 mm** | `FINAL_DELIVERABLE/coordination/wardrobe_door_lock.json` (client directive); `PRECISION_AUDIT.md`; FINAL `design_tokens.json`; `MASTER_BRIEF_V2.md`; image QA overwrites of `*four*` filenames |
 
-**Niche size is not in conflict:** clear opening remains **54 ◊ 90 ◊ 19.20 in** (1372 ◊ 2286 ◊ 488 mm) in both stories.
+**Niche size is not in conflict:** clear opening remains **54 ? 90 ? 19.20 in** (1372 ? 2286 ? 488 mm) in both stories.
 
-**Resolution for agents (current lock):** Use **3 doors / 457ñ457ñ458 mm** as the controlling client lock for V2. Treat four-leaf text as **superseded** unless client reverses in writing. Do not invent a hybrid (e.g. ì3 or 4î).
+**Resolution for agents (current lock):** Use **3 doors / 457‚Äì457‚Äì458 mm** as the controlling client lock for V2. Treat four-leaf text as **superseded** unless client reverses in writing. Do not invent a hybrid (e.g. ‚Äú3 or 4‚Äù).
 
 ---
 
-## C-03 ó Kitchen shutter colour: dual-tone vs Latte-all (CRITICAL)
+## C-03 ‚Äî Kitchen shutter colour: dual-tone vs Latte-all (CRITICAL)
 
 | Claim | Where |
 |---|---|
@@ -44,11 +44,11 @@
 `/Users/suhas/Downloads/Interiors/Bhadravati_Corrected_Visualization/Bhadravati_Corrected_Client_Handover_Visualization.pdf`  
 (extracted: `_qa_geometry_review/Bhadravati_Corrected_Client_Handover_Visualization_extracted_text.json`)
 
-**Resolution:** Locked brief wins ó **S1241 MT Latte only** for all kitchen shutters. **80236 DW** is TV-cabinet accent only. ìWarm Greige Matteî is **not** a Century code ó do not procure by that name.
+**Resolution:** Locked brief wins ‚Äî **S1241 MT Latte only** for all kitchen shutters. **80236 DW** is TV-cabinet accent only. ‚ÄúWarm Greige Matte‚Äù is **not** a Century code ‚Äî do not procure by that name.
 
 ---
 
-## C-04 ó Default wall paint: NN9074 vs NN9088 (CRITICAL)
+## C-04 ‚Äî Default wall paint: NN9074 vs NN9088 (CRITICAL)
 
 | Claim | Where |
 |---|---|
@@ -59,19 +59,19 @@
 
 ---
 
-## C-05 ó Bedroom window size (CRITICAL for architecture fidelity)
+## C-05 ‚Äî Bedroom window size (CRITICAL for architecture fidelity)
 
 | Claim | Where |
 |---|---|
-| Two **4 ft ◊ 4 ft** windows | Professional PDF spatial layout (ìproject brief statesÖî) |
-| Bedroom west **4 ft 9 in ◊ 3 ft** | Corrected Handover dimension/QA page |
+| Two **4 ft ? 4 ft** windows | Professional PDF spatial layout (‚Äúproject brief states‚Ä¶‚Äù) |
+| Bedroom west **4 ft 9 in ? 3 ft** | Corrected Handover dimension/QA page |
 | Tokens flag conflict: `4ft9in x 3ft_OR_4ft9in x 4ft_conflict` | `FINAL_DELIVERABLE/design_tokens.json` ? `openings_unverified_from_prior_docs` |
 
 **Resolution:** Mark **UNVERIFIED**. Site-measure both width and height. Do not hard-code either value into a fabrication or opening schedule. Renders must not invent a third geometry.
 
 ---
 
-## C-06 ó Root sample filename `844485` vs catalogue `84485` (CRITICAL procurement)
+## C-06 ‚Äî Root sample filename `844485` vs catalogue `84485` (CRITICAL procurement)
 
 | Claim | Reality |
 |---|---|
@@ -86,24 +86,27 @@
 
 ---
 
-## C-07 ó Wardrobe laminate: Idria vs Lyon (major)
+## C-07 ‚Äî Wardrobe laminate: Idria vs Lyon (major)
 
 | Claim | Where |
 |---|---|
 | Preferred **84689 SU Idria Oak** | Final Brief; Professional; Visual Concept; FINAL tokens |
-| Corrected pack ìmaterials usedî: **84687 SU Lyon Oak** | Corrected Client Handover |
-| Challenge: ì84689 SU Idriaî codename may be incorrect | User query 2026-08-12 |
+| Corrected pack ‚Äúmaterials used‚Äù: **84687 SU Lyon Oak** | Corrected Client Handover |
+| Challenge: ‚Äú84689 SU Idria‚Äù codename may be incorrect | User query 2026-08-12 |
 
 **Catalogue proof (Century StarLine 0.8mm.pdf):**
-- **84689 SU = IDRIA OAK** ó printed catalogue **p.55** (PDF page **90**); design-code index PDF page **143**. Evidence crop: `source/century_84689_idria_page55_pdfp90.png`.
-- **84687 SU = LYON OAK** ó printed catalogue **p.57** (PDF page **92**); same index page **143**. Image: `processed_pdf_images/century/page_092.png`.
-- Adjacent code **84688 SU = SKAGEN OAK** (also p.55) ó do not confuse with Idria.
+- **84689 SU = IDRIA OAK** ‚Äî printed catalogue **p.55** (PDF page **90**); design-code index PDF page **143**. Evidence crop: `source/century_84689_idria_page55_pdfp90.png`.
+- **84687 SU = LYON OAK** ‚Äî printed catalogue **p.57** (PDF page **92**); same index page **143**. Image: `processed_pdf_images/century/page_092.png`.
+- Adjacent code **84688 SU = SKAGEN OAK** (also p.55) ‚Äî do not confuse with Idria.
 
-**Resolution:** Preferred = **84689 SU Idria Oak** (catalogue-confirmed). Lyon **84687** = backup only after sample failure / client choice. Challenge closed ó **not a wrong SKU**.
+**Website proof (CenturyPly product page, user screenshot 2026-08-12):**
+- **Idria Oak ¬∑ 84689 SU** ‚Äî category Woodgrains | European Grey; size 8 ft ? 4 ft; thickness **0.8 mm**. Evidence: `source/century_84689_idria_oak_website_2026-08-12.png`. Full write-up: `IDRIA_REVALIDATION.md`.
+
+**Resolution:** Preferred = **84689 SU Idria Oak** (catalogue + website confirmed). Lyon **84687** = backup only after sample failure / client choice. Challenge closed ‚Äî **not a wrong SKU**.
 
 ---
 
-## C-08 ó Handle type: projecting vs recessed (major)
+## C-08 ‚Äî Handle type: projecting vs recessed (major)
 
 | Claim | Where |
 |---|---|
@@ -114,43 +117,43 @@
 
 ---
 
-## C-09 ó Kitchen shutter system: aluminium (drawing) vs laminate face (package) (major)
+## C-09 ‚Äî Kitchen shutter system: aluminium (drawing) vs laminate face (package) (major)
 
 | Claim | Where |
 |---|---|
 | K-01 requests **aluminium shutters** for B1/B2/B3 (system unspecified) | Dimension register `kitchen.notes` |
 | Client finish package specifies **Century S1241 MT Latte** laminate on shutters | Final Brief; Professional; FINAL PDF |
 
-**Resolution:** Do not collapse these into one sentence without nuance. **Finish / colour lock** = S1241 MT Latte. **Frame system** (aluminium framed vs full plywood laminate shutter) remains a fabricator decision requiring shop drawings ó unless client selects a specific system in writing. Wardrobe Option A (aluminium + fluted glass) is a **wardrobe** face option, not automatic kitchen approval.
+**Resolution:** Do not collapse these into one sentence without nuance. **Finish / colour lock** = S1241 MT Latte. **Frame system** (aluminium framed vs full plywood laminate shutter) remains a fabricator decision requiring shop drawings ‚Äî unless client selects a specific system in writing. Wardrobe Option A (aluminium + fluted glass) is a **wardrobe** face option, not automatic kitchen approval.
 
 ---
 
-## C-10 ó Internal FINAL package drift: budget / swatch still say four leaves (major)
+## C-10 ‚Äî Internal FINAL package drift: budget / swatch still say four leaves (major)
 
 Even inside the designated V1 package, after the 3-door lock:
 
 | File | Problem |
 |---|---|
-| `FINAL_DELIVERABLE/06_Budget_Phasing.md` | Still budgets ìwardrobe **four-leaf**î / ì4 leavesî |
-| `FINAL_DELIVERABLE/coordination/swatch_lock.json` | 84689 use_rule still says ì**four** equal vertical leavesî |
+| `FINAL_DELIVERABLE/06_Budget_Phasing.md` | Still budgets ‚Äúwardrobe **four-leaf**‚Äù / ‚Äú4 leaves‚Äù |
+| `FINAL_DELIVERABLE/coordination/swatch_lock.json` | 84689 use_rule still says ‚Äú**four** equal vertical leaves‚Äù |
 | Legacy visual filenames `*four_shutters*` / `*four_leaf*` | Content overwritten to 3-door per `image_qa.json`, but names mislead |
 
 **Resolution for V2:** Globally align to 3-door lock. Do not copy budget/swatch four-leaf prose forward.
 
 ---
 
-## C-11 ó Bathroom window annotation conflict (moderate)
+## C-11 ‚Äî Bathroom window annotation conflict (moderate)
 
 | Claim | Where |
 |---|---|
-| Bathroom west **2 ft ◊ 4 ft** | Corrected Handover openings list |
-| Hand annotation / visible plan: bathroom window **1 ft 8 in** (partial) | Professional PDF ìVisible plan annotationsî |
+| Bathroom west **2 ft ? 4 ft** | Corrected Handover openings list |
+| Hand annotation / visible plan: bathroom window **1 ft 8 in** (partial) | Professional PDF ‚ÄúVisible plan annotations‚Äù |
 
-**Resolution:** UNVERIFIED ó site measure. Do not fabricate from either.
+**Resolution:** UNVERIFIED ‚Äî site measure. Do not fabricate from either.
 
 ---
 
-## C-12 ó Spelling / finish variance on sample 83736 (minor but procurement-sensitive)
+## C-12 ‚Äî Spelling / finish variance on sample 83736 (minor but procurement-sensitive)
 
 | Variant | Where |
 |---|---|
@@ -162,18 +165,18 @@ Even inside the designated V1 package, after the 3-door lock:
 
 ---
 
-## C-13 ó Envelope 21◊18 ft vs fabrication use (process)
+## C-13 ‚Äî Envelope 21?18 ft vs fabrication use (process)
 
 | Claim | Where |
 |---|---|
-| Overall room **21 ft ◊ 18 ft** used on many PDF covers/plans | Professional, Client Viz, Corrected, FINAL |
+| Overall room **21 ft ? 18 ft** used on many PDF covers/plans | Professional, Client Viz, Corrected, FINAL |
 | Register: rendered plan **must not** derive cabinet/circulation cut dimensions | `dimension_register_v1.json` `non_fabrication_evidence` |
 
-**Resolution:** Keep 21◊18 as **relational** only. Not a contradiction of numbers ó a **misuse risk** if agents treat it as a cut sheet.
+**Resolution:** Keep 21?18 as **relational** only. Not a contradiction of numbers ‚Äî a **misuse risk** if agents treat it as a cut sheet.
 
 ---
 
-## Summary ó controlling answers when conflicted
+## Summary ‚Äî controlling answers when conflicted
 
 | Topic | Controlling answer |
 |---|---|
@@ -183,9 +186,9 @@ Even inside the designated V1 package, after the 3-door lock:
 | Default walls | **NN9074** |
 | Ceiling default | **WW0005** |
 | Wardrobe leaf count | **3** @ 457/457/458 mm |
-| Niche size | **54 ◊ 90 ◊ 19.20 in** |
+| Niche size | **54 ? 90 ? 19.20 in** |
 | Kitchen module | **106 in**; B1/B2/B3 **48/36/18** |
-| Granite thickness | **UNKNOWN ó measure** |
+| Granite thickness | **UNKNOWN ‚Äî measure** |
 | Openings | **UNVERIFIED** |
 | Code 844485 | **Do not use** (typo; catalogue 84485 if needed) |
 
