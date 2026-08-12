@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bhadravati wiki visuals ó axonometric + exploded</title>
+  <title>Bhadravati wiki visuals ù axonometric + exploded</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
@@ -23,15 +23,22 @@
     object, iframe { width: 100%; border: 1px solid var(--line); background: #fff; }
     #view3d { width: 100%; height: 420px; border: 1px solid var(--line); background: #1A1A1A; }
     .note { font-size: 0.78rem; }
+    .cams { display: flex; gap: 0.4rem; flex-wrap: wrap; margin: 0.4rem 0 0.6rem; }
+    .cams button { font: 600 0.78rem "IBM Plex Sans", sans-serif; border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 0.35rem 0.7rem; cursor: pointer; }
+    .cams button[aria-pressed="true"] { background: var(--oak); color: #F4EFE7; }
+    .stills { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .stills img { width: 100%; border: 1px solid var(--line); background: #fff; }
+    @media (max-width: 800px) { .stills { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
   <header>
-    <h1>Bhadravati ó precision visuals</h1>
-    <p>Warm Contemporary Minimalism. Kitchen shutters-only ∑ 3-door wardrobe ∑ Idria = European Grey <code>#3D483C</code> not taupe. Conceptual ó not fabrication-approved. Blender not found locally; SVG + three.js boxes.</p>
+    <h1>Bhadravati ù precision visuals</h1>
+    <p>Warm Contemporary Minimalism. Kitchen shutters-only ù 3-door wardrobe ù Idria = European Grey <code>#3D483C</code> not taupe. Conceptual ù not fabrication-approved. Model method: <a href="../09_MODEL_WORKFLOW.md">09 screenshot loop</a> (Grok 4.6 field guide). Blender not found; SVG + three.js + PIL stills.</p>
     <nav>
       <a href="../00_WIKI_INDEX.md">Wiki index</a>
       <a href="../08_BHADRAVATI_LOCKED_SPEC.md">Locked spec</a>
+      <a href="../09_MODEL_WORKFLOW.md">Model workflow</a>
       <a href="../07_PURCHASE_MASTER_CHECKLIST.md">Purchase checklist</a>
     </nav>
     <div class="sw">
@@ -43,8 +50,25 @@
     </div>
   </header>
   <section>
+    <h2>Locked camera stills (PIL isometric ù screenshot loop)</h2>
+    <p class="note">Pass 1 defects (taupe middle leaf, orbit, implied pulls) fixed. Recapture: <code>kitchen_camera.png</code> / <code>wardrobe_camera.png</code> + <code>qa_loop_report.json</code>.</p>
+    <div class="stills">
+      <div>
+        <img src="kitchen_camera.png" alt="Kitchen camera: S1241 MT Latte shutters on retained black granite, recessed J-pulls, B1 B2 B3" />
+        <p class="note">Kitchen camera ù Latte <code>#A49483</code> ù granite retain ù recessed J</p>
+      </div>
+      <div>
+        <img src="wardrobe_camera.png" alt="Wardrobe camera: three Idria European Grey leaves 457 457 458, Sensys cups, recessed pulls" />
+        <p class="note">Wardrobe camera ù Idria <code>#3D483C</code> ù 457 / 457 / 458 ù Sensys 8645i ù5</p>
+      </div>
+    </div>
     <h2>Dimensional 3D boxes (three.js)</h2>
-    <p class="note">Kitchen module 2692◊488◊787 mm counter band + loft; wardrobe 1372◊488◊2286 mm, three leaves. Recessed pulls implied (no bar geometry). Not BIM.</p>
+    <p class="note">Kitchen module 2692ù488ù787 mm counter band + loft; wardrobe 1372ù488ù2286 mm, three leaves. Recessed J-slots modelled. Orbit off until you ask ù stills are QA-stable. Not BIM.</p>
+    <div class="cams">
+      <button type="button" id="camKitchen" aria-pressed="true">Kitchen camera</button>
+      <button type="button" id="camWardrobe" aria-pressed="false">Wardrobe camera</button>
+      <button type="button" id="camOrbit" aria-pressed="false">Orbit</button>
+    </div>
     <div id="view3d"></div>
     <h2>Studio axonometric</h2>
     <object data="axonometric_3d.svg" type="image/svg+xml" style="height:520px"></object>
@@ -66,8 +90,6 @@
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x2C2925);
     const camera = new THREE.PerspectiveCamera(38, el.clientWidth / el.clientHeight, 0.1, 50);
-    camera.position.set(4.2, 2.8, 4.8);
-    camera.lookAt(0.4, 0.9, 0);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(el.clientWidth, el.clientHeight);
     el.appendChild(renderer.domElement);
@@ -76,28 +98,56 @@
     dir.position.set(3, 6, 4);
     scene.add(dir);
     const mm = 0.001;
-    function box(w, h, d, hex, x, y, z) {
+    const LATTE = 0xa49483;
+    const IDRIA = 0x3d483c;
+    function box(w, h, d, hex, x, y, z, rough = 0.72) {
       const m = new THREE.Mesh(
         new THREE.BoxGeometry(w * mm, h * mm, d * mm),
-        new THREE.MeshStandardMaterial({ color: hex, roughness: 0.72, metalness: 0.05 })
+        new THREE.MeshStandardMaterial({ color: hex, roughness: rough, metalness: 0.05 })
       );
       m.position.set(x * mm, y * mm, z * mm);
       scene.add(m);
       return m;
     }
-    // kitchen granite + latte shutters (origin at kitchen)
-    box(2692, 40, 488, 0x1a1a1a, 0, 787, 0);
-    box(1219, 700, 20, 0xa49483, -736, 400, -234);
-    box(914, 700, 20, 0xa49483, 120, 400, -234);
-    box(457, 700, 20, 0xa49483, 820, 400, -234);
-    box(2692, 280, 488, 0xa49483, 0, 2450, 0);
-    // wardrobe Idria European Grey
+    function jslot(leafW, leafH, cx, cy, cz, onLeft) {
+      const slotW = 12, slotH = leafH * 0.22, slotD = 8;
+      const x = onLeft ? cx - leafW / 2 + 18 : cx + leafW / 2 - 18;
+      box(slotW, slotH, slotD, 0xc5c8c6, x, cy, cz - 6, 0.45);
+    }
+    box(2692, 40, 488, 0x1a1a1a, 0, 787, 0, 0.35);
+    box(1219, 700, 20, LATTE, -736.5, 400, -234);
+    jslot(1219, 700, -736.5, 400, -234, true);
+    box(914, 700, 20, LATTE, 120, 400, -234);
+    jslot(914, 700, 120, 400, -234, true);
+    box(457, 700, 20, LATTE, 820.5, 400, -234);
+    jslot(457, 700, 820.5, 400, -234, true);
+    box(2692, 280, 488, LATTE, 0, 2450, 0);
     const ox = -2200, oz = 900;
-    box(457, 2286, 20, 0x3d483c, ox - 457, 1143, oz);
-    box(457, 2286, 20, 0x455445, ox, 1143, oz);
-    box(458, 2286, 20, 0x3d483c, ox + 458, 1143, oz);
+    box(457, 2286, 20, IDRIA, ox - 457.5, 1143, oz, 0.62);
+    jslot(457, 2286, ox - 457.5, 1143, oz, true);
+    box(457, 2286, 20, IDRIA, ox, 1143, oz, 0.62);
+    jslot(457, 2286, ox, 1143, oz, true);
+    box(458, 2286, 20, IDRIA, ox + 457.5, 1143, oz, 0.62);
+    jslot(458, 2286, ox + 457.5, 1143, oz, true);
+    const lookKitchen = () => { camera.position.set(2.4, 1.6, 3.2); camera.lookAt(0.2, 0.9, 0); };
+    const lookWardrobe = () => { camera.position.set(-1.1, 1.8, 3.6); camera.lookAt(-2.2, 1.1, 0.9); };
+    lookKitchen();
+    let orbit = false;
+    const btns = {
+      kitchen: document.getElementById("camKitchen"),
+      wardrobe: document.getElementById("camWardrobe"),
+      orbit: document.getElementById("camOrbit"),
+    };
+    function press(which) {
+      btns.kitchen.setAttribute("aria-pressed", which === "kitchen" ? "true" : "false");
+      btns.wardrobe.setAttribute("aria-pressed", which === "wardrobe" ? "true" : "false");
+      btns.orbit.setAttribute("aria-pressed", which === "orbit" ? "true" : "false");
+    }
+    btns.kitchen.onclick = () => { orbit = false; lookKitchen(); press("kitchen"); };
+    btns.wardrobe.onclick = () => { orbit = false; lookWardrobe(); press("wardrobe"); };
+    btns.orbit.onclick = () => { orbit = true; press("orbit"); };
     function tick() {
-      scene.rotation.y += 0.003;
+      if (orbit) scene.rotation.y += 0.003;
       renderer.render(scene, camera);
       requestAnimationFrame(tick);
     }

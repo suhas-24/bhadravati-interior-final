@@ -1,0 +1,38 @@
+{
+  "method": "capture_frame_list_defects_fix_only -- Eric Zakariasson Grok 4.6 field guide",
+  "tweet": "https://x.com/ericzakariasson/status/2087566447178547494",
+  "kitchen_chip_rgb": [
+    164,
+    148,
+    131
+  ],
+  "kitchen_body_rgb": [
+    161,
+    146,
+    129
+  ],
+  "wardrobe_chip_rgb": [
+    61,
+    72,
+    60
+  ],
+  "wardrobe_body_rgb": [
+    61,
+    72,
+    60
+  ],
+  "locks": {
+    "S1241_MT": [
+      164,
+      148,
+      131
+    ],
+    "84689_SU": [
+      61,
+      72,
+      60
+    ]
+  },
+  "defects": [],
+  "pass": true
+}

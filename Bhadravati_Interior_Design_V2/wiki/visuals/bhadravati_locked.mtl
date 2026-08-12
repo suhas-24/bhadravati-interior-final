@@ -1,0 +1,11 @@
+newmtl Latte
+Kd 0.643 0.580 0.514
+Ns 12
+
+newmtl Idria
+Kd 0.239 0.282 0.235
+Ns 18
+
+newmtl Granite
+Kd 0.102 0.102 0.102
+Ns 40

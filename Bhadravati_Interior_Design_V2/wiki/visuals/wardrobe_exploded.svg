@@ -8,7 +8,7 @@
     .s { font-family: "IBM Plex Sans", "Segoe UI", sans-serif; fill: #5A534A; }
     .l { font-family: "IBM Plex Sans", "Segoe UI", sans-serif; fill: #2C2925; font-weight: 600; }
     .oak { fill: #3D483C; stroke: #2A3229; stroke-width: 0.9; }
-    .oak2 { fill: #455445; stroke: #2A3229; stroke-width: 0.8; }
+    .oak2 { fill: #3D483C; stroke: #2A3229; stroke-width: 0.8; }
     .carc { fill: #B5AB9C; stroke: #6E655B; stroke-width: 0.7; }
     .ss { fill: #C5C8C6; stroke: #5A534A; stroke-width: 0.5; }
     .lock { fill: #8A8E8C; stroke: #2C2925; stroke-width: 0.6; }

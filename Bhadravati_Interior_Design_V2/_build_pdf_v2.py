@@ -495,7 +495,7 @@ def build():
         "Wardrobe → Club Prime 19 mm or Greenply 710 Marine 19 mm (HDHMR 18 mm if CNC; not Boilo; Sainik 19 mm contingency only). "
         "Hettich Sensys 8645i · KA 5632/4732 if drawers · Godrej Curvo 8010 · oval 30×15 mm rail with mid-support · "
         "SS304 kitchen · recessed SS pulls only · seal every edge · laminate both faces of kitchen shutters. "
-        "Evidence: BOARD_DECISION.md · wiki/01–08 (Honest Interior Source).",
+        "Evidence: BOARD_DECISION.md · wiki/01–09 (Honest Interior Source).",
         body,
     ))
     story.append(PageBreak())
@@ -506,6 +506,7 @@ def build():
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
         "From <b>wiki/08_BHADRAVATI_LOCKED_SPEC.md</b> after articles 01–06. "
+        "Visual method: <b>wiki/09_MODEL_WORKFLOW.md</b> (Grok 4.6 field guide — capture frame, list defects, fix only those; not Trellis). "
         "“710” in a product name is a <b>trademark, not a grade</b>. Sainik 710 and Ecotec 710 print "
         "<b>IS 303 BWP</b>. Greenply <b>710 Marine</b> prints <b>IS 710</b>. Club Prime only if "
         "<b>IS 710 is on the sheet edge</b>. QR ≠ marine. Website ₹/sqft is often the wrong thickness. "
@@ -535,6 +536,8 @@ def build():
         ("kitchen_exploded.png", "K-01 exploded — granite retained, S1241 MT Latte, B1/B2/B3, 2 mm ABS, recessed SS · conceptual"),
         ("wardrobe_exploded.png", "W-01 exploded — 457/457/458, Idria European Grey #3D483C, 5× Sensys, Curvo 8010 lock · conceptual"),
         ("material_stack.png", "Material stack — both-faces 0.8 mm + ABS wrap · Idria is olive/grey-green, not taupe"),
+        ("kitchen_camera.png", "K-01 camera still — S1241 MT Latte #A49483, granite retain, recessed J · conceptual"),
+        ("wardrobe_camera.png", "W-01 camera still — 84689 SU Idria European Grey #3D483C, 457/457/458 · conceptual"),
     ]:
         p = wiki_vis / fname
         if p.exists():
@@ -803,7 +806,7 @@ def build():
         body,
     ))
     story.append(Paragraph(
-        "Control docs: SOURCE_OF_TRUTH.md · wiki/00–08 · BOARD_DECISION.md · CONTRADICTIONS.md · "
+        "Control docs: SOURCE_OF_TRUTH.md · wiki/00–09 · BOARD_DECISION.md · CONTRADICTIONS.md · "
         "MASTER_BRIEF_V2.md · design_tokens_v2.json · dimension_register_v1.",
         small,
     ))
