@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 980 640" role="img" aria-labelledby="k-title k-desc">
+<title id="k-title">K-01 kitchen shutters-only exploded diagram</title>
+<desc id="k-desc">Existing black granite retained. Century S1241 MT Latte on all shutters. B1 1219 / B2 914 / B3 457 mm. Recessed pulls. Conceptual, not a cut sheet.</desc>
+<defs>
+  <style>
+    .t { font-family: "Fraunces", Georgia, serif; fill: #2C2925; }
+    .s { font-family: "IBM Plex Sans", "Segoe UI", sans-serif; fill: #5A534A; }
+    .l { font-family: "IBM Plex Sans", "Segoe UI", sans-serif; fill: #2C2925; font-weight: 600; }
+    .latte { fill: #A49483; stroke: #7A6F62; stroke-width: 0.8; }
+    .gran { fill: #1A1A1A; stroke: #0A0A0A; stroke-width: 0.8; }
+    .core { fill: #C4B08A; stroke: #6E655B; stroke-width: 0.6; }
+    .abs { fill: #8A8175; stroke: #5A534A; stroke-width: 0.5; }
+    .ss { fill: #C5C8C6; stroke: #6E655B; stroke-width: 0.5; }
+  </style>
+</defs>
+<rect width="980" height="640" fill="#F4EFE7"/>
+<text x="28" y="28" class="t" font-size="17">K-01 Kitchen  shutters only (exploded)</text>
+<text x="28" y="46" class="s" font-size="10">Existing granite retained · S1241 MT Latte all faces · Club Prime 19 mm IS 710 stamp (or Boilo 18 CNC) · 2 mm E3 ABS · recessed SS · not fabrication-approved</text>
+
+<!-- loft -->
+<polygon class="latte" points="120,90 760,90 790,108 150,108"/>
+<polygon class="latte" points="760,90 790,108 790,138 760,120"/>
+<polygon class="latte" points="120,90 150,108 150,138 120,120"/>
+<text x="130" y="82" class="l" font-size="11">Loft · S1241 MT both faces · floor to loft underside 2591 mm</text>
+
+<!-- granite counter -->
+<polygon class="gran" points="120,280 760,280 808,308 168,308"/>
+<polygon class="gran" points="760,280 808,308 808,328 760,300"/>
+<text x="130" y="272" class="l" font-size="11">Existing black granite · retain · floor to top 787 mm · depth 488 mm · thickness UNKNOWN (C-01)</text>
+
+<!-- B1 B2 B3 shutters exploded forward -->
+<g>
+  <polygon class="latte" points="130,150 430,150 448,162 148,162"/>
+  <polygon class="latte" points="430,150 448,162 448,250 430,238"/>
+  <polygon class="latte" points="130,150 148,162 148,250 130,238"/>
+  <rect x="136" y="188" width="8" height="42" class="ss"/>
+  <text x="160" y="200" class="l" font-size="11">B1 1219 mm</text>
+  <text x="160" y="214" class="s" font-size="9">48 in clear · recessed J</text>
+</g>
+<g>
+  <polygon class="latte" points="470,155 690,155 706,166 486,166"/>
+  <polygon class="latte" points="690,155 706,166 706,248 690,237"/>
+  <polygon class="latte" points="470,155 486,166 486,248 470,237"/>
+  <rect x="476" y="188" width="8" height="42" class="ss"/>
+  <text x="500" y="200" class="l" font-size="11">B2 914 mm</text>
+  <text x="500" y="214" class="s" font-size="9">36 in clear</text>
+</g>
+<g>
+  <polygon class="latte" points="730,160 820,160 834,170 744,170"/>
+  <polygon class="latte" points="820,160 834,170 834,246 820,236"/>
+  <polygon class="latte" points="730,160 744,170 744,246 730,236"/>
+  <rect x="736" y="188" width="7" height="40" class="ss"/>
+  <text x="748" y="200" class="l" font-size="11">B3 457</text>
+  <text x="748" y="214" class="s" font-size="9">18 in</text>
+</g>
+
+<!-- fridge -->
+<rect x="850" y="150" width="90" height="178" rx="3" fill="#D0D4D6" stroke="#6E655B"/>
+<text x="858" y="240" class="s" font-size="9">Fridge</text>
+<text x="858" y="254" class="s" font-size="9">EXTREME R</text>
+
+<!-- sandwich callout -->
+<g transform="translate(28,360)">
+  <text x="0" y="0" class="l" font-size="12">Shutter sandwich (kitchen)</text>
+  <rect x="0" y="16" width="220" height="14" class="latte"/>
+  <text x="230" y="27" class="s" font-size="10">S1241 MT Latte 0.8 mm face</text>
+  <rect x="0" y="34" width="220" height="36" class="core"/>
+  <text x="230" y="56" class="s" font-size="10">Club Prime 19 mm · IS 710 stamp (or Boilo 18 CNC)</text>
+  <rect x="0" y="74" width="220" height="14" class="latte"/>
+  <text x="230" y="85" class="s" font-size="10">S1241 MT balancer 0.8 mm (both-faces rule)</text>
+  <rect x="-8" y="16" width="8" height="72" class="abs"/>
+  <rect x="220" y="16" width="8" height="72" class="abs"/>
+  <text x="230" y="108" class="s" font-size="10">E3 ABS 2.00 mm full perimeter · PUR if machine proven · recessed pull wrapped</text>
+</g>
+
+<g transform="translate(620,360)">
+  <rect x="0" y="0" width="330" height="200" rx="4" fill="#FBF8F3" stroke="#A49483"/>
+  <text x="14" y="22" class="l" font-size="12">Locks</text>
+  <text x="14" y="44" class="s" font-size="10">Module 2692 mm · B1+B2+B3=102 in + 4×1 in = 106 in PASS</text>
+  <text x="14" y="62" class="s" font-size="10">One laminate code only  no 80236 on kitchen</text>
+  <text x="14" y="80" class="s" font-size="10">Hinges: Sensys 8645i · never 2 cups on tall leaf</text>
+  <text x="14" y="98" class="s" font-size="10">Screws SS304 · no bar pulls</text>
+  <text x="14" y="116" class="s" font-size="10">Do not cut from clear openings  overlay TBD</text>
+  <text x="14" y="144" class="s" font-size="10">Hex Latte #A49483 screen approx</text>
+  <text x="14" y="162" class="s" font-size="10">3000 K task under loft</text>
+  <text x="14" y="184" class="s" font-size="10">Conceptual diagram  not a shop drawing</text>
+</g>
+<text x="28" y="622" class="s" font-size="9">Wiki 04 + 08 · K-01 register · design control only</text>
+</svg>

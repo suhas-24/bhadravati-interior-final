@@ -495,9 +495,52 @@ def build():
         "Wardrobe → Club Prime 19 mm or Greenply 710 Marine 19 mm (HDHMR 18 mm if CNC; not Boilo; Sainik 19 mm contingency only). "
         "Hettich Sensys 8645i · KA 5632/4732 if drawers · Godrej Curvo 8010 · oval 30×15 mm rail with mid-support · "
         "SS304 kitchen · recessed SS pulls only · seal every edge · laminate both faces of kitchen shutters. "
-        "Evidence: BOARD_DECISION.md · BOARD_OPTIONS_CATALOG.md · BOARD_USER_REVIEWS.md.",
+        "Evidence: BOARD_DECISION.md · wiki/01–08 (Honest Interior Source).",
         body,
     ))
+    story.append(PageBreak())
+
+    # ——— WIKI LOCKED SPEC + EXPLODED DIAGRAMS ———
+    wiki_vis = ROOT / "wiki" / "visuals"
+    story.append(Paragraph("Wiki lock — this house (encyclopaedia synthesis)", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
+    story.append(Paragraph(
+        "From <b>wiki/08_BHADRAVATI_LOCKED_SPEC.md</b> after articles 01–06. "
+        "“710” in a product name is a <b>trademark, not a grade</b>. Sainik 710 and Ecotec 710 print "
+        "<b>IS 303 BWP</b>. Greenply <b>710 Marine</b> prints <b>IS 710</b>. Club Prime only if "
+        "<b>IS 710 is on the sheet edge</b>. QR ≠ marine. Website ₹/sqft is often the wrong thickness. "
+        "Idria Oak is Century <b>European Grey</b> (screen <b>#3D483C</b>), not taupe. "
+        "Godrej Curvo 8010 is a <b>lock</b>, not a hinge. Recessed brushed SS only.",
+        body,
+    ))
+    wiki_rows = [
+        [Paragraph("<b>Item</b>", cell_b), Paragraph("<b>Lock</b>", cell_b)],
+        [Paragraph("Kitchen core", cell),
+         Paragraph("<b>Club Prime 19 mm IS 710 stamp</b> (or Boilo 18 mm CNC; or Greenply 710 Marine 19 mm). Not Sainik default.", cell)],
+        [Paragraph("Wardrobe core", cell),
+         Paragraph("<b>Club Prime or Greenply 710 Marine 19 mm</b>. HDHMR 18 mm if CNC. <b>Not Boilo</b> on 90 in doors. Sainik = contingency.", cell)],
+        [Paragraph("Faces", cell),
+         Paragraph("<b>S1241 MT</b> Latte all kitchen · <b>84689 SU</b> Idria European Grey wardrobe · <b>80236 DW</b> TV only · finish letters are the SKU.", cell)],
+        [Paragraph("Edge / gum", cell),
+         Paragraph("E3 <b>ABS 2 mm kitchen / 1 mm wardrobe</b>. Marine/Hi-Per on sheets. PUR edge only if demonstrated.", cell)],
+        [Paragraph("Hardware", cell),
+         Paragraph("<b>Sensys 8645i</b> (not Onsys), <b>5 cups / 90 in leaf</b>. KA 5632/4732. Curvo <b>8010 lock</b>. Oval 30×15 + mid-support. SS304 wet.", cell)],
+        [Paragraph("Community", cell),
+         Paragraph("Reddit 403. Fakes are the real risk. No Boilo 2–5 yr diaries. Factory machine edges beat iron-on.", cell)],
+    ]
+    wt = Table(wiki_rows, colWidths=[38 * mm, 132 * mm])
+    wt.setStyle(tbl_style(IDRIA, header_white=True))
+    story.append(wt)
+    for fname, cap in [
+        ("kitchen_exploded.png", "K-01 exploded — granite retained, S1241 MT Latte, B1/B2/B3, 2 mm ABS, recessed SS · conceptual"),
+        ("wardrobe_exploded.png", "W-01 exploded — 457/457/458, Idria European Grey #3D483C, 5× Sensys, Curvo 8010 lock · conceptual"),
+        ("material_stack.png", "Material stack — both-faces 0.8 mm + ABS wrap · Idria is olive/grey-green, not taupe"),
+    ]:
+        p = wiki_vis / fname
+        if p.exists():
+            story.append(Spacer(1, 2 * mm))
+            story.append(fit_image(p, content_w, 78 * mm))
+            story.append(Paragraph(cap, caption))
     story.append(PageBreak())
 
     # ——— WELLNESS / LIGHTING / ACOUSTICS / SYSTEMS / CODES ———
@@ -760,8 +803,8 @@ def build():
         body,
     ))
     story.append(Paragraph(
-        "Control docs: SOURCE_OF_TRUTH.md · CONTRADICTIONS.md · V1_BASELINE.md · MASTER_BRIEF_V2.md · "
-        "PHASE_FRAMEWORK.md · design_tokens_v2.json · dimension_register_v1 · assets/ASSET_INDEX.md",
+        "Control docs: SOURCE_OF_TRUTH.md · wiki/00–08 · BOARD_DECISION.md · CONTRADICTIONS.md · "
+        "MASTER_BRIEF_V2.md · design_tokens_v2.json · dimension_register_v1.",
         small,
     ))
     story.append(PageBreak())

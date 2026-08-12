@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 980 680" role="img" aria-labelledby="w-title w-desc">
+<title id="w-title">W-01 three-door wardrobe exploded diagram</title>
+<desc id="w-desc">Three leaves 457/457/458 mm. 84689 SU Idria Oak European Grey. Five Sensys per leaf. Oval rail mid-support. Curvo 8010 lock. Conceptual.</desc>
+<defs>
+  <style>
+    .t { font-family: "Fraunces", Georgia, serif; fill: #2C2925; }
+    .s { font-family: "IBM Plex Sans", "Segoe UI", sans-serif; fill: #5A534A; }
+    .l { font-family: "IBM Plex Sans", "Segoe UI", sans-serif; fill: #2C2925; font-weight: 600; }
+    .oak { fill: #3D483C; stroke: #2A3229; stroke-width: 0.9; }
+    .oak2 { fill: #455445; stroke: #2A3229; stroke-width: 0.8; }
+    .carc { fill: #B5AB9C; stroke: #6E655B; stroke-width: 0.7; }
+    .ss { fill: #C5C8C6; stroke: #5A534A; stroke-width: 0.5; }
+    .lock { fill: #8A8E8C; stroke: #2C2925; stroke-width: 0.6; }
+  </style>
+</defs>
+<rect width="980" height="680" fill="#F4EFE7"/>
+<text x="28" y="28" class="t" font-size="17">W-01 Wardrobe  3 doors exploded</text>
+<text x="28" y="46" class="s" font-size="10">Clear 1372 × 2286 × 488 mm · 84689 SU Idria Oak European Grey (not taupe) · Club Prime / Greenply 710 Marine 19 mm · not Boilo · 1 mm E3 ABS</text>
+
+<!-- niche carcass -->
+<polygon class="carc" points="80,80 200,80 230,98 110,98"/>
+<polygon class="carc" points="80,80 110,98 110,520 80,502"/>
+<polygon class="carc" points="200,80 230,98 230,520 200,502"/>
+<text x="80" y="70" class="l" font-size="11">Niche carcass · 19 mm IS 710 ply (or HDHMR 18 CNC)</text>
+<line x1="145" y1="120" x2="195" y2="150" stroke="#C5C8C6" stroke-width="3"/>
+<circle cx="170" cy="135" r="4" class="ss"/>
+<text x="200" y="138" class="s" font-size="9">Oval 30×15 + mid-support on 54 in</text>
+
+<!-- three leaves exploded -->
+<g transform="translate(280,70)">
+  <polygon class="oak" points="0,20 70,20 88,32 18,32"/>
+  <polygon class="oak" points="0,20 18,32 18,470 0,458"/>
+  <polygon class="oak" points="70,20 88,32 88,470 70,458"/>
+  <!-- 5 hinge ticks -->
+  <circle cx="6" cy="50" r="4" class="ss"/>
+  <circle cx="6" cy="140" r="4" class="ss"/>
+  <circle cx="6" cy="230" r="4" class="ss"/>
+  <circle cx="6" cy="320" r="4" class="ss"/>
+  <circle cx="6" cy="410" r="4" class="ss"/>
+  <rect x="78" y="200" width="6" height="70" class="ss"/>
+  <text x="0" y="12" class="l" font-size="11">Leaf 1 · 457 mm · 5× Sensys 8645i</text>
+</g>
+<g transform="translate(430,85)">
+  <polygon class="oak2" points="0,20 70,20 88,32 18,32"/>
+  <polygon class="oak2" points="0,20 18,32 18,470 0,458"/>
+  <polygon class="oak2" points="70,20 88,32 88,470 70,458"/>
+  <circle cx="6" cy="50" r="4" class="ss"/>
+  <circle cx="6" cy="140" r="4" class="ss"/>
+  <circle cx="6" cy="230" r="4" class="ss"/>
+  <circle cx="6" cy="320" r="4" class="ss"/>
+  <circle cx="6" cy="410" r="4" class="ss"/>
+  <rect x="78" y="200" width="6" height="70" class="ss"/>
+  <text x="0" y="12" class="l" font-size="11">Leaf 2 · 457 mm · half overlay meeting</text>
+</g>
+<g transform="translate(580,100)">
+  <polygon class="oak" points="0,20 70,20 88,32 18,32"/>
+  <polygon class="oak" points="0,20 18,32 18,470 0,458"/>
+  <polygon class="oak" points="70,20 88,32 88,470 70,458"/>
+  <circle cx="6" cy="50" r="4" class="ss"/>
+  <circle cx="6" cy="140" r="4" class="ss"/>
+  <circle cx="6" cy="230" r="4" class="ss"/>
+  <circle cx="6" cy="320" r="4" class="ss"/>
+  <circle cx="6" cy="410" r="4" class="ss"/>
+  <rect x="78" y="200" width="6" height="70" class="ss"/>
+  <rect x="40" y="210" width="14" height="18" rx="2" class="lock"/>
+  <text x="0" y="12" class="l" font-size="11">Leaf 3 · 458 mm · Curvo 8010 lock (not a hinge)</text>
+</g>
+
+<g transform="translate(28,560)">
+  <rect x="0" y="0" width="14" height="14" fill="#3D483C"/>
+  <text x="22" y="12" class="s" font-size="10">Idria European Grey #3D483C  not Latte #A49483, not taupe</text>
+  <text x="22" y="30" class="s" font-size="10">1 mm E3 ABS all edges including rod holes · grain vertical · Sensys not Onsys · recessed SS only</text>
+  <text x="22" y="48" class="s" font-size="10">Boilo rejected on 90 in (mass). Sainik 710 = contingency (IS 303 BWP stamp, QR, cut-test).</text>
+  <text x="22" y="66" class="s" font-size="10">Conceptual  overlay/inset/reveals TBD on shop drawings. Not fabrication-approved.</text>
+</g>
+<g transform="translate(720,70)">
+  <rect x="0" y="0" width="230" height="160" rx="4" fill="#FBF8F3" stroke="#3D483C"/>
+  <text x="12" y="22" class="l" font-size="12">Hardware count</text>
+  <text x="12" y="44" class="s" font-size="10">Hinges 15 + 2 spare</text>
+  <text x="12" y="62" class="s" font-size="10">Plates 15 + 2 spare</text>
+  <text x="12" y="80" class="s" font-size="10">SL 322 × 3 (2 end + 1 mid)</text>
+  <text x="12" y="98" class="s" font-size="10">Curvo 8010 + extra key</text>
+  <text x="12" y="116" class="s" font-size="10">KA 4732 if 9.5 in drawer built</text>
+  <text x="12" y="134" class="s" font-size="10">2 extra recessed pulls</text>
+  <text x="12" y="152" class="s" font-size="10">SS304 +20% at plinth</text>
+</g>
+</svg>
