@@ -1,13 +1,13 @@
-# Bhadravati Interior Design V2 ó Asset Index
+# Bhadravati Interior Design V2 ù Asset Index
 
 **Owner:** Visualization / Presentation  
 **Purpose:** Client-deliverable page art for the V2 PDF (another agent owns PDF assembly).  
-**Concept lock:** Warm Contemporary Minimalism ∑ Scheme A (NN9074 + S1241 Latte + Idria Oak)  
-**Status:** Design-control visuals only ó not fabrication-approved.
+**Concept lock:** Warm Contemporary Minimalism ù Scheme A (NN9074 + S1241 Latte + Idria Oak)  
+**Status:** Design-control visuals only ù not fabrication-approved.
 
 ---
 
-## Presentation boards (primary ó use these in the PDF)
+## Presentation boards (primary ù use these in the PDF)
 
 | File | Absolute path | Role | Recommended PDF placement |
 |---|---|---|---|
@@ -22,8 +22,8 @@
 | File | Absolute path | Role | Recommended PDF placement |
 |---|---|---|---|
 | `02b_floorplan_atmosphere_reference.png` | `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/assets/02b_floorplan_atmosphere_reference.png` | Atmospheric 3D plan from prior Visual Concept package | **Do not use as geometry control.** Optional mood appendix only; kitchen massing may not match single-wall lock. |
-| `04b_wardrobe_elevation_four_leaf_superseded.png` | `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/assets/04b_wardrobe_elevation_four_leaf_superseded.png` | Legacy four-leaf elevation stamped SUPERSEDED | Internal QA only ó **exclude from client PDF** unless showing revision history. |
-| `05b_qa_contact_sheet_historical.jpg` | `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/assets/05b_qa_contact_sheet_historical.jpg` | Pre-V2 contact sheet (dark kitchen cabinets) | Internal QA only ó **exclude from client PDF**. |
+| `04b_wardrobe_elevation_four_leaf_superseded.png` | `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/assets/04b_wardrobe_elevation_four_leaf_superseded.png` | Legacy four-leaf elevation stamped SUPERSEDED | Internal QA only ù **exclude from client PDF** unless showing revision history. |
+| `05b_qa_contact_sheet_historical.jpg` | `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/assets/05b_qa_contact_sheet_historical.jpg` | Pre-V2 contact sheet (dark kitchen cabinets) | Internal QA only ù **exclude from client PDF**. |
 
 ---
 
@@ -46,9 +46,9 @@ Already present JPEG renders for narrative pages. Prefer Scheme A (no `_schemeB`
 | `img/05_wardrobe_aluminium_fluted_glass.jpg` | Wardrobe Option A |
 | `img/06_wardrobe_plywood_three_door.jpg` | Wardrobe Option B face |
 | `img/floor_plan_precise.jpg` | Source of board `02` (raw, unframed) |
-| `img/palette_board.jpg` | Older dense swatch board ó superseded for V2 client PDF by `01_visual_palette_board_v2.png` (still useful if PDF needs denser token dump) |
+| `img/palette_board.jpg` | Older dense swatch board ù superseded for V2 client PDF by `01_visual_palette_board_v2.png` (still useful if PDF needs denser token dump) |
 
-Scheme B twins (`*_schemeB.jpg`) ó optional comparison page only.
+Scheme B twins (`*_schemeB.jpg`) ù optional comparison page only.
 
 ---
 
@@ -64,12 +64,12 @@ Scheme B twins (`*_schemeB.jpg`) ó optional comparison page only.
 
 ## Quality notes (for PDF agent)
 
-1. **Palette board (`01`)** ó Client-ready. Locked codes match `MASTER_BRIEF_V2` / `design_tokens_v2.json`. Woodgrain swatches are approximate composites from available shade PNGs blended to locked hex ó physical laminate samples still required.  
-2. **Floorplan (`02`)** ó Best V2 geometry control (single-wall kitchen, 3-door W-01). Relational only; site measure supersedes.  
-3. **Kitchen elevation (`03`)** ó Reuses high-quality Visual Concept overlay; chrome adds V2 lock language. Drawn bar pulls on the source elevation may not match recessed-pull lock ó footer already flags this; PDF caption should prefer ìrecessed brushed stainless.î  
-4. **Wardrobe elevation (`04`)** ó Correct **3-door** configuration. Do not ship `04b` or the Visual Concept four-leaf PNG to the client.  
-5. **QA sheet (`05`)** ó Useful appendix. Some baked-in overlay text on source room JPGs may still show legacy product wording; prefer titles/captions from this index / brief over OCR of those overlays.  
-6. **Do not regenerate** kitchen elevation from scratch ó existing overlay quality is higher than a new flat redraw.  
+1. **Palette board (`01`)** ù Client-ready. Locked codes match `MASTER_BRIEF_V2` / `design_tokens_v2.json`. Paint/green swatches are flat hex; Latte / Idria / Slate use synthetic woodgrain tuned to locked hex (root shade PNGs were full room renders, not usable as chips). Physical laminate/paint samples still required.  
+2. **Floorplan (`02`)** ù Best V2 geometry control (single-wall kitchen, 3-door W-01). Relational only; site measure supersedes.  
+3. **Kitchen elevation (`03`)** ù Reuses high-quality Visual Concept overlay; chrome adds V2 lock language. Drawn bar pulls on the source elevation may not match recessed-pull lock ù footer already flags this; PDF caption should prefer ùrecessed brushed stainless.ù  
+4. **Wardrobe elevation (`04`)** ù Correct **3-door** configuration. Do not ship `04b` or the Visual Concept four-leaf PNG to the client.  
+5. **QA sheet (`05`)** ù Useful appendix. Some baked-in overlay text on source room JPGs may still show legacy product wording; prefer titles/captions from this index / brief over OCR of those overlays.  
+6. **Do not regenerate** kitchen elevation from scratch ù existing overlay quality is higher than a new flat redraw.  
 7. **Root shade PNGs** (`80171`, `83386`, `83736`, `844485`, `NN-9088`) were used only as texture grain references; they are **not** the locked product codes (Latte / Idria / Slate).
 
 ---
@@ -92,7 +92,7 @@ Scheme B twins (`*_schemeB.jpg`) ó optional comparison page only.
 
 | Asset | Built from |
 |---|---|
-| Palette board | `design_tokens_v2.json` + root shade PNGs + NN-9088 |
+| Palette board | `design_tokens_v2.json` hex lock + synthetic grain; Scheme B chip from `NN-9088.png` |
 | Floorplan V2 | `assets/img/floor_plan_precise.jpg` + V2 lock banner |
 | Floorplan atmosphere | `Bhadravati_Visual_Concept_Render/01_finished_floorplan_concept.png` |
 | Kitchen elevation | `Bhadravati_Visual_Concept_Render/02_finished_kitchen_elevation_overlay.png` |

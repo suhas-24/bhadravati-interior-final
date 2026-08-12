@@ -1,72 +1,72 @@
-# PHASE_SKILL_LOG — Bhadravati Interior Design V2
+# PHASE_SKILL_LOG ï¿½ Bhadravati Interior Design V2
 
 **Project:** Bhadravati Home (first-floor studio)  
 **Package:** `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`  
 **Date:** 2026-08-12  
 **PDF:** `Bhadravati_Interior_Design_V2.pdf`  
 **Methodology:** Follows `PHASE_FRAMEWORK.md` + `SKILLS_INVENTORY.md` + `TEAM_ROLES.md`  
-**Spec authority:** `SOURCE_OF_TRUTH.md` · `CONTRADICTIONS.md` · `V1_BASELINE.md`
+**Spec authority:** `SOURCE_OF_TRUTH.md` ï¿½ `CONTRADICTIONS.md` ï¿½ `V1_BASELINE.md`
 
 Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human factors ? Concept ? Color ? Materials ? Wellness/IEQ ? Lighting ? Acoustics ? Building systems ? Codes awareness ? FF&E ? Budget/procurement ? Visualization ? 3D/render ? CAD/BIM ? CD/specs mindset ? PM/install ? QA ? Handover ? Portfolio.
 
 ---
 
-## Phase 0 — Ethics / scope
+## Phase 0 ï¿½ Ethics / scope
 
 | | |
 |---|---|
 | **Skills** | `interior-business-ethics`, `interior-project-management` |
 | **Role** | Engagement Lead |
 | **Decisions** | Design-control only; not fabrication-approved; disclose AI visuals; no AHJ/structural certification; do not procure typo SKU 844485 |
-| **PDF** | Cover + §0 Fabrication hold |
+| **PDF** | Cover + ï¿½0 Fabrication hold |
 
 ---
 
-## Phase 1 — Discovery
+## Phase 1 ï¿½ Discovery
 
 | | |
 |---|---|
 | **Skills** | `client-discovery-communication`, `interior-design-advisor`, `residential-interior-design` |
 | **Role** | Client Strategist |
 | **Decisions** | Warm Contemporary Minimalism locked; Concept A FINAL; reject Japandi (B) and dual-tone/NN9088-default (C); supersedes Corrected Handover material schedule |
-| **PDF** | §1 Design direction |
+| **PDF** | ï¿½1 Design direction |
 
 ---
 
-## Phase 2 — Site survey
+## Phase 2 ï¿½ Site survey
 
 | | |
 |---|---|
 | **Skills** | `site-survey-existing-conditions` |
 | **Role** | Space Planner (field) |
-| **Decisions** | Envelope 21×18 ft relational only; K-01/W-01 as baseline; openings UNVERIFIED; granite thickness UNKNOWN (C-01) |
-| **PDF** | §2–4 + dimension tables |
+| **Decisions** | Envelope 21ï¿½18 ft relational only; K-01/W-01 as baseline; openings UNVERIFIED; granite thickness UNKNOWN (C-01) |
+| **PDF** | ï¿½2ï¿½4 + dimension tables |
 
 ---
 
-## Phase 3 — Programming
+## Phase 3 ï¿½ Programming
 
 | | |
 |---|---|
 | **Skills** | `programming-space-planning`, `residential-interior-design`, `visualise` |
 | **Role** | Space Planner |
-| **Decisions** | Zones SW/S/SE/NW/N/NE; fridge extreme right; single-wall kitchen; circulation 900–1200 / 600–900 |
+| **Decisions** | Zones SW/S/SE/NW/N/NE; fridge extreme right; single-wall kitchen; circulation 900ï¿½1200 / 600ï¿½900 |
 | **PDF** | Zone table + floor plan page |
 
 ---
 
-## Phase 4 — Human factors
+## Phase 4 ï¿½ Human factors
 
 | | |
 |---|---|
 | **Skills** | `human-factors-accessibility` |
 | **Role** | Human Factors Lead |
 | **Decisions** | Counter ~787 mm AFF; hang ~991 mm; wardrobe 3 leaves 457/457/458; no ADA certification claimed |
-| **PDF** | Clearance notes in §2–4 |
+| **PDF** | Clearance notes in ï¿½2ï¿½4 |
 
 ---
 
-## Phase 5 — Concept / fundamentals
+## Phase 5 ï¿½ Concept / fundamentals
 
 | | |
 |---|---|
@@ -77,7 +77,7 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ---
 
-## Phase 6 — Color
+## Phase 6 ï¿½ Color
 
 | | |
 |---|---|
@@ -88,7 +88,7 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ---
 
-## Phase 7 — Materials
+## Phase 7 ï¿½ Materials
 
 | | |
 |---|---|
@@ -99,18 +99,18 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ---
 
-## Phase 8 — Wellness / IEQ
+## Phase 8 ï¿½ Wellness / IEQ
 
 | | |
 |---|---|
 | **Skills** | `sustainability-wellness-ieq` |
 | **Role** | Wellness / IEQ Advisor |
 | **Decisions** | Mid-tone washable walls, matte wipeable joinery, BWP wet risk, repairability/spares, glare control |
-| **PDF** | §8–12 IEQ paragraph |
+| **PDF** | ï¿½8ï¿½12 IEQ paragraph |
 
 ---
 
-## Phase 9 — Lighting
+## Phase 9 ï¿½ Lighting
 
 | | |
 |---|---|
@@ -121,73 +121,73 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ---
 
-## Phase 10 — Acoustics
+## Phase 10 ï¿½ Acoustics
 
 | | |
 |---|---|
 | **Skills** | `interior-acoustics` |
 | **Role** | Acoustics Advisor |
 | **Decisions** | Rugs + closed storage + tight weaves; no specialty product claims |
-| **PDF** | Acoustics note in §8–12 |
+| **PDF** | Acoustics note in ï¿½8ï¿½12 |
 
 ---
 
-## Phase 11 — Building systems
+## Phase 11 ï¿½ Building systems
 
 | | |
 |---|---|
 | **Skills** | `interior-building-systems` |
 | **Role** | Systems Coordinator |
 | **Decisions** | Preserve plumbing access; no sealed damp zones; DB access; SS304 humid risk |
-| **PDF** | Systems note in §8–12 |
+| **PDF** | Systems note in ï¿½8ï¿½12 |
 
 ---
 
-## Phase 12 — Codes awareness
+## Phase 12 ï¿½ Codes awareness
 
 | | |
 |---|---|
 | **Skills** | `codes-life-safety-compliance` |
 | **Role** | Compliance Liaison |
 | **Decisions** | Clear aisles; licensed electrician for new points; no AHJ stamp |
-| **PDF** | Codes note in §8–12 |
+| **PDF** | Codes note in ï¿½8ï¿½12 |
 
 ---
 
-## Phase 13 — FF&E
+## Phase 13 ï¿½ FF&E
 
 | | |
 |---|---|
 | **Skills** | `furniture-fixtures-equipment`, `residential-interior-design` |
 | **Role** | FF&E Specifier |
 | **Decisions** | Sized sofa/coffee/TV cabinet/bed/desk/wardrobe/kitchen shutter list with clearances |
-| **PDF** | §13–14 FF&E table |
+| **PDF** | ï¿½13ï¿½14 FF&E table |
 
 ---
 
-## Phase 14 — Budget / procurement
+## Phase 14 ï¿½ Budget / procurement
 
 | | |
 |---|---|
 | **Skills** | `budgeting-estimating-procurement` |
 | **Role** | Cost & Procurement Lead |
-| **Decisions** | Essential / Recommended / Premium; 3-door wardrobe (not four — F13); quote checklist; sample-before-cut |
+| **Decisions** | Essential / Recommended / Premium; 3-door wardrobe (not four ï¿½ F13); quote checklist; sample-before-cut |
 | **PDF** | Budget tiers + phasing |
 
 ---
 
-## Phase 15 — Visualization
+## Phase 15 ï¿½ Visualization
 
 | | |
 |---|---|
 | **Skills** | `visualization-presentation`, `ai-generative-interior-design` |
 | **Role** | Visualization Lead |
 | **Decisions** | Storyboard: problem ? concept ? plan ? views ? palette ? decisions; AI disclosed; no invented openings/waterfall |
-| **PDF** | Living / kitchen / scheme / wardrobe view pages |
+| **PDF** | Living / kitchen / scheme / wardrobe views + boards 01â€“05 elevations/QA |
 
 ---
 
-## Phase 16 — 3D / render
+## Phase 16 ï¿½ 3D / render
 
 | | |
 |---|---|
@@ -198,7 +198,7 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ---
 
-## Phase 17 — CAD / BIM
+## Phase 17 ï¿½ CAD / BIM
 
 | | |
 |---|---|
@@ -209,7 +209,7 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ---
 
-## Phase 18 — CD / specs mindset
+## Phase 18 ï¿½ CD / specs mindset
 
 | | |
 |---|---|
@@ -220,29 +220,29 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ---
 
-## Phase 19 — PM / install
+## Phase 19 ï¿½ PM / install
 
 | | |
 |---|---|
 | **Skills** | `interior-project-management` |
 | **Role** | Project Manager |
 | **Decisions** | Measure ? samples ? fab ? install ? punch sequence |
-| **PDF** | §17–19 install sequence |
+| **PDF** | ï¿½17ï¿½19 install sequence |
 
 ---
 
-## Phase 20 — QA
+## Phase 20 ï¿½ QA
 
 | | |
 |---|---|
 | **Skills** | fundamentals, site-survey, AI guardrails, programming, codes awareness |
 | **Role** | QA Reviewer |
-| **Decisions** | Reconciled C-01…C-13; verified PDF text for S1241-all, 3-door, NN9074 default, no dual-tone, 844485 warning-only |
+| **Decisions** | Reconciled C-01ï¿½C-13; verified PDF text for S1241-all, 3-door, NN9074 default, no dual-tone, 844485 warning-only |
 | **PDF** | Residuals list; see `REVIEW.md` |
 
 ---
 
-## Phase 21 — Handover
+## Phase 21 ï¿½ Handover
 
 | | |
 |---|---|
@@ -253,7 +253,7 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ---
 
-## Phase 22 — Portfolio
+## Phase 22 ï¿½ Portfolio
 
 | | |
 |---|---|
@@ -266,10 +266,10 @@ Phase sequence: Ethics/scope ? Discovery ? Site survey ? Programming ? Human fac
 
 ## Skills de-prioritized (inventory complete)
 
-`commercial-workplace-design`, `hospitality-interior-design`, `healthcare-interior-design`, `interior-datasets-research` — inventoried, not primary for this studio home.
+`commercial-workplace-design`, `hospitality-interior-design`, `healthcare-interior-design`, `interior-datasets-research` ï¿½ inventoried, not primary for this studio home.
 
 ---
 
 ## Reconciliation note
 
-Built against verified sources first; then reconciled to Methodology (`SKILLS_INVENTORY`, `PHASE_FRAMEWORK`, `TEAM_ROLES`) and Spec audit (`SOURCE_OF_TRUTH`, `V1_BASELINE`, `CONTRADICTIONS`). Visuals `ASSET_INDEX.md` may arrive later; package already embeds compressed assets under `assets/img/`.
+Built against verified sources first; then reconciled to Methodology (`SKILLS_INVENTORY`, `PHASE_FRAMEWORK`, `TEAM_ROLES`) and Spec audit (`SOURCE_OF_TRUTH`, `V1_BASELINE`, `CONTRADICTIONS`). Asset refresh: client PDF embeds `ASSET_INDEX` primaries 01â€“05 (palette, floorplan, kitchen elevation, 3-door wardrobe elevation, QA sheet); excludes 02b/04b/05b. Room renders remain under `assets/img/`.

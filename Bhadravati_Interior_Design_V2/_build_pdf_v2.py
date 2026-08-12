@@ -30,8 +30,16 @@ from reportlab.platypus import (
 )
 
 ROOT = Path(__file__).resolve().parent
-VIS = ROOT / "assets" / "img"
+ASSETS = ROOT / "assets"
+VIS = ASSETS / "img"
 OUT = ROOT / "Bhadravati_Interior_Design_V2.pdf"
+
+# Primary presentation boards (ASSET_INDEX.md) — exclude 02b / 04b / 05b from client PDF
+BOARD_PALETTE = ASSETS / "01_visual_palette_board_v2.png"
+BOARD_FLOORPLAN = ASSETS / "02_floorplan_concept_v2.png"
+BOARD_KITCHEN_ELEV = ASSETS / "03_kitchen_elevation_overlay_v2.png"
+BOARD_WARDROBE_ELEV = ASSETS / "04_wardrobe_elevation_overlay_v2.png"  # 3-door 457/457/458
+BOARD_QA = ASSETS / "05_qa_contact_sheet_v2.jpg"
 
 NN9074 = HexColor("#B5AB9C")
 WW0005 = HexColor("#EEEDE9")
@@ -298,10 +306,13 @@ def build():
     # ——— FLOOR PLAN ———
     story.append(Paragraph("Floor plan (relational)", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
-    fp = VIS / "floor_plan_precise.jpg"
+    fp = BOARD_FLOORPLAN if BOARD_FLOORPLAN.exists() else VIS / "floor_plan_precise.jpg"
     if fp.exists():
         story.append(fit_image(fp, content_w, 170 * mm))
-        story.append(Paragraph("Scale-true plan diagram — relational envelope; fridge extreme right; not a cut sheet", caption))
+        story.append(Paragraph(
+            "V2 zoning floorplan — single-wall kitchen; W-01 3-door wardrobe; relational envelope only (not a cut sheet)",
+            caption,
+        ))
     story.append(PageBreak())
 
     # ——— COLOR / MATERIALS ———
@@ -360,11 +371,14 @@ def build():
     pt = Table(pal, colWidths=[42 * mm, 72 * mm, 56 * mm])
     pt.setStyle(tbl_style(SLATE, header_white=True))
     story.append(pt)
-    pal_img = VIS / "palette_board.jpg"
+    pal_img = BOARD_PALETTE if BOARD_PALETTE.exists() else VIS / "palette_board.jpg"
     if pal_img.exists():
         story.append(Spacer(1, 2 * mm))
-        story.append(fit_image(pal_img, content_w, 62 * mm))
-        story.append(Paragraph("Palette board — locked codes", caption))
+        story.append(fit_image(pal_img, content_w, 95 * mm))
+        story.append(Paragraph(
+            "Visual palette board V2 — Scheme A locks (NN9074 / WW0005 / S1241 Latte / Idria); do-not-use rules on board",
+            caption,
+        ))
     story.append(PageBreak())
 
     # ——— WELLNESS / LIGHTING / ACOUSTICS / SYSTEMS / CODES ———
@@ -462,6 +476,22 @@ def build():
             story.append(Paragraph(cap, caption))
     story.append(PageBreak())
 
+    # ——— KITCHEN ELEVATION (V2 board) ———
+    story.append(Paragraph("Kitchen elevation — K-01 (design control)", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
+    story.append(Paragraph(
+        "Front elevation with clear openings + V2 chrome: S1241 Latte-all, recessed brushed stainless pulls, "
+        "existing granite retained. Drawn bar pulls on source art may not match recessed-pull lock — prefer recessed.",
+        body,
+    ))
+    if BOARD_KITCHEN_ELEV.exists():
+        story.append(fit_image(BOARD_KITCHEN_ELEV, content_w, 155 * mm))
+        story.append(Paragraph(
+            "K-01 elevation overlay V2 — Latte-all shutters; shutters-only scope; not fabrication-approved",
+            caption,
+        ))
+    story.append(PageBreak())
+
     # ——— SCHEME A vs B ———
     story.append(Paragraph("Paint schemes A vs B (walls/ceilings only)", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
@@ -512,6 +542,22 @@ def build():
     if bed.exists():
         story.append(fit_image(bed, content_w, 70 * mm))
         story.append(Paragraph("Bedroom continuity — three-door plywood wardrobe (not four leaves)", caption))
+    story.append(PageBreak())
+
+    # ——— WARDROBE ELEVATION (V2 board — 3-door only) ———
+    story.append(Paragraph("Wardrobe elevation — W-01 three-door (locked)", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
+    story.append(Paragraph(
+        "Locked leaf widths <b>457 / 457 / 458 mm</b> inside 1372 mm clear. "
+        "Four-leaf artwork is superseded and excluded from this client PDF.",
+        body,
+    ))
+    if BOARD_WARDROBE_ELEV.exists():
+        story.append(fit_image(BOARD_WARDROBE_ELEV, content_w, 155 * mm))
+        story.append(Paragraph(
+            "W-01 elevation overlay V2 — 3-door composite (face + dimensioned leaves 457/457/458)",
+            caption,
+        ))
     story.append(PageBreak())
 
     # bedroom detail views
@@ -595,9 +641,25 @@ def build():
     ))
     story.append(Paragraph(
         "Control docs: SOURCE_OF_TRUTH.md · CONTRADICTIONS.md · V1_BASELINE.md · MASTER_BRIEF_V2.md · "
-        "PHASE_FRAMEWORK.md · design_tokens_v2.json · dimension_register_v1",
+        "PHASE_FRAMEWORK.md · design_tokens_v2.json · dimension_register_v1 · assets/ASSET_INDEX.md",
         small,
     ))
+    story.append(PageBreak())
+
+    # ——— VISUAL QA CONTACT SHEET (V2) ———
+    story.append(Paragraph("Appendix — visual QA contact sheet (V2)", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
+    story.append(Paragraph(
+        "Six-up strip for client visual QA: living, kitchen Latte, kitchen detail, wardrobe 3-door, "
+        "wardrobe dims, evening light. Historical / dark-cabinet contact sheets excluded.",
+        body,
+    ))
+    if BOARD_QA.exists():
+        story.append(fit_image(BOARD_QA, content_w, 160 * mm))
+        story.append(Paragraph(
+            "QA contact sheet V2 — conceptual; prefer brief captions over OCR of baked overlays",
+            caption,
+        ))
 
     doc = SimpleDocTemplate(
         str(OUT),

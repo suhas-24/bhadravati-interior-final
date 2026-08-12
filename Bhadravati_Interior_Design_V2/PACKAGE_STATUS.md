@@ -1,0 +1,116 @@
+# PACKAGE_STATUS — Bhadravati Interior Design V2
+
+**Checked:** 2026-08-12  
+**Package root:** `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`  
+**Verdict:** **COMPLETE / READY** for design-control client handoff  
+**PDF rebuild for assets 01–05:** **Not required** (already embedded)
+
+---
+
+## Summary
+
+| Status | Count | Notes |
+|---|---:|---|
+| Ready | All listed expected deliverables | Primary client PDF + control docs + boards + generator |
+| Missing | 0 | This file was the only gap; now present |
+| Needs-refresh | 0 | PDF mtime newer than primary boards; dims match embeds |
+
+---
+
+## Client PDF
+
+| Item | Status | Detail |
+|---|---|---|
+| `Bhadravati_Interior_Design_V2.pdf` | **Ready** | Exists; **19 pages**; size ~5.7 MB; mtime **2026-08-12T01:29:50** |
+| Embeds `assets/01`–`05` v2 | **Ready** | Pixel dims match current primary boards (see below) |
+| Excludes `02b` / `04b` / `05b` | **Ready** | Those caution-asset dimensions absent from PDF XObjects |
+
+### Primary board ? PDF embedding
+
+| Board | File | Asset size | In PDF | Page |
+|---|---|---|---|---:|
+| 01 | `assets/01_visual_palette_board_v2.png` | 1800×1180 | Yes | 7 |
+| 02 | `assets/02_floorplan_concept_v2.png` | 1696×1503 | Yes | 6 |
+| 03 | `assets/03_kitchen_elevation_overlay_v2.png` | 1632×1278 | Yes | 12 |
+| 04 | `assets/04_wardrobe_elevation_overlay_v2.png` | 1700×1100 | Yes | 15 |
+| 05 | `assets/05_qa_contact_sheet_v2.jpg` | 1656×962 | Yes | 19 |
+
+Asset mtimes (01:22–01:24) are **older** than PDF mtime (01:29). No rebuild needed to embed current `01`–`05` v2 images.
+
+---
+
+## Expected deliverables inventory
+
+### Core documents
+
+| Deliverable | Path | Status |
+|---|---|---|
+| Client PDF | `Bhadravati_Interior_Design_V2.pdf` | **Ready** |
+| Phase / skill log | `PHASE_SKILL_LOG.md` | **Ready** (mtime 09:52; companion doc, not PDF art) |
+| Review | `REVIEW.md` | **Ready** (PASS; notes 19-page asset-refreshed PDF) |
+| Source of truth | `SOURCE_OF_TRUTH.md` | **Ready** |
+| Phase framework | `PHASE_FRAMEWORK.md` | **Ready** |
+| Master brief | `MASTER_BRIEF_V2.md` | **Ready** |
+| V1 baseline | `V1_BASELINE.md` | **Ready** |
+| Contradictions | `CONTRADICTIONS.md` | **Ready** |
+| Skills inventory | `SKILLS_INVENTORY.md` | **Ready** |
+| Team roles | `TEAM_ROLES.md` | **Ready** |
+| Package status | `PACKAGE_STATUS.md` | **Ready** (this file) |
+
+### Generator / tokens
+
+| Deliverable | Path | Status |
+|---|---|---|
+| PDF generator | `_build_pdf_v2.py` | **Ready** (references boards 01–05) |
+| Design tokens | `source/design_tokens_v2.json` | **Ready** |
+
+### Assets — presentation boards (primary)
+
+| Deliverable | Path | Status |
+|---|---|---|
+| Asset index | `assets/ASSET_INDEX.md` | **Ready** |
+| Palette board | `assets/01_visual_palette_board_v2.png` | **Ready** (in PDF) |
+| Floorplan concept | `assets/02_floorplan_concept_v2.png` | **Ready** (in PDF) |
+| Kitchen elevation | `assets/03_kitchen_elevation_overlay_v2.png` | **Ready** (in PDF) |
+| Wardrobe elevation (3-door) | `assets/04_wardrobe_elevation_overlay_v2.png` | **Ready** (in PDF) |
+| QA contact sheet | `assets/05_qa_contact_sheet_v2.jpg` | **Ready** (in PDF) |
+
+### Assets — caution / internal only (on disk, not in client PDF)
+
+| Deliverable | Path | Status |
+|---|---|---|
+| Atmosphere plan ref | `assets/02b_floorplan_atmosphere_reference.png` | **Ready** (internal; correctly excluded) |
+| Four-leaf superseded | `assets/04b_wardrobe_elevation_four_leaf_superseded.png` | **Ready** (internal; correctly excluded) |
+| Historical QA sheet | `assets/05b_qa_contact_sheet_historical.jpg` | **Ready** (internal; correctly excluded) |
+
+### Assets — room renders / vectors
+
+| Deliverable | Path | Status |
+|---|---|---|
+| Room / scene JPEGs | `assets/img/*` | **Ready** (Scheme A + optional Scheme B twins present) |
+| SVG sources | `assets/svg/*` | **Ready** (`floor_plan_precise`, palette boards, axonometric) |
+
+---
+
+## Needs-refresh
+
+| Item | Status | Rationale |
+|---|---|---|
+| Rebuild PDF to embed `assets/01`–`05` | **Not needed** | Boards already embedded; PDF newer than board files; dim QA matches REVIEW |
+| Regenerate primary boards | **Not needed** | Present and indexed |
+| Companion markdown after PDF | Optional only | `REVIEW.md` / `PHASE_SKILL_LOG.md` updated later the same day; narrative companions, not missing art embeds |
+
+---
+
+## Missing
+
+None after creation of this file.
+
+---
+
+## Absolute paths (key)
+
+- Package: `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`
+- PDF: `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/Bhadravati_Interior_Design_V2.pdf`
+- Status: `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/PACKAGE_STATUS.md`
+- Generator: `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/_build_pdf_v2.py`

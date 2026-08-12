@@ -3,7 +3,7 @@
 **Reviewer:** V2 PDF synthesis lead  
 **Date:** 2026-08-12  
 **Package:** `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`  
-**PDF:** `Bhadravati_Interior_Design_V2.pdf` (16 pages)  
+**PDF:** `Bhadravati_Interior_Design_V2.pdf` (19 pages after asset refresh)  
 **Supersedes:** `/Users/suhas/Downloads/Interiors/FINAL_DELIVERABLE/Bhadravati_FINAL_Interior_Design.pdf` (V1)
 
 ---
@@ -11,6 +11,24 @@
 ## Verdict: **PASS** (design-control client handoff)
 
 Suitable for client handover as Version 2 design control. **Not fabrication-approved.** Residual site-measure risks remain open by design (not defects).
+
+### Asset refresh (2026-08-12)
+
+Sibling visualization boards finished after the first V2 PDF push. PDF embeds `assets/ASSET_INDEX.md` primaries via `_build_pdf_v2.py`:
+
+| Board | File | PDF role |
+|---|---|---|
+| 01 | `01_visual_palette_board_v2.png` | Materials page |
+| 02 | `02_floorplan_concept_v2.png` | Zoning plan page |
+| 03 | `03_kitchen_elevation_overlay_v2.png` | Kitchen elevation page |
+| 04 | `04_wardrobe_elevation_overlay_v2.png` | **3-door** W-01 elevation (457/457/458) |
+| 05 | `05_qa_contact_sheet_v2.jpg` | Appendix visual QA |
+
+**Excluded from client PDF:** `02b_floorplan_atmosphere_reference.png`, `04b_wardrobe_elevation_four_leaf_superseded.png`, `05b_qa_contact_sheet_historical.jpg`.
+
+Visual QA: primary board pixel dimensions confirmed embedded; excluded board dimensions absent; wardrobe XObject matches 1700×1100 3-door board.
+
+**Package status:** `PACKAGE_STATUS.md` = **COMPLETE / READY** — boards 01–05 already in PDF; caution boards absent; **no further PDF rebuild required** for this ship. `FINAL_QA_CHECKLIST.md` was not present at ship time; package completeness + prior lock/embed checks used.
 
 ---
 
@@ -24,7 +42,8 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 | `PHASE_FRAMEWORK.md` / `SKILLS_INVENTORY.md` / `TEAM_ROLES.md` | Phase sequence logged in `PHASE_SKILL_LOG.md` |
 | `dimension_register_v1` | K-01 / W-01 numbers match |
 | `design_tokens_v2.json` | Codes/dims aligned |
-| `assets/ASSET_INDEX.md` | Not present at review time; used existing `assets/img/` from package (V1 QA-passed set) |
+| `assets/ASSET_INDEX.md` | Incorporated — primary boards 01–05 embedded; 02b/04b/05b excluded |
+| `PACKAGE_STATUS.md` | COMPLETE / READY — no rebuild needed |
 
 ---
 
@@ -51,7 +70,7 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 
 1. **Global 3-door wardrobe story** — no four-leaf as current lock (C-02 / F1 / F13).  
 2. **Explicit supersession** of Corrected Handover dual-tone kitchen + NN9088-as-used + Lyon-as-used (C-03, C-04, C-07 / F2).  
-3. **Expanded client PDF** (16 pp vs V1 10 pp): ethics/hold, lighting/IEQ/systems/codes, FF&E, budget, bedroom continuity, kitchen loft detail, evening junction, install sequence, portfolio note.  
+3. **Expanded client PDF** (19 pp): ethics/hold, lighting/IEQ/systems/codes, FF&E, budget, elevations, bedroom continuity, kitchen loft detail, evening junction, install sequence, QA appendix, portfolio note.  
 4. **844485 typo** called out as do-not-order (C-06 / F5).  
 5. **C-09 nuance** retained: finish lock = S1241 laminate; kitchen aluminium frame system open.  
 6. **Openings** labeled UNVERIFIED (C-05 / C-11 / F4).  
@@ -63,6 +82,7 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 |---|---|
 | `_build_pdf_v2.py` CP1252 em-dash encoding broke build | Converted to UTF-8 with coding declaration; rebuilt PDF |
 | Phase log still used early ad-hoc phase numbering | Rewrote `PHASE_SKILL_LOG.md` to PHASE_FRAMEWORK 0–22 sequence |
+| First V2 PDF shipped before sibling presentation boards | Embedded ASSET_INDEX boards 01–05; excluded 02b/04b/05b |
 
 ### Not defects (intentional residuals)
 
@@ -72,7 +92,6 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 | C-05/C-11 | Window sizes | Open — UNVERIFIED |
 | R2 | Kitchen shutter overlay vs clear | Open — shop drawings |
 | — | AI loft/shelf bands schematic | Caption-disclosed |
-| — | ASSET_INDEX sibling missing | Package uses embedded assets; re-index later if needed |
 
 ---
 
@@ -80,11 +99,13 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 
 | Asset class | Check | Result |
 |---|---|---|
-| Living 01/01b/01c | Present; captions forbid balcony / TV wall | PASS (reuse of V1 PASS set) |
-| Kitchen 02/02b/02c | Latte-all + fridge-right narrative | PASS |
-| Wardrobe 05/06 + 04 series | three_door naming preferred | PASS |
+| Living 01/01b/01c | Present; captions forbid balcony / TV wall | PASS |
+| Kitchen 02/02b/02c + board 03 | Latte-all + fridge-right + elevation overlay | PASS |
+| Wardrobe 05/06 + 04 series + board 04 | 3-door elevation 457/457/458 embedded | PASS |
 | Scheme B pairs | Living + kitchen included | PASS |
-| Palette + floor plan | Included | PASS |
+| Palette board 01 + floorplan board 02 | V2 boards embedded | PASS |
+| QA board 05 | Appendix contact sheet; historical 05b excluded | PASS |
+| Exclusions | 02b / 04b / 05b not embedded | PASS |
 
 ---
 
@@ -93,7 +114,8 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 - Clear Version 2 branding and V1 supersede path.  
 - Fabrication hold banner on scope + dimensions.  
 - Next 3 actions actionable.  
-- Companion control docs present for agents/fabricators.
+- Companion control docs present for agents/fabricators.  
+- `PACKAGE_STATUS.md` confirms complete package for design-control handoff.
 
 **Residual risk (acceptable):** Without signed site measure, any shop drawing cut from this PDF alone remains wrong process — package states this repeatedly.
 
@@ -101,12 +123,14 @@ Suitable for client handover as Version 2 design control. **Not fabrication-appr
 
 ## Files in deliverable package
 
-- `Bhadravati_Interior_Design_V2.pdf` ? primary client PDF  
+- `Bhadravati_Interior_Design_V2.pdf` — primary client PDF  
 - `MASTER_BRIEF_V2.md`  
 - `PHASE_SKILL_LOG.md`  
 - `REVIEW.md` (this file)  
+- `PACKAGE_STATUS.md`  
 - `_build_pdf_v2.py`  
 - `SOURCE_OF_TRUTH.md`, `V1_BASELINE.md`, `CONTRADICTIONS.md`  
 - `SKILLS_INVENTORY.md`, `PHASE_FRAMEWORK.md`, `TEAM_ROLES.md`  
 - `source/design_tokens_v2.json`  
-- `assets/img/*`, `assets/svg/*`
+- `assets/ASSET_INDEX.md`, primary boards `01`–`05`, `assets/img/*`, `assets/svg/*`  
+- Caution assets `02b` / `04b` / `05b` kept on disk for internal QA only — not in client PDF
