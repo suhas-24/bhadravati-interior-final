@@ -1,3 +1,7 @@
 .DS_Store
 *.tmp
 .env
+
+# agent scratch space
+_agents/work/*
+!_agents/work/.gitkeep
