@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "sources": [
+      "FINAL_DELIVERABLE/coordination/dimension_lock.json",
+      "interior_dimension_control/dimension_register_v1.json",
+      "FINAL_DELIVERABLE/coordination/wardrobe_door_lock.json",
+      "FINAL_DELIVERABLE/coordination/swatch_lock.json"
+    ],
+    "units": "mm_primary",
+    "coordinate_system": "placements_mm_sw_origin: x from West wall, y from South wall, y-up",
+    "generated": "2026-08-23"
+  },
+  "envelope": {"length_ew_mm": 6401, "width_ns_mm": 5486, "sqft": 378, "confidence": "plan_relationship_only"},
+  "zones": {"bedroom": "SW", "living": "S-centre", "kitchen": "SE", "bathroom": "NW", "wardrobe": "N-centre", "study": "NE"},
+  "kitchen_K01": {
+    "placement": {"x0": 5913, "x1": 6401, "y0": 900, "y1": 3592, "facing": "east_wall_into_room_west"},
+    "module_width_mm": 2692, "depth_mm": 488,
+    "floor_to_countertop_mm": 787, "countertop_depth_mm": 488,
+    "lower_shelf_underside_mm": 1371, "floor_to_loft_underside_mm": 2591,
+    "openings_mm": {"B1": 1219, "B2": 914, "B3": 457},
+    "partitions_mm_each": 25.4,
+    "sum_check": "1219+914+457+4x25.4 = 2691.6 ~ 2692 PASS",
+    "thickness_conflict": "1.5in assumed vs 15mm note - site measure governs"
+  },
+  "wardrobe_W01": {
+    "placement": {"x0": 2514.5, "x1": 3886.5, "wall": "north", "depth_mm": 488},
+    "clear_w_mm": 1372, "clear_h_mm": 2286, "depth_mm": 488,
+    "leaves_mm": [457, 457, 458], "leaf_sum_check": "1372 PASS",
+    "internal_horizontal_mm": {"left": 533, "granite_partition": 15, "right": 824},
+    "left_openings_top_to_bottom_in": [12, 19.5, 19.5, 19.5, 19.5],
+    "right_stack_top_to_bottom_in": {"top_shelf": 12, "hanging": 39, "drawer_front": 9.5, "lower_opening_1": 12, "lower_opening_2": 17.5},
+    "handles": "recessed, non-dimensional"
+  },
+  "placements_mm": {
+    "fridge": {"x0": 5751, "y0": 200, "y1": 900, "note": "south of module, extreme right when facing kitchen"},
+    "bed": {"x0": 600, "y0": 900, "w": 1525, "l": 2030},
+    "sofa": {"x0": 2813, "y0": 320, "l": 2150, "d": 875},
+    "coffee": {"cx": 3888, "cy": 2045, "d": 750, "clear_from_sofa_mm": 475},
+    "tv_cabinet": {"x0": 3088, "y0": 3420, "l": 1600, "d": 425},
+    "desk": {"x0": 4651, "y0": 3936, "w": 1350, "d": 650}
+  },
+  "palette_hex": {
+    "NN9074_walls": "#B5AB9C", "NN9088_secondary": "#E9E3D9", "WW0005_ceiling": "#EEEDE9",
+    "GG7140_accent": "#9CAE91", "S1241_Latte_shutters": "#A49483", "80236_SlateGrey_tv": "#575D5C",
+    "84689_IdriaOak_wardrobe": "#3D483C", "granite_existing": "#1A1A1A"
+  },
+  "visual_assumptions_not_locked": {
+    "ceiling_height_rest_of_home_mm": 2700,
+    "window_positions": "study NE large window per brief; exact openings unverified",
+    "note": "these are visualization-only; no fabrication value"
+  }
+}
