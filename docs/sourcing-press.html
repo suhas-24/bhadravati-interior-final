@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Press &amp; Modular Sourcing Dossier — Bhadravati · Shivamogga</title>
+<meta name="description" content="Hot-press lamination, panel cutting, edge banding &amp; modular fabrication sources within reach of Bhadravati. Deep-research dossier, 25 Aug 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Kannada:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2C2925; --muted:#6A6258; --paper:#F7F3EC; --paper-deep:#EDE6DB;
+  --line:#D2C8BA; --accent:#5B7A6A; --latte:#A49483; --warn:#B08A3E;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);
+     font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+
+/* ---------- header ---------- */
+header.masthead{background:var(--paper-deep);border-bottom:1px solid var(--line);padding:56px 0 34px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+        color:var(--accent);margin-bottom:14px}
+h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.12;
+   letter-spacing:-.01em;max-width:20ch}
+.subtitle{color:var(--muted);max-width:62ch;margin-top:14px;font-size:1.02rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--muted);
+      border:1px solid var(--line);border-radius:999px;padding:.32rem .75rem;background:var(--paper)}
+.chip b{color:var(--ink);font-weight:500}
+
+/* ---------- sections ---------- */
+section{padding:40px 0 8px}
+h2{font-family:'Fraunces',serif;font-weight:600;font-size:1.45rem;letter-spacing:-.005em;
+   display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:6px}
+h2 .idx{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:var(--latte);font-weight:400;letter-spacing:.1em}
+.lede{color:var(--muted);font-size:.92rem;margin:10px 0 18px;max-width:70ch}
+h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;margin:26px 0 10px}
+
+/* ---------- tables ---------- */
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:820px}
+thead th{position:sticky;top:0;background:var(--ink);color:var(--paper);text-align:left;
+         font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;
+         font-weight:500;padding:11px 14px;white-space:nowrap}
+tbody td{padding:13px 14px;border-top:1px solid var(--line);vertical-align:top}
+tbody tr:nth-child(even){background:var(--paper-deep)}
+.rank{font-family:'IBM Plex Mono',monospace;font-size:1.05rem;font-weight:500;color:var(--accent);white-space:nowrap}
+.biz{font-weight:600}
+.loc,.ph{font-size:.84rem;color:var(--muted)}
+.ph{font-family:'IBM Plex Mono',monospace;white-space:nowrap}
+td.ev{font-size:.85rem;max-width:34ch}
+td.ev .src{display:block;margin-top:5px;font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--latte)}
+tfoot td{padding:14px;font-size:.84rem;color:var(--muted);background:var(--paper);border-top:2px solid var(--ink)}
+tfoot b{color:var(--ink)}
+
+/* ---------- badges ---------- */
+.badge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.66rem;font-weight:500;
+       letter-spacing:.07em;text-transform:uppercase;padding:.24rem .6rem;border-radius:999px;white-space:nowrap}
+.badge-call{background:var(--accent);color:#F7F3EC}
+.badge-warn{background:var(--warn);color:#F7F3EC}
+.badge-mute{background:var(--paper-deep);color:var(--muted);border:1px solid var(--line)}
+.badge-accent{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.flag{display:block;margin-top:7px;font-size:.76rem;color:var(--warn)}
+
+/* ---------- call order strip ---------- */
+.strip{display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;margin-top:16px}
+.stop{font-family:'IBM Plex Mono',monospace;font-size:.78rem;background:var(--paper-deep);
+      border:1px solid var(--line);border-radius:999px;padding:.38rem .8rem}
+.stop i{font-style:normal;color:var(--latte)}
+.stop+.stop::before{content:"→";margin-right:8px;color:var(--latte)}
+
+/* ---------- call script card ---------- */
+.script{background:var(--ink);color:var(--paper);border-radius:12px;padding:28px 30px;margin-top:16px}
+.script h2,.script h3{border:none;color:var(--paper)}
+.script h2{font-size:1.3rem;margin-bottom:2px}
+.script .lede{color:#BFB6A8}
+ol.calls{list-style:none;counter-reset:c;margin-top:16px}
+ol.calls li{counter-increment:c;position:relative;padding:14px 0 14px 52px;border-top:1px solid rgba(247,243,236,.16)}
+ol.calls li:first-child{border-top:none}
+ol.calls li::before{content:counter(c,decimal-leading-zero);position:absolute;left:0;top:14px;
+        font-family:'IBM Plex Mono',monospace;font-size:.8rem;color:var(--latte);
+        border:1px solid rgba(247,243,236,.35);border-radius:999px;width:34px;height:34px;
+        display:flex;align-items:center;justify-content:center}
+.kn{font-family:'Noto Sans Kannada','IBM Plex Sans',sans-serif;font-size:1.02rem;display:block}
+.en{display:block;color:#D8D0C2;font-size:.86rem;margin-top:3px}
+.note{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--latte);display:block;margin-top:4px}
+.redflag{color:#E4B96A}
+
+/* ---------- price benchmarks ---------- */
+.bench tbody td:first-child{font-weight:500}
+.rate{font-family:'IBM Plex Mono',monospace;white-space:nowrap;color:var(--accent);font-weight:500}
+.caps{background:var(--paper-deep);border-left:4px solid var(--warn);border-radius:0 10px 10px 0;
+      padding:20px 24px;margin-top:22px}
+.caps h3{margin:0 0 8px;color:var(--warn);font-size:1rem;text-transform:uppercase;
+         font-family:'IBM Plex Mono',monospace;letter-spacing:.1em;font-weight:500}
+.caps ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px 22px;margin:10px 0}
+.caps li{font-size:.87rem;padding-left:18px;position:relative}
+.caps li::before{content:"▲";position:absolute;left:0;color:var(--warn);font-size:.6rem;top:5px}
+.caps p{font-size:.86rem;color:var(--muted);margin-top:8px}
+.caps b{color:var(--ink)}
+
+/* ---------- visit plan ---------- */
+ol.route{list-style:none;counter-reset:r;margin-top:8px}
+ol.route li{counter-increment:r;position:relative;padding:12px 0 12px 54px;border-top:1px dashed var(--line)}
+ol.route li:first-child{border-top:none}
+ol.route li::before{content:"STOP " counter(r);position:absolute;left:0;top:14px;
+        font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.08em;color:#F7F3EC;
+        background:var(--accent);border-radius:999px;padding:.28rem .55rem;white-space:nowrap}
+ol.route .where{display:block;font-size:.82rem;color:var(--muted)}
+.carry{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.carry .chip{background:var(--paper-deep)}
+.tree{background:var(--paper-deep);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-top:16px}
+.tree ul{list-style:none;margin-top:8px}
+.tree li{padding:6px 0 6px 22px;position:relative;font-size:.89rem}
+.tree li::before{content:"◆";position:absolute;left:2px;color:var(--latte);font-size:.65rem;top:9px}
+.tree b{color:var(--accent)}
+
+/* ---------- lists ---------- */
+ul.plain{list-style:none;margin-top:8px}
+ul.plain li{padding:9px 0 9px 26px;position:relative;border-top:1px dashed var(--line);font-size:.92rem}
+ul.plain li:first-child{border-top:none}
+ul.plain li::before{content:"✕";position:absolute;left:2px;top:9px;color:var(--warn);
+                    font-family:'IBM Plex Mono',monospace;font-size:.8rem}
+.exclude{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.xchip{font-size:.84rem;border:1px solid var(--line);border-radius:8px;background:var(--paper);
+       padding:.5rem .85rem;color:var(--muted)}
+.xchip b{color:var(--ink);font-weight:500}
+.audit{background:var(--paper-deep);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-top:14px}
+.audit p{font-size:.89rem;margin-top:6px}
+.audit .stat{font-family:'IBM Plex Mono',monospace;color:var(--accent)}
+
+/* ---------- footer ---------- */
+footer{margin-top:48px;border-top:2px solid var(--ink);background:var(--paper-deep);padding:26px 0 40px}
+footer p{font-family:'IBM Plex Mono',monospace;font-size:.76rem;color:var(--muted);line-height:2}
+footer a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+
+@media (max-width:640px){
+  header.masthead{padding:40px 0 26px}
+  section{padding:30px 0 4px}
+  .script{padding:20px 18px}
+  ol.calls li{padding-left:44px}
+  .caps,.tree,.audit{padding:14px 16px}
+}
+@media print{
+  body{background:#fff}
+  .script{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Sourcing Dossier № 03 — Fabrication Capacity</p>
+    <h1>Press &amp; Modular Sourcing Dossier — Bhadravati&nbsp;·&nbsp;Shivamogga</h1>
+    <p class="subtitle">13-agent deep-research sweep · hot-press lamination, panel cutting, edge banding &amp; modular fabrication within reach of Bhadravati.</p>
+    <div class="chips">
+      <span class="chip"><b>19.2 km</b> Bhadravati→Shimoga</span>
+      <span class="chip"><b>~27 min</b> drive</span>
+      <span class="chip">updated <b>25 Aug 2026</b></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ================= 1 · GEMS ================= -->
+<section id="gems" aria-labelledby="gems-h">
+  <h2 id="gems-h"><span class="idx">01</span> Top Hidden Gems</h2>
+  <p class="lede">Eight leads ranked by strength of press evidence — not by ad spend. Verdicts reflect what documentation shows today; every one needs a confirmation call before money moves.</p>
+  <div class="tblwrap" role="region" aria-label="Ranked sourcing leads" tabindex="0">
+  <table>
+    <caption class="sr-only" style="position:absolute;left:-9999px">Ranked list of hot-press and modular fabrication candidates near Bhadravati</caption>
+    <thead>
+      <tr><th scope="col">Rank</th><th scope="col">Business</th><th scope="col">Location</th><th scope="col">Phone</th><th scope="col">Evidence</th><th scope="col">Verdict</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="rank">#0</td>
+        <td><span class="biz">Nekton Interiors &amp; Doors</span></td>
+        <td class="loc">Maharaja Gruhavaibhav, Kuvempu Rd, Shimoga</td>
+        <td class="ph">n/a</td>
+        <td class="ev">Instagram reel, verbatim: <em>“Own in-house factory — pressing, pasting &amp; edge-[banding].”</em><span class="src">IG reel transcript</span></td>
+        <td><span class="badge badge-call">Call First</span><span class="flag">⚠ Facebook page geo-tags Bhatkal — confirm city on call.</span></td>
+      </tr>
+      <tr>
+        <td class="rank">#1</td>
+        <td><span class="biz">Sri Gowri Shankar Saw Mill &amp; Timber Depot</span></td>
+        <td class="loc">Sagar Rd, Shimoga</td>
+        <td class="ph">—</td>
+        <td class="ev">Manufactures / deals <strong>prelaminated MDF board</strong> + wood shutters<span class="src">IndiaMART · 9 yrs member</span></td>
+        <td><span class="badge badge-accent">Best Documentary Press Evidence</span></td>
+      </tr>
+      <tr>
+        <td class="rank">#2</td>
+        <td><span class="biz">Richwood Panel Crafts</span></td>
+        <td class="loc">Plot 122, 2nd Main Rd, KIADB Auto Complex, Shimoga</td>
+        <td class="ph">—</td>
+        <td class="ev">Factsheet: Manufacturer, 11–25 staff, est.&nbsp;2013. PVC kitchens <strong>₹550–650/sqft</strong> — lowest band in sweep<span class="src">IndiaMART factsheet</span></td>
+        <td><span class="badge badge-accent">Manufacturer · Est. 2013</span></td>
+      </tr>
+      <tr>
+        <td class="rank">#3</td>
+        <td><span class="biz">Taj Furniture</span></td>
+        <td class="loc">Bhadravati</td>
+        <td class="ph">GST 29***1ZH</td>
+        <td class="ev">Registered 2019 · HSN 4412. Self-labels <em>“Manufacturer of Laminate Sheet &amp; Plywood since 2018.”</em> No factory photos, brand, or platen specs found<span class="src">GST registry · self-listings</span></td>
+        <td><span class="badge badge-warn">Unproven — Leaning Trader</span></td>
+      </tr>
+      <tr>
+        <td class="rank">#4</td>
+        <td><span class="biz">Shanthi Sawmills</span></td>
+        <td class="loc">Bhadravati</td>
+        <td class="ph">+91 94488 00199</td>
+        <td class="ev">₹5–25 Cr manufacturer, 17 yrs, doors + plywood ⇒ high press odds<span class="src">trade listings</span></td>
+        <td><span class="badge badge-accent">High Press Odds</span></td>
+      </tr>
+      <tr>
+        <td class="rank">#5</td>
+        <td><span class="biz">Baig Enterprises</span></td>
+        <td class="loc">Shimoga</td>
+        <td class="ph">—</td>
+        <td class="ev">Laminated / PVC-laminated door SKUs ⇒ a skin-pasting step exists in-house<span class="src">product catalogue</span></td>
+        <td><span class="badge badge-accent">Paste Step Exists</span></td>
+      </tr>
+      <tr>
+        <td class="rank">#6</td>
+        <td><span class="biz">Sri Laxmi Saw Mills</span></td>
+        <td class="loc">Old Town, Bhadravati</td>
+        <td class="ph">+91 98453 15930</td>
+        <td class="ev">Phone taken from their own Instagram. CNC 2D cutting confirmed: <em>“MDF, WPVC, Plywood &amp; Acrylic.”</em><span class="src">their IG bio/posts</span></td>
+        <td><span class="badge badge-accent">CNC Cutting Confirmed</span></td>
+      </tr>
+      <tr>
+        <td class="rank">#7</td>
+        <td><span class="biz">Bhagavati Hardware &amp; Plywood</span></td>
+        <td class="loc">Garden Area, Shivamogga</td>
+        <td class="ph">—</td>
+        <td class="ev">Advertises board cutting at <strong>₹5–20/sqft</strong><span class="src">own listing</span></td>
+        <td><span class="badge badge-mute">Cutting Benchmark</span></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="6"><b>Secondary tier — call after the eight:</b> Fourmix Pvt Ltd · Ideanl Enteror (₹250/sqft work-rate) · Sri Ganesh Sawmill <span style="white-space:nowrap">+91 94482 11409</span> · Kreative Interior (Bhadravati) · Mahalaxmi Steel Works · New Star Interior · Khohinoor Wood Industries (Bhadravati)</td></tr>
+    </tfoot>
+  </table>
+  </div>
+</section>
+
+<!-- ================= 2 · CALL ORDER ================= -->
+<section id="order" aria-labelledby="order-h">
+  <h2 id="order-h"><span class="idx">02</span> Call Order</h2>
+  <p class="lede">Work down this strip top-to-bottom; stop calling once two shops confirm press capacity on tape-worthy terms.</p>
+  <div class="strip">
+    <span class="stop">Nekton</span>
+    <span class="stop">Gowri Shankar</span>
+    <span class="stop">Richwood</span>
+    <span class="stop">Taj</span>
+    <span class="stop">Shanthi</span>
+    <span class="stop">Baig</span>
+    <span class="stop">Sri Laxmi <i>(cutting)</i></span>
+    <span class="stop">Bhagavati <i>(benchmark)</i></span>
+  </div>
+</section>
+
+<!-- ================= 3 · CALL SCRIPT ================= -->
+<section id="script" aria-labelledby="script-h">
+  <h2 id="script-h"><span class="idx">03</span> Kannada / English Call Script</h2>
+  <p class="lede">Five questions, one call. If Q1–Q2 both land yes, ask the rest — otherwise thank them and move down the strip.</p>
+  <div class="script">
+    <h2>Kannada / English Call Script</h2>
+    <p class="lede">Lead in Kannada; numbers and rates usually switch to English on their own.</p>
+    <ol class="calls">
+      <li>
+        <span class="kn" lang="kn">“ನಿಮ್ಮ ಅಂಗಡಿಯಲ್ಲಿ HOT PRESS ಇದೆಯಾ?”</span>
+        <span class="en">“Do you run a hot press?”</span>
+        <span class="note">then: platen ≥ 8×4 ft?</span>
+      </li>
+      <li>
+        <span class="kn" lang="kn">“Press machine ಬೇರೊಬ್ಬರ board-laminate JOB WORK ಮಾಡಿ ಕೊಡ್ತೀರಾ?”</span>
+        <span class="en">“Will you do board-laminate job work for outside customers?”</span>
+      </li>
+      <li>
+        <span class="en">Rate per sheet / sqft? Minimum lot size? Glue — our own or yours (we bring Fevicol HI-PER)?</span>
+      </li>
+      <li>
+        <span class="en">Panel saw / scoring blade available? Rate? Edge bander on site? ₹ per metre?</span>
+      </li>
+      <li>
+        <span class="kn" lang="kn">“Machine ತೋರಿಸ್ತೀರಾ?”</span>
+        <span class="en">“Will you show me the machine?”</span>
+        <span class="note"><span class="redflag">refusal = red flag</span> — no machine tour, no order.</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 4 · PRICES ================= -->
+<section id="prices" aria-labelledby="prices-h">
+  <h2 id="prices-h"><span class="idx">04</span> Price Benchmarks</h2>
+  <p class="lede">What the market actually quotes across the district and Bengaluru, so no first quote gets accepted blind.</p>
+  <div class="tblwrap" role="region" aria-label="Price benchmarks" tabindex="0">
+  <table>
+    <thead>
+      <tr><th scope="col">Service</th><th scope="col">Going Rate</th><th scope="col">Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Board cutting at ply dealer</td><td class="rate">₹5–20/sqft</td><td>Bhagavati, in-district</td></tr>
+      <tr><td>Laminate pasting job work</td><td class="rate">₹8–14/sqft</td><td>regional listings</td></tr>
+      <tr><td>PVC edge banding</td><td class="rate">₹18–23/metre</td><td>service listings</td></tr>
+      <tr><td>Press + cut + band combined</td><td class="rate">₹27/sqft</td><td>Bengaluru FB trade group</td></tr>
+      <tr><td>Cut + paste + band promo</td><td class="rate">from ₹9/sqft</td><td>WTBI Insta</td></tr>
+      <tr><td>CNC jali, MDF</td><td class="rate">₹20–56/sqft</td><td>Bengaluru</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <aside class="caps" aria-label="Fair price caps">
+    <h3>Fair-Price Caps</h3>
+    <p>Above any of these you are paying Bengaluru parity without Bengaluru logistics — walk or counter.</p>
+    <ul>
+      <li>Pasting &gt; <b>₹12/sqft</b></li>
+      <li>Flat cutting &gt; <b>₹9/sqft</b></li>
+      <li>Banding labour &gt; <b>₹16/RFT</b></li>
+      <li>Kitchen fab-labour &gt; <b>₹720/sqft</b></li>
+    </ul>
+    <p>Turnkey laminate kitchen fair band: <b>₹1,000–2,250/sqft local</b> vs ₹1,200–2,800 metro.</p>
+  </aside>
+</section>
+
+<!-- ================= 5 · VISIT PLAN ================= -->
+<section id="visit" aria-labelledby="visit-h">
+  <h2 id="visit-h"><span class="idx">05</span> Afternoon Visit Plan</h2>
+  <p class="lede">One loop, Bhadravati first so the tempo question resolves early.</p>
+  <ol class="route">
+    <li><strong>Taj Furniture</strong><span class="where">Bhadravati — settle the manufacturer-vs-trader question face to face</span></li>
+    <li><strong>Sri Laxmi Saw Mills</strong><span class="where">Old Town, Holehonnur Rd — see the CNC, quote the cutting list</span></li>
+    <li><strong>Nekton Interiors &amp; Doors</strong><span class="where">Kuvempu Rd — verify the “in-house factory” reel claim</span></li>
+    <li><strong>Richwood Panel Crafts</strong><span class="where">KIADB Auto Complex — platen size, PVC kitchen rates</span></li>
+    <li><strong>Sri Gowri Shankar Saw Mill</strong><span class="where">Sagar Rd — prelam stock shades, press job-work terms</span></li>
+  </ol>
+
+  <div class="carry" aria-label="Carry list">
+    <span class="chip">cutting list</span>
+    <span class="chip">laminate swatches — S1241 Latte · 84689 Idria Oak</span>
+    <span class="chip">camera</span>
+  </div>
+
+  <div class="tree" aria-label="Decision tree">
+    <h3>Decision Tree</h3>
+    <ul>
+      <li><b>Press found in Bhadravati</b> → go local; zero transport risk.</li>
+      <li><b>Only Shimoga presses</b> → one tempo trip, ~13 sheets (~₹600–1k transport).</li>
+      <li><b>Nobody presses customer boards</b> → switch to the prelam route (shade-match gate applies).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 6 · NEGATIVES ================= -->
+<section id="negatives" aria-labelledby="neg-h">
+  <h2 id="neg-h"><span class="idx">06</span> Key Negative Findings</h2>
+  <p class="lede">What thirteen agents could <em>not</em> find — absence of evidence that itself shapes strategy.</p>
+  <ul class="plain">
+    <li><strong>No business district-wide advertises hot-press / banding job-work online</strong> — the capacity hides inside workshops as informal side work.</li>
+    <li>All 8 plywood dealers checked are <span class="badge badge-mute">Boards-only</span> — zero offer value-added services.</li>
+    <li>Justdial’s “76 dealers” claim is radius-inflated — counts bleed into Shivamogga city and beyond.</li>
+    <li>Review prose is locked behind bot-walls — rating <em>counts</em> are quoted instead of text throughout.</li>
+    <li>OSM coverage is nearly unmapped here — navigation relies on landmark names, not pins.</li>
+  </ul>
+</section>
+
+<!-- ================= 7 · EXCLUSIONS ================= -->
+<section id="exclude" aria-labelledby="excl-h">
+  <h2 id="excl-h"><span class="idx">07</span> Reseller Exclusion List</h2>
+  <p class="lede">Branded retail / franchise channels — marked-up catalogue work, no raw press access. Not contacted for job-work.</p>
+  <div class="exclude">
+    <span class="xchip"><b>Godrej Interio</b> Kuvempu Rd · +91 9619947115</span>
+    <span class="xchip"><b>HomeLane</b> studio</span>
+    <span class="xchip"><b>VK Interiors</b> (Arancia Kuchen franchise)</span>
+    <span class="xchip"><b>Livspace</b>-via-Sturdy</span>
+    <span class="xchip"><b>Sadhana Trading</b></span>
+  </div>
+</section>
+
+<!-- ================= 8 · SOCIAL VOICE ================= -->
+<section id="audit" aria-labelledby="audit-h">
+  <h2 id="audit-h"><span class="idx">08</span> Social-Voice Audit</h2>
+  <div class="audit">
+    <p><strong>Space Elements Living</strong> — the only staff voice found anywhere in the district’s feeds: <span class="stat">11 FB likes vs claimed 98 Justdial reviews</span>. The gap between claimed and visible traction is the widest signal in the sweep.</p>
+    <p><strong>Zero open customer-review text anywhere</strong> — platform walls (Justdial bot-gates, FB login walls) documented during capture; rating counts stand in for prose.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Compiled 25 Aug 2026 · 13 research agents · phones/prices are directory-sourced EST — verify before ordering<br>
+    Part of the Bhadravati interior project (<a href="./index.html">Visual Package</a>) · Nothing here is fabrication-approved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
