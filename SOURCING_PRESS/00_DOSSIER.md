@@ -81,3 +81,24 @@ Local expectation for Shimoga-tier banding outwork: ₹15–25/m if a modular fa
 5. Reseller exclusion list
 6. Call script + visit plan (what to ask, what to inspect)
 7. Sources
+
+## POST-PUBLISH AUDIT (25 Aug 2026, 3 falsification agents) — verdicts
+| Claim | Verdict | Action taken |
+|---|---|---|
+| Nekton Interiors Shimoga + factory reel + Maharaja Gruhavaibhav address | REFUTED (factory = Nekton Bhatkal, Bengre; address = Godrej Interio showroom) | Retracted everywhere |
+| Sri Laxmi phone 98453 15930 | CONFIRMED (FB Lakdi Works + YouTube + IG — 3 platforms) | Kept |
+| Shanthi "5-25 Cr manufacturer" | WEAKENED (IndiaMART says Retailer; turnover unverifiable); official site shanthisawmill.com found; 2nd ph 94487 66665 | Reworded |
+| Bhagavati cutting Rs5-20/sqft | Shop CONFIRMED (Justdial 4.8/46, est.2015, 08182-221448/8792578453); rate UNVERIFIABLE (boilerplate line, per-cut vs per-sqft ambiguity) | Rate flagged UNVERIFIED |
+| Fair-price caps Rs12/9/16-RFT/720 | Rs16/RFT unit-incoherent; others over-derived | Replaced with indicative bands |
+| Taj "since 2018" vs GST regd 2019 | Internal contradiction | Dropped 2018 |
+
+## RECOVERED LEADS (Wayback-round parallel sources)
+- K B S Plywood and Hardware - C-N Road, Bhadravathi (ExportersIndia)
+- Sampath Glass & Plywoods - Balaji Complex, Tarikere Rd, Bhadravati 577301 (same)
+- Khohinoor Wood Industries - only in-Bhadravati furniture name recoverable
+- Choudhary Plywood & Hardware - BH Rd opp Modern Talkies, Garden Area Shivamogga (ask in-house cutting)
+- JD 'Wood Cutting Services Shimoga' names: Sri Vishwakarma Wood Arts, Rahmatullah, Sanaulla Enterprises (phones gated)
+- Bengaluru prelam fallback: Mangaldeep Ply & Laminates (tradeindia), Golden Enterprises, Abhishek Glass & Plywoods
+
+## PRELAM ROUTE VERDICT (W6, condensed)
+Action TESA prelam HDHMR/MDF: 200+ shades claimed, official shade card PDF exists; Century prelam mostly MDF/particle (BWP ply prelam scarce); Greenply prelam MDF 'Perfect/Elegant' ranges. Transport to B'ti adds ~Rs10-14/sqft. VERDICT: replaces hot-press ONLY if shade codes match S1241 Latte / Idria-Oak-class grains — else hybrid (plain boards + local pressing).

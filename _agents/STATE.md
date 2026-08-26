@@ -23,6 +23,12 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 ## Budget spec package (2026-08-22)
 `BUDGET_SPEC/` now holds a research-priced buy list (6 tracks: paint, wood/joinery, electrical, utilities, envelope, furniture) — 40-source citation ledger, EST totals: Essential ≈₹2.9–3.6L, Recommended ≈₹3.9–4.9L. All prices need local quote replacement before ordering; Phase 0 gate unchanged. Client-facing PDF: `Bhadravati_Budget_Build_Spec.pdf` (repo root), rebuilt via `BUDGET_SPEC/_build_budget_pdf.py`.
 
+## Material system research package (2026-08-25)
+`MATERIAL_SYSTEM/` now holds the complete deep-research material system (7 specialist tracks + parent engineering): Tier A/B/C build systems, takeoff + cutting plan (verdict: **11×19mm Sainik 710 practical, 10 optimized**; leaves need **2×18mm**, not 1), decision matrix, carpenter build spec, QC/procurement/maintenance protocols, local supplier shortlist (City Plywood Shivamogga primary), and citation ledger. Gate unchanged: nothing fabrication-approved until site measure closes UNKNOWNs U1–U5 (`90_SITE_MEASURE_ADDENDUM.md`). Price conflict to resolve at quote stage: Sainik 710 19mm ₹106–125 vs ₹145–165/sqft across sources.
+
+## Press & modular sourcing dossier (2026-08-25, REVISED after falsification audit)
+`SOURCING_PRESS/` — 13-agent fan-out + 3-agent falsification audit. Nekton entry RETRACTED (Bhatkal/Godrej-showroom conflation); Shanthi downgraded to trader w/ official site shanthisawmill.com; Bhagavati rate UNVERIFIED; price caps replaced by sourced bands (pasting ₹8–14/sqft verified via IndiaMART; banding tape ₹3–15/m vs service ₹18–23/m). Survivors: Sri Gowri Shankar (prelam MDF), Richwood Panel Crafts, Taj (unproven), Sri Laxmi Saw Mills CNC (+91 98453 15930, 3-platform confirmed). Live page `docs/sourcing-press.html` now carries a dated Corrections Log §06. Skill created at user request: **absolute-honest-truth** (provenance labels, identity-trap rule, derived-number rule, corrections protocol) — run before ANY future publish.
+
 ## Recent history (context)
 - 2026-08-07: Aug-7 visualization packs (legacy folders).
 - 2026-08-11: FINAL v1 handover (10 pp) + coordination locks.
