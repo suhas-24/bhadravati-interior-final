@@ -102,3 +102,8 @@ Local expectation for Shimoga-tier banding outwork: ₹15–25/m if a modular fa
 
 ## PRELAM ROUTE VERDICT (W6, condensed)
 Action TESA prelam HDHMR/MDF: 200+ shades claimed, official shade card PDF exists; Century prelam mostly MDF/particle (BWP ply prelam scarce); Greenply prelam MDF 'Perfect/Elegant' ranges. Transport to B'ti adds ~Rs10-14/sqft. VERDICT: replaces hot-press ONLY if shade codes match S1241 Latte / Idria-Oak-class grains — else hybrid (plain boards + local pressing).
+
+## INSTAGRAM LAYER (26 Aug 2026, dedicated mining agent)
+Geo-confirmed: @sri_shanthi_sawmills (Shanthi, Bhadravati tag, 350+ fol) · @laxmi.sawmill (MEDIUM cand for Sri Laxmi: teak/Honne/Sal/pine/plywood/laminate bio, city absent in snippet) · @kreative_interior_ (Kreative, #shivamogga reel). REJECTED as contamination: @shri_ganesh_saw_mill = Akole MAHARASHTRA mill (not ours); @taj.furniture_store = all-India WhatsApp storefront, unverified link to Bhadravati Taj. shanthisawmill.com attribution DISPUTED (export-lumber profile ≠ Holehonnur Rd mill) — IG handle now primary asset.
+NEW IG-ONLY GEMS: @bhadra_furnitures (Gowdarahalli, self-described manufacturing) · @the_creative_interior_works (Shimoga, finished Italian kitchens) · @insha_interiors_work + @newchethanframe ph9632549484 (Bhadravati carpentry/frames) · Zeeshan Aluminium Fab + Nihal Aluminium (Shimoga alu route) · @shimoga.vibes = local promo aggregator worth following.
+MACHINERY EVIDENCE: none found on district IG — no indexed hot-press/bander operating post exists; press question remains for on-site round. Zero-IG businesses (trader signal): Fourmix, Ideanl Enteror, Mahalaxmi Steel Works, Baig Enterprises, Richwood Panel Crafts.
