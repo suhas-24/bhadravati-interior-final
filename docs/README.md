@@ -22,6 +22,8 @@ Includes floor plan, axonometric, palette board, three-view room sets, **wardrob
 
 ## Locked palette and finishes
 
+For the industrial-belt dust/smoke rationale, visual swatch evidence, and the explicit exterior-source gate, see [`BIRLA_OPUS_COLOUR_SELECTION.md`](../BIRLA_OPUS_COLOUR_SELECTION.md).
+
 | Role | Spec |
 |------|------|
 | Main walls (Scheme A default) | Birla Opus **NN9074** Puddle of Grey `#B5AB9C` |

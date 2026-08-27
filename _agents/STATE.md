@@ -1,6 +1,6 @@
 # STATE — live project tracker (update after every meaningful change)
 
-**Last updated:** 2026-08-22 · by: ox-alpha (workspace organization pass)
+**Last updated:** 2026-08-27 · by: Codex (industrial-premium colour audit)
 
 ## Project
 Bhadravati Home — first-floor studio, Bhadravati, Karnataka. Envelope ~21×18 ft (~378 sq ft, plan_relationship_only).
@@ -19,6 +19,7 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 | 2 | Physical laminate/paint sample approval | Client action | Fabrication sign-off |
 | 3 | Granite thickness conflict (drawing 1.5″ vs 15 mm note) | Site verify | Any counter/shelf/loft cut |
 | 4 | Untracked legacy folders + vendor PDFs (53 dirty git entries) | Housekeeping decision | Repo hygiene; commit or ignore deliberately |
+| 5 | Confirm exterior Birla Opus product/tint and approve physical NN9589 sample | Client/dealer input | Exterior paint order and end-to-end exterior QA |
 
 ## Budget spec package (2026-08-22)
 `BUDGET_SPEC/` now holds a research-priced buy list (6 tracks: paint, wood/joinery, electrical, utilities, envelope, furniture) — 40-source citation ledger, EST totals: Essential ≈₹2.9–3.6L, Recommended ≈₹3.9–4.9L. All prices need local quote replacement before ordering; Phase 0 gate unchanged. Client-facing PDF: `Bhadravati_Budget_Build_Spec.pdf` (repo root), rebuilt via `BUDGET_SPEC/_build_budget_pdf.py`.
@@ -35,8 +36,16 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 - 2026-08-12: V2 package complete/ready (19-pp PDF); Idria Oak 84689 SU double-verified; caption hygiene pass; Pages gallery dual-scheme.
 - Latest commits apply "Zakariasson Grok screenshot loop" to locked kitchen/wardrobe 3D.
 
+## Switch colour research (2026-08-26)
+`/Users/suhas/Storage/Research/modular-switches-2026/colors/FINDINGS_COLOR.md` — 3-agent deep research against the locked palette. Outcome: matte-only law disqualifies glossy Roma Urban/Coral/Verona; **Legrand Myrius NextGen** confirmed as the only compliant system (converging with BUDGET_SPEC R-Switch winner): Charcoal Grey modules default, Ice Graphite/Charcoal kitchen, Pearl Champagne hero-board accent only, NO wood-print plates near Idria Oak, white allowed only on ceiling boards. Physical sheen samples (Ice Silk / Ice Graphite / Charcoal / Pearl Champagne) to be ordered before any bulk purchase. NOT yet a design lock — awaits sample approval like all material decisions.
+
 ## Next actions (suggested order)
 1. Get site measure scheduled (unblocks everything).
 2. Decide fate of untracked clutter: commit provenance-worthy items (site photos ARE register evidence — recommend committing them), gitignore scratch.
 3. When client picks paint scheme finally: retire the other scheme's gallery twins or mark clearly.
-4. Any new work → follow `_agents/PLAYBOOK.md`; update this file after.
+4. Order Myrius NextGen finish samples (see switch colour note above) alongside laminate/paint samples.
+5. Any new work → follow `_agents/PLAYBOOK.md`; update this file after.
+
+## 2026-08-27 colour audit
+
+Added `BIRLA_OPUS_COLOUR_SELECTION.md`. Official rendered swatches were visually checked for NN9074 Puddle of Grey, NN9242 A Khadi Kurta, WW0005 White Linen, NN9564 Parisian Evenings, and NN9589 Studio Pose. Existing exterior concept boards were reviewed; NN9589 is the recommended exterior direction. Exterior product/tint and physical façade sample approval remain open.
