@@ -440,7 +440,7 @@
 <body>
   <header class="hero">
     <div class="wrap hero-inner">
-      <p class="eyebrow">Bhadravati &#183; V2 corrected final &#183; design-control package</p>
+      <p class="eyebrow" id="hero-eyebrow">Bhadravati &#183; V2 corrected final &#183; design-control package</p>
       <h1>Bhadravati Home</h1>
       <p class="lede">Warm Contemporary Minimalism &#8212; locked palette, scale-true plan, recessed pulls, and wardrobe face Options A / B for client choice.</p>
       <div class="cta-row">
@@ -681,8 +681,8 @@
 
     <section id="palette">
       <div class="wrap">
-        <h2>Palette board</h2>
-        <p class="section-lede" id="palette-lede">NN9088 Ecru Tint / WW0020 Virgin White / S1241 MT Latte / 83661 Sonoma Oak / 80236 Slate / black granite / NN9059 + NN9077 + conceptual NN9079 exterior / muted blue-grey roof sample pending / recessed SS hardware / E3 ABS / 3000&nbsp;K.</p>
+        <h2>Palette board · corrected final material set</h2>
+        <p class="section-lede" id="palette-lede">NN9088 Ecru Tint / WW0020 Virgin White / S1241 MT Latte / 83661 Sonoma Oak / 80236 Slate / black granite / NN9059 + NN9077 + conceptual NN9079 exterior / muted blue-grey roof sample pending / recessed SS hardware / E3 ABS / 3000&nbsp;K. This board is shared; the legacy toggle changes only the comparison paint tokens above.</p>
         <div class="svg-frame palette-board-active">
           <object data="palette_board_sonoma_kalahodha.svg" type="image/svg+xml" aria-label="Active Sonoma Oak and Kala Ghoda palette board SVG">Active palette SVG</object>
         </div>
@@ -851,6 +851,7 @@
       const swatchCeilLabel = document.getElementById("swatch-ceil-label");
       const tokensLede = document.getElementById("tokens-lede");
       const paletteLede = document.getElementById("palette-lede");
+      const heroEyebrow = document.getElementById("hero-eyebrow");
       const livingLede = document.querySelector('[data-room-lede="living"]');
       const schemeImages = Array.from(document.querySelectorAll("img[data-scheme-src]"));
 
@@ -910,6 +911,11 @@
       }
 
       function updateLabels(s) {
+        if (heroEyebrow) {
+          heroEyebrow.textContent = s.id === "a"
+            ? "Bhadravati · Legacy alternate preview · design-control package"
+            : "Bhadravati · V2 corrected final · design-control package";
+        }
         activePair.innerHTML =
           "<code>" + s.wallCode + "</code> " + s.wallName +
           " &#183; <code>" + s.ceilCode + "</code> " + s.ceilName;
