@@ -49,3 +49,5 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 ## 2026-08-27 colour audit
 
 Added `BIRLA_OPUS_COLOUR_SELECTION.md`. Official rendered swatches were visually checked for NN9074 Puddle of Grey, NN9242 A Khadi Kurta, WW0005 White Linen, NN9564 Parisian Evenings, and NN9589 Studio Pose. Existing exterior concept boards were reviewed; NN9589 is the recommended exterior direction. Exterior product/tint and physical façade sample approval remain open.
+
+Published on GitHub Pages after rebuild: gallery includes the exterior concept and `Bhadravati_FINAL_Interior_Design.pdf` now points to the 24-page V2 handoff. Live asset checks returned HTTP 200 for the page, exterior PNG, and PDF.
