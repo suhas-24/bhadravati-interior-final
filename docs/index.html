@@ -31,7 +31,7 @@
       --ceil-code: "WW0005";
       --ceil-name: "White Linen";
       --latte: #A49483;
-      --oak: #3D483C; /* Century Idria Oak European Grey screen approx */
+      --oak: #B3A38F; /* Century 83661 SU Sonoma Oak screen approx */
       --slate: #575D5C;
       --paper: #F7F3EC;
       --paper-deep: #EDE6DB;
@@ -306,14 +306,14 @@
     .swatch.on-dark span { background: rgba(28,28,28,0.75); color: #EEEDE9; }
     .swatch[data-role="wall"] { background: var(--wall); }
     .swatch[data-role="ceil"] { background: var(--ceil); }
-    .swatch.idria {
+    .swatch.sonoma {
       background-color: var(--oak);
-      background-image: url("swatch_84689_idria_oak.png");
+      background-image: url("swatch_83661_sonoma_oak.png");
       background-size: cover;
       background-position: center;
       color: var(--ceil);
     }
-    .swatch.idria span { background: rgba(28,28,28,0.75); color: #EEEDE9; }
+    .swatch.sonoma span { background: rgba(28,28,28,0.75); color: #EEEDE9; }
     .swatch.latte {
       background-color: var(--latte);
     }
@@ -509,7 +509,7 @@
           <div class="swatch" data-role="wall" id="swatch-wall"><span id="swatch-wall-label">NN9088 &#183; #E9E3D9</span></div>
           <div class="swatch" data-role="ceil" id="swatch-ceil"><span id="swatch-ceil-label">WW0020 &#183; #EDE9E2</span></div>
           <div class="swatch latte" style="background:#A49483"><span>S1241 MT Latte</span></div>
-          <div class="swatch idria on-dark" style="background-color:#3D483C" title="84689 SU Idria Oak · European Grey"><span>84689 SU Idria Oak</span></div>
+          <div class="swatch sonoma on-dark" style="background-color:#B3A38F" title="83661 SU Sonoma Oak · official StarLine swatch"><span>83661 SU Sonoma Oak</span></div>
           <div class="swatch slate on-dark" style="background:#575D5C"><span>80236 DW TV</span></div>
           <div class="swatch on-dark" style="background:#1A1A1A"><span>Black granite</span></div>
         </div>
@@ -541,7 +541,7 @@
             <img src="06_wardrobe_plywood_three_door.png" alt="Option B plywood three-door wardrobe" data-scheme-src />
             <figcaption>
               <div class="option-label">Option B &#183; 06</div>
-              Plywood / Idria Oak face &#183; recessed pulls &#183; 3-door single+double
+              Plywood / Sonoma Oak face &#183; recessed pulls &#183; 3-door single+double
             </figcaption>
           </figure>
         </div>
@@ -599,7 +599,7 @@
 
         <div class="room-block" id="bedroom-set">
           <h3>Bedroom / wardrobe &#8212; three-view set (plywood continuity)</h3>
-          <p class="room-lede" data-room-lede="bedroom">W-01 1372&#215;2286&#215;488&nbsp;mm &#183; <strong>3 doors</strong> 457/457/458 &#183; recessed pulls &#183; plywood / Idria continuity &#183; standing clear 1153&nbsp;mm</p>
+          <p class="room-lede" data-room-lede="bedroom">W-01 1372&#215;2286&#215;488&nbsp;mm &#183; <strong>3 doors</strong> 457/457/458 &#183; recessed pulls &#183; plywood / Sonoma continuity &#183; standing clear 1153&nbsp;mm</p>
           <div class="tri-gallery">
             <figure class="hero-shot">
               <span class="pending-badge" hidden>Scheme B image pending</span>
@@ -670,12 +670,9 @@
     <section id="palette">
       <div class="wrap">
         <h2>Palette board</h2>
-        <p class="section-lede" id="palette-lede">NN9074 / WW0005 / S1241 MT Latte / 84689 Idria / 80236 Slate / granite / recessed SS hardware / E3 ABS / 3000&nbsp;K.</p>
-        <div class="svg-frame palette-board-a">
-          <object data="palette_board.svg" type="image/svg+xml" aria-label="Scheme A palette board SVG">Palette SVG Scheme A</object>
-        </div>
+        <p class="section-lede" id="palette-lede">NN9088 Ecru Tint / WW0020 Virgin White / S1241 MT Latte / 83661 Sonoma Oak / 80236 Slate / black granite / NN9059 + NN9077 exterior / recessed SS hardware / E3 ABS / 3000&nbsp;K.</p>
         <div class="svg-frame palette-board-b">
-          <object data="palette_board_schemeB.svg" type="image/svg+xml" aria-label="Scheme B palette board SVG">Palette SVG Scheme B</object>
+          <object data="palette_board_sonoma_kalahodha.svg" type="image/svg+xml" aria-label="Active Sonoma Oak and Kala Ghoda palette board SVG">Active palette SVG</object>
         </div>
       </div>
     </section>
@@ -683,15 +680,19 @@
     <section id="exterior">
       <div class="wrap">
         <h2>Exterior concept — industrial-premium envelope</h2>
-        <p class="section-lede">Corrected concept: Birla Opus <strong>NN9589 Studio Pose</strong> as the exact muted olive-grey wall field (`#80837D`), with NN9590 No Chance of Sun (`#676B65`) only on existing bands/plinths. Warm teak-toned door balances the palette.</p>
+        <p class="section-lede">Active concept: Birla Opus <strong>NN9059 Kala Ghoda museum</strong> (`#BEB2A1`) as the warm medium-taupe wall field, with <strong>NN9077 Old leaves underfoot</strong> (`#766C62`) only on the lower plinth and recessed entry. This middle-value, low-sheen envelope is intended to be more forgiving of rice-mill ash, soot, oil and mud than a pale wall.</p>
         <div class="gallery">
           <figure>
-            <img src="exterior_colour_concept_nn9589_corrected.png" alt="Corrected conceptual exterior colour board using Birla Opus NN9589 Studio Pose and NN9590 No Chance of Sun" />
-            <figcaption><div class="badge">CORRECTED CONCEPT · NN9589 + NN9590</div>Exact shade-card RGB values are shown in the legend. Preserve existing geometry; confirm exterior product family/tint and physical façade sample before painting.</figcaption>
+            <img src="exterior_colour_concept_nn9059_kalahodha.png" alt="Conceptual exterior colour board using Birla Opus NN9059 Kala Ghoda museum and NN9077 Old leaves underfoot" />
+            <figcaption><div class="badge">ACTIVE CONCEPT · NN9059 + NN9077</div>Exact shade-card RGB values are shown in the legend. Preserve existing geometry; confirm exterior product family/tint and physical façade sample before painting.</figcaption>
           </figure>
           <figure>
-            <img src="birla_official_swatches_nn9589_nn9590_page133.png" alt="Official Birla Opus shade card page showing NN9589 Studio Pose and NN9590 No chance of sun" />
-            <figcaption><div class="badge">OFFICIAL SWATCH CARD · PAGE 133</div>Actual rendered Birla Opus shade-card reference for NN9589 Studio Pose and NN9590 No chance of sun.</figcaption>
+            <img src="birla_official_swatches_nn9059_page104.png" alt="Official Birla Opus shade card page showing NN9059 Kala Ghoda museum" />
+            <figcaption><div class="badge">OFFICIAL SWATCH CARD · PAGE 104</div>Actual rendered Birla Opus shade-card reference for NN9059 Kala Ghoda museum.</figcaption>
+          </figure>
+          <figure>
+            <img src="birla_official_swatches_nn9077_page105.png" alt="Official Birla Opus shade card page showing NN9077 Old leaves underfoot" />
+            <figcaption><div class="badge">OFFICIAL SWATCH CARD · PAGE 105</div>Actual rendered Birla Opus shade-card reference for NN9077 Old leaves underfoot.</figcaption>
           </figure>
         </div>
         <div class="panel highlight" style="margin-top:1.25rem">
@@ -703,7 +704,7 @@
     <section id="boards-hardware">
       <div class="wrap">
         <h2>Boards &amp; hardware</h2>
-        <p class="section-lede">Lock from <code>BOARD_DECISION.md</code> (full-field catalog + reviews; Sainik-wardrobe rec revisited). Kitchen = shutters-only on existing granite. Wardrobe = carcass + three Idria leaves. Recessed brushed stainless pulls stay locked. Name “710” ≠ IS&nbsp;710 marine.</p>
+        <p class="section-lede">Lock from <code>BOARD_DECISION.md</code> (full-field catalog + reviews; Sainik-wardrobe rec revisited). Kitchen = shutters-only on existing granite. Wardrobe = carcass + three Sonoma Oak leaves. Recessed brushed stainless pulls stay locked. Name “710” ≠ IS&nbsp;710 marine.</p>
         <div class="panel highlight" style="margin-bottom:1.25rem">
           <strong>Kitchen shutters</strong> (S1241 MT Latte 0.8&nbsp;mm · 2&nbsp;mm E3 ABS · 3000&nbsp;K):
           <strong>Century Club Prime 19&nbsp;mm</strong> with <strong>IS&nbsp;710</strong> on the sheet-edge stamp + QR.
@@ -711,7 +712,7 @@
           Do <strong>not</strong> default to Sainik 710 (official page = IS&nbsp;303 BWP, not marine). Laminate <strong>both faces</strong>; seal every edge.
         </div>
         <div class="panel" style="margin-bottom:1.25rem">
-          <strong>Wardrobe</strong> (54×90×19.20&nbsp;in · three Idria Oak leaves · 1&nbsp;mm E3 ABS):
+          <strong>Wardrobe</strong> (54×90×19.20&nbsp;in · three Sonoma Oak leaves · 1&nbsp;mm E3 ABS):
           <strong>Club Prime 19&nbsp;mm</strong> or <strong>Greenply 710 Marine 19&nbsp;mm</strong>.
           CNC alternate: <strong>HDHMR / HDWR 18&nbsp;mm</strong>. <strong>Boilo too heavy</strong> for 90&nbsp;in doors.
           <strong>Sainik 710 19&nbsp;mm</strong> = contingency only (QR, no core gaps) — <strong>not</strong> the written default.
@@ -795,7 +796,7 @@
 
   <script>
     (function () {
-      const STORAGE_KEY = "bhadravati-paint-scheme-v2-corrected";
+      const STORAGE_KEY = "bhadravati-paint-scheme-v3-sonoma-kalahodha";
       const SCHEMES = {
         a: {
           id: "a",
@@ -807,7 +808,7 @@
           ceilName: "White Linen",
           ceilHex: "#EEEDE9",
           tokensLede: "From <code>swatch_lock.json</code> (Scheme A) + <code>dimension_lock.json</code> + <code>wardrobe_door_lock.json</code>. Birla Opus hex exact; Century laminate hex = visual approx.",
-          paletteLede: "NN9074 Puddle of Grey / WW0005 White Linen / S1241 MT Latte / 84689 Idria / 80236 Slate / granite / recessed SS / E3 ABS / 3000&nbsp;K.",
+          paletteLede: "NN9074 Puddle of Grey / WW0005 White Linen / S1241 MT Latte / 83661 Sonoma Oak / 80236 Slate / granite / recessed SS / E3 ABS / 3000&nbsp;K.",
           livingLede: "S-centre &#183; sofa&#8211;coffee 475&nbsp;mm &#183; aisle ~950&#8211;1000&nbsp;mm &#183; NN9074 TV wall &#183; 80236 floating cabinet only &#183; no balcony",
           bedroomCallout: "<strong>Bedroom</strong> &#8212; SW queen; west side <strong>600&nbsp;mm</strong>. NN9074 / WW0005. Lamps 2700&#8211;3000&nbsp;K."
         },
@@ -821,7 +822,7 @@
           ceilName: "Virgin White",
           ceilHex: "#EDE9E2",
           tokensLede: "From <code>scheme_b_swatch_lock.json</code> (Scheme B) + shared material locks. Walls NN9088 + ceiling WW0020 Virgin White &#8212; Birla Opus hex exact.",
-          paletteLede: "NN9088 Ecru Tint / WW0020 Virgin White / S1241 MT Latte / 84689 Idria / 80236 Slate / granite / recessed SS / E3 ABS / 3000&nbsp;K.",
+          paletteLede: "NN9088 Ecru Tint / WW0020 Virgin White / S1241 MT Latte / 83661 Sonoma Oak / 80236 Slate / granite / recessed SS / E3 ABS / 3000&nbsp;K.",
           livingLede: "S-centre &#183; sofa&#8211;coffee 475&nbsp;mm &#183; aisle ~950&#8211;1000&nbsp;mm &#183; NN9088 TV wall &#183; 80236 floating cabinet only &#183; no balcony",
           bedroomCallout: "<strong>Bedroom</strong> &#8212; SW queen; west side <strong>600&nbsp;mm</strong>. NN9088 / WW0020. Lamps 2700&#8211;3000&nbsp;K."
         }

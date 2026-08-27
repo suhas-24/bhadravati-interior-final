@@ -4,7 +4,7 @@
 
 ## Project
 Bhadravati Home — first-floor studio, Bhadravati, Karnataka. Envelope ~21×18 ft (~378 sq ft, plan_relationship_only).
-Concept LOCKED: Warm Contemporary Minimalism — climate-resilient (corrected final: NN9088 Ecru Tint + WW0020 Virgin White + S1241 MT Latte + 84689 SU Idria Oak).
+Concept LOCKED: Warm Contemporary Minimalism — climate-resilient (active replacement: NN9088 Ecru Tint + WW0020 Virgin White + S1241 MT Latte + 83661 SU Sonoma Oak; exterior NN9059 + NN9077).
 
 ## Current phase position
 Phases 0–18 effectively complete (design control). **Blocked at Phase 2 exit:** signed site measure not yet done ⇒ nothing is fabrication-approved.
@@ -19,7 +19,7 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 | 2 | Physical laminate/paint sample approval | Client action | Fabrication sign-off |
 | 3 | Granite thickness conflict (drawing 1.5″ vs 15 mm note) | Site verify | Any counter/shelf/loft cut |
 | 4 | Untracked legacy folders + vendor PDFs (53 dirty git entries) | Housekeeping decision | Repo hygiene; commit or ignore deliberately |
-| 5 | Confirm exterior Birla Opus product/tint and approve physical NN9589 sample | Client/dealer input | Exterior paint order and end-to-end exterior QA |
+| 5 | Confirm exterior Birla Opus product/tint and approve physical NN9059 + NN9077 samples | Client/dealer input | Exterior paint order and end-to-end exterior QA |
 
 ## Budget spec package (2026-08-22)
 `BUDGET_SPEC/` now holds a research-priced buy list (6 tracks: paint, wood/joinery, electrical, utilities, envelope, furniture) — 40-source citation ledger, EST totals: Essential ≈₹2.9–3.6L, Recommended ≈₹3.9–4.9L. All prices need local quote replacement before ordering; Phase 0 gate unchanged. Client-facing PDF: `Bhadravati_Budget_Build_Spec.pdf` (repo root), rebuilt via `BUDGET_SPEC/_build_budget_pdf.py`.
@@ -37,7 +37,7 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 - Latest commits apply "Zakariasson Grok screenshot loop" to locked kitchen/wardrobe 3D.
 
 ## Switch colour research (2026-08-26)
-`/Users/suhas/Storage/Research/modular-switches-2026/colors/FINDINGS_COLOR.md` — 3-agent deep research against the locked palette. Outcome: matte-only law disqualifies glossy Roma Urban/Coral/Verona; **Legrand Myrius NextGen** confirmed as the only compliant system (converging with BUDGET_SPEC R-Switch winner): Charcoal Grey modules default, Ice Graphite/Charcoal kitchen, Pearl Champagne hero-board accent only, NO wood-print plates near Idria Oak, white allowed only on ceiling boards. Physical sheen samples (Ice Silk / Ice Graphite / Charcoal / Pearl Champagne) to be ordered before any bulk purchase. NOT yet a design lock — awaits sample approval like all material decisions.
+`/Users/suhas/Storage/Research/modular-switches-2026/colors/FINDINGS_COLOR.md` — 3-agent deep research against the locked palette. Outcome: matte-only law disqualifies glossy Roma Urban/Coral/Verona; **Legrand Myrius NextGen** confirmed as the only compliant system (converging with BUDGET_SPEC R-Switch winner): Charcoal Grey modules default, Ice Graphite/Charcoal kitchen, Pearl Champagne hero-board accent only, NO wood-print plates near Sonoma Oak, white allowed only on ceiling boards. Physical sheen samples (Ice Silk / Ice Graphite / Charcoal / Pearl Champagne) to be ordered before any bulk purchase. NOT yet a design lock — awaits sample approval like all material decisions.
 
 ## Next actions (suggested order)
 1. Get site measure scheduled (unblocks everything).
@@ -48,7 +48,7 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 
 ## 2026-08-27 colour audit
 
-Added `BIRLA_OPUS_COLOUR_SELECTION.md`. Official rendered swatches were visually checked for NN9074 Puddle of Grey, NN9242 A Khadi Kurta, WW0005 White Linen, NN9564 Parisian Evenings, and NN9589 Studio Pose. Existing exterior concept boards were reviewed; NN9589 is the recommended exterior direction. Exterior product/tint and physical façade sample approval remain open.
+Added `BIRLA_OPUS_COLOUR_SELECTION.md`. Official rendered swatches were visually checked for NN9088 Ecru Tint, WW0020 Virgin White, NN9059 Kala Ghoda museum, and NN9077 Old leaves underfoot. NN9505 was screened out as too light for black soot/grease contrast on a broad façade. Exterior product/tint and physical façade sample approval remain open.
 
 Published on GitHub Pages after rebuild: gallery includes the exterior concept and `Bhadravati_FINAL_Interior_Design.pdf` now points to the 24-page V2 handoff. Live asset checks returned HTTP 200 for the page, exterior PNG, and PDF.
 
@@ -56,4 +56,4 @@ Published on GitHub Pages after rebuild: gallery includes the exterior concept a
 
 Official Birla Opus swatches were visually inspected and cross-checked: NN9088 Ecru Tint `#E9E3D9` is the selected wall field and WW0020 Virgin White `#EDE9E2` the selected ceiling/trim. NN9074 Puddle of Grey + WW0005 White Linen remain legacy alternate only. A replacement 12-image living/kitchen/evening/bedroom/wardrobe set was generated, visually inspected, and stored in `Bhadravati_Interior_Design_V2/assets/img/corrected_ecru_virgin_white/`; the matching `docs/*_schemeB.png` gallery twins now reference that corrected set. V2 PDF rebuilt and verified at 24 pages.
 
-Exterior correction: official page 133 was rechecked. Main wall is NN9589 Studio Pose `#80837D` / RGB 128,131,125; existing darker bands/plinths are NN9590 No chance of sun `#676B65` / RGB 103,107,101. New concept `docs/exterior_colour_concept_nn9589_corrected.png` and actual official swatch page `docs/birla_official_swatches_nn9589_nn9590_page133.png` are embedded in the rebuilt PDF and gallery.
+Exterior replacement: official pages 104–105 were visually rechecked. Main wall is NN9059 Kala Ghoda museum `#BEB2A1` / RGB 190,178,161; lower bands/plinths are NN9077 Old leaves underfoot `#766C62` / RGB 118,108,98. New concept `docs/exterior_colour_concept_nn9059_kalahodha.png`, official swatches, and the active palette board are now in the gallery. Studio Pose and Idria are historical/rejected only.

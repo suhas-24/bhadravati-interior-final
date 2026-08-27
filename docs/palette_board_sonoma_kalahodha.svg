@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bhadravati active palette — Ecru, Sonoma Oak and Kala Ghoda museum</title>
+  <desc id="desc">Exact Birla Opus paint swatches and catalogue-confirmed Century laminate selections for the climate-resilient warm contemporary minimalism scheme.</desc>
+  <rect width="1200" height="760" fill="#F7F3EC"/>
+  <text x="64" y="70" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2C2925">ACTIVE PALETTE · 27 AUG 2026</text>
+  <text x="64" y="104" font-family="Arial, sans-serif" font-size="16" fill="#6A6258">Warm Contemporary Minimalism · industrial dust/smoke context · matte / low-sheen</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="64" y="145" width="250" height="145" rx="5" fill="#E9E3D9" stroke="#C9BFB3"/>
+    <text x="82" y="225" font-size="22" font-weight="700" fill="#2C2925">NN9088</text>
+    <text x="82" y="252" font-size="18" fill="#2C2925">Ecru Tint</text>
+    <text x="82" y="276" font-size="14" fill="#6A6258">RGB 233, 227, 217 · #E9E3D9</text>
+
+    <rect x="338" y="145" width="250" height="145" rx="5" fill="#EDE9E2" stroke="#C9BFB3"/>
+    <text x="356" y="225" font-size="22" font-weight="700" fill="#2C2925">WW0020</text>
+    <text x="356" y="252" font-size="18" fill="#2C2925">Virgin White</text>
+    <text x="356" y="276" font-size="14" fill="#6A6258">RGB 237, 233, 226 · #EDE9E2</text>
+
+    <rect x="612" y="145" width="250" height="145" rx="5" fill="#BEB2A1" stroke="#A99D8E"/>
+    <text x="630" y="225" font-size="22" font-weight="700" fill="#2C2925">NN9059</text>
+    <text x="630" y="252" font-size="18" fill="#2C2925">Kala Ghoda museum</text>
+    <text x="630" y="276" font-size="14" fill="#4A433B">RGB 190, 178, 161 · #BEB2A1</text>
+
+    <rect x="886" y="145" width="250" height="145" rx="5" fill="#766C62" stroke="#62594F"/>
+    <text x="904" y="225" font-size="22" font-weight="700" fill="#F7F3EC">NN9077</text>
+    <text x="904" y="252" font-size="18" fill="#F7F3EC">Old leaves underfoot</text>
+    <text x="904" y="276" font-size="14" fill="#F7F3EC">RGB 118, 108, 98 · #766C62</text>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="64" y="340" width="250" height="145" rx="5" fill="#C8B9A4" stroke="#B3A38F"/>
+    <text x="82" y="420" font-size="22" font-weight="700" fill="#2C2925">S1241 MT</text>
+    <text x="82" y="447" font-size="18" fill="#2C2925">Latte · kitchen shutters</text>
+    <text x="82" y="471" font-size="14" fill="#6A6258">solid matte · catalogue-confirmed</text>
+
+    <rect x="338" y="340" width="250" height="145" rx="5" fill="#575D5C" stroke="#464B4A"/>
+    <text x="356" y="420" font-size="22" font-weight="700" fill="#F7F3EC">80236 DW</text>
+    <text x="356" y="447" font-size="18" fill="#F7F3EC">Slate Grey · TV cabinet only</text>
+    <text x="356" y="471" font-size="14" fill="#F7F3EC">controlled dark accent</text>
+
+    <rect x="612" y="340" width="250" height="145" rx="5" fill="#1A1A1A" stroke="#090909"/>
+    <text x="630" y="420" font-size="22" font-weight="700" fill="#F7F3EC">EXISTING</text>
+    <text x="630" y="447" font-size="18" fill="#F7F3EC">Black granite · retain</text>
+    <text x="630" y="471" font-size="14" fill="#F7F3EC">no waterfall / no re-polish</text>
+
+    <rect x="886" y="340" width="250" height="145" rx="5" fill="#C8B9A4" stroke="#B3A38F"/>
+    <image href="swatch_83661_sonoma_oak.png" x="886" y="340" width="250" height="145" preserveAspectRatio="xMidYMid slice" opacity="0.88"/>
+    <rect x="886" y="340" width="250" height="145" rx="5" fill="none" stroke="#A99B89"/>
+    <text x="904" y="420" font-size="22" font-weight="700" fill="#FFFFFF" stroke="#5A5148" stroke-width="0.7">83661 SU</text>
+    <text x="904" y="447" font-size="18" fill="#FFFFFF" stroke="#5A5148" stroke-width="0.5">Sonoma Oak · wardrobe</text>
+    <text x="904" y="471" font-size="14" fill="#FFFFFF" stroke="#5A5148" stroke-width="0.4">official catalogue swatch · 3 leaves</text>
+  </g>
+
+  <rect x="64" y="540" width="1072" height="112" rx="6" fill="#EEE8DE" stroke="#D1C6B8"/>
+  <text x="88" y="580" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#2C2925">WHY THIS SET</text>
+  <text x="88" y="608" font-family="Arial, sans-serif" font-size="15" fill="#4E4841">NN9088 keeps the studio bright; WW0020 prevents a grey ceiling cast; 83661 Sonoma keeps the wardrobe light.</text>
+  <text x="88" y="633" font-family="Arial, sans-serif" font-size="15" fill="#4E4841">NN9059 is the dust-forgiving main façade; NN9077 is restricted to the plinth/recess. NN9505 and Studio Pose are not active.</text>
+  <text x="64" y="710" font-family="Arial, sans-serif" font-size="13" fill="#7C7369">Screen approximations apply only to laminates. Confirm all paint tints, substrates, edge bands and hardware with physical samples on site.</text>
+</svg>

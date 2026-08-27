@@ -32,7 +32,7 @@ from reportlab.platypus import (
 ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets"
 VIS = ASSETS / "img"
-CORRECTED_VIS = VIS / "corrected_ecru_virgin_white"
+CORRECTED_VIS = VIS / "ecru_sonoma_kalahodha"
 OUT = ROOT / "Bhadravati_Interior_Design_V2.pdf"
 
 # Primary presentation boards (ASSET_INDEX.md) — exclude 02b / 04b / 05b from client PDF
@@ -43,8 +43,9 @@ BOARD_FLOORPLAN = ASSETS / "02_floorplan_concept_v2.png"
 BOARD_KITCHEN_ELEV = ASSETS / "03_kitchen_elevation_overlay_v2.png"
 BOARD_WARDROBE_ELEV = ASSETS / "04_wardrobe_elevation_overlay_v2.png"  # 3-door 457/457/458
 BOARD_QA = ASSETS / "05_qa_contact_sheet_v2.jpg"
-EXTERIOR_CONCEPT = ROOT.parent / "docs" / "exterior_colour_concept_nn9589_corrected.png"
-EXTERIOR_SWATCH = ROOT.parent / "docs" / "birla_official_swatches_nn9589_nn9590_page133.png"
+EXTERIOR_CONCEPT = ROOT.parent / "docs" / "exterior_colour_concept_nn9059_kalahodha.png"
+EXTERIOR_SWATCH = ROOT.parent / "docs" / "birla_official_swatches_nn9059_page104.png"
+EXTERIOR_SWATCH_ACCENT = ROOT.parent / "docs" / "birla_official_swatches_nn9077_page105.png"
 
 NN9074 = HexColor("#B5AB9C")
 WW0005 = HexColor("#EEEDE9")
@@ -52,7 +53,7 @@ NN9088 = HexColor("#E9E3D9")
 WW0020 = HexColor("#EDE9E2")
 LATTE = HexColor("#A49483")
 SLATE = HexColor("#575D5C")
-IDRIA = HexColor("#3D483C")
+SONOMA = HexColor("#B3A38F")
 INK = HexColor("#2C2A26")
 MUTED = HexColor("#5C574F")
 RULE = HexColor("#D4CEC4")
@@ -237,7 +238,7 @@ def build():
         story.append(Paragraph(f"• {item}", bullet))
     concept_data = [
         [Paragraph("<b>Concept</b>", cell_b), Paragraph("<b>Decision</b>", cell_b)],
-        [Paragraph("A — Warm Contemporary Minimalism (NN9074 + Latte + Idria)", cell), Paragraph("<b>LOCKED FINAL</b>", cell_b)],
+        [Paragraph("Warm Contemporary Minimalism (NN9088 + Latte + Sonoma)", cell), Paragraph("<b>LOCKED FINAL</b>", cell_b)],
         [Paragraph("B — Textbook Japandi", cell), Paragraph("Reject as governing style", cell)],
         [Paragraph("C — Dual-tone kitchen / NN9088 as default walls", cell), Paragraph("Reject (supersedes Corrected Handover schedule)", cell)],
     ]
@@ -343,7 +344,7 @@ def build():
         ("NN9088", "Final walls", "#E9E3D9"),
         ("WW0020", "Final ceiling", "#EDE9E2"),
         ("S1241", "Latte MT", "#A49483"),
-        ("84689", "Idria Oak SU", "#3D483C"),
+        ("83661", "Sonoma Oak SU", "#B3A38F"),
         ("80236", "Slate DW", "#575D5C"),
         ("NN9074", "Legacy wall", "#B5AB9C"),
     ]
@@ -377,7 +378,9 @@ def build():
         [Paragraph("Legacy alternate ceiling", cell), Paragraph("Birla <b>WW0005</b> White Linen", cell), Paragraph("Optional only", cell)],
         [Paragraph("Kitchen all shutters", cell), Paragraph("Century <b>S1241 MT Latte</b>", cell), Paragraph("Base+drawers+loft; one code", cell)],
         [Paragraph("TV cabinet only", cell), Paragraph("<b>80236 DW Slate Grey</b> (or Latte)", cell), Paragraph("Controlled accent — not kitchen", cell)],
-        [Paragraph("Wardrobe preferred", cell), Paragraph("<b>84689 SU Idria Oak</b>", cell), Paragraph("Backup 84687 Lyon only", cell)],
+        [Paragraph("Wardrobe preferred", cell), Paragraph("<b>83661 SU Sonoma Oak</b>", cell), Paragraph("Fallback S1241 MT Latte only", cell)],
+        [Paragraph("Exterior main façade", cell), Paragraph("Birla <b>NN9059</b> Kala Ghoda museum", cell), Paragraph("#BEB2A1 · medium warm taupe-stone", cell)],
+        [Paragraph("Exterior plinth / recess", cell), Paragraph("Birla <b>NN9077</b> Old leaves underfoot", cell), Paragraph("#766C62 · splash/grease zone", cell)],
         [Paragraph("Edges", cell), Paragraph("E3 ABS matched", cell), Paragraph("2 mm kitchen / 1 mm wardrobe; matt", cell)],
         [Paragraph("Hardware", cell), Paragraph("Brushed SS <b>recessed</b>", cell), Paragraph("No projecting bars", cell)],
         [Paragraph("Counter", cell), Paragraph("Existing black granite", cell), Paragraph("Retain; shutters only", cell)],
@@ -400,7 +403,7 @@ def build():
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
         "From <b>BOARD_DECISION.md</b> (catalog + user reviews; prior Sainik-wardrobe rec revisited). "
-        "Kitchen = shutters-only on existing black granite. Wardrobe = carcass + three hinged Idria leaves. "
+        "Kitchen = shutters-only on existing black granite. Wardrobe = carcass + three hinged Sonoma Oak leaves. "
         "<b>IS 303:2024</b> = general-purpose MR/BWR/BWP. <b>IS 710:2024</b> = marine. "
         "Product name “710” is not the stamp. Sainik 710 official page = <b>IS 303 BWP</b>. "
         "Greenply Ecotec 710 = IS 303; Greenply <b>710 Marine</b> = IS 710.",
@@ -412,7 +415,7 @@ def build():
         [Paragraph("Kitchen shutters · S1241 MT Latte 0.8 mm · 2 mm E3 ABS · 3000 K", cell),
          Paragraph("<b>Century Club Prime 19 mm</b> — <b>IS 710</b> on sheet-edge stamp + CenturyPromise QR. Laminate <b>both faces</b>.", cell),
          Paragraph("<b>Boilo 18 mm</b> if CNC/HDF-fluent. <b>Greenply 710 Marine 19 mm</b> (IS 710 stamp). Classic Marine / Bond 710 only if stamped IS 710.", cell)],
-        [Paragraph("Wardrobe carcass + 3 Idria leaves · 54×90×19.20 in · 1 mm E3 ABS", cell),
+        [Paragraph("Wardrobe carcass + 3 Sonoma Oak leaves · 54×90×19.20 in · 1 mm E3 ABS", cell),
          Paragraph("<b>Club Prime 19 mm</b> or <b>Greenply 710 Marine 19 mm</b> (IS 710 stamp). Same mill as kitchen ply path preferred.", cell),
          Paragraph("<b>HDHMR / HDWR 18 mm</b> if CNC. <b>Boilo too heavy</b> for 90 in doors. <b>Sainik 710 19 mm</b> = contingency only (QR, no core gaps) — <b>not</b> the written default.", cell)],
     ]
@@ -493,7 +496,7 @@ def build():
          Paragraph("Not the kitchen hinge spec", cell)],
     ]
     ht = Table(hw_rows, colWidths=[38 * mm, 84 * mm, 48 * mm])
-    ht.setStyle(tbl_style(IDRIA, header_white=True))
+    ht.setStyle(tbl_style(SONOMA, header_white=True))
     story.append(ht)
     story.append(Spacer(1, 3 * mm))
     story.append(Paragraph(
@@ -516,7 +519,7 @@ def build():
         "“710” in a product name is a <b>trademark, not a grade</b>. Sainik 710 and Ecotec 710 print "
         "<b>IS 303 BWP</b>. Greenply <b>710 Marine</b> prints <b>IS 710</b>. Club Prime only if "
         "<b>IS 710 is on the sheet edge</b>. QR ≠ marine. Website ₹/sqft is often the wrong thickness. "
-        "Idria Oak is Century <b>European Grey</b> (screen <b>#3D483C</b>), not taupe. "
+        "Sonoma Oak is Century <b>83661 SU</b> (screen approx <b>#B3A38F</b>); use the official page 61 swatch, not a guessed flat colour. "
         "Godrej Curvo 8010 is a <b>lock</b>, not a hinge. Recessed brushed SS only.",
         body,
     ))
@@ -527,7 +530,7 @@ def build():
         [Paragraph("Wardrobe core", cell),
          Paragraph("<b>Club Prime or Greenply 710 Marine 19 mm</b>. HDHMR 18 mm if CNC. <b>Not Boilo</b> on 90 in doors. Sainik = contingency.", cell)],
         [Paragraph("Faces", cell),
-         Paragraph("<b>S1241 MT</b> Latte all kitchen · <b>84689 SU</b> Idria European Grey wardrobe · <b>80236 DW</b> TV only · finish letters are the SKU.", cell)],
+         Paragraph("<b>S1241 MT</b> Latte all kitchen · <b>83661 SU</b> Sonoma Oak wardrobe · <b>80236 DW</b> TV only · finish letters are the SKU.", cell)],
         [Paragraph("Edge / gum", cell),
          Paragraph("E3 <b>ABS 2 mm kitchen / 1 mm wardrobe</b>. Marine/Hi-Per on sheets. PUR edge only if demonstrated.", cell)],
         [Paragraph("Hardware", cell),
@@ -536,14 +539,14 @@ def build():
          Paragraph("Reddit 403. Fakes are the real risk. No Boilo 2–5 yr diaries. Factory machine edges beat iron-on.", cell)],
     ]
     wt = Table(wiki_rows, colWidths=[38 * mm, 132 * mm])
-    wt.setStyle(tbl_style(IDRIA, header_white=True))
+    wt.setStyle(tbl_style(SONOMA, header_white=True))
     story.append(wt)
     for fname, cap in [
         ("kitchen_exploded.png", "K-01 exploded — granite retained, S1241 MT Latte, B1/B2/B3, 2 mm ABS, recessed SS · conceptual"),
-        ("wardrobe_exploded.png", "W-01 exploded — 457/457/458, Idria European Grey #3D483C, 5× Sensys, Curvo 8010 lock · conceptual"),
-        ("material_stack.png", "Material stack — both-faces 0.8 mm + ABS wrap · Idria is olive/grey-green, not taupe"),
+        ("wardrobe_exploded.png", "W-01 exploded — 457/457/458, Sonoma Oak 83661 SU, 5× Sensys, Curvo 8010 lock · conceptual"),
+        ("material_stack.png", "Material stack — both-faces 0.8 mm + ABS wrap · Sonoma is a light warm-neutral oak"),
         ("kitchen_camera.png", "K-01 camera still — S1241 MT Latte #A49483, granite retain, recessed J · conceptual"),
-        ("wardrobe_camera.png", "W-01 camera still — 84689 SU Idria European Grey #3D483C, 457/457/458 · conceptual"),
+        ("wardrobe_camera.png", "W-01 camera still — 83661 SU Sonoma Oak, 457/457/458 · conceptual"),
     ]:
         p = wiki_vis / fname
         if p.exists():
@@ -597,7 +600,7 @@ def build():
         [Paragraph("Queen bed + 2 nightstands", cell), Paragraph("Mattress ~1525×2030", cell), Paragraph("Sides ?600 mm where possible", cell)],
         [Paragraph("Study desk + mesh chair", cell), Paragraph("Desk 1200–1500", cell), Paragraph("2–3 shelves ?300 mm deep", cell)],
         [Paragraph("Kitchen shutters B1–B3 + loft", cell), Paragraph("Clear 48/36/18 in", cell), Paragraph("S1241 MT Latte; recessed pulls", cell)],
-        [Paragraph("Wardrobe 3 leaves", cell), Paragraph("457/457/458 mm", cell), Paragraph("84689 Idria; Options A/B face", cell)],
+        [Paragraph("Wardrobe 3 leaves", cell), Paragraph("457/457/458 mm", cell), Paragraph("83661 Sonoma; Options A/B face", cell)],
     ]
     ft = Table(ffe, colWidths=[48 * mm, 48 * mm, 74 * mm])
     ft.setStyle(tbl_style(NN9074))
@@ -695,7 +698,7 @@ def build():
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
         "Locked: three leaves <b>457 / 457 / 458 mm</b> inside clear <b>1372 × 2286 × 488 mm</b>. "
-        "Preferred face laminate <b>84689 SU Idria Oak</b> (backup 84687 Lyon). Recessed pulls only. "
+        "Preferred face laminate <b>83661 SU Sonoma Oak</b> (fallback S1241 MT Latte). Recessed pulls only. "
         "Client chooses Option A or B after samples. Four-leaf text elsewhere is superseded.",
         body,
     ))
@@ -706,7 +709,7 @@ def build():
         caps.append(Paragraph("<b>Option A</b> — Aluminium frame + fluted glass", caption))
     if wb.exists():
         imgs.append(fit_image(wb, half, 95 * mm))
-        caps.append(Paragraph("<b>Option B</b> — Plywood / Idria face", caption))
+        caps.append(Paragraph("<b>Option B</b> — Plywood / Sonoma Oak face", caption))
     if imgs:
         story.append(Table([imgs], colWidths=[half + 3 * mm] * len(imgs)))
         story.append(Table([caps], colWidths=[half + 3 * mm] * len(caps)))
@@ -754,7 +757,7 @@ def build():
     ))
     for s in [
         "Measure & sign site sheet (K-01, W-01, openings) ? photograph tape end-to-end.",
-        "Approve sample board (NN9088/WW0020 corrected final; NN9074/WW0005 legacy alternate if desired; S1241; 84689; 80236; E3; recessed SS) beside granite @ morning/afternoon/3000 K.",
+        "Approve sample board (NN9088/WW0020 corrected final; NN9074/WW0005 legacy alternate if desired; S1241; 83661; 80236; E3; recessed SS) beside granite @ morning/afternoon/3000 K. Add NN9059 + NN9077 exterior test patches after rain and a cleaning trial.",
         "Choose wardrobe Option A or B; lock quote (board grades, laminate codes, edges, hinges, access panels).",
         "Fabricate ? site prep ? install kitchen shutters + wardrobe ? paint ? lighting ? FF&E ? punch.",
     ]:
@@ -768,7 +771,7 @@ def build():
         ("1. Sign the site-measure sheet",
          "Kitchen, wardrobe niche, all openings. Resolves C-01 granite thickness and C-05/C-11 window conflicts."),
         ("2. Approve physical sample board",
-         "Corrected final NN9088/WW0020 chips; S1241 MT Latte; 84689 Idria; 80236; E3 1&2 mm; recessed brushed SS — beside granite under morning / afternoon / 3000 K. Choose wardrobe A or B."),
+         "Corrected final NN9088/WW0020 chips; S1241 MT Latte; 83661 Sonoma; 80236; E3 1&2 mm; recessed brushed SS — beside granite under morning / afternoon / 3000 K. Choose wardrobe A or B."),
         ("3. Lock fabricator shop drawings + quotation",
          "One kitchen laminate (S1241 all); three wardrobe leaves 457/457/458; boards; edges; recessed hardware; service access — then only then commission fabrication-faithful visuals."),
     ]
@@ -822,16 +825,16 @@ def build():
     story.append(Paragraph("Exterior colour concept — industrial-premium envelope", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
-        "Corrected concept: Birla Opus <b>NN9589 Studio Pose</b> as the exact muted olive-grey wall field "
-        "(<b>#80837D</b> / RGB 128,131,125), with NN9590 No Chance of Sun "
-        "(<b>#676B65</b> / RGB 103,107,101) only on existing bands/plinths. "
-        "Warm teak-toned door balances the locked interior palette and Idria Oak wardrobe finish.",
+        "Active concept: Birla Opus <b>NN9059 Kala Ghoda museum</b> as the warm medium-taupe wall field "
+        "(<b>#BEB2A1</b> / RGB 190,178,161), with NN9077 Old leaves underfoot "
+        "(<b>#766C62</b> / RGB 118,108,98) only on the lower plinth/recess. "
+        "This middle-value, low-sheen envelope is more forgiving of rice-mill ash, soot, oil and mud than a pale wall.",
         body,
     ))
     if EXTERIOR_CONCEPT.exists():
         story.append(fit_image(EXTERIOR_CONCEPT, content_w, 205 * mm))
         story.append(Paragraph(
-            "Corrected conceptual exterior board — NN9589 Studio Pose + NN9590 No Chance of Sun. Preserve existing geometry, openings, drainage, "
+            "Active conceptual exterior board — NN9059 Kala Ghoda museum + NN9077 Old leaves underfoot. Preserve existing geometry, openings, drainage, "
             "canopy, grills and signage. Confirm the exact Birla Opus exterior product/tint and approve a physical "
             "façade sample in sun, shade and post-rain conditions before painting.",
             caption,
@@ -839,7 +842,15 @@ def build():
     if EXTERIOR_SWATCH.exists():
         story.append(fit_image(EXTERIOR_SWATCH, content_w, 66 * mm))
         story.append(Paragraph(
-            "Actual official Birla Opus shade-card reference — page 133: NN9589 Studio Pose and NN9590 No chance of sun.",
+            "Actual official Birla Opus shade-card reference — page 104: NN9059 Kala Ghoda museum. Page 105 carries the NN9077 plinth accent.",
+            caption,
+        ))
+    if EXTERIOR_SWATCH_ACCENT.exists():
+        story.append(PageBreak())
+        story.append(Paragraph("Exterior accent swatch evidence", h2))
+        story.append(fit_image(EXTERIOR_SWATCH_ACCENT, content_w, 180 * mm))
+        story.append(Paragraph(
+            "Actual official Birla Opus shade-card reference — page 105: NN9077 Old leaves underfoot.",
             caption,
         ))
     story.append(PageBreak())
@@ -858,7 +869,7 @@ def build():
         story.append(Paragraph(
             "QA contact sheet V2 — conceptual only. Wardrobe SoT lock (override baked overlays): "
             "clear niche <b>1372 × 2286 × 488 mm</b>; leaves <b>457 / 457 / 458 mm</b>; "
-            "preferred face <b>84689 SU Idria Oak</b>. Do not trust OCR of height/depth typos or wrong laminate names on the sheet.",
+            "preferred face <b>83661 SU Sonoma Oak</b>. Do not trust OCR of height/depth typos or wrong laminate names on the sheet.",
             caption,
         ))
 

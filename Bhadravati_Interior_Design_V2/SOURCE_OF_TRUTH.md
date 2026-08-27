@@ -126,26 +126,31 @@ Brief: `/Users/suhas/Downloads/Interiors/Bhadravati_Final_Interior_Design_Brief/
 
 **Workspace paint sample asset:** `/Users/suhas/Downloads/Interiors/NN-9088.png` — visual sample for the corrected **NN9088** final walls.
 
+### Exterior palette — dust/smoke context (active recommendation)
+
+| Role | Code | Name | Hex / RGB | Use |
+|---|---|---|---|---|
+| Main façade field | **NN9059** | Kala Ghoda museum | `#BEB2A1` / RGB 190,178,161 | Warm medium taupe-stone; premium and forgiving of industrial dust |
+| Plinth / recessed entry accent | **NN9077** | Old leaves underfoot | `#766C62` / RGB 118,108,98 | Narrow bands and plinth only; do not use as a broad wall |
+| Product system | Birla Opus One or Calista | Low-sheen exterior | — | Confirm tint/product and physical façade sample before order |
+
+Studio Pose (NN9589) and No Chance of Sun (NN9590) are superseded and must not be used in the active exterior concept.
+
 ### Laminates — Century StarLine (catalogue-verified)
 
 Catalogue: `/Users/suhas/Downloads/Interiors/Century Laminates StarLine 0.8mm.pdf`  
 Extract: `/Users/suhas/Downloads/Interiors/processed_pdf_text/century_starline_extracted.txt`  
-Evidence crop (Idria catalogue PDF): `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/source/century_84689_idria_page55_pdfp90.png`  
-Evidence (Idria CenturyPly website, 2026-08-12): `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/source/century_84689_idria_oak_website_2026-08-12.png`
+Evidence crop (Sonoma catalogue PDF): `Bhadravati_Interior_Design_V2/source/century_83661_sonoma_page61_pdfp96.png`
 
 | Role | Code | Finish | Name | Catalogue check | Notes |
 |---|---|---|---|---|---|
 | Kitchen base + drawers + loft (**all**) | **S1241** | **MT** | Latte | `S1241 MT` / `LATTE` present | **One code only** — no dual-tone kitchen |
 | Kitchen backup (if Latte fails sample) | **S1173** | **MT** | Cloud Grey | Present | Backup only |
 | TV cabinet (controlled accent) | **80236** | **DW** | Slate Grey | `80236 DW` present | **Not** for kitchen shutters |
-| Wardrobe preferred | **84689** | **SU** | Idria Oak | **CONFIRMED** — StarLine printed **p.55** (PDF p.90): `84689 SU` / `IDRIA OAK`; index PDF p.143; **website** confirms Idria Oak / 84689 SU / Woodgrains · European Grey / 8?4 ft / **0.8 mm** | Prefer over Lyon. Also listed as `84689 CL` Crystal Line (PDF p.12) — project lock remains **SU** |
-| Wardrobe backup | **84687** | **SU** | Lyon Oak | **CONFIRMED** — StarLine printed **p.57** (PDF p.92): `84687 SU` / `LYON OAK`; index PDF p.143 | Backup only |
+| Wardrobe preferred | **83661** | **SU** | Sonoma Oak | **CONFIRMED** — StarLine printed **p.61** (PDF p.96): `83661 SU` / `SONOMA OAK`; extract `century_starline_extracted.txt` | Active replacement for rejected Idria; light warm-neutral woodgrain keeps the small room bright |
+| Wardrobe fallback | **S1241** | **MT** | Latte | **CONFIRMED** — same kitchen code | Solid matte fallback only if the physical Sonoma sample is unavailable |
 
-**2026-08-12 SKU revalidation (pass 1):** User challenge that “84689 SU Idria” might be wrong was checked against the Century StarLine PDF + extract + index. **Verdict: code and commercial name are correct.** Do not substitute Skagen (`84688 SU`) or Lyon (`84687 SU`) as Idria.
-
-**2026-08-12 SKU revalidation (pass 2 — website):** User-supplied CenturyPly product-page screenshot re-confirms **Idria Oak · 84689 SU · Woodgrains | European Grey · 8 ft ? 4 ft · Thickness 0.8 mm**. See `IDRIA_REVALIDATION.md`.
-
-Laminate hexes in tokens (`#A49483`, `#3D483C`, `#575D5C`) are **screen approx**. Idria `#3D483C` was re-sampled 2026-08-12 from the CenturyPly product-page image (European Grey olive/grey-green) — prior `#A39178` taupe was a wrong visual approx. Catalogue extract has no RGB. Physical sample required.
+**2026-08-27 wardrobe palette decision:** Idria Oak is rejected by the client for its dark grey/olive cast. The active wardrobe face is **83661 SU Sonoma Oak**, selected from the official StarLine page 61 swatch as a lighter warm-neutral woodgrain. The screen approximation in tokens is for layout only; catalogue laminate has no manufacturer RGB value. Physical sample required.
 
 ### Edge / hardware / lighting
 
@@ -222,5 +227,5 @@ From dimension register:
 - Granite thickness (1.50 in vs 15 mm).  
 - All door/window sill dimensions (conflicts exist).  
 - Hob / sink exact positions beyond “sink under window / fridge right” (pending site confirm).  
-- Whether wardrobe face is Option A (aluminium + fluted glass) or Option B (plywood / Idria) — **client choice open**.  
-- Physical sample approval for S1241 / 84689 / NN9088 + WW0020 beside granite under morning / afternoon / 3000 K — **not recorded as approved**.
+- Whether wardrobe face is Option A (aluminium + fluted glass) or Option B (plywood / **83661 SU Sonoma Oak**) — **client choice open**.  
+- Physical sample approval for S1241 / 83661 / NN9088 + WW0020 beside granite under morning / afternoon / 3000 K — **not recorded as approved**.

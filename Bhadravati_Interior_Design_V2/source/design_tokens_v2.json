@@ -1,7 +1,7 @@
 {
   "project": "Bhadravati Home",
   "version": "V2",
-  "concept_id": "B_warm_contemporary_minimalism_ecru",
+  "concept_id": "B_warm_contemporary_minimalism_ecru_sonoma_kalahodha",
   "concept_name": "Warm Contemporary Minimalism - climate-resilient",
   "status": "design_control_not_fabrication_approved",
   "location": "Bhadravati, Karnataka",
@@ -60,6 +60,29 @@
       "hex_approx": "#EEEDE9",
       "rgb_approx": [238, 237, 233],
       "use": "legacy_alternate_only"
+    },
+    "exterior": {
+      "main_wall": {
+        "brand": "Birla Opus",
+        "code": "NN9059",
+        "name": "Kala Ghoda museum",
+        "hex": "#BEB2A1",
+        "rgb": [190, 178, 161],
+        "lrv": 45.1,
+        "finish": "low_sheen_exterior",
+        "use": "main_facade_field",
+        "selection_note": "Warm medium taupe-stone selected for a premium, dust-forgiving industrial context."
+      },
+      "accent_plinth": {
+        "brand": "Birla Opus",
+        "code": "NN9077",
+        "name": "Old leaves underfoot",
+        "hex": "#766C62",
+        "rgb": [118, 108, 98],
+        "finish": "low_sheen_exterior",
+        "use": "plinth_and_recessed_entry_only"
+      },
+      "product_note": "Confirm Birla Opus One or Calista exterior tint and approve a physical facade sample before painting. NN9589 Studio Pose and NN9590 No Chance of Sun are superseded."
     },
     "accent_optional": {
       "primary": {
@@ -164,16 +187,16 @@
     },
     "wardrobe_shutters": {
       "preferred": {
-        "code": "84689",
+        "code": "83661",
         "finish": "SU",
-        "name": "Idria Oak",
-        "catalogue_name": "IDRIA OAK",
-        "catalogue_proof": "Century Laminates StarLine 0.8mm.pdf printed p.55 (PDF p.90); index PDF p.143; extract century_starline_extracted.txt; evidence source/century_84689_idria_page55_pdfp90.png; CenturyPly website screenshot source/century_84689_idria_oak_website_2026-08-12.png (Idria Oak / 84689 SU / Woodgrains European Grey / 8x4 ft / 0.8mm)",
+        "name": "Sonoma Oak",
+        "catalogue_name": "SONOMA OAK",
+        "catalogue_proof": "Century Laminates StarLine 0.8mm.pdf printed p.61 (PDF p.96); extract century_starline_extracted.txt; evidence source/century_83661_sonoma_page61_pdfp96.png",
         "catalogue_status": "CONFIRMED",
         "thickness_mm": 0.8,
         "sheet_size": "8ft x 4ft",
-        "category": "Woodgrains | European Grey",
-        "hex_approx": "#3D483C",
+        "category": "Woodgrains | warm neutral oak",
+        "hex_approx": "#B3A38F",
         "door_count": 3,
         "leaf_count": 3,
         "configuration": "single + double",
@@ -189,22 +212,18 @@
           457,
           458
         ],
-        "rgb_approx": [
-          61,
-          72,
-          60
-        ],
-        "undertone": "european_grey_olive_muted",
-        "visual_note": "Screen approx sampled from CenturyPly Idria Oak product image 2026-08-12 (European Grey woodgrain); not Latte/taupe."
+        "rgb_approx": [179, 163, 143],
+        "undertone": "light_warm_neutral_oak",
+        "visual_note": "Screen approximation from official StarLine Sonoma Oak swatch; not a manufacturer RGB value. Physical sample required."
       },
       "backup": {
-        "code": "84687",
-        "finish": "SU",
-        "name": "Lyon Oak",
-        "catalogue_name": "LYON OAK",
-        "catalogue_proof": "Century Laminates StarLine 0.8mm.pdf printed p.57 (PDF p.92); index PDF p.143; extract century_starline_extracted.txt",
+        "code": "S1241",
+        "finish": "MT",
+        "name": "Latte",
+        "catalogue_name": "LATTE",
+        "catalogue_proof": "Century Laminates StarLine 0.8mm.pdf; extract century_starline_extracted.txt",
         "catalogue_status": "CONFIRMED",
-        "hex_approx": "#9A8A72"
+        "hex_approx": "#C8B9A4"
       },
       "board": "18mm_HDHMR_or_BWP"
     },
@@ -520,7 +539,7 @@
       "id": "wardrobe",
       "room": "dressing",
       "item": "wardrobe shutters x3 (single + double)",
-      "laminate": "84689_SU_Idria_Oak",
+      "laminate": "83661_SU_Sonoma_Oak",
       "door_count": 3,
       "configuration": "single + double",
       "handle_type": "recessed",

@@ -34,7 +34,7 @@
 3. **Orchestrator merges** only when a sibling marks `ready_for_merge` (or files appear with complete checklist). Merge = update `index.html` captions/swatches/callouts + fill `PRECISION_AUDIT.md` + residual note in `QA_FINDINGS.md`.
 4. **No ownership fights.** If an asset is wrong, the owning sibling fixes it; Orchestrator files a FAIL in the audit and waits.
 5. **Confidence labels required** on every dimension callout: `register` (K-01/W-01) or `plan_relationship_only` (21x18 studio, furniture approx, openings).
-6. **Concept lock (no drift):** Warm Contemporary Minimalism -- NN9074 walls, WW0005 ceiling, all kitchen shutters S1241 MT Latte, black granite counter retained (no waterfall), 80236 TV cabinet only, 84689 Idria Oak four leaves, brushed SS, 3000 K, matte/low-sheen.
+6. **Concept lock (no drift):** Warm Contemporary Minimalism -- active final NN9088 Ecru Tint walls, WW0020 Virgin White ceiling, all kitchen shutters S1241 MT Latte, black granite counter retained (no waterfall), 80236 TV cabinet only, 83661 Sonoma Oak three leaves (457/457/458), brushed SS, 3000 K, matte/low-sheen. Exterior active palette: NN9059 main field + NN9077 plinth/recess.
 
 ---
 

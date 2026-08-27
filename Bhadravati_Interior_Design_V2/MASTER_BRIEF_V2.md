@@ -29,7 +29,7 @@ The home must feel calm, practical, and locally believable � not a pale showro
 
 | Concept | Decision |
 |---|---|
-| **Warm Contemporary Minimalism � corrected light pair** (NN9088 Ecru Tint + WW0020 Virgin White + Latte + Idria) | **FINAL / V2 locked** |
+| **Warm Contemporary Minimalism � corrected light pair** (NN9088 Ecru Tint + WW0020 Virgin White + Latte + Sonoma Oak) | **FINAL / V2 locked** |
 | B � Textbook Japandi | Reject as governing style |
 | C � Dual-tone kitchen / lighter walls as default | Reject |
 
@@ -75,7 +75,7 @@ Arithmetic PASS for module width. **Granite thickness conflict** on drawing (1.5
 | Left openings T?B | 12 + 4�19.5 | 305 + 4�495 |
 | Right stack | 12 / 39 hang / 9.5 / 12 / 17.5 | 305 / 991 / 241 / 305 / 445 |
 
-Face options: **A** aluminium frame + fluted glass � **B** plywood / Idria Oak face. Recessed pulls only.
+Face options: **A** aluminium frame + fluted glass � **B** plywood / **83661 SU Sonoma Oak** face. Recessed pulls only.
 
 ---
 
@@ -89,7 +89,9 @@ Face options: **A** aluminium frame + fluted glass � **B** plywood / Idria Oak
 | Legacy alternate ceiling | Birla Opus **WW0005** White Linen | `#EEEDE9` | Optional only |
 | Kitchen all shutters | Century **S1241 MT Latte** | `#A49483` | One code only |
 | TV cabinet | **80236 DW Slate Grey** (or Latte) | `#575D5C` | Controlled accent |
-| Wardrobe | **84689 SU Idria Oak** (backup **84687 Lyon**) | `#3D483C` | Soft woodgrain |
+| Wardrobe | **83661 SU Sonoma Oak** (fallback S1241 MT Latte) | screen approx `#B3A38F` | Light warm-neutral woodgrain; 3 leaves |
+| Exterior main façade | **NN9059 Kala Ghoda museum** | `#BEB2A1` | Medium warm taupe-stone; low-sheen, dust-forgiving field |
+| Exterior plinth / recess | **NN9077 Old leaves underfoot** | `#766C62` | Darker band only for mud/grease/soot splash zone |
 | Optional accent | **GG7140** / **GG7162** | `#9CAE91` / `#B9CEA4` | One small wall max |
 | Edge | E3 ABS matched | � | Kitchen **2 mm**, wardrobe **1 mm** |
 | Hardware | Brushed stainless **recessed** | � | Kitchen + wardrobe |
@@ -97,7 +99,7 @@ Face options: **A** aluminium frame + fluted glass � **B** plywood / Idria Oak
 
 **Boards:** kitchen base 18 mm BWP at wet/hinge stress; loft 16�18 mm HDHMR if sealed; wardrobe 18 mm HDHMR/BWP; SS304 in wet risk; PUR only if machine-proven.
 
-Hex/RGB are screen references. Approve physical samples beside granite under morning / afternoon / 3000 K light.
+Hex/RGB are screen references. Approve physical samples beside granite under morning / afternoon / 3000 K light. The exterior must use a smooth washable low-sheen Birla Opus One or Calista system; colour alone cannot prevent oil/soot adhesion.
 
 ---
 
@@ -165,7 +167,7 @@ Dust/smoke, laterite dust, hard water, hot summers, monsoon humidity, strong day
 ## Next 3 actions
 
 1. **Sign the site-measure sheet** for kitchen, wardrobe, and all openings (photograph tape end-to-end).
-2. **Approve the physical sample board** (corrected NN9088 + WW0020 chips; legacy NN9074 + WW0005 only if comparing, plus S1241 + 84689 + 80236 + E3 + recessed SS) beside granite under morning / afternoon / 3000 K; choose wardrobe Option A or B.
+2. **Approve the physical sample board** (corrected NN9088 + WW0020 chips; legacy NN9074 + WW0005 only if comparing, plus S1241 + 83661 + 80236 + E3 + recessed SS) beside granite under morning / afternoon / 3000 K; choose wardrobe Option A or B. Add NN9059 + NN9077 exterior test patches after rain and a cleaning trial.
 3. **Lock fabricator shop drawings + quotation** (one kitchen laminate, three wardrobe leaves 457/457/458, boards, edges, recessed hardware, service access), then commission plan-faithful visuals from locked geometry only.
 
 ---

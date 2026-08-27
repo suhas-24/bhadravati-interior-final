@@ -3,10 +3,10 @@
   "concept_id": "A_warm_contemporary_minimalism",
   "owner": "color_material_swatch_specialist",
   "status": "complete",
-  "updated": "2026-08-11",
+  "updated": "2026-08-27",
   "verification_summary": {
     "birla_opus_shade_card": "All locked paint hex/RGB match processed_pdf_text/birla_opus_shade_card_extracted.txt exactly. No paint hex corrections required.",
-    "century_starline": "Codes S1241 MT Latte, S1173 MT Cloud Grey, 80236 DW Slate Grey, 84689 SU Idria Oak, 84687 SU Lyon Oak confirmed in century_starline_extracted.txt. No catalogue RGB -- hex remain visual approx aligned to names/families.",
+    "century_starline": "Codes S1241 MT Latte, S1173 MT Cloud Grey, 80236 DW Slate Grey and 83661 SU Sonoma Oak confirmed in century_starline_extracted.txt. No catalogue RGB -- laminate hex remain visual approx only; physical samples required.",
     "e3_edge": "PVC & ABS; finishes include SUPER MATT / SOFT TOUCHE; thicknesses include 1.00 mm and 2.00 mm. Select matt/soft match only -- not SUPER GLOSS or SPARKLE.",
     "hex_corrections_made": []
   },
@@ -54,20 +54,20 @@
       "use_rule": "ALL kitchen shutters -- base, drawers, and loft. One code only. No dual-tone.",
       "verification_note": "StarLine printed p.51 / PDF p.80 Solid MATTE chip crop 2026-08-12; screen approx #A49483 rgb 164,148,131. Solid matte \u2014 not woodgrain. Physical sample required."
     },
-    "84689_SU": {
+    "83661_SU": {
       "brand": "Century StarLine",
-      "name": "Idria Oak",
+      "name": "Sonoma Oak",
       "finish_code": "SU",
-      "hex": "#3D483C",
+      "hex": "#B3A38F",
       "rgb": [
-        61,
-        72,
-        60
+        179,
+        163,
+        143
       ],
-      "undertone": "european_grey_olive_muted",
+      "undertone": "light_warm_neutral_oak",
       "sheen": "soft_woodgrain_SU",
       "use_rule": "Wardrobe shutters -- 3 doors (single L + double R), leaves 457/457/458. Grain vertical.",
-      "verification_note": "CenturyPly website product image 2026-08-12 (Woodgrains | European Grey). Recropped excluding UI chrome. Screen approx #3D483C rgb 61,72,60. Catalogue print p.55 reads lighter charcoal #5D5C54 \u2014 website photography is the locked chip. Not taupe."
+      "verification_note": "Century StarLine printed p.61 / PDF p.96 shows 83661 SU SONOMA OAK. Screen approx only; official page image archived as source/century_83661_sonoma_page61_pdfp96.png. Physical sample required."
     },
     "80236_DW": {
       "brand": "Century StarLine",
@@ -83,6 +83,26 @@
       "sheen": "matte_dyed_woodgrain_DW",
       "use_rule": "TV cabinet ONLY as controlled low accent. Do not use in kitchen or broadly on walls.",
       "verification_note": "StarLine printed p.7 / PDF p.8 Dyed Wood chip crop 2026-08-12; screen approx #575D5C rgb 87,93,92. Real DW grain, not synthetic. Physical sample required."
+    },
+    "NN9059": {
+      "brand": "Birla Opus",
+      "name": "Kala Ghoda museum",
+      "hex": "#BEB2A1",
+      "rgb": [190, 178, 161],
+      "undertone": "warm_medium_taupe_stone",
+      "sheen": "low_sheen_exterior",
+      "use_rule": "Exterior main façade field; selected for dust/soot/mud tolerance by mid-value and warm neutral bias.",
+      "verification_note": "Official shade card page 104; physical exterior sample required."
+    },
+    "NN9077": {
+      "brand": "Birla Opus",
+      "name": "Old leaves underfoot",
+      "hex": "#766C62",
+      "rgb": [118, 108, 98],
+      "undertone": "deep_warm_grey_brown",
+      "sheen": "low_sheen_exterior",
+      "use_rule": "Lower plinth and recessed entry only; sacrificial splash/grease zone.",
+      "verification_note": "Official shade card page 105; physical exterior sample required."
     },
     "black_granite": {
       "brand": "existing_site",

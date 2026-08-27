@@ -9,7 +9,7 @@ Design-control handoff for client review and fabricator briefing. Location: firs
 
 ## Download PDF
 
-**[Bhadravati_FINAL_Interior_Design.pdf](Bhadravati_FINAL_Interior_Design.pdf)** — current 24-page V2 client handoff (design direction, locked palette, K-01/W-01 dimensions, interior concepts, and industrial-premium NN9589 exterior concept).
+**[Bhadravati_FINAL_Interior_Design.pdf](Bhadravati_FINAL_Interior_Design.pdf)** — current 25-page V2 client handoff (design direction, locked palette, K-01/W-01 dimensions, interior concepts, and industrial-premium NN9059/NN9077 exterior concept).
 
 ---
 
@@ -32,10 +32,12 @@ For the industrial-belt dust/smoke rationale, visual swatch evidence, and the ex
 | Legacy alternate ceiling | Birla Opus **WW0005** White Linen `#EEEDE9` |
 | Kitchen shutters (all) | Century **S1241 MT Latte** |
 | TV cabinet only | **80236** DW Slate Grey |
+| Exterior main façade | Birla Opus **NN9059** Kala Ghoda museum `#BEB2A1` |
+| Exterior plinth / recessed entry | Birla Opus **NN9077** Old leaves underfoot `#766C62` |
 | Wardrobe niche | W-01 **1372 x 2286 x 488 mm** |
 | Wardrobe doors | **3 doors** (1 single L + 1 double R) -- leaves **457 / 457 / 458 mm** |
 | Wardrobe Option A | Aluminium frame + fluted glass (`05_...`) |
-| Wardrobe Option B | Plywood / Idria face (`06_...`) |
+| Wardrobe Option B | Plywood / 83661 SU Sonoma Oak face (`06_...`) |
 | Handles | **Recessed only** (kitchen + wardrobe) -- no projecting bars |
 | Counter | Existing **black granite** (retain) |
 | Hardware finish | Brushed stainless (recessed profiles) |

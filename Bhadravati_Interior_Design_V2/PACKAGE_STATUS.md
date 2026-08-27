@@ -5,7 +5,7 @@
 **Verdict:** **COMPLETE / READY** for design-control client handoff  
 **PDF rebuild for assets 01�05:** **Not required** (already embedded)
 
-**2026-08-27 colour audit addendum:** `../BIRLA_OPUS_COLOUR_SELECTION.md` records the industrial dust/smoke response and visual verification of the corrected interior pair NN9088 Ecru Tint + WW0020 Virgin White, plus NN9074/WW0005 legacy alternate and NN9564/NN9589 exterior swatches. NN9589 Studio Pose is the recommended exterior concept; exterior product/tint and physical façade sample approval remain open. V2 PDF rebuilt with the corrected 12-image interior set and exterior concept page; current output is 24 pages.
+**2026-08-27 palette replacement addendum:** Active set is NN9088 Ecru Tint + WW0020 Virgin White + S1241 MT Latte + 83661 SU Sonoma Oak + 80236 DW Slate + existing black granite. Exterior concept is NN9059 Kala Ghoda museum with NN9077 Old leaves underfoot at the plinth/recess; Studio Pose and Idria are rejected. Official Birla pages 104/105 and Century page 61/PDF p.96 were visually inspected and archived in `source/`; new Sonoma/Kala Ghoda render set is in `assets/img/ecru_sonoma_kalahodha/`. Exterior product/tint and physical façade sample approval remain open.
 
 ---
 

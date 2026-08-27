@@ -61,6 +61,24 @@
       "rgb_approx": [238, 237, 233],
       "use": "legacy_alternate_only"
     },
+    "exterior_main_wall": {
+      "brand": "Birla Opus",
+      "code": "NN9059",
+      "name": "Kala Ghoda museum",
+      "hex": "#BEB2A1",
+      "rgb": [190, 178, 161],
+      "use": "main_facade_field",
+      "finish": "low_sheen_exterior"
+    },
+    "exterior_plinth": {
+      "brand": "Birla Opus",
+      "code": "NN9077",
+      "name": "Old leaves underfoot",
+      "hex": "#766C62",
+      "rgb": [118, 108, 98],
+      "use": "plinth_and_recess_only",
+      "finish": "low_sheen_exterior"
+    },
     "accent_optional": {
       "primary": {
         "code": "GG7140",
@@ -164,10 +182,10 @@
     },
     "wardrobe_shutters": {
       "preferred": {
-        "code": "84689",
+        "code": "83661",
         "finish": "SU",
-        "name": "Idria Oak",
-        "hex_approx": "#3D483C",
+        "name": "Sonoma Oak",
+        "hex_approx": "#B3A38F",
         "door_count": 3,
         "leaf_count": 3,
         "configuration": "single + double",
@@ -184,18 +202,18 @@
           458
         ],
         "rgb_approx": [
-          61,
-          72,
-          60
+          179,
+          163,
+          143
         ],
-        "undertone": "european_grey_olive_muted",
-        "visual_note": "Screen approx sampled from CenturyPly Idria Oak product image 2026-08-12 (European Grey woodgrain); not Latte/taupe."
+        "undertone": "light_warm_neutral_oak",
+        "visual_note": "Screen approximation from official Century StarLine 83661 SU Sonoma Oak page 61/PDF p.96; physical sample required."
       },
       "backup": {
-        "code": "84687",
+        "code": "S1241",
         "finish": "SU",
-        "name": "Lyon Oak",
-        "hex_approx": "#9A8A72"
+        "name": "Latte",
+        "hex_approx": "#C8B9A4"
       },
       "board": "18mm_HDHMR_or_BWP"
     },
@@ -511,7 +529,7 @@
       "id": "wardrobe",
       "room": "dressing",
       "item": "wardrobe shutters x3 (single + double)",
-      "laminate": "84689_SU_Idria_Oak",
+      "laminate": "83661_SU_Sonoma_Oak",
       "door_count": 3,
       "configuration": "single + double",
       "handle_type": "recessed",

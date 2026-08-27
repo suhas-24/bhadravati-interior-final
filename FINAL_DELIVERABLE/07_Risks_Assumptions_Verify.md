@@ -67,5 +67,5 @@
 ## Next 3 actions
 
 1. **Complete and sign the site-measure sheet** (kitchen + wardrobe + openings); supersede register where values differ.
-2. **Approve physical samples** on one board: NN9074, WW0005, S1241 MT Latte, 84689 SU Idria Oak, 80236 DW, matched E3 ABS (1 & 2 mm), brushed SS handle, beside existing granite under morning / afternoon / 3000 K light.
+2. **Approve physical samples** on one board: NN9088, WW0020, S1241 MT Latte, 83661 SU Sonoma Oak, 80236 DW, matched E3 ABS (1 & 2 mm), brushed SS handle, beside existing granite under morning / afternoon / 3000 K light. For the exterior, add NN9059 and NN9077 test patches after rain and after a cleaning trial.
 3. **Issue fabricator quotation + shop drawings** that lock one kitchen laminate (S1241 all shutters), four wardrobe leaves, board grades, edge thickness, hardware models, and service access — then produce the three-part visual set (wide / opposite / detail) only from that locked geometry.

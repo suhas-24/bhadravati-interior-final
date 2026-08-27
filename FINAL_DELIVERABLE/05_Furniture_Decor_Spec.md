@@ -65,7 +65,7 @@ Sizes are **approximate design sizes** unless marked from the dimension register
 
 | Item | Spec | Size | Placement rationale |
 |---|---|---|---|
-| Shutters ×3 | **3 doors = 1 single + 1 double** (3 leaves total). Face options: **(A)** aluminium frame + fluted glass, **(B)** plywood (Idria Oak **84689 SU** still applies if plywood face). 18 mm carcass/shutter as required; straightener per fabricator | Clear opening **54 × 90 in (1372 × 2286 mm)** (W-01 register); depth **19.20 in (488 mm)** | Leaf widths **457 / 457 / 458 mm** (single L + double R) = 1372 mm clear — not four leaves, not two full-width slabs |
+| Shutters ×3 | **3 doors = 1 single + 1 double** (3 leaves total). Face options: **(A)** aluminium frame + fluted glass, **(B)** plywood (**83661 SU Sonoma Oak** if plywood face). 18 mm carcass/shutter as required; straightener per fabricator | Clear opening **54 × 90 in (1372 × 2286 mm)** (W-01 register); depth **19.20 in (488 mm)** | Leaf widths **457 / 457 / 458 mm** (single L + double R) = 1372 mm clear — not four leaves, not two full-width slabs |
 | Internal left | Shelves per register openings | Left clear **21 in (533 mm)** | Folded storage; align single leaf to left bay where practical |
 | Internal right | Hanging + drawer + lowers | Right clear **32.41 in (823 mm)**; hang **39 in (991 mm)** | Long hang + drawers; double leaves span right bay |
 | Interior finish | Quiet neutral laminate/paint | — | Contrast enough to find dark clothes |
