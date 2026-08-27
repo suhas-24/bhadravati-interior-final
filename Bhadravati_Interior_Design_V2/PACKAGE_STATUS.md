@@ -23,7 +23,7 @@
 
 | Item | Status | Detail |
 |---|---|---|
-| `Bhadravati_Interior_Design_V2.pdf` | **Ready** | Exists; **24 pages**; rebuilt 2026-08-27 against corrected Ecru/Virgin White renders |
+| `Bhadravati_Interior_Design_V2.pdf` | **Ready** | Exists; **25 pages**; rebuilt 2026-08-27 against corrected Ecru/Virgin White + Sonoma/Kala Ghoda renders |
 | Embeds corrected render set | **Ready** | 12 Ecru/Virgin White PNGs are embedded from `assets/img/corrected_ecru_virgin_white/`; legacy palette board is intentionally excluded to prevent stale A-swatch mismatch |
 | Excludes `02b` / `04b` / `05b` | **Ready** | Those caution-asset dimensions absent from PDF XObjects |
 
