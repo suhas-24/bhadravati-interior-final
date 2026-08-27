@@ -57,4 +57,5 @@ This is a design-control recommendation, not fabrication or paint-order approval
 - Static gallery reference check: PASS (HTML and image asset resolve).
 - Local HTTP smoke test: PASS (`docs/index.html` and the exterior PNG returned successfully).
 - Direct visual inspection: PASS for the exterior board and official shade-card renders.
+- V2 PDF rebuild: PASS; 24-page output includes the exterior concept page (page 23), which was rendered and visually inspected.
 - Automated browser screenshot: **NOT RUN** because the local Playwright runtime has no installed Chrome distribution; no claim of browser-render QA is made.
