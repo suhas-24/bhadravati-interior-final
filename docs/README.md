@@ -26,10 +26,10 @@ For the industrial-belt dust/smoke rationale, visual swatch evidence, and the ex
 
 | Role | Spec |
 |------|------|
-| Main walls (Scheme A default) | Birla Opus **NN9074** Puddle of Grey `#B5AB9C` |
-| Ceiling (Scheme A) | Birla Opus **WW0005** White Linen `#EEEDE9` |
-| Main walls (Scheme B) | Birla Opus **NN9088** Ecru Tint `#E9E3D9` |
-| Ceiling (Scheme B) | Birla Opus **WW0020** Virgin White `#EDE9E2` |
+| Main walls (corrected final) | Birla Opus **NN9088** Ecru Tint `#E9E3D9` |
+| Ceiling (corrected final) | Birla Opus **WW0020** Virgin White `#EDE9E2` |
+| Legacy alternate walls | Birla Opus **NN9074** Puddle of Grey `#B5AB9C` |
+| Legacy alternate ceiling | Birla Opus **WW0005** White Linen `#EEEDE9` |
 | Kitchen shutters (all) | Century **S1241 MT Latte** |
 | TV cabinet only | **80236** DW Slate Grey |
 | Wardrobe niche | W-01 **1372 x 2286 x 488 mm** |
@@ -43,7 +43,7 @@ For the industrial-belt dust/smoke rationale, visual swatch evidence, and the ex
 
 Matte / low-sheen finishes throughout. Machine-readable tokens: `design_tokens.json`. Locks: `coordination/*_lock.json` (incl. `scheme_b_swatch_lock.json`) + `image_qa.json`.
 
-**Paint scheme toggle:** sticky segmented control in `index.html` switches CSS swatches, palette board (`palette_board.svg` / `palette_board_schemeB.svg`), and gallery image sources (`*_schemeB.png` when present; falls back to Scheme A with a “Scheme B image pending” badge).
+**Paint scheme toggle:** the corrected Ecru Tint + Virgin White set loads by default. The segmented control can still show the legacy Puddle of Grey + White Linen alternate; all `*_schemeB.png` gallery assets are the visually re-checked corrected renders.
 
 ---
 

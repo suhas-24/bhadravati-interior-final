@@ -116,15 +116,15 @@ Brief: `/Users/suhas/Downloads/Interiors/Bhadravati_Final_Interior_Design_Brief/
 
 | Role | Code | Name | Hex (shade card) | Notes |
 |---|---|---|---|---|
-| Main walls (Scheme A **default**) | **NN9074** | Puddle of Grey | `#B5AB9C` RGB 181,171,156 | Exact match in shade card |
-| Lighter walls (Scheme B alt) | **NN9088** | Ecru Tint | `#E9E3D9` RGB 233,227,217 | Exact; shows dust faster |
-| Ceiling (Scheme A) | **WW0005** | White Linen | `#EEEDE9` RGB 238,237,233 | Exact |
-| Ceiling (Scheme B) | **WW0020** | Virgin White | Present in shade card as WW 0020 | Used in FINAL Scheme B; confirm physical sample |
+| Main walls (corrected **final**) | **NN9088** | Ecru Tint | `#E9E3D9` RGB 233,227,217 | Exact match in shade card; lighter preferred to avoid a dark room |
+| Ceiling (corrected **final**) | **WW0020** | Virgin White | `#EDE9E2` RGB 237,233,226 | Exact match in shade card; pairs with NN9088 |
+| Legacy alternate walls | **NN9074** | Puddle of Grey | `#B5AB9C` RGB 181,171,156 | Retained as optional darker alternate only |
+| Legacy alternate ceiling | **WW0005** | White Linen | `#EEEDE9` RGB 238,237,233 | Retained as optional alternate only |
 | Optional green accent | **GG7140** / **GG7162** | Tender Buds / Old Olive Trees | `#9CAE91` / `#B9CEA4` | One small wall max |
 | Study optional | **BB5146** / **BG6116** | Old Novel / Songs from the Valley | `#90B1C3` / `#8BA6A3` | Controlled accent only |
 | Limited accent also audited | GG7054 | (name in brief audit list) | Shade card lists GG 7054 | Accent-only; not default |
 
-**Workspace paint sample asset:** `/Users/suhas/Downloads/Interiors/NN-9088.png` — visual sample for **NN9088** only (not default walls).
+**Workspace paint sample asset:** `/Users/suhas/Downloads/Interiors/NN-9088.png` — visual sample for the corrected **NN9088** final walls.
 
 ### Laminates — Century StarLine (catalogue-verified)
 
@@ -223,4 +223,4 @@ From dimension register:
 - All door/window sill dimensions (conflicts exist).  
 - Hob / sink exact positions beyond “sink under window / fridge right” (pending site confirm).  
 - Whether wardrobe face is Option A (aluminium + fluted glass) or Option B (plywood / Idria) — **client choice open**.  
-- Physical sample approval for S1241 / 84689 / NN9074 beside granite under morning / afternoon / 3000 K — **not recorded as approved**.
+- Physical sample approval for S1241 / 84689 / NN9088 + WW0020 beside granite under morning / afternoon / 3000 K — **not recorded as approved**.

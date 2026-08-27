@@ -1,6 +1,6 @@
 # Birla Opus colour selection — industrial-belt premium interior
 
-**Status:** design-control record · exterior concept selected; final exterior product confirmation still required  
+**Status:** design-control record · corrected interior pair selected; exterior concept selected; physical product confirmations still required  
 **Site:** Bhadravati, Karnataka · first-floor studio · approximately 21 ft × 18 ft (relationship-only until signed measure)
 
 ## Design intent
@@ -11,20 +11,25 @@ Warm Contemporary Minimalism with a richer, more composed presence in a dusty an
 
 | Role | Birla Opus shade | Digital representation | Use |
 |---|---|---|---|
-| Main interior walls | **NN9074 — Puddle of Grey** | `#B5AB9C` / RGB 181,171,156 | Living, kitchen, bedroom and study walls; mid-tone warm greige is more forgiving of soot than a stark light wall. |
+| Main interior walls | **NN9088 — Ecru Tint** | `#E9E3D9` / RGB 233,227,217 | Corrected final for living, kitchen, bedroom and study; keeps the room bright and warm instead of the darker Puddle of Grey cast. |
 | Dim-zone refinement | **NN9242 — A Khadi Kurta** | `#C7BAB0` / RGB 199,186,176 | Optional bath corridor / wardrobe surround where extra reflected light helps; not a new broad-wall default. |
-| Ceilings | **WW0005 — White Linen** | `#EEEDE9` / RGB 238,237,233 | All ceilings; warm white keeps the premium palette soft under 3000 K. |
+| Ceilings | **WW0020 — Virgin White** | `#EDE9E2` / RGB 237,233,226 | Corrected final ceiling/trim; slightly creamy and lighter than the wall, preserving a premium soft contrast under 3000 K. |
+| Legacy alternate | **NN9074 — Puddle of Grey + WW0005 — White Linen** | `#B5AB9C` / `#EEEDE9` | Retained only as an optional darker alternate; not used by the corrected render set. |
 | Small accent (optional) | **GG7140 — Tender Buds** | `#9CAE91` / RGB 156,174,145 | At most one small wall; only after physical sample approval. |
 
 The hex/RGB values above are the shade-card digital representations used by the existing project tokens. They are not a claim of monitor-independent paint accuracy; the shade code and physical sample remain the authority.
+
+## Swatch analysis (visual + digital cross-check)
+
+The official rendered cards show NN9074 as a mid/deep warm greige, while NN9088 is a pale warm ecru with substantially more reflected light. Using the card RGB values as a screen check, approximate relative luminance is 0.41 for NN9074 versus 0.77 for NN9088; that explains why the former made the room feel heavy in the renders. WW0005 White Linen reads cleaner/greyer, while WW0020 Virgin White reads a touch creamier and sits closer to the Ecru Tint family. The corrected pairing is therefore NN9088 + WW0020: bright, warm, and premium without a stark white ceiling or a grey cast. These are screen checks only; approve physical chips in the actual room.
 
 ## Visual verification evidence
 
 The actual rendered Birla Opus shade-card swatches were inspected, with code/name spatial association confirmed:
 
-- `processed_pdf_images/birla/page_105.png` — NN9074 Puddle of Grey on the official “Neutrals: Browns & Greys” card.
+- `processed_pdf_images/birla/page_105.png` — NN9074 Puddle of Grey and NN9088 Ecru Tint on the official “Neutrals: Browns & Greys” card; the lighter Ecru card was selected.
 - `processed_pdf_images/birla/page_114.png` — NN9242 A Khadi Kurta on the official “Neutrals: Browns & Greys (continued)” card.
-- `processed_pdf_images/birla/page_002.png` — WW0005 White Linen on the official Whites card.
+- `processed_pdf_images/birla/page_002.png` — WW0005 White Linen on the official Whites card; WW0020 Virgin White was additionally confirmed from the rendered official shade-card PDF page 3.
 
 The existing swatch-pixel QA crops are retained under `Bhadravati_Interior_Design_V2/source/swatch_pixel_qa/`.
 
@@ -54,8 +59,8 @@ This is a design-control recommendation, not fabrication or paint-order approval
 
 ## Validation record
 
-- Static gallery reference check: PASS (HTML and image asset resolve).
+- Static gallery reference check: PASS (HTML and corrected image assets resolve).
 - Local HTTP smoke test: PASS (`docs/index.html` and the exterior PNG returned successfully).
-- Direct visual inspection: PASS for the exterior board and official shade-card renders.
-- V2 PDF rebuild: PASS; 24-page output includes the exterior concept page (page 23), which was rendered and visually inspected.
+- Direct visual inspection: PASS for the exterior board, official shade-card renders, corrected palette chips, and 12 replacement room/wardrobe images.
+- V2 PDF rebuild: PASS; 24-page output uses the corrected render set and includes the exterior concept page (page 23).
 - Automated browser screenshot: **NOT RUN** because the local Playwright runtime has no installed Chrome distribution; no claim of browser-render QA is made.

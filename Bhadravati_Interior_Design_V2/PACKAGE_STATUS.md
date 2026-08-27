@@ -1,11 +1,11 @@
 # PACKAGE_STATUS — Bhadravati Interior Design V2
 
-**Checked:** 2026-08-12  
+**Checked:** 2026-08-27  
 **Package root:** `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`  
 **Verdict:** **COMPLETE / READY** for design-control client handoff  
 **PDF rebuild for assets 01�05:** **Not required** (already embedded)
 
-**2026-08-27 colour audit addendum:** `../BIRLA_OPUS_COLOUR_SELECTION.md` records the industrial dust/smoke response and visual verification of the official NN9074, NN9242, WW0005, NN9564, and NN9589 swatches. NN9589 Studio Pose is the recommended exterior concept; exterior product/tint and physical façade sample approval remain open. V2 PDF rebuilt with the exterior concept page; current output is 24 pages.
+**2026-08-27 colour audit addendum:** `../BIRLA_OPUS_COLOUR_SELECTION.md` records the industrial dust/smoke response and visual verification of the corrected interior pair NN9088 Ecru Tint + WW0020 Virgin White, plus NN9074/WW0005 legacy alternate and NN9564/NN9589 exterior swatches. NN9589 Studio Pose is the recommended exterior concept; exterior product/tint and physical façade sample approval remain open. V2 PDF rebuilt with the corrected 12-image interior set and exterior concept page; current output is 24 pages.
 
 ---
 
@@ -23,21 +23,21 @@
 
 | Item | Status | Detail |
 |---|---|---|
-| `Bhadravati_Interior_Design_V2.pdf` | **Ready** | Exists; **19 pages**; size ~5.7 MB; mtime **2026-08-12T01:29:50** |
-| Embeds `assets/01`�`05` v2 | **Ready** | Pixel dims match current primary boards (see below) |
+| `Bhadravati_Interior_Design_V2.pdf` | **Ready** | Exists; **24 pages**; rebuilt 2026-08-27 against corrected Ecru/Virgin White renders |
+| Embeds corrected render set | **Ready** | 12 Ecru/Virgin White PNGs are embedded from `assets/img/corrected_ecru_virgin_white/`; legacy palette board is intentionally excluded to prevent stale A-swatch mismatch |
 | Excludes `02b` / `04b` / `05b` | **Ready** | Those caution-asset dimensions absent from PDF XObjects |
 
 ### Primary board ? PDF embedding
 
 | Board | File | Asset size | In PDF | Page |
 |---|---|---|---|---:|
-| 01 | `assets/01_visual_palette_board_v2.png` | 1800�1180 | Yes | 7 |
+| 01 | `docs/palette_board_schemeB.svg` | vector | Gallery only | — |
 | 02 | `assets/02_floorplan_concept_v2.png` | 1696�1503 | Yes | 6 |
 | 03 | `assets/03_kitchen_elevation_overlay_v2.png` | 1632�1278 | Yes | 12 |
 | 04 | `assets/04_wardrobe_elevation_overlay_v2.png` | 1700�1100 | Yes | 15 |
 | 05 | `assets/05_qa_contact_sheet_v2.jpg` | 1656�962 | Yes | 19 |
 
-Asset mtimes (01:22�01:24) are **older** than PDF mtime (01:29). No rebuild needed to embed current `01`�`05` v2 images.
+The PDF was rebuilt after the corrected render set and verified with `_verify_pdf_v2.py`; the old Scheme A palette board is not embedded because it would contradict the corrected pair.
 
 ---
 
@@ -71,7 +71,7 @@ Asset mtimes (01:22�01:24) are **older** than PDF mtime (01:29). No rebuild ne
 | Deliverable | Path | Status |
 |---|---|---|
 | Asset index | `assets/ASSET_INDEX.md` | **Ready** |
-| Palette board | `assets/01_visual_palette_board_v2.png` | **Ready** (in PDF) |
+| Palette board | `docs/palette_board_schemeB.svg` | **Ready** (corrected pair; gallery) |
 | Floorplan concept | `assets/02_floorplan_concept_v2.png` | **Ready** (in PDF) |
 | Kitchen elevation | `assets/03_kitchen_elevation_overlay_v2.png` | **Ready** (in PDF) |
 | Wardrobe elevation (3-door) | `assets/04_wardrobe_elevation_overlay_v2.png` | **Ready** (in PDF) |
@@ -89,7 +89,7 @@ Asset mtimes (01:22�01:24) are **older** than PDF mtime (01:29). No rebuild ne
 
 | Deliverable | Path | Status |
 |---|---|---|
-| Room / scene JPEGs | `assets/img/*` | **Ready** (Scheme A + optional Scheme B twins present) |
+| Room / scene images | `assets/img/*` | **Ready** (legacy Scheme A plus corrected Ecru/Virgin White set) |
 | SVG sources | `assets/svg/*` | **Ready** (`floor_plan_precise`, palette boards, axonometric) |
 
 ---

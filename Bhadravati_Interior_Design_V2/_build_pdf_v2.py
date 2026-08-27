@@ -32,10 +32,13 @@ from reportlab.platypus import (
 ROOT = Path(__file__).resolve().parent
 ASSETS = ROOT / "assets"
 VIS = ASSETS / "img"
+CORRECTED_VIS = VIS / "corrected_ecru_virgin_white"
 OUT = ROOT / "Bhadravati_Interior_Design_V2.pdf"
 
 # Primary presentation boards (ASSET_INDEX.md) — exclude 02b / 04b / 05b from client PDF
-BOARD_PALETTE = ASSETS / "01_visual_palette_board_v2.png"
+# The former board was Scheme A and would contradict the corrected Ecru/Virgin White lock.
+# Keep the corrected swatch table below as the PDF source; the full corrected SVG board is in docs/.
+BOARD_PALETTE = ASSETS / "01_visual_palette_board_v2_corrected.png"
 BOARD_FLOORPLAN = ASSETS / "02_floorplan_concept_v2.png"
 BOARD_KITCHEN_ELEV = ASSETS / "03_kitchen_elevation_overlay_v2.png"
 BOARD_WARDROBE_ELEV = ASSETS / "04_wardrobe_elevation_overlay_v2.png"  # 3-door 457/457/458
@@ -44,6 +47,8 @@ EXTERIOR_CONCEPT = ROOT.parent / "docs" / "exterior_colour_concept_nn9589.png"
 
 NN9074 = HexColor("#B5AB9C")
 WW0005 = HexColor("#EEEDE9")
+NN9088 = HexColor("#E9E3D9")
+WW0020 = HexColor("#EDE9E2")
 LATTE = HexColor("#A49483")
 SLATE = HexColor("#575D5C")
 IDRIA = HexColor("#3D483C")
@@ -176,13 +181,13 @@ def build():
         "Supersedes V1: FINAL_DELIVERABLE/Bhadravati_FINAL_Interior_Design.pdf (2026-08-11)",
         ParagraphStyle("sup", parent=small, spaceBefore=4, spaceAfter=6),
     ))
-    living = VIS / "01_living_social_zone_daylight.jpg"
+    living = CORRECTED_VIS / "01_living_social_zone_daylight.png"
     if living.exists():
         story.append(fit_image(living, content_w, 88 * mm))
         story.append(Paragraph("Living — social zone (daylight concept · AI-assisted · verify on site)", caption))
     story.append(Paragraph(
         f"Generated {date.today().isoformat()} · Reconciled to SOURCE_OF_TRUTH + CONTRADICTIONS · "
-        "3-door wardrobe · S1241 Latte-all · NN9074 default",
+        "3-door wardrobe · S1241 Latte-all · NN9088 Ecru Tint + WW0020 Virgin White",
         small,
     ))
     story.append(PageBreak())
@@ -225,7 +230,7 @@ def build():
         "Kitchen base + drawers + loft = <b>Century S1241 MT Latte only</b> — never dual-tone; never 80236 in kitchen.",
         "Wardrobe = <b>3 doors</b> (single L + double R), leaves <b>457 / 457 / 458 mm</b> inside 1372 mm clear — not four leaves; not two slabs.",
         "Hardware = brushed stainless <b>recessed</b> pulls; edges E3 ABS <b>2 mm kitchen / 1 mm wardrobe</b>; lighting <b>3000 K</b>; matte/low-sheen.",
-        "Default walls <b>NN9074</b>; ceiling <b>WW0005</b>; NN9088 = Scheme B alternate only.",
+        "Corrected final walls <b>NN9088 Ecru Tint</b>; ceiling <b>WW0020 Virgin White</b>. NN9074/WW0005 retained as a legacy alternate only.",
         "No TV feature wall, gold strips, gloss/sparkle laminates, or Japandi prop clutter.",
     ]:
         story.append(Paragraph(f"• {item}", bullet))
@@ -334,12 +339,12 @@ def build():
     ))
     # swatches
     swatch_specs = [
-        ("NN9074", "A walls", "#B5AB9C"),
-        ("WW0005", "A ceiling", "#EEEDE9"),
-        ("NN9088", "B walls alt", "#E9E3D9"),
+        ("NN9088", "Final walls", "#E9E3D9"),
+        ("WW0020", "Final ceiling", "#EDE9E2"),
         ("S1241", "Latte MT", "#A49483"),
         ("84689", "Idria Oak SU", "#3D483C"),
         ("80236", "Slate DW", "#575D5C"),
+        ("NN9074", "Legacy wall", "#B5AB9C"),
     ]
     cells = []
     for code, name, hx in swatch_specs:
@@ -365,10 +370,10 @@ def build():
     story.append(Spacer(1, 3 * mm))
     pal = [
         [Paragraph("<b>Role</b>", cell_b), Paragraph("<b>Code</b>", cell_b), Paragraph("<b>Notes</b>", cell_b)],
-        [Paragraph("Scheme A walls (default)", cell), Paragraph("Birla <b>NN9074</b> Puddle of Grey", cell), Paragraph("#B5AB9C exact", cell)],
-        [Paragraph("Scheme A ceiling", cell), Paragraph("Birla <b>WW0005</b> White Linen", cell), Paragraph("#EEEDE9 exact", cell)],
-        [Paragraph("Scheme B walls (alt only)", cell), Paragraph("Birla <b>NN9088</b> Ecru Tint", cell), Paragraph("Shows dust faster", cell)],
-        [Paragraph("Scheme B ceiling", cell), Paragraph("Birla <b>WW0020</b> Virgin White", cell), Paragraph("Sample confirm", cell)],
+        [Paragraph("Corrected final walls", cell), Paragraph("Birla <b>NN9088</b> Ecru Tint", cell), Paragraph("#E9E3D9 exact", cell)],
+        [Paragraph("Corrected final ceiling", cell), Paragraph("Birla <b>WW0020</b> Virgin White", cell), Paragraph("#EDE9E2 exact", cell)],
+        [Paragraph("Legacy alternate walls", cell), Paragraph("Birla <b>NN9074</b> Puddle of Grey", cell), Paragraph("Darker greige; optional only", cell)],
+        [Paragraph("Legacy alternate ceiling", cell), Paragraph("Birla <b>WW0005</b> White Linen", cell), Paragraph("Optional only", cell)],
         [Paragraph("Kitchen all shutters", cell), Paragraph("Century <b>S1241 MT Latte</b>", cell), Paragraph("Base+drawers+loft; one code", cell)],
         [Paragraph("TV cabinet only", cell), Paragraph("<b>80236 DW Slate Grey</b> (or Latte)", cell), Paragraph("Controlled accent — not kitchen", cell)],
         [Paragraph("Wardrobe preferred", cell), Paragraph("<b>84689 SU Idria Oak</b>", cell), Paragraph("Backup 84687 Lyon only", cell)],
@@ -379,13 +384,12 @@ def build():
     pt = Table(pal, colWidths=[42 * mm, 72 * mm, 56 * mm])
     pt.setStyle(tbl_style(SLATE, header_white=True))
     story.append(pt)
-    pal_img = BOARD_PALETTE if BOARD_PALETTE.exists() else VIS / "palette_board.jpg"
+    pal_img = BOARD_PALETTE
     if pal_img.exists():
         story.append(Spacer(1, 2 * mm))
         story.append(fit_image(pal_img, content_w, 95 * mm))
         story.append(Paragraph(
-            "Visual palette board V2 — Scheme A locks (NN9074 / WW0005 / S1241 Latte / Idria); do-not-use rules on board. "
-            "Idria chip sampled from CenturyPly European Grey product image (not taupe).",
+            "Corrected visual palette board — NN9088 Ecru Tint / WW0020 Virgin White with shared material locks.",
             caption,
         ))
     story.append(PageBreak())
@@ -575,7 +579,7 @@ def build():
         "No AHJ stamp claimed in this package.",
         body,
     ))
-    eve = VIS / "03_evening_material_lighting_detail.jpg"
+    eve = CORRECTED_VIS / "03_evening_material_lighting_detail.png"
     if eve.exists():
         story.append(fit_image(eve, content_w, 78 * mm))
         story.append(Paragraph("Evening material / lighting junction — 3000 K intent · conceptual", caption))
@@ -599,7 +603,7 @@ def build():
     story.append(ft)
     story.append(Paragraph("Budget tiers", h2))
     for t in [
-        "<b>Essential:</b> Kitchen Latte shutters + wardrobe 3 leaves + NN9074/WW0005 paint + E3 edges + recessed hardware + kitchen task LED.",
+        "<b>Essential:</b> Kitchen Latte shutters + wardrobe 3 leaves + NN9088/WW0020 paint + E3 edges + recessed hardware + kitchen task LED.",
         "<b>Recommended:</b> + TV cabinet, ambient dimming, sofa/curtains/rugs, bedside & study lamps.",
         "<b>Premium:</b> Proven PUR, upgraded boards/lighting, spare laminate kit — still no gloss / island / TV wall.",
     ]:
@@ -615,9 +619,9 @@ def build():
     story.append(Paragraph("15–16. Living — three-view set (conceptual)", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     for path, cap in [
-        (VIS / "01_living_social_zone_daylight.jpg", "Living — social zone daylight · no balcony invention · 80236 floating cabinet only"),
-        (VIS / "01b_living_from_tv_toward_sofa.jpg", "Living — from TV toward sofa"),
-        (VIS / "01c_living_side_across_social.jpg", "Living — side across social zone"),
+        (CORRECTED_VIS / "01_living_social_zone_daylight.png", "Living — social zone daylight · no balcony invention · 80236 floating cabinet only"),
+        (CORRECTED_VIS / "01b_living_from_tv_toward_sofa.png", "Living — from TV toward sofa"),
+        (CORRECTED_VIS / "01c_living_side_across_social.png", "Living — side across social zone"),
     ]:
         if path.exists():
             story.append(fit_image(path, content_w, 72 * mm))
@@ -633,9 +637,9 @@ def build():
         body,
     ))
     for path, cap in [
-        (VIS / "02_kitchen_granite_latte_shutters.jpg", "Kitchen — granite + Latte shutters"),
-        (VIS / "02b_kitchen_from_fridge_along_run.jpg", "Kitchen — from fridge along run (fridge right)"),
-        (VIS / "02c_kitchen_loft_shelf_band_detail.jpg", "Kitchen — loft / mid shelf band detail (schematic)"),
+        (CORRECTED_VIS / "02_kitchen_granite_latte_shutters.png", "Kitchen — granite + Latte shutters"),
+        (CORRECTED_VIS / "02b_kitchen_from_fridge_along_run.png", "Kitchen — from fridge along run (fridge right)"),
+        (CORRECTED_VIS / "02c_kitchen_loft_shelf_band_detail.png", "Kitchen — loft / mid shelf band detail (schematic)"),
     ]:
         if path.exists():
             story.append(fit_image(path, content_w, 68 * mm))
@@ -663,14 +667,14 @@ def build():
     story.append(Paragraph("Paint schemes A vs B (walls/ceilings only)", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
-        "<b>Scheme A (default):</b> NN9074 + WW0005. <b>Scheme B (alternate):</b> NN9088 + WW0020. "
-        "Joinery codes unchanged. Supersedes Corrected Handover which showed NN9088 as used default (C-04).",
+        "<b>Corrected final:</b> NN9088 Ecru Tint + WW0020 Virgin White. <b>Legacy alternate:</b> NN9074 + WW0005. "
+        "Joinery codes unchanged; the corrected Ecru/ Virgin White render set was visually re-checked against the official shade-card RGB values.",
         body,
     ))
     half = (content_w - 6 * mm) / 2
     for a_n, b_n, label in [
-        ("01_living_social_zone_daylight.jpg", "01_living_social_zone_daylight_schemeB.jpg", "Living"),
-        ("02_kitchen_granite_latte_shutters.jpg", "02_kitchen_granite_latte_shutters_schemeB.jpg", "Kitchen"),
+        ("01_living_social_zone_daylight.jpg", "corrected_ecru_virgin_white/01_living_social_zone_daylight.png", "Living"),
+        ("02_kitchen_granite_latte_shutters.jpg", "corrected_ecru_virgin_white/02_kitchen_granite_latte_shutters.png", "Kitchen"),
     ]:
         a, b = VIS / a_n, VIS / b_n
         imgs, caps = [], []
@@ -694,7 +698,7 @@ def build():
         "Client chooses Option A or B after samples. Four-leaf text elsewhere is superseded.",
         body,
     ))
-    wa, wb = VIS / "05_wardrobe_aluminium_fluted_glass.jpg", VIS / "06_wardrobe_plywood_three_door.jpg"
+    wa, wb = CORRECTED_VIS / "05_wardrobe_aluminium_fluted_glass.png", CORRECTED_VIS / "06_wardrobe_plywood_three_door.png"
     imgs, caps = [], []
     if wa.exists():
         imgs.append(fit_image(wa, half, 95 * mm))
@@ -705,7 +709,7 @@ def build():
     if imgs:
         story.append(Table([imgs], colWidths=[half + 3 * mm] * len(imgs)))
         story.append(Table([caps], colWidths=[half + 3 * mm] * len(caps)))
-    bed = VIS / "04_bedroom_wardrobe_three_door_plywood.jpg"
+    bed = CORRECTED_VIS / "04_bedroom_wardrobe_three_door_plywood.png"
     if bed.exists():
         story.append(fit_image(bed, content_w, 70 * mm))
         story.append(Paragraph("Bedroom continuity — three-door plywood wardrobe (not four leaves)", caption))
@@ -731,8 +735,8 @@ def build():
     story.append(Paragraph("Bedroom / wardrobe continuity views", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     for path, cap in [
-        (VIS / "04b_bedroom_from_wardrobe_toward_bed.jpg", "From wardrobe toward bed"),
-        (VIS / "04c_wardrobe_three_door_detail.jpg", "Three-door wardrobe detail"),
+        (CORRECTED_VIS / "04b_bedroom_from_wardrobe_toward_bed.png", "From wardrobe toward bed"),
+        (CORRECTED_VIS / "04c_wardrobe_three_door_detail.png", "Three-door wardrobe detail"),
     ]:
         if path.exists():
             story.append(fit_image(path, content_w, 85 * mm))
@@ -749,7 +753,7 @@ def build():
     ))
     for s in [
         "Measure & sign site sheet (K-01, W-01, openings) ? photograph tape end-to-end.",
-        "Approve sample board (NN9074/WW0005 and/or Scheme B; S1241; 84689; 80236; E3; recessed SS) beside granite @ morning/afternoon/3000 K.",
+        "Approve sample board (NN9088/WW0020 corrected final; NN9074/WW0005 legacy alternate if desired; S1241; 84689; 80236; E3; recessed SS) beside granite @ morning/afternoon/3000 K.",
         "Choose wardrobe Option A or B; lock quote (board grades, laminate codes, edges, hinges, access panels).",
         "Fabricate ? site prep ? install kitchen shutters + wardrobe ? paint ? lighting ? FF&E ? punch.",
     ]:
@@ -763,7 +767,7 @@ def build():
         ("1. Sign the site-measure sheet",
          "Kitchen, wardrobe niche, all openings. Resolves C-01 granite thickness and C-05/C-11 window conflicts."),
         ("2. Approve physical sample board",
-         "Scheme A default chips + optional Scheme B; S1241 MT Latte; 84689 Idria; 80236; E3 1&2 mm; recessed brushed SS — beside granite under morning / afternoon / 3000 K. Choose wardrobe A or B."),
+         "Corrected final NN9088/WW0020 chips; S1241 MT Latte; 84689 Idria; 80236; E3 1&2 mm; recessed brushed SS — beside granite under morning / afternoon / 3000 K. Choose wardrobe A or B."),
         ("3. Lock fabricator shop drawings + quotation",
          "One kitchen laminate (S1241 all); three wardrobe leaves 457/457/458; boards; edges; recessed hardware; service access — then only then commission fabrication-faithful visuals."),
     ]

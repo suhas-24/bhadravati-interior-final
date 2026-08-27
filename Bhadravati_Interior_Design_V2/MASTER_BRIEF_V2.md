@@ -29,7 +29,7 @@ The home must feel calm, practical, and locally believable � not a pale showro
 
 | Concept | Decision |
 |---|---|
-| **A � Warm Contemporary Minimalism** (NN9074 + Latte + Idria) | **FINAL / V2 locked** |
+| **Warm Contemporary Minimalism � corrected light pair** (NN9088 Ecru Tint + WW0020 Virgin White + Latte + Idria) | **FINAL / V2 locked** |
 | B � Textbook Japandi | Reject as governing style |
 | C � Dual-tone kitchen / lighter walls as default | Reject |
 
@@ -83,10 +83,10 @@ Face options: **A** aluminium frame + fluted glass � **B** plywood / Idria Oak
 
 | Role | Code / product | Approx hex | Notes |
 |---|---|---|---|
-| Scheme A walls (default) | Birla Opus **NN9074** Puddle of Grey | `#B5AB9C` | Mid warm greige; dust-friendly |
-| Scheme A ceiling | Birla Opus **WW0005** White Linen | `#EEEDE9` | Matt |
-| Scheme B walls | Birla Opus **NN9088** Ecru Tint | `#E9E3D9` | Lighter alt; shows dust faster |
-| Scheme B ceiling | Birla Opus **WW0020** Virgin White | `#EDE9E2` | Cleaner warm white |
+| Corrected final walls | Birla Opus **NN9088** Ecru Tint | `#E9E3D9` | Light warm ecru; chosen to avoid the darker grey cast |
+| Corrected final ceiling | Birla Opus **WW0020** Virgin White | `#EDE9E2` | Matt, warm clean white |
+| Legacy alternate walls | Birla Opus **NN9074** Puddle of Grey | `#B5AB9C` | Optional darker greige only |
+| Legacy alternate ceiling | Birla Opus **WW0005** White Linen | `#EEEDE9` | Optional only |
 | Kitchen all shutters | Century **S1241 MT Latte** | `#A49483` | One code only |
 | TV cabinet | **80236 DW Slate Grey** (or Latte) | `#575D5C` | Controlled accent |
 | Wardrobe | **84689 SU Idria Oak** (backup **84687 Lyon**) | `#3D483C` | Soft woodgrain |
@@ -165,7 +165,7 @@ Dust/smoke, laterite dust, hard water, hot summers, monsoon humidity, strong day
 ## Next 3 actions
 
 1. **Sign the site-measure sheet** for kitchen, wardrobe, and all openings (photograph tape end-to-end).
-2. **Approve the physical sample board** (Scheme A and/or B chips + S1241 + 84689 + 80236 + E3 + recessed SS) beside granite under morning / afternoon / 3000 K; choose paint scheme and wardrobe Option A or B.
+2. **Approve the physical sample board** (corrected NN9088 + WW0020 chips; legacy NN9074 + WW0005 only if comparing, plus S1241 + 84689 + 80236 + E3 + recessed SS) beside granite under morning / afternoon / 3000 K; choose wardrobe Option A or B.
 3. **Lock fabricator shop drawings + quotation** (one kitchen laminate, three wardrobe leaves 457/457/458, boards, edges, recessed hardware, service access), then commission plan-faithful visuals from locked geometry only.
 
 ---

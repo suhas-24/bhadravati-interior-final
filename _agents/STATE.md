@@ -4,7 +4,7 @@
 
 ## Project
 Bhadravati Home — first-floor studio, Bhadravati, Karnataka. Envelope ~21×18 ft (~378 sq ft, plan_relationship_only).
-Concept LOCKED: Warm Contemporary Minimalism — climate-resilient (Scheme A final: NN9074 + S1241 MT Latte + 84689 SU Idria Oak).
+Concept LOCKED: Warm Contemporary Minimalism — climate-resilient (corrected final: NN9088 Ecru Tint + WW0020 Virgin White + S1241 MT Latte + 84689 SU Idria Oak).
 
 ## Current phase position
 Phases 0–18 effectively complete (design control). **Blocked at Phase 2 exit:** signed site measure not yet done ⇒ nothing is fabrication-approved.
@@ -42,7 +42,7 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 ## Next actions (suggested order)
 1. Get site measure scheduled (unblocks everything).
 2. Decide fate of untracked clutter: commit provenance-worthy items (site photos ARE register evidence — recommend committing them), gitignore scratch.
-3. When client picks paint scheme finally: retire the other scheme's gallery twins or mark clearly.
+3. Corrected Ecru/Virgin White render set is now the default; Puddle/White Linen gallery twins remain clearly marked as legacy alternate.
 4. Order Myrius NextGen finish samples (see switch colour note above) alongside laminate/paint samples.
 5. Any new work → follow `_agents/PLAYBOOK.md`; update this file after.
 
@@ -51,3 +51,7 @@ See `../AGENTS.md §2`. Machine locks: `FINAL_DELIVERABLE/coordination/*.json`.
 Added `BIRLA_OPUS_COLOUR_SELECTION.md`. Official rendered swatches were visually checked for NN9074 Puddle of Grey, NN9242 A Khadi Kurta, WW0005 White Linen, NN9564 Parisian Evenings, and NN9589 Studio Pose. Existing exterior concept boards were reviewed; NN9589 is the recommended exterior direction. Exterior product/tint and physical façade sample approval remain open.
 
 Published on GitHub Pages after rebuild: gallery includes the exterior concept and `Bhadravati_FINAL_Interior_Design.pdf` now points to the 24-page V2 handoff. Live asset checks returned HTTP 200 for the page, exterior PNG, and PDF.
+
+## 2026-08-27 corrected interior render set
+
+Official Birla Opus swatches were visually inspected and cross-checked: NN9088 Ecru Tint `#E9E3D9` is the selected wall field and WW0020 Virgin White `#EDE9E2` the selected ceiling/trim. NN9074 Puddle of Grey + WW0005 White Linen remain legacy alternate only. A replacement 12-image living/kitchen/evening/bedroom/wardrobe set was generated, visually inspected, and stored in `Bhadravati_Interior_Design_V2/assets/img/corrected_ecru_virgin_white/`; the matching `docs/*_schemeB.png` gallery twins now reference that corrected set. V2 PDF rebuilt and verified at 24 pages.

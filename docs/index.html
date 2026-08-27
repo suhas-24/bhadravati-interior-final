@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-paint-scheme="a">
+<html lang="en" data-paint-scheme="b">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -461,26 +461,26 @@
           <button
             type="button"
             role="radio"
-            aria-checked="true"
-            aria-pressed="true"
-            tabindex="0"
+            aria-checked="false"
+            aria-pressed="false"
+            tabindex="-1"
             data-scheme="a"
             id="scheme-a-btn"
           >
-            <span class="seg-code">Scheme A</span>
-            <span class="seg-name">Puddle of Grey</span>
+            <span class="seg-code">Legacy alternate</span>
+            <span class="seg-name">Puddle of Grey + White Linen</span>
           </button>
           <button
             type="button"
             role="radio"
-            aria-checked="false"
-            aria-pressed="false"
-            tabindex="-1"
+            aria-checked="true"
+            aria-pressed="true"
+            tabindex="0"
             data-scheme="b"
             id="scheme-b-btn"
           >
-            <span class="seg-code">Scheme B</span>
-            <span class="seg-name">Ecru Tint</span>
+            <span class="seg-code">Corrected final</span>
+            <span class="seg-name">Ecru Tint + Virgin White</span>
           </button>
         </div>
       </div>
@@ -506,8 +506,8 @@
         <h2>Locked design tokens</h2>
         <p class="section-lede" id="tokens-lede">From <code>swatch_lock.json</code> + <code>dimension_lock.json</code> + <code>wardrobe_door_lock.json</code> (all complete). Birla Opus hex exact; Century laminate hex = visual approx.</p>
         <div class="token-strip" aria-label="Primary palette">
-          <div class="swatch" data-role="wall" id="swatch-wall"><span id="swatch-wall-label">NN9074 &#183; #B5AB9C</span></div>
-          <div class="swatch" data-role="ceil" id="swatch-ceil"><span id="swatch-ceil-label">WW0005 &#183; #EEEDE9</span></div>
+          <div class="swatch" data-role="wall" id="swatch-wall"><span id="swatch-wall-label">NN9088 &#183; #E9E3D9</span></div>
+          <div class="swatch" data-role="ceil" id="swatch-ceil"><span id="swatch-ceil-label">WW0020 &#183; #EDE9E2</span></div>
           <div class="swatch latte" style="background:#A49483"><span>S1241 MT Latte</span></div>
           <div class="swatch idria on-dark" style="background-color:#3D483C" title="84689 SU Idria Oak · European Grey"><span>84689 SU Idria Oak</span></div>
           <div class="swatch slate on-dark" style="background:#575D5C"><span>80236 DW TV</span></div>
@@ -750,8 +750,8 @@
             <dd>Warm Contemporary Minimalism &#8212; not textbook Japandi.</dd>
             <dt>Paint schemes</dt>
             <dd id="notes-paint">
-              <strong>Scheme A (default):</strong> NN9074 Puddle of Grey + WW0005 White Linen.<br />
-              <strong>Scheme B:</strong> NN9088 Ecru Tint + WW0020 Virgin White. Toggle persists in <code>localStorage</code>.
+              <strong>Corrected final:</strong> NN9088 Ecru Tint + WW0020 Virgin White.<br />
+              <strong>Legacy alternate:</strong> NN9074 Puddle of Grey + WW0005 White Linen. Toggle persists in <code>localStorage</code>.
             </dd>
             <dt>Plan scale (locked)</dt>
             <dd>Plan <strong>0.1&nbsp;px/mm</strong>; axo <strong>0.045&nbsp;px/mm</strong>. Studio 6401&#215;5486&nbsp;mm = plan_relationship_only.</dd>
@@ -791,7 +791,7 @@
 
   <script>
     (function () {
-      const STORAGE_KEY = "bhadravati-paint-scheme";
+      const STORAGE_KEY = "bhadravati-paint-scheme-v2-corrected";
       const SCHEMES = {
         a: {
           id: "a",
@@ -873,10 +873,10 @@
         if (hash === "scheme-b" || hash === "schemeb") return "b";
         if (hash === "scheme-a" || hash === "schemea") return "a";
         try {
-          const stored = localStorage.getItem(STORAGE_KEY);
+        const stored = localStorage.getItem(STORAGE_KEY);
           if (stored === "b" || stored === "a") return stored;
         } catch (_) { /* ignore */ }
-        return "a";
+        return "b";
       }
 
       function setRadioState(scheme) {
@@ -985,7 +985,7 @@
       }
 
       async function applyScheme(scheme, { persist = true, updateHash = true } = {}) {
-        const s = SCHEMES[scheme] || SCHEMES.a;
+        const s = SCHEMES[scheme] || SCHEMES.b;
         root.setAttribute("data-paint-scheme", s.id);
         setRadioState(s.id);
         updateLabels(s);
@@ -1063,7 +1063,7 @@
         living: "<strong>Living</strong> &#8212; S-centre. Sofa&#8211;coffee <strong>475&nbsp;mm</strong>. Primary clear <strong>950&nbsp;mm</strong>; coffee&#8211;TV aisle <strong>1000&nbsp;mm</strong>. Floating 80236 only.",
         kitchen: "<strong>Kitchen</strong> &#8212; Module <strong>2692&#215;488&nbsp;mm</strong>; B1/B2/B3 <strong>1219/914/457</strong>. Latte all. Fridge extreme right. <strong>Recessed pulls</strong>. No waterfall.",
         wardrobe: "<strong>Wardrobe</strong> &#8212; Clear <strong>1372&#215;2286&#215;488&nbsp;mm</strong>. <strong>3 doors</strong> 457/457/458 (single L + double R). Recessed pulls. Option A (05 aluminium fluted glass) or Option B (06 plywood).",
-        bedroom: SCHEMES.a.bedroomCallout,
+        bedroom: SCHEMES.b.bedroomCallout,
         study: "<strong>Study</strong> &#8212; NE desk <strong>1350&#215;650&nbsp;mm</strong>. Limited shelves. Task 3000&nbsp;K."
       };
       const callout = document.getElementById("callout");
@@ -1077,7 +1077,7 @@
           btn.setAttribute("aria-selected", "true");
           callout.dataset.zone = btn.dataset.zone;
           if (btn.dataset.zone === "bedroom") {
-            const s = SCHEMES[window.__activePaintScheme || "a"];
+            const s = SCHEMES[window.__activePaintScheme || "b"];
             callout.innerHTML = s.bedroomCallout;
           } else {
             callout.innerHTML = copy[btn.dataset.zone];

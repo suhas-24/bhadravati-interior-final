@@ -16,19 +16,6 @@
   "palette": {
     "base_walls": {
       "brand": "Birla Opus",
-      "code": "NN9074",
-      "name": "Puddle of Grey",
-      "hex_approx": "#B5AB9C",
-      "rgb_approx": [
-        181,
-        171,
-        156
-      ],
-      "undertone": "warm_greige",
-      "sheen": "low_sheen_washable_matt"
-    },
-    "secondary_walls_optional": {
-      "brand": "Birla Opus",
       "code": "NN9088",
       "name": "Ecru Tint",
       "hex_approx": "#E9E3D9",
@@ -37,19 +24,42 @@
         227,
         217
       ],
-      "use": "lighter_alternative_not_default"
+      "undertone": "light_warm_ecru",
+      "sheen": "low_sheen_washable_matt",
+      "selection_note": "Client-preferred lighter wall for dust/smoke environment; official swatch visually inspected."
+    },
+    "secondary_walls_optional": {
+      "brand": "Birla Opus",
+      "code": "NN9074",
+      "name": "Puddle of Grey",
+      "hex_approx": "#B5AB9C",
+      "rgb_approx": [
+        181,
+        171,
+        156
+      ],
+      "use": "legacy_alternate_only; darker greige reads heavier in this room"
     },
     "ceiling": {
+      "brand": "Birla Opus",
+      "code": "WW0020",
+      "name": "Virgin White",
+      "hex_approx": "#EDE9E2",
+      "rgb_approx": [
+        237,
+        233,
+        226
+      ],
+      "sheen": "matt",
+      "selection_note": "Chosen with NN9088 after official shade-card inspection; keeps the ceiling light without a grey cast."
+    },
+    "legacy_ceiling_alternate": {
       "brand": "Birla Opus",
       "code": "WW0005",
       "name": "White Linen",
       "hex_approx": "#EEEDE9",
-      "rgb_approx": [
-        238,
-        237,
-        233
-      ],
-      "sheen": "matt"
+      "rgb_approx": [238, 237, 233],
+      "use": "legacy_alternate_only"
     },
     "accent_optional": {
       "primary": {
