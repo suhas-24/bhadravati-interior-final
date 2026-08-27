@@ -131,7 +131,9 @@ Brief: `/Users/suhas/Downloads/Interiors/Bhadravati_Final_Interior_Design_Brief/
 | Role | Code | Name | Hex / RGB | Use |
 |---|---|---|---|---|
 | Main façade field | **NN9059** | Kala Ghoda museum | `#BEB2A1` / RGB 190,178,161 | Warm medium taupe-stone; premium and forgiving of industrial dust |
-| Plinth / recessed entry accent | **NN9077** | Old leaves underfoot | `#766C62` / RGB 118,108,98 | Narrow bands and plinth only; do not use as a broad wall |
+| Front fascia / balcony band + plinth / recessed entry | **NN9077** | Old leaves underfoot | `#766C62` / RGB 118,108,98 | Narrow bands, splash/plinth zones and recessed entry; full-height only on a shaded lorry-facing side after sample trial |
+| Roofline edge concept | **NN9079** | Dark tidings | `#4F4A47` / RGB 79,74,71 / LRV 7.1% | Thin coping/roofline edge only; conceptual until physical sample and product/tint confirmation |
+| Roof sheet concept | **UNKNOWN / SAMPLE-ONLY** | Muted medium blue-grey | — | Visual direction only; confirm actual roof-sheet code, finish and reflectance on site |
 | Product system | Birla Opus One or Calista | Low-sheen exterior | — | Confirm tint/product and physical façade sample before order |
 
 Studio Pose (NN9589) and No Chance of Sun (NN9590) are superseded and must not be used in the active exterior concept.

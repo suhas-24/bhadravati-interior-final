@@ -43,7 +43,7 @@ BOARD_FLOORPLAN = ASSETS / "02_floorplan_concept_v2.png"
 BOARD_KITCHEN_ELEV = ASSETS / "03_kitchen_elevation_overlay_v2.png"
 BOARD_WARDROBE_ELEV = ASSETS / "04_wardrobe_elevation_overlay_v2.png"  # 3-door 457/457/458
 BOARD_QA = ASSETS / "05_qa_contact_sheet_v2.jpg"
-EXTERIOR_CONCEPT = ROOT.parent / "docs" / "exterior_colour_concept_nn9059_kalahodha.png"
+EXTERIOR_CONCEPT = ROOT.parent / "docs" / "exterior_colour_concept_nn9059_nn9077_nn9079_blue_roof.png"
 EXTERIOR_SWATCH = ROOT.parent / "docs" / "birla_official_swatches_nn9059_page104.png"
 EXTERIOR_SWATCH_ACCENT = ROOT.parent / "docs" / "birla_official_swatches_nn9077_page105.png"
 
@@ -380,7 +380,9 @@ def build():
         [Paragraph("TV cabinet only", cell), Paragraph("<b>80236 DW Slate Grey</b> (or Latte)", cell), Paragraph("Controlled accent — not kitchen", cell)],
         [Paragraph("Wardrobe preferred", cell), Paragraph("<b>83661 SU Sonoma Oak</b>", cell), Paragraph("Fallback S1241 MT Latte only", cell)],
         [Paragraph("Exterior main façade", cell), Paragraph("Birla <b>NN9059</b> Kala Ghoda museum", cell), Paragraph("#BEB2A1 · medium warm taupe-stone", cell)],
-        [Paragraph("Exterior plinth / recess", cell), Paragraph("Birla <b>NN9077</b> Old leaves underfoot", cell), Paragraph("#766C62 · splash/grease zone", cell)],
+        [Paragraph("Exterior fascia / balcony / plinth", cell), Paragraph("Birla <b>NN9077</b> Old leaves underfoot", cell), Paragraph("#766C62 · bands and splash/grease zones", cell)],
+        [Paragraph("Exterior roofline concept", cell), Paragraph("Birla <b>NN9079</b> Dark tidings", cell), Paragraph("#4F4A47 · thin edge only; sample required", cell)],
+        [Paragraph("Roof sheet", cell), Paragraph("Muted medium blue-grey", cell), Paragraph("UNKNOWN / SAMPLE-ONLY", cell)],
         [Paragraph("Edges", cell), Paragraph("E3 ABS matched", cell), Paragraph("2 mm kitchen / 1 mm wardrobe; matt", cell)],
         [Paragraph("Hardware", cell), Paragraph("Brushed SS <b>recessed</b>", cell), Paragraph("No projecting bars", cell)],
         [Paragraph("Counter", cell), Paragraph("Existing black granite", cell), Paragraph("Retain; shutters only", cell)],
@@ -825,16 +827,18 @@ def build():
     story.append(Paragraph("Exterior colour concept — industrial-premium envelope", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
-        "Active concept: Birla Opus <b>NN9059 Kala Ghoda museum</b> as the warm medium-taupe wall field "
-        "(<b>#BEB2A1</b> / RGB 190,178,161), with NN9077 Old leaves underfoot "
-        "(<b>#766C62</b> / RGB 118,108,98) only on the lower plinth/recess. "
-        "This middle-value, low-sheen envelope is more forgiving of rice-mill ash, soot, oil and mud than a pale wall.",
+        "Final visual concept: Birla Opus <b>NN9059 Kala Ghoda museum</b> is the broad warm medium-taupe wall field "
+        "(<b>#BEB2A1</b> / RGB 190,178,161). NN9077 Old leaves underfoot "
+        "(<b>#766C62</b> / RGB 118,108,98) is limited to the front fascia/balcony band, lower splash/plinth zones, "
+        "and the lorry-facing side only after orientation and sample review. Conceptual NN9079 Dark tidings "
+        "(<b>#4F4A47</b> / RGB 79,74,71) is restricted to the thin roofline edge. The roof is muted medium blue-grey, "
+        "but its exact roof-sheet code is UNKNOWN / SAMPLE-ONLY. This zoning balances premium contrast, industrial ash/soot/grease tolerance and heat moderation.",
         body,
     ))
     if EXTERIOR_CONCEPT.exists():
         story.append(fit_image(EXTERIOR_CONCEPT, content_w, 205 * mm))
         story.append(Paragraph(
-            "Active conceptual exterior board — NN9059 Kala Ghoda museum + NN9077 Old leaves underfoot. Preserve existing geometry, openings, drainage, "
+            "Final conceptual exterior board — NN9059 Kala Ghoda museum + NN9077 Old leaves underfoot + conceptual NN9079 Dark tidings roofline and muted blue-grey roof. Preserve existing geometry, openings, drainage, "
             "canopy, grills and signage. Confirm the exact Birla Opus exterior product/tint and approve a physical "
             "façade sample in sun, shade and post-rain conditions before painting.",
             caption,

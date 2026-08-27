@@ -329,6 +329,20 @@
       display: block; width: 100%; height: 100%; object-fit: cover;
       min-height: 280px; max-height: 380px; transition: transform 0.6s ease, opacity 0.35s ease;
     }
+    .gallery figure.exterior-board img,
+    .gallery figure.swatch-reference img {
+      height: auto;
+      max-height: none;
+      min-height: 0;
+      object-fit: contain;
+    }
+    .gallery figure.exterior-board figcaption,
+    .gallery figure.swatch-reference figcaption {
+      position: static;
+      background: none;
+      color: var(--muted);
+      padding: 0.85rem 0 0;
+    }
     .gallery figure:hover img { transform: scale(1.03); }
     .gallery figcaption {
       position: absolute; left: 0; right: 0; bottom: 0; padding: 0.85rem 1rem;
@@ -670,7 +684,7 @@
     <section id="palette">
       <div class="wrap">
         <h2>Palette board</h2>
-        <p class="section-lede" id="palette-lede">NN9088 Ecru Tint / WW0020 Virgin White / S1241 MT Latte / 83661 Sonoma Oak / 80236 Slate / black granite / NN9059 + NN9077 exterior / recessed SS hardware / E3 ABS / 3000&nbsp;K.</p>
+        <p class="section-lede" id="palette-lede">NN9088 Ecru Tint / WW0020 Virgin White / S1241 MT Latte / 83661 Sonoma Oak / 80236 Slate / black granite / NN9059 + NN9077 + conceptual NN9079 exterior / muted blue-grey roof sample pending / recessed SS hardware / E3 ABS / 3000&nbsp;K.</p>
         <div class="svg-frame palette-board-b">
           <object data="palette_board_sonoma_kalahodha.svg" type="image/svg+xml" aria-label="Active Sonoma Oak and Kala Ghoda palette board SVG">Active palette SVG</object>
         </div>
@@ -680,19 +694,23 @@
     <section id="exterior">
       <div class="wrap">
         <h2>Exterior concept — industrial-premium envelope</h2>
-        <p class="section-lede">Active concept: Birla Opus <strong>NN9059 Kala Ghoda museum</strong> (`#BEB2A1`) as the warm medium-taupe wall field, with <strong>NN9077 Old leaves underfoot</strong> (`#766C62`) only on the lower plinth and recessed entry. This middle-value, low-sheen envelope is intended to be more forgiving of rice-mill ash, soot, oil and mud than a pale wall.</p>
+        <p class="section-lede">Final visual concept: Birla Opus <strong>NN9059 Kala Ghoda museum</strong> (`#BEB2A1`) is the broad wall field; <strong>NN9077 Old leaves underfoot</strong> (`#766C62`) is reserved for the front fascia/balcony band, all lower splash/plinth bands, and the lorry-facing side only after orientation and physical-sample review; conceptual <strong>NN9079 Dark tidings</strong> (`#4F4A47`) is restricted to the thin roofline edge. The roof is a muted medium blue-grey, with the exact roof-sheet code still <strong>UNKNOWN / SAMPLE-ONLY</strong>. This zoning balances premium contrast, industrial dust/ash/grease tolerance, and heat moderation.</p>
         <div class="gallery">
-          <figure>
-            <img src="exterior_colour_concept_nn9059_kalahodha.png" alt="Conceptual exterior colour board using Birla Opus NN9059 Kala Ghoda museum and NN9077 Old leaves underfoot" />
-            <figcaption><div class="badge">ACTIVE CONCEPT · NN9059 + NN9077</div>Exact shade-card RGB values are shown in the legend. Preserve existing geometry; confirm exterior product family/tint and physical façade sample before painting.</figcaption>
+          <figure class="exterior-board">
+            <img src="exterior_colour_concept_nn9059_nn9077_nn9079_blue_roof.png" alt="Final conceptual exterior colour board using NN9059 main walls, NN9077 bands and lorry-facing side, NN9079 roofline edge, and a muted blue-grey roof" />
+            <figcaption><div class="badge">FINAL VISUAL CONCEPT · NN9059 + NN9077 + NN9079 + BLUE-GREY ROOF</div>Exact paint RGB values are printed in the legend. Preserve existing geometry; confirm exterior product family/tint, roof-sheet colour, orientation, and physical façade samples before painting.</figcaption>
           </figure>
-          <figure>
+          <figure class="swatch-reference">
             <img src="birla_official_swatches_nn9059_page104.png" alt="Official Birla Opus shade card page showing NN9059 Kala Ghoda museum" />
             <figcaption><div class="badge">OFFICIAL SWATCH CARD · PAGE 104</div>Actual rendered Birla Opus shade-card reference for NN9059 Kala Ghoda museum.</figcaption>
           </figure>
-          <figure>
+          <figure class="swatch-reference">
             <img src="birla_official_swatches_nn9077_page105.png" alt="Official Birla Opus shade card page showing NN9077 Old leaves underfoot" />
             <figcaption><div class="badge">OFFICIAL SWATCH CARD · PAGE 105</div>Actual rendered Birla Opus shade-card reference for NN9077 Old leaves underfoot.</figcaption>
+          </figure>
+          <figure class="swatch-reference">
+            <img src="swatch_nn9079_dark_tidings.svg" alt="NN9079 Dark tidings exact screen-reference swatch" />
+            <figcaption><div class="badge">CONCEPT ACCENT · NN9079</div>Exact RGB/hex/LRV are recorded from the Birla Opus colour catalogue; this is a screen reference, not procurement approval. Confirm the physical exterior sample before ordering.</figcaption>
           </figure>
         </div>
         <div class="panel highlight" style="margin-top:1.25rem">

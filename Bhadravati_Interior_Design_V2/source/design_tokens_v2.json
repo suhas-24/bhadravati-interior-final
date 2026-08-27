@@ -82,6 +82,24 @@
         "finish": "low_sheen_exterior",
         "use": "plinth_and_recessed_entry_only"
       },
+      "accent_roofline_concept": {
+        "brand": "Birla Opus",
+        "code": "NN9079",
+        "name": "Dark tidings",
+        "hex": "#4F4A47",
+        "rgb": [79, 74, 71],
+        "lrv": 7.1,
+        "finish": "low_sheen_exterior",
+        "use": "thin_roofline_coping_edge_only; conceptual_not_procurement_locked",
+        "selection_note": "Chosen because NN9070 is too close to NN9077 visually; physical sample and product/tint confirmation required before ordering."
+      },
+      "roof_sheet_concept": {
+        "brand": "UNKNOWN",
+        "code": "SAMPLE-ONLY",
+        "name": "Muted medium blue-grey",
+        "use": "roof_sheet_visual_concept_only; exact roof-sheet code and reflectance remain unverified",
+        "finish": "matte_preferred"
+      },
       "product_note": "Confirm Birla Opus One or Calista exterior tint and approve a physical facade sample before painting. NN9589 Studio Pose and NN9590 No Chance of Sun are superseded."
     },
     "accent_optional": {

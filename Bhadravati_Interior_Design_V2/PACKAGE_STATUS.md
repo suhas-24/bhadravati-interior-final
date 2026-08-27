@@ -5,7 +5,7 @@
 **Verdict:** **COMPLETE / READY** for design-control client handoff  
 **PDF rebuild for assets 01�05:** **Not required** (already embedded)
 
-**2026-08-27 palette replacement addendum:** Active set is NN9088 Ecru Tint + WW0020 Virgin White + S1241 MT Latte + 83661 SU Sonoma Oak + 80236 DW Slate + existing black granite. Exterior concept is NN9059 Kala Ghoda museum with NN9077 Old leaves underfoot at the plinth/recess; Studio Pose and Idria are rejected. Official Birla pages 104/105 and Century page 61/PDF p.96 were visually inspected and archived in `source/`; new Sonoma/Kala Ghoda render set is in `assets/img/ecru_sonoma_kalahodha/`. Exterior product/tint and physical façade sample approval remain open.
+**2026-08-27 palette replacement addendum:** Active set is NN9088 Ecru Tint + WW0020 Virgin White + S1241 MT Latte + 83661 SU Sonoma Oak + 80236 DW Slate + existing black granite. Final exterior visual concept is NN9059 Kala Ghoda museum on broad walls, NN9077 Old leaves underfoot on front fascia/balcony bands and splash/plinth zones (full-height only on a shaded lorry-facing side after sample trial), and conceptual NN9079 Dark tidings on the thin roofline edge; roof is muted medium blue-grey with code UNKNOWN / SAMPLE-ONLY. Studio Pose and Idria are rejected. Official Birla pages 104/105 and NN9079 catalogue data were visually checked; exterior product/tint, roof-sheet code and physical façade sample approval remain open.
 
 ---
 
