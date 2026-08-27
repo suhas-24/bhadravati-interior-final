@@ -48,8 +48,11 @@ Two exterior concept boards are present in `interior_dimension_control/site_phot
 
 - **NN9564 — Parisian Evenings** (`#9D9CA1`, RGB 157,156,161): visually verified on official shade-card page 132; cooler/lavender grey, acceptable but less connected to the warm interior materials.
 - **NN9589 — Studio Pose** (`#80837D`, RGB 128,131,125): visually verified on official shade-card page 133; muted green-grey that coordinates with 84689 SU Idria Oak and matte black metal while remaining forgiving of soot streaks.
+- **NN9590 — No chance of sun** (`#676B65`, RGB 103,107,101): visually verified on official shade-card page 133; use only for the existing darker bands/plinths, not as the broad wall field.
 
-**Recommended exterior concept:** NN9589 Studio Pose as the broad wall field, with a restrained darker graphite/black band only where already expressed by the building (parapet/bands/grills/canopy), and a warm teak-toned door. Preserve the existing geometry, openings, drainage, canopy, grills, and signage. Do not add a decorative façade feature wall.
+**Corrected exterior concept:** NN9589 Studio Pose as the broad wall field, with NN9590 No chance of sun only on the existing darker bands/plinths, matte-black metal/grills/canopy, and a warm teak-toned door. Preserve the existing geometry, openings, drainage, canopy, grills, and signage. Do not add a decorative façade feature wall.
+
+**Actual swatch evidence:** `docs/birla_official_swatches_nn9589_nn9590_page133.png` is the rendered official shade-card page showing both codes and chips. The corrected concept is `docs/exterior_colour_concept_nn9589_corrected.png`.
 
 The boards are visual concepts, not proof of an exterior-product tint. Before painting, obtain the exact exterior Birla Opus product family available from the local dealer and test physical samples against the actual façade in sun, shade, and post-rain conditions. The shade code remains the identity; the interior shade-card RGB is a digital approximation, not an exterior paint certificate.
 

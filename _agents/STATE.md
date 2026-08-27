@@ -55,3 +55,5 @@ Published on GitHub Pages after rebuild: gallery includes the exterior concept a
 ## 2026-08-27 corrected interior render set
 
 Official Birla Opus swatches were visually inspected and cross-checked: NN9088 Ecru Tint `#E9E3D9` is the selected wall field and WW0020 Virgin White `#EDE9E2` the selected ceiling/trim. NN9074 Puddle of Grey + WW0005 White Linen remain legacy alternate only. A replacement 12-image living/kitchen/evening/bedroom/wardrobe set was generated, visually inspected, and stored in `Bhadravati_Interior_Design_V2/assets/img/corrected_ecru_virgin_white/`; the matching `docs/*_schemeB.png` gallery twins now reference that corrected set. V2 PDF rebuilt and verified at 24 pages.
+
+Exterior correction: official page 133 was rechecked. Main wall is NN9589 Studio Pose `#80837D` / RGB 128,131,125; existing darker bands/plinths are NN9590 No chance of sun `#676B65` / RGB 103,107,101. New concept `docs/exterior_colour_concept_nn9589_corrected.png` and actual official swatch page `docs/birla_official_swatches_nn9589_nn9590_page133.png` are embedded in the rebuilt PDF and gallery.
