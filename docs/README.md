@@ -28,13 +28,16 @@ For the industrial-belt dust/smoke rationale, visual swatch evidence, and the ex
 |------|------|
 | Main walls (corrected final) | Birla Opus **NN9088** Ecru Tint `#E9E3D9` |
 | Ceiling (corrected final) | Birla Opus **WW0020** Virgin White `#EDE9E2` |
+| Interior product system | **Birla Opus Calista Ever Wash**, matte/low-sheen washable emulsion |
 | Legacy alternate walls | Birla Opus **NN9074** Puddle of Grey `#B5AB9C` |
 | Legacy alternate ceiling | Birla Opus **WW0005** White Linen `#EEEDE9` |
 | Kitchen shutters (all) | Century **S1241 MT Latte** |
 | TV cabinet only | **80236** DW Slate Grey |
 | Exterior main façade | Birla Opus **NN9059** Kala Ghoda museum `#BEB2A1` |
+| Exterior product system | **Birla Opus Calista Neo Star**, soft-sheen exterior emulsion |
 | Exterior fascia / plinth / lorry-facing side concept | Birla Opus **NN9077** Old leaves underfoot `#766C62` |
 | Exterior roofline edge concept | Birla Opus **NN9079** Dark tidings `#4F4A47` — physical sample required |
+| Exterior primer | **Calista Perfect Choice Primer**; use an approved Alldry basecoat where dampness exists |
 | Roof sheet | Muted medium blue-grey — **UNKNOWN / SAMPLE-ONLY** |
 | Wardrobe niche | W-01 **1372 x 2286 x 488 mm** |
 | Wardrobe doors | **3 doors** (1 single L + 1 double R) -- leaves **457 / 457 / 458 mm** |

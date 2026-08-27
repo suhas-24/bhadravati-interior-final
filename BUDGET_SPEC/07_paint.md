@@ -9,13 +9,13 @@
 
 In an industrial-belt home the wall finish is a **maintenance surface**, not just a color surface. Soot + fine dust deposit on walls; cleaning frequency will be monthly wipe-downs. That makes **scrub resistance (cycles)** and **anti-fungal additive package** the two specs to buy for — sheen stays matte/low-sheen per locked concept.
 
-**Buy rule:** ≥5000 scrub cycles class, anti-fungal/algae additive, low-sheen. In Birla Opus ladder: **Calista Ever Wash** (premium pick) or **Style Color Smart** (economy pick). Luxury tier = One Pure Elegance Matt if budget allows.
+**Buy rule:** ≥5000 scrub cycles class, anti-fungal/algae additive, low-sheen. The locked Birla Opus interior purchase is **Calista Ever Wash**; the locked exterior purchase is **Calista Neo Star**.
 
 ## 2. Brand-series comparison (2025-26 street reality)
 
 | Brand | Series | Chemistry | Washability claim | Anti-fungal | Sheen | Street ₹/L* | Verdict |
 |---|---|---|---|---|---|---|---|
-| **Birla Opus** | Calista Ever Wash | acrylic emulsion | 5000+ scrubs | yes | low-sheen/matt | ~380–450 | **WINNER premium-value** — matches card system notes |
+| **Birla Opus** | Calista Ever Wash | acrylic emulsion | 5000+ scrubs | yes | low-sheen/matt | ~380–450 | **LOCKED interior system** — matches card system notes |
 | Birla Opus | Style Color Smart | emulsion | washable | yes | matt | ~250–320 | **Winner economy** — same shade library |
 | Birla Opus | One Pure Elegance Matt | luxury acrylic | scuff+stain, 7-yr class | yes | matt | ~600–750 | only if splurging on living room |
 | Asian Paints | Royale Aspira/Shyne | pure acrylic + additive pkg | high scrub | yes | soft-sheen | ~550–800 | best-known brand tax; comparable perf |
@@ -31,16 +31,16 @@ In an industrial-belt home the wall finish is a **maintenance surface**, not jus
 | Slot | Pick | Why |
 |---|---|---|
 | Putty | **Acrylic-based white cement putty** (Birla White Wallcare / Birla Opus One Pro), 2 coats | bonds to plaster, resists flaking vs pure acrylic-only putties on humid walls |
-| Primer | **Interior primer tinted toward NN9074** (Calista Pro White or One Pro) | tinted primer = fewer topcoats needed = saves money |
+| Primer | **Calista Pro White Primer**, tinted toward NN9088 where supported | tinted primer = fewer topcoats needed = saves money |
 | Sealer (smoke) | if old smoke stains bleed, one coat of **stain-blocking primer** (Asian Paints Tractor Sealer class or oil-based primer spot-primer) | soot is oily; water-based alone can let it bleed through |
 
 ## 4. Shade plan (locked + industrial-ladder refinement)
 
 | Room | Shade | Code | Logic |
 |---|---|---|---|
-| Living, kitchen walls, bedroom main | warm greige | **NN9074 Puddle of Grey** (LOCKED) | mid-tone hides soot streaks; harmonizes Latte+Idria |
+| Living, kitchen walls, bedroom main | warm ecru | **NN9088 Ecru Tint** (LOCKED) | bright, warm, and compatible with ivory furnishings |
 | Bath corridor / wardrobe surround (dim zones) | lighter khaki-neutral | **NN9242 A Khadi Kurta** | factory-recommended "industrial areas" wall shade — brighter in dim light, still dust-tolerant |
-| Ceiling all rooms | warm linen white | **WW0005 White Linen** (LOCKED); alt WW0020 | card's industrial ceiling rec |
+| Ceiling all rooms | warm clean white | **WW0020 Virgin White** (LOCKED) | slightly lighter than NN9088 without a stark cool contrast |
 | Accent wall (living, max 1) | sage | **GG7140 Tender Buds** (optional) | calm, pairs with Idria green-grey grain |
 | Study optional accent | dusty blue-green | BB5146 Old Novel | one controlled surface only |
 
@@ -80,7 +80,7 @@ VOC/scrub figures are water-based typical class — confirm printed TDS at deale
 
 ## 6b. Shade scheme reconciliation
 
-The agent proposed an Asian-Paints-code scheme (Country Beige 8600 / Cane Beige 8563 / Beige Rage 8770 / ceiling Basra Pearl-N 0974), Berger Color Bank can computer-match those codes. **However the LOCKED repo palette stays governing** (NN9074 walls / WW0005 ceiling / GG7140 accent — catalogue-verified in this repo with swatch-lock audit). Resolution: order NN9074/WW0005/GG7140 in the winning paint system (Berger Easy Clean Fresh via code-match against the Birla Opus shade card hex values, or buy Birla Opus Calista Ever Wash in native codes). If client prefers the agent's warmer scheme, it's a client decision — not a spec change.
+The agent proposed an Asian-Paints-code scheme, but the **corrected LOCKED repo palette stays governing** (NN9088 walls / WW0020 ceiling / GG7140 accent — catalogue-verified in this repo with swatch-lock audit). Resolution: order NN9088/WW0020/GG7140 in **Birla Opus Calista Ever Wash** native codes. Exterior order: **Calista Neo Star** in NN9059/NN9077/NN9079 according to the exterior zoning in `BIRLA_OPUS_COLOUR_SELECTION.md`.
 
 ## 7. Application notes for smoky/dusty environment
 

@@ -1,6 +1,6 @@
 # Birla Opus colour selection — industrial-belt premium interior
 
-**Status:** design-control record · corrected interior pair selected; exterior concept selected; physical product confirmations still required  
+**Status:** design-control record · corrected interior pair and exterior concept selected; product systems selected subject to physical-sample approval
 **Site:** Bhadravati, Karnataka · first-floor studio · approximately 21 ft × 18 ft (relationship-only until signed measure)
 
 ## Design intent
@@ -35,26 +35,26 @@ The existing swatch-pixel QA crops are retained under `Bhadravati_Interior_Desig
 
 ## Industrial-area application rules
 
-1. Specify a Birla Opus washable, low-sheen/matt system; premium-value target is Calista Ever Wash (final product SKU and local price remain dealer verification items).
+1. Specify **Birla Opus Calista Ever Wash** for interior walls and ceilings, in matte/low-sheen finish; use the native shade codes below.
 2. Use white-cement putty, tinted primer, and a stain-blocking spot primer on old soot marks before topcoat.
 3. Keep the kitchen splash zone tiled; do not rely on painted plaster behind the hob.
 4. Use closed storage, sealed window/door gaps, washable low-pile textiles, and a purifier/exhaust strategy to reduce deposition at source.
 5. Clean with microfiber dusting monthly, gentle damp wiping quarterly at touch zones, and mild-soap washing twice yearly; no abrasive pads or bleach.
 6. Preserve the locked material language: Century S1241 MT Latte kitchen shutters, 84689 SU Idria Oak wardrobe, retained black granite, recessed brushed-stainless pulls, and 3000 K lighting.
 
-## Exterior concept — premium, smoke- and dust-aware
+## Exterior concept and product — premium, smoke- and dust-aware
 
 Two exterior concept boards are present in `interior_dimension_control/site_photos/` (27-Aug-2026):
 
-- **NN9564 — Parisian Evenings** (`#9D9CA1`, RGB 157,156,161): visually verified on official shade-card page 132; cooler/lavender grey, acceptable but less connected to the warm interior materials.
-- **NN9589 — Studio Pose** (`#80837D`, RGB 128,131,125): visually verified on official shade-card page 133; muted green-grey that coordinates with 84689 SU Idria Oak and matte black metal while remaining forgiving of soot streaks.
-- **NN9590 — No chance of sun** (`#676B65`, RGB 103,107,101): visually verified on official shade-card page 133; use only for the existing darker bands/plinths, not as the broad wall field.
+- **NN9059 — Kala Ghoda museum** (`#BEB2A1`, RGB 190,178,161): visually verified on official shade-card page 104; warm muted taupe for the broad wall field.
+- **NN9077 — Old leaves underfoot** (`#766C62`, RGB 118,108,98): visually verified on official shade-card page 105; use for the front fascia/balcony band, lower splash/plinth bands, and lorry-facing side only after sample trial.
+- **NN9079 — Dark tidings** (`#4F4A47`, RGB 79,74,71): screen-reference accent restricted to the thin roofline edge; physical sample required.
 
-**Corrected exterior concept:** NN9589 Studio Pose as the broad wall field, with NN9590 No chance of sun only on the existing darker bands/plinths, matte-black metal/grills/canopy, and a warm teak-toned door. Preserve the existing geometry, openings, drainage, canopy, grills, and signage. Do not add a decorative façade feature wall.
+**Corrected exterior concept:** NN9059 Kala Ghoda museum as the broad wall field, with NN9077 Old leaves underfoot on the specified bands/plinths and lorry-facing side, and NN9079 Dark tidings only on the thin roofline edge. Use **Birla Opus Calista Neo Star** as the exterior topcoat, with Calista Perfect Choice Primer or an approved Alldry waterproofing basecoat where dampness exists. Preserve the existing geometry, openings, drainage, canopy, grills, and signage. Do not add a decorative façade feature wall.
 
-**Actual swatch evidence:** `docs/birla_official_swatches_nn9589_nn9590_page133.png` is the rendered official shade-card page showing both codes and chips. The corrected concept is `docs/exterior_colour_concept_nn9589_corrected.png`.
+**Actual swatch evidence:** the live concept includes the rendered official shade-card references for NN9059 and NN9077, plus the NN9079 screen-reference swatch. The corrected concept is `docs/exterior_colour_concept_nn9059_nn9077_nn9079_blue_roof.png`.
 
-The boards are visual concepts, not proof of an exterior-product tint. Before painting, obtain the exact exterior Birla Opus product family available from the local dealer and test physical samples against the actual façade in sun, shade, and post-rain conditions. The shade code remains the identity; the interior shade-card RGB is a digital approximation, not an exterior paint certificate.
+The boards are visual concepts, not proof of product performance. Before painting, obtain **Calista Neo Star** tinted in the exact shade codes and test physical samples against the actual façade in sun, shade, and post-rain conditions. The shade code remains the identity; the RGB values are digital approximations, not an exterior paint certificate.
 
 ## Approval gate
 

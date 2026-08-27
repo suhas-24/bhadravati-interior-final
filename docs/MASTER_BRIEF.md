@@ -81,9 +81,10 @@ Arithmetic PASS for module width. **Granite thickness conflict** on drawing (1.5
 
 | Role | Code / product | Approx hex | Sheen / notes |
 |---|---|---|---|
-| Main walls | Birla Opus **NN9074 Puddle of Grey** | `#B5AB9C` | Low-sheen washable; warm greige |
-| Lighter alt | **NN9088 Ecru Tint** | `#E9E3D9` | Optional only |
-| Ceiling | **WW0005 White Linen** | `#EEEDE9` | Matt |
+| Main walls | Birla Opus **NN9088 Ecru Tint** | `#E9E3D9` | Calista Ever Wash; low-sheen washable; warm ecru |
+| Legacy alternate | **NN9074 Puddle of Grey** | `#B5AB9C` | Historical only; not the current broad-wall default |
+| Ceiling | **WW0020 Virgin White** | `#EDE9E2` | Calista Ever Wash; matt |
+| Legacy alternate ceiling | **WW0005 White Linen** | `#EEEDE9` | Historical only; not the current ceiling default |
 | Kitchen all shutters | Century **S1241 MT Latte** | ?`#C8B9A4` | Matte; one code only |
 | TV cabinet | **80236 DW Slate Grey** (or Latte) | ?`#4E4C49` | Controlled accent |
 | Wardrobe | **84689 SU Idria Oak** (backup **84687 Lyon**) | ?`#3D483C` | Soft woodgrain |
