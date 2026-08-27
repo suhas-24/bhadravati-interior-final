@@ -2,8 +2,8 @@ newmtl Latte
 Kd 0.643 0.580 0.514
 Ns 12
 
-newmtl Idria
-Kd 0.239 0.282 0.235
+newmtl Sonoma
+Kd 0.702 0.639 0.561
 Ns 18
 
 newmtl Granite

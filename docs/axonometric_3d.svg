@@ -8,11 +8,11 @@
     .s { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; fill: #5A534A; }
     .l { font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif; fill: #2C2925; font-weight: 600; }
     .floor { fill: #EDE6DB; stroke: #6E655B; stroke-width: 1.1; }
-    .wallN { fill: #B5AB9C; stroke: #6E655B; stroke-width: 0.7; }
-    .wallE { fill: #A89F90; stroke: #6E655B; stroke-width: 0.7; }
-    .ceil { fill: #EEEDE9; stroke: #B5AB9C; stroke-width: 0.5; opacity: 0.5; }
+    .wallN { fill: #E9E3D9; stroke: #6E655B; stroke-width: 0.7; }
+    .wallE { fill: #E9E3D9; stroke: #6E655B; stroke-width: 0.7; }
+    .ceil { fill: #EDE9E2; stroke: #C9C0B4; stroke-width: 0.5; opacity: 0.5; }
     .latte { fill: #A49483; stroke: #7A6F62; stroke-width: 0.6; }
-    .oak { fill: #3D483C; stroke: #5C5348; stroke-width: 0.6; }
+    .oak { fill: #B3A38F; stroke: #8B7A68; stroke-width: 0.6; }
     .slate { fill: #575D5C; stroke: #2A2927; stroke-width: 0.6; }
     .gran { fill: #1C1C1C; stroke: #0A0A0A; stroke-width: 0.6; }
     .textile { fill: #C4B5A0; stroke: #8A7A68; stroke-width: 0.6; }
@@ -34,7 +34,7 @@
 <polygon class="textile" points="478.31,483.5 537.74,517.81 458.63,563.49 399.2,529.17"/>
 <polygon class="textile" points="537.74,538.06 537.74,517.81 458.63,563.49 458.63,583.74"/>
 <polygon class="textile" points="478.31,503.75 478.31,483.5 537.74,517.81 537.74,538.06"/>
-<text x="468.31" y="481.25" class="l" font-size="11">Bedroom | SW</text>
+<text x="430.0" y="470.0" class="l" font-size="10">Bedroom · SW</text>
 <polygon class="textile" points="587.16,521.59 670.94,569.97 636.84,589.65 553.06,541.28"/>
 <polygon class="textile" points="670.94,588.87 670.94,569.97 636.84,589.65 636.84,608.55"/>
 <polygon class="textile" points="587.16,540.49 587.16,521.59 670.94,569.97 670.94,588.87"/>
@@ -44,8 +44,8 @@
 <polygon class="slate" points="477.06,578.18 539.42,614.18 522.85,623.74 460.5,587.74"/>
 <polygon class="slate" points="539.42,634.43 539.42,614.18 522.85,623.74 522.85,643.99"/>
 <polygon class="slate" points="477.06,598.43 477.06,578.18 539.42,614.18 539.42,634.43"/>
-<text x="587.16" y="518.89" class="l" font-size="11">Living | S-centre</text>
-<text x="587.16" y="532.89" class="s" font-size="9">80236 TV | sofa-coffee 475</text>
+<text x="610.0" y="510.0" class="l" font-size="10">Living · S-centre</text>
+<text x="610.0" y="524.0" class="s" font-size="8">80236 TV · sofa-coffee 475</text>
 <polygon class="gran" points="685.36,587.88 704.38,598.86 599.47,659.43 580.45,648.45"/>
 <polygon class="gran" points="704.38,634.27 704.38,598.86 599.47,659.43 599.47,694.84"/>
 <polygon class="gran" points="685.36,623.29 685.36,587.88 704.38,598.86 704.38,634.27"/>
@@ -64,31 +64,30 @@
 <polygon class="fridge" points="706.33,527.4 731.66,542.02 704.38,557.77 679.05,543.15"/>
 <polygon class="fridge" points="731.66,618.52 731.66,542.02 704.38,557.77 704.38,634.27"/>
 <polygon class="fridge" points="706.33,603.9 706.33,527.4 731.66,542.02 731.66,618.52"/>
-<text x="572.66" y="639.45" class="l" font-size="11">Kitchen | SE | K-01</text>
-<text x="572.66" y="653.45" class="s" font-size="9">2692 module | B1/B2/B3 | fridge right</text>
-<text x="572.66" y="667.45" class="s" font-size="9">Counter H 787 | Loft und. 2591</text>
+<text x="620.0" y="680.0" class="l" font-size="10">Kitchen · SE · K-01</text>
+<text x="620.0" y="694.0" class="s" font-size="8">2692 module · fridge right · Latte</text>
 <polygon class="oak" points="393.22,536.16 446.68,567.03 427.67,578.01 374.2,547.14"/>
 <polygon class="oak" points="446.68,669.9 446.68,567.03 427.67,578.01 427.67,680.88"/>
 <polygon class="oak" points="393.22,639.03 393.22,536.16 446.68,567.03 446.68,669.9"/>
 <!-- 3 doors: single (L) + double pair (R); near-equal leaves within 1372 -->
 <line x1="411.04" y1="649.32" x2="411.04" y2="546.45" stroke="#5C5348" stroke-width="1.1"/>
 <line x1="428.86" y1="659.61" x2="428.86" y2="556.74" stroke="#5C5348" stroke-width="0.7"/>
-<text x="389.32" y="530.31" class="l" font-size="11">Wardrobe | 3 doors (1+2)</text>
-<text x="389.32" y="544.31" class="s" font-size="9">1372 x 2286 x 488 | single+double | 84689 Idria Oak</text>
+<text x="350.0" y="515.0" class="l" font-size="10">Wardrobe · 3 doors</text>
+<text x="389.32" y="544.31" class="s" font-size="9">1372 x 2286 x 488 | single+double | 83661 Sonoma Oak (screen approx)</text>
 <polygon class="oak" points="517.86,629.46 570.48,659.83 545.14,674.46 492.53,644.08"/>
 <polygon class="oak" points="570.48,693.58 570.48,659.83 545.14,674.46 545.14,708.21"/>
 <polygon class="oak" points="517.86,663.21 517.86,629.46 570.48,659.83 570.48,693.58"/>
-<text x="517.86" y="627.21" class="l" font-size="11">Study | NE</text>
+<text x="505.0" y="620.0" class="l" font-size="10">Study · NE</text>
 <text x="630.32" y="533.01" class="s" font-size="10">6401 mm E-W</text>
 <text x="363.62" y="520.47" class="s" font-size="10">5486 mm N-S</text>
 <g transform="translate(36,90)">
   <rect x="0" y="0" width="200" height="200" rx="4" fill="#FBF8F3" stroke="#A49483" stroke-width="1"/>
   <text x="12" y="22" class="l" font-size="12">Material keys</text>
-  <rect x="12" y="36" width="14" height="10" fill="#B5AB9C"/><text x="34" y="45" class="s" font-size="10">NN9074 walls</text>
-  <rect x="12" y="54" width="14" height="10" fill="#EEEDE9" stroke="#B5AB9C"/><text x="34" y="63" class="s" font-size="10">WW0005 ceiling</text>
+  <rect x="12" y="36" width="14" height="10" fill="#E9E3D9"/><text x="34" y="45" class="s" font-size="10">NN9088 Ecru Tint walls</text>
+  <rect x="12" y="54" width="14" height="10" fill="#EDE9E2" stroke="#C9C0B4"/><text x="34" y="63" class="s" font-size="10">WW0020 Virgin White ceiling</text>
   <rect x="12" y="72" width="14" height="10" fill="#A49483"/><text x="34" y="81" class="s" font-size="10">S1241 Latte kitchen</text>
   <rect x="12" y="90" width="14" height="10" fill="#1C1C1C"/><text x="34" y="99" class="s" font-size="10">Black granite retain</text>
-  <rect x="12" y="108" width="14" height="10" fill="#3D483C"/><text x="34" y="117" class="s" font-size="10">84689 Idria Oak</text>
+  <rect x="12" y="108" width="14" height="10" fill="#B3A38F"/><text x="34" y="117" class="s" font-size="10">83661 Sonoma Oak (screen approx)</text>
   <rect x="12" y="126" width="14" height="10" fill="#575D5C"/><text x="34" y="135" class="s" font-size="10">80236 TV only</text>
   <text x="12" y="158" class="s" font-size="10">Hardware: brushed SS</text>
   <text x="12" y="174" class="s" font-size="10">Lighting: 3000 K</text>

@@ -28,7 +28,7 @@
   </g>
 
   <g font-family="Arial, sans-serif">
-    <rect x="64" y="340" width="250" height="145" rx="5" fill="#C8B9A4" stroke="#B3A38F"/>
+    <rect x="64" y="340" width="250" height="145" rx="5" fill="#A49483" stroke="#7A6F62"/>
     <text x="82" y="420" font-size="22" font-weight="700" fill="#2C2925">S1241 MT</text>
     <text x="82" y="447" font-size="18" fill="#2C2925">Latte · kitchen shutters</text>
     <text x="82" y="471" font-size="14" fill="#6A6258">solid matte · catalogue-confirmed</text>
@@ -43,7 +43,7 @@
     <text x="630" y="447" font-size="18" fill="#F7F3EC">Black granite · retain</text>
     <text x="630" y="471" font-size="14" fill="#F7F3EC">no waterfall / no re-polish</text>
 
-    <rect x="886" y="340" width="250" height="145" rx="5" fill="#C8B9A4" stroke="#B3A38F"/>
+    <rect x="886" y="340" width="250" height="145" rx="5" fill="#A49483" stroke="#7A6F62"/>
     <image href="swatch_83661_sonoma_oak.png" x="886" y="340" width="250" height="145" preserveAspectRatio="xMidYMid slice" opacity="0.88"/>
     <rect x="886" y="340" width="250" height="145" rx="5" fill="none" stroke="#A99B89"/>
     <text x="904" y="420" font-size="22" font-weight="700" fill="#FFFFFF" stroke="#5A5148" stroke-width="0.7">83661 SU</text>

@@ -31,11 +31,11 @@ This file tells any agent (Hermes, Claude Code, Codex, Cursor…) how to work he
 | `interior_dimension_control/` | K-01 (kitchen) / W-01 (wardrobe) dimension register + OCR pass script | **Only** dimension source until signed measure |
 | `materials/` + root vendor PDFs | Century StarLine, Birla Opus, Advance, E3 EBT catalogs | Source catalogs; use extracted text for lookup |
 | `processed_pdf_text/`, `processed_pdf_images/` | Pre-extracted catalog text + page JPGs (birla/, century/, e3/) | SKU/shade verification workspace |
-| `recent_works_review/`, `recent_works_rendered_concept/` | Designer portfolio ("Our recent works.pdf", 27 pages) | Style reference only |
+| `research/` | Research essays ("The Resilient Indian Home…") | Reference material |
 | `_qa_geometry_review/` | Page-by-page QA of earlier client PDFs (geometry errors caught) | **Read before re-rendering** — don't repeat fixed mistakes |
 | `Bhadravati_Client_Visualization/`, `Bhadravati_Corrected_Renders/`, `Bhadravati_Corrected_Visualization/`, `Bhadravati_Professional_Interior_Design/`, `Bhadravati_Visual_Concept_Render/`, `Bhadravati_Final_Interior_Design_Brief/` | Aug-7 iteration history (legacy) | Provenance only — superseded |
-| Root `WhatsApp Image 2026-08-07 *.jpeg` (5 files) | **Site photos** — K-01 dimension evidence | Referenced by the dimension register |
-| Root laminate chip PNGs (`80171…`, `83386…`, `83736…`, `844485…`, `NN-9088`) | Physical swatch scans | Swatch reference for pixel QA |
+| `interior_dimension_control/site_photos/` | Site photos — K-01 dimension evidence | Referenced by the dimension register |
+| `Bhadravati_Interior_Design_V2/source/swatches/` | Physical swatch scans (80171, 83386, 83736, 844485, NN-9088) | Swatch reference for pixel QA |
 
 ---
 
@@ -46,8 +46,8 @@ This file tells any agent (Hermes, Claude Code, Codex, Cursor…) how to work he
 - **Wardrobe:** **3 doors** (single L + double R), leaf widths 457/457/458 mm inside 1372 mm clear. (Four-leaf option superseded — see `assets/04b_…_superseded.png`.)
 - **Lighting:** 3000 K warm-neutral baseline. **Finishes:** matte / low-sheen.
 - **Banned:** TV feature wall, island, L-kitchen flip, gold strips, slatted Japandi props, gloss/sparkle laminates.
-- **Palette:** Scheme A (NN9074 + Latte + **84689 SU Idria Oak**) is FINAL; Scheme B kept only as a gallery toggle.
-- **SKU verified:** 84689 SU = **Idria Oak** (Century StarLine p.55/PDF p.90 + website screenshot; see `IDRIA_REVALIDATION.md`).
+- **Palette:** Corrected final = **NN9088 Ecru Tint + WW0020 Virgin White + S1241 MT Latte + 83661 SU Sonoma Oak**. NN9074 + WW0005 and 84689 SU Idria remain historical/legacy alternates only.
+- **SKU verified:** **83661 SU Sonoma Oak** is the active wardrobe face; 84689 SU Idria Oak was catalogue-verified historically but is rejected for the current brief (see `IDRIA_REVALIDATION.md`).
 
 ---
 

@@ -1,11 +1,13 @@
 # PACKAGE_STATUS — Bhadravati Interior Design V2
 
 **Checked:** 2026-08-27  
-**Package root:** `/Users/suhas/Downloads/Interiors/Bhadravati_Interior_Design_V2/`  
-**Verdict:** **COMPLETE / READY** for design-control client handoff  
-**PDF rebuild for assets 01�05:** **Not required** (already embedded)
+**Package root:** `/Users/suhas/Storage/Personal/Interiors/Bhadravati_Interior_Design_V2/`
+**Verdict:** **COMPLETE / READY** for design-control client handoff (not fabrication approval)
+**PDF rebuild:** **Completed** after SVG, palette-board, and exterior-legend corrections; verified 25 pages.
 
 **2026-08-27 palette replacement addendum:** Active set is NN9088 Ecru Tint + WW0020 Virgin White + S1241 MT Latte + 83661 SU Sonoma Oak + 80236 DW Slate + existing black granite. Final exterior visual concept is NN9059 Kala Ghoda museum on broad walls, NN9077 Old leaves underfoot on front fascia/balcony bands and splash/plinth zones (full-height only on a shaded lorry-facing side after sample trial), and conceptual NN9079 Dark tidings on the thin roofline edge; roof is muted medium blue-grey with code UNKNOWN / SAMPLE-ONLY. Studio Pose and Idria are rejected. Official Birla pages 104/105 and NN9079 catalogue data were visually checked; exterior product/tint, roof-sheet code and physical façade sample approval remain open.
+
+**2026-08-27 final QA addendum:** The gallery now opens on corrected final Scheme B, keeps the active palette board visible for both toggles, matches Scheme A swatches to its legacy labels, and includes corrected section offsets, captions, middle dots, and ARIA tab state. Active floor-plan/axonometric legends use NN9088/WW0020/83661. Broken wiki SVG encoding was repaired and PNGs regenerated. Legacy kitchen/wardrobe overlay boards were excluded from the PDF in favour of clean locked diagrams. Exterior legend chips are flat exact RGB for NN9059, NN9077, and NN9079; roof remains UNKNOWN / SAMPLE-ONLY. Local HTML refs resolve with zero missing files; both scheme screenshots and all 25 PDF pages were visually inspected.
 
 ---
 

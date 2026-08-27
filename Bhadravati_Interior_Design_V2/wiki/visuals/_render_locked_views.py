@@ -16,8 +16,9 @@ from PIL import Image, ImageDraw, ImageFont
 OUT = Path(__file__).resolve().parent
 LATTE = (164, 148, 131)  # S1241 MT
 LATTE_S = (122, 111, 98)
-IDRIA = (61, 72, 60)  # 84689 SU European Grey
-IDRIA_S = (42, 50, 41)
+# 83661 SU Sonoma Oak — screen approximation only; physical swatch controls.
+SONOMA = (179, 163, 143)
+SONOMA_S = (139, 124, 108)
 GRAN = (26, 26, 26)
 WALL = (181, 171, 156)
 PAPER = (244, 239, 231)
@@ -66,7 +67,7 @@ def box_iso(draw, x, y, z, w, h, d, fill, ox, oy, s, shade=None):
 
 
 def grain_front(img: Image.Image, front, base, vertical=True, amp=7, seed=1):
-    """Value-only grain so Idria stays olive/grey-green (not taupe)."""
+    """Value-only grain so Sonoma Oak stays warm and light (not grey-green)."""
     xs = [p[0] for p in front]
     ys = [p[1] for p in front]
     minx, maxx = int(min(xs)), int(max(xs))
@@ -163,32 +164,29 @@ def wardrobe_camera() -> Image.Image:
     leaves = [(0, 457), (457, 457), (914, 458)]
     fronts = []
     for i, (x, w) in enumerate(leaves):
-        f = box_iso(draw, x, 0, 0, w, 2286, 20, IDRIA, ox, oy, s, IDRIA_S)
+        f = box_iso(draw, x, 0, 0, w, 2286, 20, SONOMA, ox, oy, s, SONOMA_S)
         fronts.append(f)
-        recessed_j(draw, x, 0, 0, 2286, ox, oy, s, True, groove=(32, 38, 31))
+        recessed_j(draw, x, 0, 0, 2286, ox, oy, s, True, groove=(82, 73, 64))
         # 5 Sensys cups on hinge stile (diagrammatic dots on left of each leaf)
         for k in range(5):
             cy = 180 + k * 480
             p = iso(x + 8, cy, 2, ox, oy, s)
             r = 4
-            draw.ellipse((p[0] - r, p[1] - r, p[0] + r, p[1] + r), fill=SS, outline=IDRIA_S)
+            draw.ellipse((p[0] - r, p[1] - r, p[0] + r, p[1] + r), fill=SS, outline=SONOMA_S)
     for i, f in enumerate(fronts):
-        grain_front(img, f, IDRIA, vertical=True, amp=6, seed=10 + i)
+        grain_front(img, f, SONOMA, vertical=True, amp=6, seed=10 + i)
     draw = ImageDraw.Draw(img)
     t, sfont = font(26), font(15)
     draw.text((28, 22), "W-01 wardrobe camera -- 3 leaves", font=t, fill=INK)
     draw.text(
         (28, 58),
-        "84689 SU Idria Oak European Grey #3D483C    NOT taupe    457 / 457 / 458 mm    Sensys 8645i 5    recessed SS",
+        "83661 SU Sonoma Oak (screen approx #B3A38F)    light warm-neutral    457 / 457 / 458 mm    Sensys 8645i 5    recessed SS",
         font=sfont,
         fill=MUTED,
     )
     draw.text((28, H - 48), "Not Boilo on 90 in doors  Curvo 8010 is a lock  conceptual -- not fabrication-approved", font=sfont, fill=MUTED)
-    draw.rectangle((W - 150, 22, W - 28, 86), fill=IDRIA, outline=IDRIA_S)
-    draw.text((W - 148, 92), "Idria chip", font=sfont, fill=MUTED)
-    # reject taupe chip
-    draw.rectangle((W - 150, 120, W - 28, 160), fill=(69, 84, 69), outline=INK)
-    draw.text((W - 148, 166), "not #455445", font=sfont, fill=MUTED)
+    draw.rectangle((W - 150, 22, W - 28, 86), fill=SONOMA, outline=SONOMA_S)
+    draw.text((W - 148, 92), "Sonoma chip", font=sfont, fill=MUTED)
     return img
 
 
@@ -215,14 +213,14 @@ def write_obj(path: Path) -> None:
     add_box(2165, 40, 0, 457, 700, 20, "Latte")
     add_box(0, 2310, 0, 2692, 280, 488, "Latte")
     ox = -2200
-    add_box(ox, 0, 0, 457, 2286, 20, "Idria")
-    add_box(ox + 457, 0, 0, 457, 2286, 20, "Idria")
-    add_box(ox + 914, 0, 0, 458, 2286, 20, "Idria")
+    add_box(ox, 0, 0, 457, 2286, 20, "Sonoma")
+    add_box(ox + 457, 0, 0, 457, 2286, 20, "Sonoma")
+    add_box(ox + 914, 0, 0, 458, 2286, 20, "Sonoma")
     vblock = [f"v {x} {y} {z}" for x, y, z in verts]
     path.write_text("\n".join(["# verts in mm, Y up"] + vblock + lines[1:]) + "\n", encoding="utf-8")
     path.with_suffix(".mtl").write_text(
         "newmtl Latte\nKd 0.643 0.580 0.514\nNs 12\n\n"
-        "newmtl Idria\nKd 0.239 0.282 0.235\nNs 18\n\n"
+        "newmtl Sonoma\nKd 0.702 0.639 0.561\nNs 18\n\n"
         "newmtl Granite\nKd 0.102 0.102 0.102\nNs 40\n",
         encoding="utf-8",
     )

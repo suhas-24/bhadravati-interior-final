@@ -38,7 +38,7 @@
       --line: #D2C8BA;
       --accent: #5B7A6A;
       --granite: #1A1A1A;
-      --scheme-label: "Scheme A";
+      --scheme-label: "Legacy alternate";
       --wall-glow: rgba(181,171,156,0.35);
     }
     [data-paint-scheme="b"] {
@@ -275,7 +275,7 @@
     nav.section-nav a { color: var(--muted); text-decoration: none; white-space: nowrap; }
     nav.section-nav a:hover { color: var(--ink); }
 
-    section { padding: 3.5rem 0; }
+    section { padding: 3.5rem 0; scroll-margin-top: 130px; }
     h2 {
       font-family: "Fraunces", Georgia, serif;
       font-size: clamp(1.6rem, 3vw, 2.1rem);
@@ -384,7 +384,7 @@
       letter-spacing: 0.08em; text-transform: uppercase; color: var(--latte); margin-bottom: 0.3rem;
     }
     .badge {
-      display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 0.68rem;
+      display: block; font-family: "IBM Plex Mono", monospace; font-size: 0.68rem;
       letter-spacing: 0.06em; text-transform: uppercase; color: var(--latte); margin-bottom: 0.25rem;
     }
     .pending-badge {
@@ -409,9 +409,7 @@
     .panel.highlight { border-color: var(--accent); background: rgba(91,122,106,0.08); overflow: visible; }
     .svg-frame { background: #fff; border: 1px solid var(--line); padding: 0.5rem; overflow: auto; }
     .svg-frame object, .svg-frame img, .svg-frame svg { width: 100%; height: auto; display: block; }
-    .palette-board-a, .palette-board-b { display: none; }
-    [data-paint-scheme="a"] .palette-board-a { display: block; }
-    [data-paint-scheme="b"] .palette-board-b { display: block; }
+    .palette-board-active { display: block; }
     .two-col { display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 1.25rem; align-items: start; }
     .notes dt { font-weight: 600; margin-top: 0.85rem; }
     .notes dd { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.92rem; }
@@ -442,7 +440,7 @@
 <body>
   <header class="hero">
     <div class="wrap hero-inner">
-      <p class="eyebrow">Bhadravati &#183; FINAL_v1 &#183; Dual paint schemes locked</p>
+      <p class="eyebrow">Bhadravati &#183; V2 corrected final &#183; design-control package</p>
       <h1>Bhadravati Home</h1>
       <p class="lede">Warm Contemporary Minimalism &#8212; locked palette, scale-true plan, recessed pulls, and wardrobe face Options A / B for client choice.</p>
       <div class="cta-row">
@@ -458,7 +456,7 @@
         <div class="scheme-meta">
           <span class="label" id="paint-scheme-label">Paint scheme</span>
           <span class="active-pair" id="scheme-active-pair" aria-live="polite">
-            <code>NN9074</code> walls &#183; <code>WW0005</code> ceiling
+            <code>NN9088</code> Ecru Tint &#183; <code>WW0020</code> Virgin White
           </span>
         </div>
         <div class="scheme-chips" aria-hidden="true">
@@ -520,8 +518,8 @@
         <h2>Locked design tokens</h2>
         <p class="section-lede" id="tokens-lede">From <code>swatch_lock.json</code> + <code>dimension_lock.json</code> + <code>wardrobe_door_lock.json</code> (all complete). Birla Opus hex exact; Century laminate hex = visual approx.</p>
         <div class="token-strip" aria-label="Primary palette">
-          <div class="swatch" data-role="wall" id="swatch-wall"><span id="swatch-wall-label">NN9088 &#183; #E9E3D9</span></div>
-          <div class="swatch" data-role="ceil" id="swatch-ceil"><span id="swatch-ceil-label">WW0020 &#183; #EDE9E2</span></div>
+          <div class="swatch" data-role="wall" id="swatch-wall"><span id="swatch-wall-label">NN9088 · #E9E3D9</span></div>
+          <div class="swatch" data-role="ceil" id="swatch-ceil"><span id="swatch-ceil-label">WW0020 · #EDE9E2</span></div>
           <div class="swatch latte" style="background:#A49483"><span>S1241 MT Latte</span></div>
           <div class="swatch sonoma on-dark" style="background-color:#B3A38F" title="83661 SU Sonoma Oak · official StarLine swatch"><span>83661 SU Sonoma Oak</span></div>
           <div class="swatch slate on-dark" style="background:#575D5C"><span>80236 DW TV</span></div>
@@ -565,11 +563,11 @@
     <section id="concepts">
       <div class="wrap">
         <h2>Photorealistic concepts</h2>
-        <p class="section-lede">Three-view sets per critical room. Image QA: 14 PASS / 0 FAIL. Conceptual &#8212; openings and granite thickness remain site-measure items. Toggle paint scheme above to compare wall/ceiling pairs.</p>
+        <p class="section-lede">Three-view sets per critical room. Visual QA completed for the displayed assets; all imagery is conceptual and openings/granite thickness remain site-measure items. Toggle paint scheme above only to compare the legacy wall/ceiling alternate with the corrected final.</p>
 
         <div class="room-block" id="living-set">
           <h3>Living &#8212; three-view set</h3>
-          <p class="room-lede" data-room-lede="living">S-centre &#183; sofa&#8211;coffee 475&nbsp;mm &#183; aisle ~950&#8211;1000&nbsp;mm &#183; NN9074 TV wall &#183; 80236 floating cabinet only &#183; no balcony</p>
+          <p class="room-lede" data-room-lede="living">S-centre &#183; sofa&#8211;coffee 475&nbsp;mm &#183; aisle ~950&#8211;1000&nbsp;mm &#183; NN9088 TV wall &#183; 80236 floating cabinet only &#183; no balcony</p>
           <div class="tri-gallery">
             <figure class="hero-shot">
               <span class="pending-badge" hidden>Scheme B image pending</span>
@@ -668,11 +666,11 @@
         </div>
         <aside>
           <div class="hotspots" role="tablist" aria-label="Zone callouts">
-            <button class="hotspot active" data-zone="living" role="tab" aria-selected="true"><strong>Living</strong><span>Sofa&#8211;coffee 475 &#183; 80236 only</span></button>
-            <button class="hotspot" data-zone="kitchen" role="tab"><strong>Kitchen</strong><span>2692&#215;488 &#183; recessed &#183; fridge right</span></button>
-            <button class="hotspot" data-zone="wardrobe" role="tab"><strong>Wardrobe</strong><span>3 doors 457/457/458 &#183; Options A/B</span></button>
-            <button class="hotspot" data-zone="bedroom" role="tab"><strong>Bedroom</strong><span>Queen &#183; west side 600 &#183; paint scheme</span></button>
-            <button class="hotspot" data-zone="study" role="tab"><strong>Study</strong><span>Desk 1350&#215;650 &#183; NE</span></button>
+            <button class="hotspot active" data-zone="living" role="tab" aria-selected="true" tabindex="0"><strong>Living</strong><span>Sofa&#8211;coffee 475 &#183; 80236 only</span></button>
+            <button class="hotspot" data-zone="kitchen" role="tab" aria-selected="false" tabindex="-1"><strong>Kitchen</strong><span>2692&#215;488 &#183; recessed &#183; fridge right</span></button>
+            <button class="hotspot" data-zone="wardrobe" role="tab" aria-selected="false" tabindex="-1"><strong>Wardrobe</strong><span>3 doors 457/457/458 &#183; Options A/B</span></button>
+            <button class="hotspot" data-zone="bedroom" role="tab" aria-selected="false" tabindex="-1"><strong>Bedroom</strong><span>Queen &#183; west side 600 &#183; paint scheme</span></button>
+            <button class="hotspot" data-zone="study" role="tab" aria-selected="false" tabindex="-1"><strong>Study</strong><span>Desk 1350&#215;650 &#183; NE</span></button>
           </div>
           <div id="callout" role="tabpanel">
             <strong>Living</strong> &#8212; S-centre. Sofa&#8211;coffee <strong>475&nbsp;mm</strong>. Primary clear <strong>950&nbsp;mm</strong>; coffee&#8211;TV aisle <strong>1000&nbsp;mm</strong>. Floating 80236 only.
@@ -685,7 +683,7 @@
       <div class="wrap">
         <h2>Palette board</h2>
         <p class="section-lede" id="palette-lede">NN9088 Ecru Tint / WW0020 Virgin White / S1241 MT Latte / 83661 Sonoma Oak / 80236 Slate / black granite / NN9059 + NN9077 + conceptual NN9079 exterior / muted blue-grey roof sample pending / recessed SS hardware / E3 ABS / 3000&nbsp;K.</p>
-        <div class="svg-frame palette-board-b">
+        <div class="svg-frame palette-board-active">
           <object data="palette_board_sonoma_kalahodha.svg" type="image/svg+xml" aria-label="Active Sonoma Oak and Kala Ghoda palette board SVG">Active palette SVG</object>
         </div>
       </div>
@@ -915,8 +913,8 @@
         activePair.innerHTML =
           "<code>" + s.wallCode + "</code> " + s.wallName +
           " &#183; <code>" + s.ceilCode + "</code> " + s.ceilName;
-        swatchWallLabel.textContent = s.wallCode + " &#183; " + s.wallHex;
-        swatchCeilLabel.textContent = s.ceilCode + " &#183; " + s.ceilHex;
+        swatchWallLabel.textContent = s.wallCode + " · " + s.wallHex;
+        swatchCeilLabel.textContent = s.ceilCode + " · " + s.ceilHex;
         tokensLede.innerHTML = s.tokensLede;
         paletteLede.innerHTML = s.paletteLede;
         if (livingLede) livingLede.innerHTML = s.livingLede;
@@ -1095,9 +1093,11 @@
           document.querySelectorAll(".hotspot").forEach((b) => {
             b.classList.remove("active");
             b.setAttribute("aria-selected", "false");
+            b.tabIndex = -1;
           });
           btn.classList.add("active");
           btn.setAttribute("aria-selected", "true");
+          btn.tabIndex = 0;
           callout.dataset.zone = btn.dataset.zone;
           if (btn.dataset.zone === "bedroom") {
             const s = SCHEMES[window.__activePaintScheme || "b"];

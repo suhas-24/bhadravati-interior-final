@@ -1,6 +1,6 @@
 # STATE — live project tracker (update after every meaningful change)
 
-**Last updated:** 2026-08-27 · by: Codex (industrial-premium colour audit)
+**Last updated:** 2026-08-27 · by: Codex (final visual/PDF QA)
 
 ## Project
 Bhadravati Home — first-floor studio, Bhadravati, Karnataka. Envelope ~21×18 ft (~378 sq ft, plan_relationship_only).
@@ -57,3 +57,9 @@ Published on GitHub Pages after rebuild: gallery includes the exterior concept a
 Official Birla Opus swatches were visually inspected and cross-checked: NN9088 Ecru Tint `#E9E3D9` is the selected wall field and WW0020 Virgin White `#EDE9E2` the selected ceiling/trim. NN9074 Puddle of Grey + WW0005 White Linen remain legacy alternate only. A replacement 12-image living/kitchen/evening/bedroom/wardrobe set was generated, visually inspected, and stored in `Bhadravati_Interior_Design_V2/assets/img/corrected_ecru_virgin_white/`; the matching `docs/*_schemeB.png` gallery twins now reference that corrected set. V2 PDF rebuilt and verified at 24 pages.
 
 Exterior replacement: official pages 104–105 were visually rechecked. Final visual concept uses NN9059 Kala Ghoda museum `#BEB2A1` / RGB 190,178,161 on broad walls; NN9077 Old leaves underfoot `#766C62` / RGB 118,108,98 on front bands/plinths and a lorry-facing side only after sample trial; conceptual NN9079 Dark tidings `#4F4A47` / RGB 79,74,71 on the thin roofline edge; roof is muted blue-grey with code UNKNOWN / SAMPLE-ONLY. Final concept image `docs/exterior_colour_concept_nn9059_nn9077_nn9079_blue_roof.png` is now the exterior visual reference. Studio Pose and Idria are historical/rejected only; no colour is fabrication-approved until physical samples are approved.
+
+## 2026-08-27 final webpage + PDF QA
+
+The client gallery now opens on the corrected NN9088 Ecru Tint + WW0020 Virgin White pair, keeps the corrected palette board visible for both URL toggles, uses real middle-dot labels, and has complete tab ARIA state plus section scroll offsets. Active floor-plan and axonometric SVG legends were reconciled to NN9088/WW0020/83661 Sonoma Oak. The three wiki SVG sources were UTF-8 cleaned and their PNGs regenerated; the wardrobe camera/exploded visuals now show 83661 Sonoma Oak rather than Idria.
+
+V2 PDF was rebuilt and verified: 25 pages, unencrypted, no XML parser placeholders, no stale Idria wardrobe camera, no stale NN9074 IEQ wording, and no corrupted `?` glyphs. The deployed copy is `docs/Bhadravati_FINAL_Interior_Design.pdf`. All local HTML references resolve; scheme A and B full-page screenshots were visually inspected. These remain conceptual design-control outputs, not fabrication approval.

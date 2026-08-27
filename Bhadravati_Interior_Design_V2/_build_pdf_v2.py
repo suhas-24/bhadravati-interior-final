@@ -40,8 +40,10 @@ OUT = ROOT / "Bhadravati_Interior_Design_V2.pdf"
 # Keep the corrected swatch table below as the PDF source; the full corrected SVG board is in docs/.
 BOARD_PALETTE = ASSETS / "01_visual_palette_board_v2_corrected.png"
 BOARD_FLOORPLAN = ASSETS / "02_floorplan_concept_v2.png"
-BOARD_KITCHEN_ELEV = ASSETS / "03_kitchen_elevation_overlay_v2.png"
-BOARD_WARDROBE_ELEV = ASSETS / "04_wardrobe_elevation_overlay_v2.png"  # 3-door 457/457/458
+# The legacy overlay boards contained stale colour text and a duplicated title.
+# Use the UTF-8-clean, regenerated locked diagrams instead.
+BOARD_KITCHEN_ELEV = ROOT / "wiki" / "visuals" / "kitchen_exploded.png"
+BOARD_WARDROBE_ELEV = ROOT / "wiki" / "visuals" / "wardrobe_exploded.png"  # 3-door 457/457/458
 BOARD_QA = ASSETS / "05_qa_contact_sheet_v2.jpg"
 EXTERIOR_CONCEPT = ROOT.parent / "docs" / "exterior_colour_concept_nn9059_nn9077_nn9079_blue_roof.png"
 EXTERIOR_SWATCH = ROOT.parent / "docs" / "birla_official_swatches_nn9059_page104.png"
@@ -252,8 +254,8 @@ def build():
     story.append(Paragraph("2–4. Site baseline, zoning & human factors", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=6))
     story.append(Paragraph(
-        "Studio envelope ? <b>21 × 18 ft (6401 × 5486 mm)</b> — <b>plan relationship only</b>, not a cut sheet. "
-        "Source hierarchy: signed site measure ? dimension_register_v1 ? this package ? renders.",
+        "Studio envelope: <b>21 × 18 ft (6401 × 5486 mm)</b> — <b>plan relationship only</b>, not a cut sheet. "
+        "Source hierarchy: signed site measure -> dimension_register_v1 -> this package -> renders.",
         body,
     ))
     zones = [
@@ -270,7 +272,7 @@ def build():
     story.append(zt)
     story.append(Paragraph(
         "Circulation: primary 900–1200 mm · secondary 600–900 mm · sofa–coffee 450–500 mm · "
-        "bed sides ?600 mm · wardrobe standing clear ?600 mm (prefer 900). "
+        "bed sides >=600 mm · wardrobe standing clear >=600 mm (prefer 900). "
         "Counter ~787 mm AFF; hanging bay ~991 mm — verify for users. No accessibility certification claimed. "
         "All door/window sizes = <b>UNVERIFIED</b> (bedroom window conflict: do not hard-code).",
         body,
@@ -290,10 +292,10 @@ def build():
         [Paragraph("<b>Item</b>", cell_b), Paragraph("<b>in</b>", cell_b), Paragraph("<b>mm</b>", cell_b)],
         [Paragraph("Module width", cell), Paragraph("106.00", cell), Paragraph("2692", cell)],
         [Paragraph("Ref. wall width", cell), Paragraph("220.00", cell), Paragraph("5588", cell)],
-        [Paragraph("Floor ? loft underside", cell), Paragraph("102.00", cell), Paragraph("2591", cell)],
-        [Paragraph("Loft ? lower shelf underside", cell), Paragraph("48.00", cell), Paragraph("1219", cell)],
-        [Paragraph("Shelf underside ? counter top", cell), Paragraph("23.00", cell), Paragraph("584", cell)],
-        [Paragraph("Floor ? counter top", cell), Paragraph("31.00", cell), Paragraph("787", cell)],
+        [Paragraph("Floor -> loft underside", cell), Paragraph("102.00", cell), Paragraph("2591", cell)],
+        [Paragraph("Loft -> lower shelf underside", cell), Paragraph("48.00", cell), Paragraph("1219", cell)],
+        [Paragraph("Shelf underside -> counter top", cell), Paragraph("23.00", cell), Paragraph("584", cell)],
+        [Paragraph("Floor -> counter top", cell), Paragraph("31.00", cell), Paragraph("787", cell)],
         [Paragraph("Internal counter depth", cell), Paragraph("19.20", cell), Paragraph("488", cell)],
         [Paragraph("B1 / B2 / B3 clear", cell), Paragraph("48 / 36 / 18", cell), Paragraph("1219 / 914 / 457", cell)],
     ]
@@ -307,7 +309,7 @@ def build():
         [Paragraph("Clear W × H × D", cell), Paragraph("54 × 90 × 19.20", cell), Paragraph("1372 × 2286 × 488", cell)],
         [Paragraph("Left / partition / right", cell), Paragraph("21 / 0.59 / 32.41", cell), Paragraph("533 / 15 / 823", cell)],
         [Paragraph("Three vertical leaves (locked)", cell), Paragraph("1 single + 1 double", cell), Paragraph("<b>457 / 457 / 458</b>", cell)],
-        [Paragraph("Left openings T?B", cell), Paragraph("12 + 4×19.5", cell), Paragraph("305 + 4×495", cell)],
+        [Paragraph("Left openings T->B", cell), Paragraph("12 + 4×19.5", cell), Paragraph("305 + 4×495", cell)],
         [Paragraph("Right stack", cell), Paragraph("12 / 39 hang / 9.5 / 12 / 17.5", cell), Paragraph("305 / 991 / 241 / 305 / 445", cell)],
     ]
     wt = Table(w_data, colWidths=[70 * mm, 50 * mm, 50 * mm])
@@ -561,12 +563,12 @@ def build():
     story.append(Paragraph("8–12. Wellness, lighting, acoustics, systems & codes", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=6))
     story.append(Paragraph(
-        "<b>IEQ / climate:</b> Mid-tone washable greige (NN9074), matte wipeable joinery, sealed wet-risk boards (BWP at hinge/splash), "
+        "<b>IEQ / climate:</b> Light warm ecru (NN9088 Ecru Tint), matte wipeable joinery, sealed wet-risk boards (BWP at hinge/splash), "
         "spare laminate/edge for repairability, preserve daylight with sheers for glare/heat. Prefer durability over green theater.",
         body,
     ))
     story.append(Paragraph(
-        "<b>Lighting:</b> Baseline <b>3000 K</b> (bedroom lamps 2700–3000 K). Prefer CRI ?90 at kitchen/living finishes. "
+        "<b>Lighting:</b> Baseline <b>3000 K</b> (bedroom lamps 2700–3000 K). Prefer CRI <b>90+</b> at kitchen/living finishes. "
         "Mandatory kitchen under-loft linear task (300–750 lux guidance). Living ambient 150–300; bedroom 50–150; study/reading 300–500. "
         "Separate zones + dimming living/bedroom. Accent minimal — no cove glitter.",
         body,
@@ -581,7 +583,7 @@ def build():
         body,
     ))
     story.append(Paragraph(
-        "<b>Codes awareness (non-certifying):</b> Keep egress/aisles clear of FF&E. New electrical points ? licensed electrician. "
+        "<b>Codes awareness (non-certifying):</b> Keep egress/aisles clear of FF&E. New electrical points require a licensed electrician. "
         "No AHJ stamp claimed in this package.",
         body,
     ))
@@ -599,8 +601,8 @@ def build():
         [Paragraph("3-seat sofa", cell), Paragraph("~2150×875×825 mm", cell), Paragraph("Wipeable taupe; front legs on rug", cell)],
         [Paragraph("Round coffee table", cell), Paragraph("Ø700–800 × H~425", cell), Paragraph("450–500 mm to sofa", cell)],
         [Paragraph("Floating TV cabinet", cell), Paragraph("1400–1800 mm", cell), Paragraph("80236 DW or Latte; no TV wall", cell)],
-        [Paragraph("Queen bed + 2 nightstands", cell), Paragraph("Mattress ~1525×2030", cell), Paragraph("Sides ?600 mm where possible", cell)],
-        [Paragraph("Study desk + mesh chair", cell), Paragraph("Desk 1200–1500", cell), Paragraph("2–3 shelves ?300 mm deep", cell)],
+        [Paragraph("Queen bed + 2 nightstands", cell), Paragraph("Mattress ~1525×2030", cell), Paragraph("Sides >=600 mm where possible", cell)],
+        [Paragraph("Study desk + mesh chair", cell), Paragraph("Desk 1200–1500", cell), Paragraph("2–3 shelves <=300 mm deep", cell)],
         [Paragraph("Kitchen shutters B1–B3 + loft", cell), Paragraph("Clear 48/36/18 in", cell), Paragraph("S1241 MT Latte; recessed pulls", cell)],
         [Paragraph("Wardrobe 3 leaves", cell), Paragraph("457/457/458 mm", cell), Paragraph("83661 Sonoma; Options A/B face", cell)],
     ]
@@ -615,7 +617,7 @@ def build():
     ]:
         story.append(Paragraph(f"• {t}", bullet))
     story.append(Paragraph(
-        "Phase 0 measure+samples ? 1 wet/storage core ? 2 light+living ? 3 sleep/work ? 4 optional polish. "
+        "Phase 0 measure+samples -> 1 wet/storage core -> 2 light+living -> 3 sleep/work -> 4 optional polish. "
         "Quotes must state board grade/thickness, laminate code/finish, edge brand/thickness, adhesive process, hinge models, warranty exclusions, spares.",
         body,
     ))
@@ -656,15 +658,15 @@ def build():
     story.append(Paragraph("Kitchen elevation — K-01 (design control)", h1))
     story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
     story.append(Paragraph(
-        "Front elevation with clear openings + V2 chrome: S1241 Latte-all, recessed brushed stainless pulls, "
-        "existing granite retained. Drawn bar pulls on source art may not match recessed-pull lock — prefer recessed.",
+        "Locked K-01 diagram: S1241 Latte-all, recessed brushed stainless pulls, existing granite retained. "
+        "The diagram is conceptual and not a fabrication drawing.",
         body,
     ))
     if BOARD_KITCHEN_ELEV.exists():
         story.append(fit_image(BOARD_KITCHEN_ELEV, content_w, 155 * mm))
         story.append(Paragraph(
-            "K-01 elevation overlay V2 — Latte-all shutters; shutters-only; hardware lock = "
-            "<b>recessed</b> brushed stainless pulls (C-08) — ignore any drawn bar pulls on source art; not fabrication-approved",
+            "K-01 locked diagram — Latte-all shutters; shutters-only; hardware lock = "
+            "<b>recessed</b> brushed stainless pulls (C-08); not fabrication-approved",
             caption,
         ))
     story.append(PageBreak())
@@ -732,7 +734,7 @@ def build():
     if BOARD_WARDROBE_ELEV.exists():
         story.append(fit_image(BOARD_WARDROBE_ELEV, content_w, 155 * mm))
         story.append(Paragraph(
-            "W-01 elevation overlay V2 — 3-door composite (face + dimensioned leaves 457/457/458)",
+            "W-01 locked 3-door diagram — Sonoma Oak screen approximation + dimensioned leaves 457/457/458",
             caption,
         ))
     story.append(PageBreak())
@@ -758,10 +760,10 @@ def build():
         body,
     ))
     for s in [
-        "Measure & sign site sheet (K-01, W-01, openings) ? photograph tape end-to-end.",
+        "Measure & sign site sheet (K-01, W-01, openings) -> photograph tape end-to-end.",
         "Approve sample board (NN9088/WW0020 corrected final; NN9074/WW0005 legacy alternate if desired; S1241; 83661; 80236; E3; recessed SS) beside granite @ morning/afternoon/3000 K. Add NN9059 + NN9077 exterior test patches after rain and a cleaning trial.",
         "Choose wardrobe Option A or B; lock quote (board grades, laminate codes, edges, hinges, access panels).",
-        "Fabricate ? site prep ? install kitchen shutters + wardrobe ? paint ? lighting ? FF&E ? punch.",
+        "Fabricate -> site prep -> install kitchen shutters + wardrobe -> paint -> lighting -> FF&E -> punch.",
     ]:
         story.append(Paragraph(f"• {s}", bullet))
     story.append(PageBreak())

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 980 420" role="img" aria-labelledby="m-title">
-<title id="m-title">Bhadravati material stack  kitchen vs wardrobe</title>
+<title id="m-title">Bhadravati material stack â€” kitchen vs wardrobe</title>
 <defs>
   <style>
     .t { font-family: "Fraunces", Georgia, serif; fill: #2C2925; }
@@ -9,7 +9,7 @@
   </style>
 </defs>
 <rect width="980" height="420" fill="#F4EFE7"/>
-<text x="28" y="28" class="t" font-size="17">Material stack  this house</text>
+<text x="28" y="28" class="t" font-size="17">Material stack â€” this house</text>
 <text x="28" y="46" class="s" font-size="10">0.8 mm StarLine telegraphs core gaps. Both faces. Machine ABS. Recessed pull wrapped. Conceptual.</text>
 
 <g transform="translate(40,70)">
@@ -22,22 +22,22 @@
   <text x="410" y="118" class="s" font-size="10">S1241 MT reverse 0.8 mm</text>
   <rect x="-12" y="16" width="12" height="106" fill="#8A8175" stroke="#5A534A"/>
   <rect x="400" y="16" width="12" height="106" fill="#8A8175" stroke="#5A534A"/>
-  <text x="410" y="148" class="s" font-size="10">E3 ABS 2.00 mm · PUR if proven</text>
+  <text x="410" y="148" class="s" font-size="10">E3 ABS 2.00 mm Â· PUR if proven</text>
   <rect x="388" y="50" width="10" height="48" fill="#C5C8C6" stroke="#5A534A"/>
   <text x="410" y="168" class="s" font-size="10">Recessed brushed SS (not a bar)</text>
 </g>
 
 <g transform="translate(40,260)">
   <text x="0" y="0" class="l" font-size="13">Wardrobe leaf</text>
-  <rect x="0" y="16" width="400" height="18" fill="#3D483C" stroke="#2A3229"/>
-  <text x="410" y="30" class="s" font-size="10">84689 SU Idria Oak 0.8 mm · European Grey</text>
+  <rect x="0" y="16" width="400" height="18" fill="#B3A38F" stroke="#8B7A68"/>
+  <text x="410" y="30" class="s" font-size="10">83661 SU Sonoma Oak 0.8 mm Â· light warm-neutral screen approx</text>
   <rect x="0" y="34" width="400" height="70" fill="#C4B08A" stroke="#6E655B"/>
-  <text x="410" y="74" class="s" font-size="10">Club Prime / Greenply 710 Marine 19 mm (HDHMR 18 CNC) · not Boilo</text>
+  <text x="410" y="74" class="s" font-size="10">Club Prime / Greenply 710 Marine 19 mm (HDHMR 18 CNC) Â· not Boilo</text>
   <rect x="0" y="104" width="400" height="18" fill="#D8D4CC" stroke="#6E655B"/>
   <text x="410" y="118" class="s" font-size="10">Same-thickness balancer (not raw ply)</text>
   <rect x="-8" y="16" width="8" height="106" fill="#8A8175" stroke="#5A534A"/>
   <rect x="400" y="16" width="8" height="106" fill="#8A8175" stroke="#5A534A"/>
-  <text x="410" y="148" class="s" font-size="10">E3 ABS 1.00 mm · 5× Sensys 8645i</text>
+  <text x="410" y="148" class="s" font-size="10">E3 ABS 1.00 mm Â· 5Ã— Sensys 8645i</text>
 </g>
-<text x="28" y="400" class="s" font-size="9">NN9074 walls #B5AB9C · WW0005 ceiling · 80236 DW TV only · 3000 K · wiki 04 / 08</text>
+<text x="28" y="400" class="s" font-size="9">NN9088 Ecru Tint #E9E3D9 Â· WW0020 Virgin White #EDE9E2 Â· 80236 DW TV only Â· 3000 K Â· wiki 04 / 08</text>
 </svg>

@@ -99,21 +99,21 @@ f 33 37 38 34
 f 36 35 39 40
 f 33 36 40 37
 f 34 38 39 35
-usemtl Idria
+usemtl Sonoma
 f 41 42 43 44
 f 45 48 47 46
 f 41 45 46 42
 f 44 43 47 48
 f 41 44 48 45
 f 42 46 47 43
-usemtl Idria
+usemtl Sonoma
 f 49 50 51 52
 f 53 56 55 54
 f 49 53 54 50
 f 52 51 55 56
 f 49 52 56 53
 f 50 54 55 51
-usemtl Idria
+usemtl Sonoma
 f 57 58 59 60
 f 61 64 63 62
 f 57 61 62 58
