@@ -40,6 +40,7 @@ BOARD_FLOORPLAN = ASSETS / "02_floorplan_concept_v2.png"
 BOARD_KITCHEN_ELEV = ASSETS / "03_kitchen_elevation_overlay_v2.png"
 BOARD_WARDROBE_ELEV = ASSETS / "04_wardrobe_elevation_overlay_v2.png"  # 3-door 457/457/458
 BOARD_QA = ASSETS / "05_qa_contact_sheet_v2.jpg"
+EXTERIOR_CONCEPT = ROOT.parent / "docs" / "exterior_colour_concept_nn9589.png"
 
 NN9074 = HexColor("#B5AB9C")
 WW0005 = HexColor("#EEEDE9")
@@ -810,6 +811,25 @@ def build():
         "MASTER_BRIEF_V2.md · design_tokens_v2.json · dimension_register_v1.",
         small,
     ))
+    story.append(PageBreak())
+
+    # ——— EXTERIOR COLOUR CONCEPT ———
+    story.append(Paragraph("Exterior colour concept — industrial-premium envelope", h1))
+    story.append(HRFlowable(width="100%", thickness=0.6, color=RULE, spaceAfter=4))
+    story.append(Paragraph(
+        "Recommended concept: Birla Opus <b>NN9589 Studio Pose</b> as the muted green-grey wall field, "
+        "with restrained graphite/black accents on existing bands, parapets, grills and canopy. "
+        "Warm teak-toned door balances the locked interior palette and Idria Oak wardrobe finish.",
+        body,
+    ))
+    if EXTERIOR_CONCEPT.exists():
+        story.append(fit_image(EXTERIOR_CONCEPT, content_w, 205 * mm))
+        story.append(Paragraph(
+            "Conceptual exterior board — NN9589 Studio Pose. Preserve existing geometry, openings, drainage, "
+            "canopy, grills and signage. Confirm the exact Birla Opus exterior product/tint and approve a physical "
+            "façade sample in sun, shade and post-rain conditions before painting.",
+            caption,
+        ))
     story.append(PageBreak())
 
     # ——— VISUAL QA CONTACT SHEET (V2) ———

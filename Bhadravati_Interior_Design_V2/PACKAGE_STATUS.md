@@ -5,7 +5,7 @@
 **Verdict:** **COMPLETE / READY** for design-control client handoff  
 **PDF rebuild for assets 01�05:** **Not required** (already embedded)
 
-**2026-08-27 colour audit addendum:** `../BIRLA_OPUS_COLOUR_SELECTION.md` records the industrial dust/smoke response and visual verification of the official NN9074, NN9242, WW0005, NN9564, and NN9589 swatches. NN9589 Studio Pose is the recommended exterior concept; exterior product/tint and physical façade sample approval remain open.
+**2026-08-27 colour audit addendum:** `../BIRLA_OPUS_COLOUR_SELECTION.md` records the industrial dust/smoke response and visual verification of the official NN9074, NN9242, WW0005, NN9564, and NN9589 swatches. NN9589 Studio Pose is the recommended exterior concept; exterior product/tint and physical façade sample approval remain open. V2 PDF rebuilt with the exterior concept page; current output is 24 pages.
 
 ---
 
